@@ -1,2 +1,16 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!doctype html>
+<head>
+    <title>Kakule Travel App</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div id="calendar">
+            <% render "calendar" %>
+        </div>
+        <div id="addpanel">
+            <% render "addpanel" %>
+        </div>
+    </div>
+</body>
+</html>
