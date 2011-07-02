@@ -1,5 +1,9 @@
-Tmp::Application.routes.draw do
+Kakule::Application.routes.draw do
+  resources :events
+
   get "home/index"
+  
+  post "search/events"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

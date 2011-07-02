@@ -1,0 +1,49 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Eventful</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Venue</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Postal</th>
+    <th>Country</th>
+    <th>Latitute</th>
+    <th>Longitude</th>
+    <th>Picture url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.eventful_id %></td>
+    <td><%= event.name %></td>
+    <td><%= event.description %></td>
+    <td><%= event.start_time %></td>
+    <td><%= event.end_time %></td>
+    <td><%= event.venue %></td>
+    <td><%= event.street %></td>
+    <td><%= event.city %></td>
+    <td><%= event.state %></td>
+    <td><%= event.postal %></td>
+    <td><%= event.country %></td>
+    <td><%= event.latitute %></td>
+    <td><%= event.longitude %></td>
+    <td><%= event.picture_url %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>

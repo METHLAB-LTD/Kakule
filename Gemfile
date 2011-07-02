@@ -11,15 +11,20 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano', "~> 2.6.0"
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
 
 # Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
+gem "fb_graph", "~> 1.9.1"
+gem "eventfulapi", "~> 2.2.1"
+gem "nokogiri", "~> 1.5.0"
+gem "curb", "~> 0.7.15"
+gem "hirb", :require => nil
+
+# gem 'bj'	
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
