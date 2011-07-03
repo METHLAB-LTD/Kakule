@@ -1,16 +1,22 @@
-<!doctype html>
-<head>
-    <title>Kakule Travel App</title>
-</head>
-<body>
-    <div id="header"></div>
-    <div id="content">
+<div id="header">
+    <div id="logo">
+        <%= link_to(image_tag("kakule.png"), root_url) %>
+    </div>
+</div>
+<div id="content">
+    <div id="toppanel">
         <div id="calendar">
-            <% render "calendar" %>
+            <%= render "calendar" %>
         </div>
         <div id="addpanel">
-            <% render "addpanel" %>
+            <%= render "addpanel" %>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="bottompanel">
+        <div id="savepanel">
+            <%= render "savepanel" %>
         </div>
     </div>
-</body>
-</html>
+    
+</div>
