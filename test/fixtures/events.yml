@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  eventful_id: MyString
+  name: MyString
+  description: MyString
+  start_time: 2011-07-02 03:33:49
+  end_time: 2011-07-02 03:33:49
+  venue: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  postal: MyString
+  country: MyString
+  latitute: 1.5
+  longitude: 1.5
+  picture_url: MyString
+
+two:
+  eventful_id: MyString
+  name: MyString
+  description: MyString
+  start_time: 2011-07-02 03:33:49
+  end_time: 2011-07-02 03:33:49
+  venue: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  postal: MyString
+  country: MyString
+  latitute: 1.5
+  longitude: 1.5
+  picture_url: MyString

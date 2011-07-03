@@ -1,4 +1,4 @@
-Tmp::Application.configure do
+Kakule::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -22,5 +22,8 @@ Tmp::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  
+  EVENTFUL_APPLICATION_KEY = "2gvs63mL8FnKFXL3"
 end
 
