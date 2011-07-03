@@ -30,6 +30,8 @@ GEM
     activesupport (3.0.3)
     arel (2.0.10)
     attr_required (0.0.3)
+    authlogic (2.1.6)
+      activesupport
     builder (2.1.2)
     capistrano (2.6.0)
       highline
@@ -40,6 +42,7 @@ GEM
     curb (0.7.15)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    event-calendar (2.3.3)
     eventfulapi (2.2.1)
       mime-types (> 0.0.0)
     fb_graph (1.9.1)
@@ -103,8 +106,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authlogic
   capistrano (~> 2.6.0)
   curb (~> 0.7.15)
+  event-calendar
   eventfulapi (~> 2.2.1)
   fb_graph (~> 1.9.1)
   hirb
