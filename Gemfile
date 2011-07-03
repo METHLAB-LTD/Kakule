@@ -23,6 +23,8 @@ gem "eventfulapi", "~> 2.2.1"
 gem "nokogiri", "~> 1.5.0"
 gem "curb", "~> 0.7.15"
 gem "hirb", :require => nil
+gem 'event-calendar', :require => 'event_calendar'
+gem 'authlogic'
 
 # gem 'bj'	
 # gem 'sqlite3-ruby', :require => 'sqlite3'
