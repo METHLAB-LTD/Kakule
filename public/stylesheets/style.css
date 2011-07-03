@@ -120,6 +120,10 @@ img {
     margin: 0px;
 }
 
+#current_location {
+    color: #333;
+}
+
 #addpanel .heading {
     margin-bottom: 5px;
     
