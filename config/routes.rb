@@ -5,8 +5,7 @@ Kakule::Application.routes.draw do
 
   resources :events
 
-  get "home/index"
-  
+  get "home/index" 
   post "search/events"
   post "search/location"
   
