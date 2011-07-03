@@ -25,5 +25,9 @@ Kakule::Application.configure do
   
   
   EVENTFUL_APPLICATION_KEY = "2gvs63mL8FnKFXL3"
+  SIMPLEGEO_OAUTH_KEY = "aQTVSUHfyWD7NeyqmSwFRaQxbEF8TUbP"
+  SIMPLEGEO_SECRET = "VNYHLGpJTR6v4Lm52xkTv9ybny3JkKt2"
+  
+  SimpleGeo::Client.set_credentials(SIMPLEGEO_OAUTH_KEY, SIMPLEGEO_SECRET)
 end
 

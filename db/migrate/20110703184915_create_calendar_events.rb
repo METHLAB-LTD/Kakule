@@ -5,7 +5,7 @@ class CreateCalendarEvents < ActiveRecord::Migration
       t.datetime :start_at
       t.datetime :end_at
       t.boolean :all_day, :default => false
-      t.event_type :string
+      t.string :event_type
       t.references :itinerary
       
       t.timestamps

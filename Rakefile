@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Tmp::Application.load_tasks
+Kakule::Application.load_tasks
