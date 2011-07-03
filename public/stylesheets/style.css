@@ -42,6 +42,13 @@ img {
     margin-right: 0.5em;
 
     font-family: AaarghNormal, Helvetica, Arial, serif;
+
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 1;
 }
 
 .icon {
@@ -115,6 +122,12 @@ img {
 
 #addpanel .heading {
     margin-bottom: 5px;
+    
+    cursor: pointer;
+}
+
+#addpanel .heading:hover {
+    text-decoration: underline;
 }
 
 .addpane {
