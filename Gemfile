@@ -25,6 +25,8 @@ gem "curb", "~> 0.7.15"
 gem "hirb", :require => nil
 gem 'event-calendar', :require => 'event_calendar'
 gem 'authlogic'
+gem "simplegeo", "~> 0.5.3"
+
 
 # gem 'bj'	
 # gem 'sqlite3-ruby', :require => 'sqlite3'
