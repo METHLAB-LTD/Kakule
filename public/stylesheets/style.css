@@ -44,6 +44,12 @@ img {
     font-family: AaarghNormal, Helvetica, Arial, serif;
 }
 
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
 /* Home styles 
  * @home
  */
@@ -105,6 +111,44 @@ img {
 #addpanel #title{
     border-bottom: 1px solid #dedede;
     margin: 0px;
+}
+
+#addpanel .heading {
+    margin-bottom: 5px;
+}
+
+.addpane {
+    text-transform: uppercase;
+}
+
+#locations {
+    color: #FFA8A8;
+}
+
+#location_icon {
+    width: 11px;
+    height: 16px;
+    background: url("../images/icons/location_icon.png");
+}
+
+#attractions {
+    color: #8BC5C5;
+}
+
+#attractions_icon {
+    width: 13px;
+    height: 15px;
+    background: url("../images/icons/attraction_icon.png");
+}
+
+#meals {
+    color: #FFCF75;
+}
+
+#meals_icon {
+    width: 11px;
+    height: 16px;
+    background: url("../images/icons/food_icon.png");
 }
 
 /* Save panel styles 
