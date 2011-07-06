@@ -131,14 +131,17 @@ img {
 }
 
 #addpanel .heading:hover {
-    text-decoration: underline;
 }
 
-.addpane {
+#addpanel .search {
+    display: none;
+}
+
+.addpane label{
     text-transform: uppercase;
 }
 
-#locations {
+#locations label{
     color: #FFA8A8;
 }
 
@@ -148,7 +151,7 @@ img {
     background: url("../images/icons/location_icon.png");
 }
 
-#attractions {
+#attractions label{
     color: #8BC5C5;
 }
 
@@ -158,7 +161,7 @@ img {
     background: url("../images/icons/attraction_icon.png");
 }
 
-#meals {
+#meals label{
     color: #FFCF75;
 }
 
