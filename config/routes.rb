@@ -8,6 +8,7 @@ Kakule::Application.routes.draw do
   get "home/index" 
   post "search/events"
   post "search/location"
+  post "search/geocoding"
   
 
   # The priority is based upon order of creation:

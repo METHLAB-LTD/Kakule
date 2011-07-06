@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110703191315) do
+ActiveRecord::Schema.define(:version => 20110706022659) do
 
   create_table "calendar_events", :force => true do |t|
     t.string   "name"
@@ -38,6 +38,14 @@ ActiveRecord::Schema.define(:version => 20110703191315) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "picture_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "geocodes", :force => true do |t|
+    t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
