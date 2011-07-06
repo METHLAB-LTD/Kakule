@@ -13,9 +13,9 @@ class SearchController < ApplicationController
     
   end
   
-  # POST /search/location
+  # POST /search/locations
   # params => {"lat" : 25, "long" : -120, "ip" : "255.255.255.255"}
-  def location
+  def locations
     if (params[:lat] && params[:long])
       data = SimpleGeo::Client.get_context(params[:lat], params[:long])
     elsif (params[:ip])
