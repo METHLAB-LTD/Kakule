@@ -6,6 +6,7 @@ Kakule::Application.routes.draw do
   resources :events
 
   get "home/index" 
+  get "calendar/render_calendar"
   post "search/events"
   post "search/location"
   post "search/geocoding"

@@ -3,5 +3,4 @@
 <% @shown_month = Date.civil(@year, @month) %>
 <% @event_strips = CalendarEvent.event_strips_for_month(@shown_month) %>
 
-<%= stylesheet_link_tag "event_calendar" %>
 <%= raw(event_calendar) %>

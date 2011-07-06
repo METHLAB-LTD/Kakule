@@ -9,5 +9,7 @@ Modernizr.load([
   }, 
   {
     load: '/javascripts/application.js'
+  }, 
+  { load: '/javascripts/event_calendar.js'
   }
 ]);

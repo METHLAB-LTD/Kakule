@@ -93,17 +93,30 @@ img {
  * @calendar
  */
 
-/* Add panel styles
- * @addpanel
+
+/* Right panel styles 
+ * @right 
  */
+#right { 
+    float: left; 
+    margin-left: 2em;
+}
+
+#savepanel {
+    height: 3.5em;
+}
+
+#savepanel .button {
+    width: 44.5%;
+    background: #D3E9E9;
+    color: #5EBFC5;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 #addpanel {
-    float: left;
-
     width: 320px;
 
-    margin-top: 1.5em;
-    margin-left: 2em;
     background: #f3f3f3;
     border: 1px solid #ededed;
     min-height: 240px;
@@ -167,18 +180,3 @@ img {
     background: url("../images/icons/food_icon.png");
 }
 
-/* Save panel styles 
- * @savepanel
- */
-
-#savepanel .button {
-    background: #D3E9E9;
-    color: #5EBFC5;
-    text-transform: uppercase;
-}
-
-#generatebutton {
-}
-
-#savebutton {
-}
