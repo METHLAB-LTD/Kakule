@@ -6,6 +6,11 @@ class SearchController < ApplicationController
   def events
     #validate_time_range
     
+    params[:radius] = 10 if params[:radius].nil?
+    params[:end_time] = Time.now + 1.day if params[:end_time].nil?
+    params[:start_time] = Time.now if params[:start_time].nil?
+    
+    
     @events = Event.find(:all, 
       :conditions => ["(latitude between ? and ?) AND (longitude between ? and ?) 
         AND ((name LIKE ?) OR (description LIKE ?)) 
@@ -22,18 +27,26 @@ class SearchController < ApplicationController
   end
   
   # POST /search/location
+  # params => {"lat" : 25, "long" : -120, "ip" : "255.255.255.255"}
   def location
-    data = SimpleGeo::Client.get_context(params[:lat], params[:long])
-    render :json => {:location => data[:address][:properties][:city]}
+    if (params[:lat] && params[:long])
+      data = SimpleGeo::Client.get_context(params[:lat], params[:long])
+    elsif (params[:ip])
+      data = SimpleGeo::Client.get_context_ip(params[:ip])
+    else
+      data = nil  
+    end
+    location = data[:address][:properties][:city] rescue nil
+    
+    render :json => {:location => location}
   end
   
-  
-  
-  
-  
-  
-  
-  
+  # POST /search/geocoding
+  # params => {"query" : "San Francisco"}
+  def geocoding
+    geocodes = Geocode.find_by_similar_name(params[:query])
+    render :json => geocodes
+  end
   
   
   private
