@@ -23,14 +23,29 @@ kakule.init = {
 
 	    $("#attractions .heading").click(function() {
 	        $("#attractions .search").toggle();
-	        if(kakule.util.openAction("attractions")) {
-	            kakule.server.searchAttractions(kakule.ui.repopulateList);
-	        }
+	        // if(kakule.util.openAction("attractions")) {
+	        //     kakule.server.searchAttractions(kakule.ui.repopulateList);
+	        // }
 	    });
 
 	    $("#meals .heading").click(function() {
 	        $("#meals .search").toggle();
 	    });
+	},
+	
+	attachSearchHandlers : function(){
+		var search_fields = $(".search_form");
+	  
+		search_fields.submit(function(evt){
+			var text_box = $(".search_field", this);
+			var css_class = text_box.attr("id");
+			func = css_class.split("_")[1];
+			kakule.search[func](text_box.val());
+			text_box.val("");
+			return false;
+		});
+		
+		
 	}
 };
 
@@ -41,7 +56,7 @@ kakule.util = {
 	    kakule.current.long = position.coords.longitude;
 
 	    /* Find location name */
-	    $.post("/search/location", 
+	    $.post("/search/locations", 
 	        {lat: kakule.current.lat, long: kakule.current.long},  
 	        function(data) {
 	          $("#current_location").text(data.location);
@@ -54,27 +69,34 @@ kakule.util = {
 	}
 };
 
+
+kakule.search = {
+	attractions : function(query){
+		kakule.server.searchAttractions({'query' : query, 'radius' : 100}, function(r){console.log(r)});
+	}
+}
+
 kakule.server = {
 	searchLocations : function(callback){
-		return [];
+		$.post("/search/locations",
+        {lat: kakule.current.lat, long: kakule.current.long}, callback
+    );
 	},
 	
-	searchAttractions : function(callback) {
-	    $.post("/search/events",
-	        {lat: kakule.current.lat, long: kakule.current.long}, 
-	        function(data) {
-	            callback("attractions", data);
-	        }
+	searchAttractions : function(data, callback) {
+			data.lat = kakule.current.lat;
+			data.long = kakule.current.long
+	    $.post("/search/events", data, callback
 	    );
 	},
 	
 	
 	searchMeals : function(callback) {
 	}
-}
+};
 
 kakule.ui = {
-	repopulateList : function(category, data) {
+	repopulateList : function(data) {
 	    console.log(data);
 	}
 	
@@ -97,5 +119,6 @@ kakule.ui = {
 $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
+		kakule.init.attachSearchHandlers();
 });
 

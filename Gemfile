@@ -28,6 +28,7 @@ gem 'authlogic'
 gem "simplegeo", "~> 0.5.3"
 
 
+
 # gem 'bj'	
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'

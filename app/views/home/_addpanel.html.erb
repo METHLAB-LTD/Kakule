@@ -14,7 +14,7 @@ Current location: <span id="current_location">Loading...</span>
     </div>
     <div class="search">
         <div class="panel">
-            <input id="location_search" type="text" placeholder="Search"></input>
+						<%= render :partial => "search_form", :locals => {:id => "locations"}%>
         </div>
         <div class="results">
             No results found.
@@ -28,7 +28,7 @@ Current location: <span id="current_location">Loading...</span>
     </div>
     <div class="search">
         <div class="panel">
-            <input id="location_search" type="text" placeholder="Search"></input>
+            <%= render :partial => "search_form", :locals => {:id => "attractions"}%>
         </div>
         <div class="results">
             No results found.
@@ -42,7 +42,7 @@ Current location: <span id="current_location">Loading...</span>
     </div>
     <div class="search">
         <div class="panel">
-            <input id="location_search" type="text" placeholder="Search"></input>
+            <%= render :partial => "search_form", :locals => {:id => "meals"}%>
         </div>
         <div class="results">
             No results found.

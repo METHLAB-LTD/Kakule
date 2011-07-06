@@ -7,7 +7,7 @@ Kakule::Application.routes.draw do
 
   get "home/index" 
   post "search/events"
-  post "search/location"
+  post "search/locations"
   post "search/geocoding"
   
 
