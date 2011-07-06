@@ -8,6 +8,6 @@ Modernizr.load([
     }
   }, 
   {
-    load: 'javascripts/application.js'
+    load: '/javascripts/application.js'
   }
 ]);

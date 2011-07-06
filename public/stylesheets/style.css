@@ -68,7 +68,7 @@ img {
 }
 
 #header {
-    margin-left: 40px;
+    margin-left: 0.5em;
     margin-bottom: 2em;
 }
 
@@ -79,10 +79,6 @@ img {
 
 #calendar {
     float: left;
-
-    width: 501px;
-    height: 294px;
-    background: url("../images/calendar-temp.png");
 }
 
 #toppanel {
@@ -90,7 +86,7 @@ img {
 }
 
 #bottompanel {
-    margin-left: 40px;
+    margin-left: 0.5em; 
 }
 
 /* Calendar styles 
