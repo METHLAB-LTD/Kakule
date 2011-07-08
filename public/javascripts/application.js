@@ -66,32 +66,45 @@ kakule.util = {
 	
 	openAction : function(search) {
 	    return $("#" + search + " .search").css("display") != "none";
+	},
+	
+	addCurrentLocationData : function(data){
+		data.lat = kakule.current.lat;
+		data.long = kakule.current.long;
 	}
 };
 
 
 kakule.search = {
 	attractions : function(query){
-		kakule.server.searchAttractions({'query' : query, 'radius' : 100}, function(r){console.log(r)});
+		function callback (response){
+			console.log(response.events);
+		};
+		kakule.server.searchAttractions({'query' : query, 'radius' : 100}, callback);
+	},
+	
+	searchLocations : function(query){
+		function callback (response){
+			console.log(response);
+		};
+		kakule.server.searchLocations({'query' : query}, callback);
 	}
-}
+};
+
 
 kakule.server = {
-	searchLocations : function(callback){
-		$.post("/search/locations",
-        {lat: kakule.current.lat, long: kakule.current.long}, callback
-    );
+	searchLocations : function(data, callback){
+		kakule.util.addCurrentLocationData(data);
+		$.post("/search/locations", data, callback);
 	},
 	
 	searchAttractions : function(data, callback) {
-			data.lat = kakule.current.lat;
-			data.long = kakule.current.long
-	    $.post("/search/events", data, callback
-	    );
+		kakule.util.addCurrentLocationData(data);
+    $.post("/search/events", data, callback);
 	},
 	
-	
-	searchMeals : function(callback) {
+	searchMeals : function(data, callback) {
+		kakule.util.addCurrentLocationData(data);
 	}
 };
 
@@ -101,7 +114,7 @@ kakule.ui = {
 	}
 	
 	
-}
+};
 
 
 

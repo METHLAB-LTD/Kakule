@@ -1,18 +1,6 @@
 class SearchController < ApplicationController
   
   
-  # POST /search/events
-  # params => {"lat" : 25, "long" : -120, "radius" : 50, "query" : "ass", "start_time" : (new Date()).toLocaleString(), "end_time" : (new Date(2011,7,2)).toLocaleString(), "limit" : 20}
-  def events
-    #validate_time_range
-    @events = Event.find_by_custom_params(params)
-    
-    render :json => {
-      :events => @events
-    }
-    
-  end
-  
   # POST /search/locations
   # params => {"lat" : 25, "long" : -120, "ip" : "255.255.255.255"}
   def locations
@@ -27,6 +15,18 @@ class SearchController < ApplicationController
     
     render :json => {:location => location}
   end
+  
+  # POST /search/events
+  # params => {"lat" : 25, "long" : -120, "radius" : 50, "query" : "ass", "start_time" : (new Date()).toLocaleString(), "end_time" : (new Date(2011,7,2)).toLocaleString(), "limit" : 20}
+  def events
+    #TODO: validate_time_range
+    @events = Event.find_by_custom_params(params)
+    
+    render :json => {
+      :events => @events
+    }
+  end
+
   
   # POST /search/geocoding
   # params => {"query" : "San Francisco"}

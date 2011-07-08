@@ -5,6 +5,10 @@ class CreateGeocodes < ActiveRecord::Migration
       t.string :name
       t.float :latitude
       t.float :longitude
+      t.string :country
+      t.integer :population
+      t.integer :gtopo30
+      t.integer :timezone_id
       
       t.timestamps
     end

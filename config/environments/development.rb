@@ -23,6 +23,8 @@ Kakule::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
   
+  require 'hirb'
+  Hirb.enable
   
   EVENTFUL_APPLICATION_KEY = "2gvs63mL8FnKFXL3"
   SIMPLEGEO_OAUTH_KEY = "aQTVSUHfyWD7NeyqmSwFRaQxbEF8TUbP"
