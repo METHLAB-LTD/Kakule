@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  gmt_offset: MyString
+  dst_offset: MyString
+
+two:
+  name: MyString
+  gmt_offset: MyString
+  dst_offset: MyString
