@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(:version => 20110708212347) do
     t.string   "country"
     t.integer  "population"
     t.integer  "gtopo30"
-    t.float    "timezone_id"
+    t.integer  "timezone_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,6 +65,9 @@ ActiveRecord::Schema.define(:version => 20110708212347) do
   create_table "itineraries", :force => true do |t|
     t.string   "name"
     t.integer  "owner_id"
+    t.integer  "parent_id"
+    t.text     "stringified_data"
+    t.integer  "permission_level"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

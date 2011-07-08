@@ -5,7 +5,6 @@ class Event < ActiveRecord::Base
   has_many :likes, :as => :likable
   
   
-  
   @@default_radius = 10
   @@default_search_page = 20
   

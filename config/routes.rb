@@ -1,11 +1,12 @@
 Kakule::Application.routes.draw do
   resources :attractions
-
+  resources :events
+  resources :itineraries
   resources :users
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
-  resources :events
+  
 
   get "home/index" 
   get "calendar/render_calendar"
