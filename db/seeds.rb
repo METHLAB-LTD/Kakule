@@ -54,3 +54,5 @@ timezone_arr.each do |t|
     :dst_offset => t[2]
   })
 end
+
+User.create({:username => "azhu", :password=>"123456", :password_confirmation => "123456", :email=>"anhang@gmail.com"})

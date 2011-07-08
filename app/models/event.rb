@@ -1,6 +1,11 @@
 class Event < ActiveRecord::Base
   validates_presence_of :name
   validates_uniqueness_of :eventful_id, :allow_nil => true
+  
+  has_many :likes, :as => :likable
+  
+  
+  
   @@default_radius = 10
   @@default_search_page = 20
   
