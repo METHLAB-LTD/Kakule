@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/gems/event-calendar-2.3.3
+  specs:
+    event-calendar (2.3.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -43,7 +48,6 @@ GEM
     curb (0.7.15)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    event-calendar (2.3.3)
     eventfulapi (2.2.1)
       mime-types (> 0.0.0)
     fb_graph (1.9.1)
@@ -120,7 +124,7 @@ DEPENDENCIES
   authlogic
   capistrano (~> 2.6.0)
   curb (~> 0.7.15)
-  event-calendar
+  event-calendar (= 2.3.3)!
   eventfulapi (~> 2.2.1)
   fb_graph (~> 1.9.1)
   hirb

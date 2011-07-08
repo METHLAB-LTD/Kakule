@@ -23,7 +23,7 @@ gem "eventfulapi", "~> 2.2.1"
 gem "nokogiri", "~> 1.5.0"
 gem "curb", "~> 0.7.15"
 gem "hirb", :require => nil
-gem 'event-calendar', :require => 'event_calendar'
+gem 'event-calendar', '2.3.3', :path => ('vendor/gems/event-calendar-2.3.3'), :require => 'event_calendar'
 gem 'authlogic'
 gem "simplegeo", "~> 0.5.3"
 gem "songkick", "~> 0.0.2"
