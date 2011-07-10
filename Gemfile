@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,7 +24,7 @@ gem "nokogiri", "~> 1.5.0"
 gem "curb", "~> 0.7.15"
 gem "hirb", :require => nil
 gem 'event-calendar', '2.3.3', :path => ('vendor/gems/event-calendar-2.3.3'), :require => 'event_calendar'
-gem 'authlogic'
+gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git'
 gem "simplegeo", "~> 0.5.3"
 gem "songkick", "~> 0.0.2"
 gem "httparty", "~> 0.7.8"
