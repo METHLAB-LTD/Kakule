@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110708212347) do
+ActiveRecord::Schema.define(:version => 20110710190404) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -88,6 +88,11 @@ ActiveRecord::Schema.define(:version => 20110708212347) do
     t.datetime "updated_at"
   end
 
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "email"
@@ -101,6 +106,9 @@ ActiveRecord::Schema.define(:version => 20110708212347) do
     t.datetime "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_guest",          :default => false
   end
+
+  add_index "users", ["is_guest"], :name => "users_is_guest_index"
 
 end

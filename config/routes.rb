@@ -3,11 +3,12 @@ Kakule::Application.routes.draw do
   resources :events
   resources :itineraries
   resources :users
+  resources :user_sessions
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
-  
-
+  get "user_sessions/new", :as => "new_user_session"
+  get "users/show", :as => "dashboard"
   get "home/index" 
   get "calendar/render_calendar"
   post "search/events"

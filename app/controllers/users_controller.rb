@@ -80,4 +80,9 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  # Create a unique guest for users that are not logged in yet
+  def createguest
+    user = User.create(:is_guest => true)    
+  end
 end

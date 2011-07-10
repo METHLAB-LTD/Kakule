@@ -1,10 +1,18 @@
 class User < ActiveRecord::Base
-  acts_as_authentic
+  acts_as_authentic do |config|
+    config.merge_validates_format_of_login_field_options :unless => :is_guest?
+    config.merge_validates_length_of_login_field_options :unless => :is_guest?
+    config.merge_validates_length_of_password_field_options :unless => :is_guest?
+    config.merge_validates_format_of_email_field_options :unless => :is_guest?
+  end
+
   has_many :itineraries
   has_many :calendar_events, :through => :itineraries
   has_many :likes
-  
-  
+   
+  def is_guest? 
+    is_guest
+  end
   
   def can_read_itinerary?(itinerary)
     itinerary.owner == self || itinerary.permission_level >= Itinerary.permissions("Limited")
