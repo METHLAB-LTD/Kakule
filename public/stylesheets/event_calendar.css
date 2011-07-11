@@ -90,18 +90,16 @@
 }
 
 .ec-day-bg {
-  background: #eee;
 }
 
 .ec-today-bg {
-  background-color: #FFD9D7;
 }
 
 .ec-row-table {
   position: relative;
   width: 100%;
   table-layout: fixed;
-  border-spacing: 0.8em 0em;
+  border-spacing: 0.8em 0.8em;
 }
 
 /* Day header */
@@ -112,6 +110,7 @@
   line-height: 63px; 
   overflow: hidden;
   cursor: pointer;
+  background: #eee;
 }
 
 .ec-day-header:hover {
@@ -125,6 +124,7 @@ a.ec-day-link {
 
 .ec-today-header {
   color: #FFA8A8;
+  background-color: #FFD9D7;
 }
 
 .ec-weekend-day-header {
@@ -132,10 +132,10 @@ a.ec-day-link {
 }
 
 .ec-other-month-header {
+  background: #e2e2e2; 
 }
 
 .ec-other-month-bg {
-  background: #e2e2e2; 
 }
 
 

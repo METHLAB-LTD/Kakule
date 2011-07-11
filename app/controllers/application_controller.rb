@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user, :require_user, :current_itinerary
 
   private
+    def format_date(date)
+        date.strftime("%A, %B %d, %Y")
+    end
+
     def find_or_create_guest_user
       unless current_user
         User.create_guest
@@ -12,15 +16,24 @@ class ApplicationController < ActionController::Base
     end
 
     def find_or_create_itinerary
-      unless current_itinerary
-        find_or_create_guest_user
-        session[:itinerary] = Itinerary.create_itinerary(current_user)
-      end
+      find_or_create_guest_user
+      itinerary = current_itinerary || create_itinerary
+    end
+
+    def create_itinerary
+      itinerary = Itinerary.create_itinerary(current_user)
+      session[:itinerary] = itinerary.id
+      return itinerary
     end
 
     def current_itinerary
         return @current_itinerary if defined?(@current_itinerary)
-        @current_itinerary = session[:itinerary] && current_user.can_update_itinerary(Itinerary.find(session[:itinerary])) && session[:itinerary] 
+        if session[:itinerary]
+          itinerary = Itinerary.find(session[:itinerary])
+          @current_itinerary = current_user.can_update_itinerary(itinerary) && itinerary
+        end
+        
+        return @current_itinerary
     end
 
     ### Methods for user sessions

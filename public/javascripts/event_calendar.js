@@ -22,11 +22,21 @@ function render_calendar(e) {
 }
 
 function choose_day(e) {
-        
+    var date = $(this).attr("id");
+
+    $(".ec-today-header").removeClass("ec-today-header");
+    $(this).addClass("ec-today-header");
+
+    $.get("/itineraries/render_day",
+          {date: date},
+          function(data) {
+            $("#addpanel").empty();
+            $("#addpanel").append(data.html);
+          }
+    );
 }
 
 $(document).ready(function() {
-    console.log(kakule);
     $("body").delegate(".ec-previous-month a", "click", render_calendar);
     $("body").delegate(".ec-next-month a", "click", render_calendar);
     $("body").delegate(".ec-day-header", "click", choose_day);

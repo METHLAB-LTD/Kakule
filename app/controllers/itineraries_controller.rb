@@ -60,7 +60,7 @@ class ItinerariesController < ApplicationController
 
   # PUT /itineraries/1
   def update
-    @itinerary = itinerary.find(params[:id])
+    @itinerary = Itinerary.find(params[:id])
     
     if @itinerary.update_attributes(params[:itinerary])
       render :json => {
@@ -75,26 +75,33 @@ class ItinerariesController < ApplicationController
 
   # DELETE /itineraries/1
   def destroy
-    @itinerary = itinerary.find(params[:id])
+    @itinerary = Itinerary.find(params[:id])
     @itinerary.destroy
 
     render :json => {
       :success => true
     }
   end
+
+  def render_day
+    @date = format_date(params[:date].to_time)
+    render :json => {
+        :html => (render_to_string :partial => "home/addpanel")
+    }
+  end
   
   
   private
   def validate_write_permission
-    current_user.can_update_itinerary?(itinerary.find(params[:id]))
+    current_user.can_update_itinerary?(Itinerary.find(params[:id]))
   end
   
   def validate_read_permission
-    current_user.can_read_itinerary?(itinerary.find(params[:id]))
+    current_user.can_read_itinerary?(Itinerary.find(params[:id]))
   end
   
   def validate_destroy_permission
-    current_user.can_destroy_itinerary?(itinerary.find(params[:id]))
+    current_user.can_destroy_itinerary?(Itinerary.find(params[:id]))
   end
   
   
