@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   def is_guest? 
     is_guest
   end
-  
+
   def can_read_itinerary?(itinerary)
     itinerary.owner == self || itinerary.permission_level >= Itinerary.permissions("Limited")
   end
@@ -26,7 +26,8 @@ class User < ActiveRecord::Base
     itinerary.owner == self
   end
   
+  def self.create_guest
+    User.create(:is_guest => true)
+  end
   
-    
-    
 end

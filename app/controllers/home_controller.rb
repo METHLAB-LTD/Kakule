@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
   def index
     @date = Time.now
-    unless current_user
-      User.create(:is_guest => true)
-    end
+    find_or_create_guest_user
+    @itinerary = find_or_create_itinerary
   end
 end

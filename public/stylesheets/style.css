@@ -22,11 +22,13 @@ body {
     font-size: 13px;
 }
 
-h2 {
+h1, h2 {
     font-weight: normal;
-    font-size: 1.2em;
     color: #999;
 }
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.2em; }
 
 img {
     border: 0px;
@@ -102,16 +104,8 @@ img {
     margin-left: 2em;
 }
 
-#savepanel {
-    height: 3.5em;
-}
-
-#savepanel .button {
-    width: 44.5%;
-    background: #D3E9E9;
-    color: #5EBFC5;
-    text-transform: uppercase;
-    text-align: center;
+#itinerary-title {
+    margin: 0.6em 0.8em; 
 }
 
 #addpanel {
@@ -180,3 +174,14 @@ img {
     background: url("../images/icons/food_icon.png");
 }
 
+#savepanel {
+    margin-top: 1em;
+}
+
+#savepanel .button {
+    width: 44.5%;
+    background: #D3E9E9;
+    color: #5EBFC5;
+    text-transform: uppercase;
+    text-align: center;
+}

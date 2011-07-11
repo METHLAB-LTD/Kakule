@@ -44,7 +44,7 @@ class ItinerariesController < ApplicationController
 
   # POST /itineraries
   def create
-    @itinerary = itinerary.new(params[:itinerary])
+    @itinerary = Itinerary.new(params[:itinerary])
     @itinerary.owner_id = current_user[:id]
 
     if @itinerary.save

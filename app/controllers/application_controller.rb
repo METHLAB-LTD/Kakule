@@ -2,9 +2,29 @@ class ApplicationController < ActionController::Base
   include Kakule
   filter_parameter_logging :password, :password_confirmation
   protect_from_forgery
-  helper_method :current_user_session, :current_user, :require_user
+  helper_method :current_user_session, :current_user, :require_user, :current_itinerary
 
   private
+    def find_or_create_guest_user
+      unless current_user
+        User.create_guest
+      end
+    end
+
+    def find_or_create_itinerary
+      unless current_itinerary
+        find_or_create_guest_user
+        session[:itinerary] = Itinerary.create_itinerary(current_user)
+      end
+    end
+
+    def current_itinerary
+        return @current_itinerary if defined?(@current_itinerary)
+        @current_itinerary = session[:itinerary] && current_user.can_update_itinerary(Itinerary.find(session[:itinerary])) && session[:itinerary] 
+    end
+
+    ### Methods for user sessions
+
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
       @current_user_session = UserSession.find
@@ -16,7 +36,7 @@ class ApplicationController < ActionController::Base
     end
 
     def require_user
-      unless current_user
+      unless !current_user.is_guest?
         store_location
         flash[:notice] = "You must be logged in to access this page"
         redirect_to new_user_session_url
@@ -25,7 +45,7 @@ class ApplicationController < ActionController::Base
     end
 
     def require_no_user
-      if current_user
+      if !current_user
         store_location
         flash[:notice] = "You must be logged out to access this page"
         redirect_to dashboard_url

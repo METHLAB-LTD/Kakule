@@ -9,17 +9,19 @@
             <%= render "calendar" %>
         </div>
         <div id="right">
-            <div id="savepanel">
-                <%= render "savepanel" %>
-            </div>
+            <h1 id="itinerary-title"> 
+                <span id="itinerary-name"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
+            </h1>
             <div id="addpanel">
                 <%= render "addpanel" %>
+            </div>
+            <div id="savepanel">
+                <%= render "savepanel" %>
             </div>
         </div>
         <div class="clear"></div>
     </div>
     <div id="bottompanel">
-    <% if current_user %>Someone is logged in <% end %>
     </div>
     
 </div>
