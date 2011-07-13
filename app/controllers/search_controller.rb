@@ -52,7 +52,7 @@ class SearchController < ApplicationController
   # POST /search/cars
   # params => {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
   def cars
-    Expedia::Car.rentals(params[:rental])
+    render :json => {:rentals => Expedia::Car.rentals(params[:rental])}.to_json
   end
   
   # POST /search/hotels

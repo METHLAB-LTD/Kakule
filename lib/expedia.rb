@@ -1,17 +1,8 @@
 module Expedia
-  #p = {:from => "SFO", :to => "HKG", :departure_date => Time.now + 3.days, :return_date => Time.now + 9.days, :adults => 1}
   CURL_TIMEOUT = 5
   
-  def self.get(url, xml)
-    curl = Curl::Easy.new
-    curl.connect_timeout = Expedia::CURL_TIMEOUT
-    curl.url = url + CGI.escape(xml)
-    curl.http_get
-    return Nokogiri::XML.parse(curl.body_str)
-  end
-  
-  
   module Air
+    #p = {:from => "SFO", :to => "HKG", :departure_date => Time.now + 3.days, :return_date => Time.now + 9.days, :adults => 1}
     AIR_URL = "http://api.ean.com/ean-services/rs/air/200919/xmlinterface.jsp?cid=#{EXPEDIA_CID}&resType=air&intfc=ws&apiKey=#{EXPEDIA_AIR_API_KEY}&xml="
   
     def self.flight_info(params)
@@ -29,7 +20,7 @@ module Expedia
                 <adultPassengers>#{params[:adults]}</adultPassengers>
               </Passengers>"
       xml += "</AirAvailabilityQuery></AirSessionRequest>"
-      parse(Expedia.get(AIR_URL, xml))
+      parse(Expedia::Util.get(AIR_URL, xml))
     end
   
   
@@ -58,11 +49,11 @@ module Expedia
         if elem.name == "SegmentList"
           elem.children.each do |segment|
             if segment.name == "Segment"
-              segment_list[segment.attributes["key"].value] = extract_data(segment)
+              segment_list[segment.attributes["key"].value] = Expedia::Util.extract_data(segment)
             end
           end
         elsif elem.name == "AirAvailabilityReply"
-          flight_list << extract_data(elem)
+          flight_list << Expedia::Util.extract_data(elem)
         end
       end
       
@@ -71,22 +62,6 @@ module Expedia
         :flight_list => flight_list
       }
     end
-
-    def self.extract_data(node)
-      h = {}
-      node.children.each do |elem|
-        next if elem.name == 'text'
-        insert = (elem.children.length > 1 ? extract_data(elem) : elem.text.strip)
-        if h.key?(elem.name)
-          h[elem.name].class == Array ? h[elem.name].push(insert) : h[elem.name] = [h[elem.name]].push(insert)
-        else
-          h[elem.name] = insert
-        end
-      end
-      return h
-    end
-    
-
   end
 
   module Hotel
@@ -134,7 +109,7 @@ module Expedia
 
  #   p = {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
     def self.rentals(params)
-      Expedia.get(CAR_URL, create_xml_request(params, XML_TEMPLATE))
+      parse(Expedia::Util.get(CAR_URL, create_xml_request(params, XML_TEMPLATE)))
     end
     
     def self.create_xml_request(params, template)
@@ -143,7 +118,37 @@ module Expedia
       return t
     end
     
+    def self.parse(xml)
+      return Expedia::Util.extract_data(xml.child)["CarAvailability"]
+    end
+    
 
   end
-      
+   
+   
+   
+  module Util
+    def self.get(url, xml)
+      curl = Curl::Easy.new
+      curl.connect_timeout = Expedia::CURL_TIMEOUT
+      curl.url = url + CGI.escape(xml)
+      curl.http_get
+      return Nokogiri::XML.parse(curl.body_str)
+    end
+    
+    def self.extract_data(node)
+      h = {}
+      node.children.each do |elem|
+        next if elem.name == 'text'
+        insert = (elem.children.length > 1 ? extract_data(elem) : elem.text.strip)
+        if h.key?(elem.name)
+          h[elem.name].class == Array ? h[elem.name].push(insert) : h[elem.name] = [h[elem.name]].push(insert)
+        else
+          h[elem.name] = insert
+        end
+      end
+      return h
+    end
+    
+  end   
 end
