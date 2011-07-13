@@ -33,9 +33,13 @@ Kakule::Application.configure do
   HOTELS_COMBINED_API_KEY = "F7538EB2-2B63-4AE1-8C43-2FAD2D83EACB"
   HOTELS_COMBINED_USER_ID = "31115"
   
-  EXPEDIA_API_KEY = "bj5gt59kj7n3jue88q97v9b3"
+  EXPEDIA_AIR_API_KEY   = "bj5gt59kj7n3jue88q97v9b3"
+  EXPEDIA_CAR_API_KEY   = "hgskw36r4jbcgknm9mj56ejf"
+  EXPEDIA_HOTEL_API_KEY = "cfhk5quqg46dxr3am35kd39b"
   EXPEDIA_CID = "55505"
   
   SimpleGeo::Client.set_credentials(SIMPLEGEO_OAUTH_KEY, SIMPLEGEO_SECRET)
+  
+  EXPEDIA_HOTEL_JSON = ""
 end
 

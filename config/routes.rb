@@ -14,6 +14,8 @@ Kakule::Application.routes.draw do
   post "search/events"
   post "search/locations"
   post "search/geocoding"
+  post "search/flights"
+  post "search/hotels"
   
 
   # The priority is based upon order of creation:

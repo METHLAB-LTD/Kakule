@@ -39,7 +39,15 @@ class SearchController < ApplicationController
   # POST /search/flights
   # params => {:from => "SFO", :to => "HKG", :departure_date => Time.now + 3.days, :return_date => Time.now + 9.days, :adults => 1 (optional)}
   def flights
-    Expedia::Air.flight_info(params)
+    render :json => Expedia::Air.flight_info(params).to_json
+    
+  end
+  
+  # POST /search/hotels
+  # params => {:latitude => "037.000000", :longitude => "122.000000", :searchRadius => "50", :searchRadiusUnit => "MI", :arrivalDate => "10/18/2011", :departureDate => "10/20/2011", :numberOfResults => 50}
+  
+  def hotels
+    render :json => Expedia::Hotel.search_by_coordinate(params).to_json
   end
   
   # POST /search/hotels
