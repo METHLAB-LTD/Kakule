@@ -39,7 +39,5 @@ Kakule::Application.configure do
   EXPEDIA_CID = "55505"
   
   SimpleGeo::Client.set_credentials(SIMPLEGEO_OAUTH_KEY, SIMPLEGEO_SECRET)
-  
-  EXPEDIA_HOTEL_JSON = ""
 end
 

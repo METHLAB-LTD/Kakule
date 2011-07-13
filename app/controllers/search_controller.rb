@@ -49,12 +49,17 @@ class SearchController < ApplicationController
   def hotels
     render :json => Expedia::Hotel.search_by_coordinate(params).to_json
   end
+  # POST /search/cars
+  # params => {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
+  def cars
+    Expedia::Car.rentals(params[:rental])
+  end
   
   # POST /search/hotels
   # params => {"query" : "San Francisco"}
-  def hotels
-    url = "http://sandbox.hotelscombined.com/API/Search.svc/pox/CitySearch?ApiKey=#{HOTELS_COMBINED_API_KEY}&UserID#{HOTELS_COMBINED_USER_ID}&UserAgent=Internet%20Explorer&UserIPAddress=127.0.0.1&CityID=5766&Checkin=2010-12-10&Checkout=2010-12-25&Guests=1&Rooms=1&AvailableOnly=true"
-  end
+  # def hotels
+  #   url = "http://sandbox.hotelscombined.com/API/Search.svc/pox/CitySearch?ApiKey=#{HOTELS_COMBINED_API_KEY}&UserID#{HOTELS_COMBINED_USER_ID}&UserAgent=Internet%20Explorer&UserIPAddress=127.0.0.1&CityID=5766&Checkin=2010-12-10&Checkout=2010-12-25&Guests=1&Rooms=1&AvailableOnly=true"
+  # end
   
   
   
