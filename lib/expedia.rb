@@ -1,6 +1,16 @@
 module Expedia
   #p = {:from => "SFO", :to => "HKG", :departure_date => Time.now + 3.days, :return_date => Time.now + 9.days, :adults => 1}
   CURL_TIMEOUT = 5
+  
+  def self.get(url, xml)
+    curl = Curl::Easy.new
+    curl.connect_timeout = Expedia::CURL_TIMEOUT
+    curl.url = url + CGI.escape(xml)
+    curl.http_get
+    return Nokogiri::XML.parse(curl.body_str)
+  end
+  
+  
   module Air
     AIR_URL = "http://api.ean.com/ean-services/rs/air/200919/xmlinterface.jsp?cid=#{EXPEDIA_CID}&resType=air&intfc=ws&apiKey=#{EXPEDIA_AIR_API_KEY}&xml="
   
@@ -19,7 +29,7 @@ module Expedia
                 <adultPassengers>#{params[:adults]}</adultPassengers>
               </Passengers>"
       xml += "</AirAvailabilityQuery></AirSessionRequest>"
-      parse(get_and_parse_xml(xml))
+      parse(Expedia.get(AIR_URL, xml))
     end
   
   
@@ -39,14 +49,6 @@ module Expedia
     def self.sanitize_params(params)
       params[:adults] = 1 if params[:adults].nil?
       #TODO
-    end
-    
-    def self.get_and_parse_xml(xml)
-      curl = Curl::Easy.new
-      curl.connect_timeout = Expedia::CURL_TIMEOUT
-      curl.url = AIR_URL + CGI.escape(xml)
-      curl.http_get
-      return Nokogiri::XML.parse(curl.body_str)
     end
     
     def self.parse(xml)
@@ -114,4 +116,34 @@ module Expedia
       
   end
 
+
+  module Car
+    CAR_URL = "http://api.ean.com/ean-services/rs/car/200820/xmlinterface.jsp?cid=#{EXPEDIA_CID}&resType=car200820&intfc=ws&apiKey=#{EXPEDIA_CAR_API_KEY}&xml="
+    XML_TEMPLATE = "<CarSessionRequest method='getCarAvailability'>
+       <CarAvailabilityQuery>
+        <cityCode>[CITYCODE]</cityCode>
+        <pickUpDate>[PICKUPDATE]</pickUpDate>
+        <dropOffDate>[DROPOFFDATE]</dropOffDate>
+        <classCode>[CLASSCODE]</classCode>
+        <pickUpTime>[PICKUPTIME]</pickUpTime>
+        <dropOffTime>[DROPOFFTIME]</dropOffTime>
+        <sortMethod>[SORTMETHOD]</sortMethod>
+        <currencyCode>[CURRENCYCODE]</currencyCode>
+       </CarAvailabilityQuery>
+    </CarSessionRequest>"
+
+ #   p = {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
+    def self.rentals(params)
+      Expedia.get(CAR_URL, create_xml_request(params, XML_TEMPLATE))
+    end
+    
+    def self.create_xml_request(params, template)
+      t = template.dup
+      params.each{|k, v| t.gsub!("[#{k.to_s.upcase}]", v)}
+      return t
+    end
+    
+
+  end
+      
 end
