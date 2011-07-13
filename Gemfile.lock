@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/binarylogic/authlogic.git
-  revision: 0297e1c005c626c1e37bcc1de5f347476c838ed0
-  ref: 0297e1c005c626c1e37b
+  revision: 2da24e490ace2bf99bcfd57ee4d5d31dd2e2b2be
   specs:
-    authlogic (3.0.2)
+    authlogic (3.0.3)
       activerecord (>= 3.0.7)
       activerecord (>= 3.0.7)
 
