@@ -9,6 +9,8 @@ Kakule::Application.routes.draw do
   post "search/events"
   post "search/locations"
   post "search/geocoding"
+  post "search/flights"
+  post "search/hotels"
   
   resources :attractions, :events, :itineraries, :users, :user_sessions
 
