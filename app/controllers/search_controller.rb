@@ -37,31 +37,26 @@ class SearchController < ApplicationController
   end
   
   # POST /search/flights
-  # params => {:from => "SFO", :to => "HKG", :departure_date => Time.now + 3.days, :return_date => Time.now + 9.days, :adults => 1 (optional)}
+  # params => {from : "SFO", to : "HKG", departure_date : (new Date(2011,8,2)).toLocaleString(), return_date : (new Date(2011,8,20)).toLocaleString()} 
+  # optional_params => {adults : 1}
   def flights
     render :json => Expedia::Air.flight_info(params).to_json
-    
   end
   
   # POST /search/hotels
-  # params => {:latitude => "037.000000", :longitude => "122.000000", :searchRadius => "50", :searchRadiusUnit => "MI", :arrivalDate => "10/18/2011", :departureDate => "10/20/2011", :numberOfResults => 50}
-  
+  # params = {latitude : "037.000000", longitude : "122.000000", arrivalDate : "10/18/2011", departureDate : "10/20/2011", searchRadius : 50, searchRadiusUnit : "MI"}
+    
   def hotels
     render :json => Expedia::Hotel.search_by_coordinate(params).to_json
   end
+  
   # POST /search/cars
-  # params => {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
+  # params = {rentals : {cityCode: "LAX", classCode: "S", dropOffDate: "8/26/2011", dropOffTime: "9AM", pickUpDate: "8/22/2011", pickUpTime: "9PM", sortMethod: "0"}}
   def cars
-    render :json => {:rentals => Expedia::Car.rentals(params[:rental])}.to_json
+    render :json => {
+      :rentals => Expedia::Car.rentals(params[:rentals]),
+      :zipcar => false
+    }.to_json
   end
-  
-  # POST /search/hotels
-  # params => {"query" : "San Francisco"}
-  # def hotels
-  #   url = "http://sandbox.hotelscombined.com/API/Search.svc/pox/CitySearch?ApiKey=#{HOTELS_COMBINED_API_KEY}&UserID#{HOTELS_COMBINED_USER_ID}&UserAgent=Internet%20Explorer&UserIPAddress=127.0.0.1&CityID=5766&Checkin=2010-12-10&Checkout=2010-12-25&Guests=1&Rooms=1&AvailableOnly=true"
-  # end
-  
-  
-  
 
 end

@@ -39,6 +39,9 @@ module Expedia
     
     def self.sanitize_params(params)
       params[:adults] = 1 if params[:adults].nil?
+      params[:departure_date] = Time.parse(params[:departure_date])
+      params[:return_date] = Time.parse(params[:return_date]) if params[:return_date]
+      
       #TODO
     end
     
@@ -69,14 +72,16 @@ module Expedia
     HOTEL_URL = "http://api.ean.com/ean-services/rs/hotel/v3/"
     
     def self.search_by_coordinate(params)
-      params.reject!{|k, v| not [:arrivalDate, :departureDate, :latitude, :longitude, :searchRadius, :searchRadiusUnit, :numberOfResults].include?(k)}
-      return if params[:arrivalDate].nil? || params[:departureDate].nil? || params[:latitude].nil? || params[:longitude].nil?
-      params[:searchRadius] ||= "25"
-      params[:searchRadiusUnit] ||= "MI"
-      params[:numberOfResults] ||= "50"
+      puts params.inspect
+      params.reject!{|k, v| not %w(arrivalDate departureDate latitude longitude searchRadius searchRadiusUnit numberOfResults).include?(k)}
+      puts params.inspect
+      return if params["arrivalDate"].nil? || params["departureDate"].nil? || params["latitude"].nil? || params["longitude"].nil?
+      params["searchRadius"] ||= "25"
+      params["searchRadiusUnit"] ||= "MI"
+      params["numberOfResults"] ||= "50"
       
       response = get_and_parse_json("list", params)
-      (response && !response["HotelListResponse"].blank?) ? response["HotelListResponse"] : "ERROR"
+      return response["HotelListResponse"]
     end
     
     private
