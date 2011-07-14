@@ -27,13 +27,23 @@ class SearchController < ApplicationController
       :attractions => @attractions
     }
   end
-
   
   # POST /search/geocoding
   # params => {"query" : "San Francisco"}
   def geocoding
     geocodes = Geocode.find_by_similar_name(params[:query])
-    render :json => geocodes
+    # render :json => geocodes
+
+    # Return in Ruby format because we want rails to do the
+    # partial generation 
+  end
+
+  # Render partial UI for geocoding results
+  def render_geocoding
+    results = geocoding
+    render :json => {
+        :html => (render_to_string :partial => "geocoding", :locals => {:data => results})
+    }
   end
   
   # POST /search/flights

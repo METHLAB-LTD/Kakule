@@ -11,7 +11,7 @@ kakule.current = {
 kakule.init = {
 	getLocation : function() {
       if (kakule.util.hasCachedLocationData()) {
-        kakule.util.setLocation(kakule.current.location);
+        kakule.ui.setLocation(kakule.current.location);
         return;
       }
 
@@ -24,35 +24,35 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-	    $("#locations .heading").click(function() {
+	    $("body").delegate("#locations .heading", "click", function() {
 	        $("#locations .search").toggle();
 	    });
 
-	    $("#attractions .heading").click(function() {
+	    $("body").delegate("#attractions .heading", "click", function() {
 	        $("#attractions .search").toggle();
 	        // if(kakule.util.openAction("attractions")) {
 	        //     kakule.server.searchAttractions(kakule.ui.repopulateList);
 	        // }
 	    });
 
-	    $("#meals .heading").click(function() {
+	    $("body").delegate("#meals .heading", "click", function() {
 	        $("#meals .search").toggle();
 	    });
 	},
 	
 	attachSearchHandlers : function(){
-		var search_fields = $(".search_form");
+		var search_fields = $(".search_field");
 	  
-		search_fields.submit(function(evt){
-			var text_box = $(".search_field", this);
+		search_fields.keydown(function(evt){
+			var text_box = $(this);
 			var css_class = text_box.attr("id");
 			func = css_class.split("_")[1];
 			kakule.search[func](text_box.val());
-			text_box.val("");
-			return false;
 		});
-		
-		
+
+        $(".search_form").submit(function(e) {
+            e.preventDefault();
+        });
 	}
 };
 
@@ -68,15 +68,11 @@ kakule.util = {
             
             function(data) {
                 kakule.current.location = data.location;
-                kakule.util.setLocation(kakule.current.location);
+                kakule.ui.setLocation(kakule.current.location);
             }    
 	    );
 	},
 
-    setLocation : function(location) {
-	     $("#current_location").text(location);
-    },
-	
 	openAction : function(search) {
 	    return $("#" + search + " .search").css("display") != "none";
 	},
@@ -99,14 +95,14 @@ kakule.util = {
 kakule.search = {
 	attractions : function(query){
 		function callback (response){
-			console.log(response.events);
+            kakule.ui.repopulateAttractions(response);
 		};
 		kakule.server.searchAttractions({'query' : query, 'radius' : 100}, callback);
 	},
 	
-	searchLocations : function(query){
+	locations : function(query){
 		function callback (response){
-			console.log(response);
+            kakule.ui.repopulateLocations(response);
 		};
 		kakule.server.searchLocations({'query' : query}, callback);
 	}
@@ -116,7 +112,7 @@ kakule.search = {
 kakule.server = {
 	searchLocations : function(data, callback){
 		kakule.util.addCurrentLocationData(data);
-		$.post("/search/locations", data, callback);
+		$.get("/search/render_geocoding", data, callback);
 	},
 	
 	searchAttractions : function(data, callback) {
@@ -130,9 +126,20 @@ kakule.server = {
 };
 
 kakule.ui = {
-	repopulateList : function(data) {
+	repopulateLocations : function(data) {
 	    console.log(data);
-	}
+        $("#locations .results").empty();
+        $("#locations .results").append(data.html);
+	},
+
+    repopulateAttractions : function(data) {
+        console.log(data);
+    },
+
+    setLocation : function(location) {
+	     $("#current_location").text(location);
+    }
+	
 };
 
 $(document).ready(function() {

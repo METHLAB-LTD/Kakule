@@ -8,7 +8,7 @@ Kakule::Application.routes.draw do
   get "calendar/render_calendar"
   post "search/events"
   post "search/locations"
-  post "search/geocoding"
+  get "search/render_geocoding"
   post "search/flights"
   post "search/hotels"
   post "search/cars"
