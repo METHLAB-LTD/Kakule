@@ -4,11 +4,18 @@ if (!kakule) {
 
 kakule.current = {
     lat: 0,
-    long: 0
+    long: 0,
+    location: undefined
 };
 
 kakule.init = {
 	getLocation : function() {
+      if (kakule.util.hasCachedLocationData()) {
+        kakule.util.setLocation(kakule.current.location);
+        return;
+      }
+
+      console.log("Location not cached, using geolocation");
 	  if (Modernizr.geolocation) {
 	    navigator.geolocation.getCurrentPosition(kakule.util.lookupLocationName);
 	  } else {
@@ -58,15 +65,29 @@ kakule.util = {
 	    /* Find location name */
 	    $.post("/search/locations", 
 	        {lat: kakule.current.lat, long: kakule.current.long},  
-	        function(data) {
-	          $("#current_location").text(data.location);
-	        }
+            
+            function(data) {
+                kakule.current.location = data.location;
+                kakule.util.setLocation(kakule.current.location);
+            }    
 	    );
 	},
+
+    setLocation : function(location) {
+	     $("#current_location").text(location);
+    },
 	
 	openAction : function(search) {
 	    return $("#" + search + " .search").css("display") != "none";
 	},
+
+    hasCachedLocationData : function() {
+        if (typeof kakule.current.location === "undefined") {
+            return false;
+        } else {
+            return true;
+        }
+    },
 	
 	addCurrentLocationData : function(data){
 		data.lat = kakule.current.lat;
@@ -112,26 +133,11 @@ kakule.ui = {
 	repopulateList : function(data) {
 	    console.log(data);
 	}
-	
-	
 };
-
-
-
-
-
-
-
-
-
-
- 
-
-
 
 $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
-		kakule.init.attachSearchHandlers();
+    kakule.init.attachSearchHandlers();
 });
 

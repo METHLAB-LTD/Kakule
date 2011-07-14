@@ -32,6 +32,7 @@ function choose_day(e) {
           function(data) {
             $("#addpanel").empty();
             $("#addpanel").append(data.html);
+            kakule.init.getLocation();
           }
     );
 }
