@@ -59,6 +59,14 @@ img {
     top: 4px;
 }
 
+a {
+    color: #999;
+}
+
+a:hover {
+    color: #333;
+}
+
 /* Home styles 
  * @home
  */
@@ -127,6 +135,10 @@ img {
     color: #333;
 }
 
+.addpane {
+    margin-bottom: 15px;
+}
+
 #addpanel .heading {
     margin-bottom: 5px;
     
@@ -138,6 +150,23 @@ img {
 
 #addpanel .search {
     display: none;
+}
+
+#locations .search {
+    display: block;
+}
+
+.search {
+    margin-left: 10px;
+}
+
+.search_field {
+    padding: 5px;
+    border-radius: 2px;
+    width: 70%;
+
+    outline: 0px;
+    border: 0px;
 }
 
 .addpane label{

@@ -24,10 +24,6 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-	    $("body").delegate("#locations .heading", "click", function() {
-	        $("#locations .search").toggle();
-	    });
-
 	    $("body").delegate("#attractions .heading", "click", function() {
 	        $("#attractions .search").toggle();
 	        // if(kakule.util.openAction("attractions")) {

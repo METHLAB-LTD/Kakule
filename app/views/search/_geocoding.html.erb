@@ -1,5 +1,7 @@
 <% for location in data %>
-    <div><%= location.name %></div>
+    <div class="result">
+        <%= link_to "[pin]", "#" %> <%= location.name %>
+    </div>
 <% end %>
 
 <% if data.empty? %>
