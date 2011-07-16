@@ -22,7 +22,7 @@ while(true)
   name = arr[2].capitalize
   lat = arr[4]
   lng = arr[5]
-  country = find_country(arr[8])
+  country = find_country(arr[8]).capitalize
   population = arr[14]
   gtopo30 = arr[16]
   timezone = find_timezone(arr[17])

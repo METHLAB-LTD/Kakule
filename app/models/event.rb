@@ -5,21 +5,21 @@ class Event < ActiveRecord::Base
   has_many :likes, :as => :likable
   
   
-  @@default_radius = 10
+  @@default_radius = 1
   @@default_search_page = 20
   
   def self.find_by_custom_params(params)
-    params[:radius] = @@default_radius if params[:radius].nil?
-    params[:limit] = @@default_search_page if params[:limit].nil?
+    params[:radius] ||= @@default_radius
+    params[:limit] ||= @@default_search_page
     params[:end_time] = params[:end_time].nil? ? Time.now + 1.day : Time.parse(params[:end_time])
     params[:start_time] = params[:start_time].nil? ? Time.now : Time.parse(params[:start_time])
+    params[:query] ||= ""
 
-    
     find(:all, 
       :conditions => ["(latitude between ? and ?) AND (longitude between ? and ?) 
         AND ((name LIKE ?) OR (description LIKE ?)) 
         AND (start_time < ? AND (end_time > ? OR end_time = ?))", 
-        params[:lat].to_f - params[:radius].to_f, params[:lat].to_f + params[:radius].to_f, params[:long].to_f - params[:radius].to_f, params[:long].to_f + params[:radius].to_f,
+        params[:lat].to_f - params[:radius].to_f, params[:lat].to_f + params[:radius].to_f, params[:lng].to_f - params[:radius].to_f, params[:lng].to_f + params[:radius].to_f,
         "%#{params[:query]}%",  "%#{params[:query]}%",
         
         params[:end_time], 
@@ -49,5 +49,7 @@ class Event < ActiveRecord::Base
       })
     end
   end
+  
+
   
 end

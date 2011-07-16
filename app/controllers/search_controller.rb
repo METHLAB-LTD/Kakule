@@ -2,10 +2,11 @@ class SearchController < ApplicationController
   
   
   # POST /search/locations
-  # params => {"lat" : 25, "long" : -120, "ip" : "255.255.255.255"}
+  # Required: either lat and lng or ip
+  # params => {"lat" : 25, "lng" : -120, "ip" : "255.255.255.255"}
   def locations
-    if (params[:lat] && params[:long])
-      data = SimpleGeo::Client.get_context(params[:lat], params[:long])
+    if (params[:lat] && params[:lng])
+      data = SimpleGeo::Client.get_context(params[:lat], params[:lng])
     elsif (params[:ip])
       data = SimpleGeo::Client.get_context_ip(params[:ip])
     else
@@ -17,7 +18,9 @@ class SearchController < ApplicationController
   end
   
   # POST /search/events
-  # params => {"lat" : 25, "long" : -120, "radius" : 50, "query" : "ass", "start_time" : (new Date()).toLocaleString(), "end_time" : (new Date(2011,7,2)).toLocaleString(), "limit" : 20}
+  # Required: lat, lng
+  # Optional: radius, query, start_time, end_time, limit
+  # example = {lat : 37.782455, lng : -122.405855, radius : 50, query : "ass", start_time : (new Date()).toLocaleString(), end_time : (new Date(2011,7,2)).toLocaleString(), limit : 20}
   def events
     @events = Event.find_by_custom_params(params)
     @attractions = Attraction.find_by_custom_params(params)
@@ -29,7 +32,8 @@ class SearchController < ApplicationController
   end
   
   # POST /search/geocoding
-  # params => {"query" : "San Francisco"}
+  # Required: query
+  # example = {"query" : "San Francisco"}
   def geocoding
     geocodes = Geocode.find_by_similar_name(params[:query])
     # render :json => geocodes
@@ -47,24 +51,39 @@ class SearchController < ApplicationController
   end
   
   # POST /search/flights
-  # params => {from : "SFO", to : "HKG", departure_date : (new Date(2011,8,2)).toLocaleString(), return_date : (new Date(2011,8,20)).toLocaleString()} 
-  # optional_params => {adults : 1}
+  # Required: from, to, departure_date
+  # Optional: return_date, adults
+  # example = {from : "SFO", to : "HKG", departure_date : (new Date(2011,8,2)).toLocaleString(), return_date : (new Date(2011,8,20)).toLocaleString()} 
   def flights
     render :json => Expedia::Air.flight_info(params).to_json
   end
   
   # POST /search/hotels
-  # params = {latitude : "037.000000", longitude : "122.000000", arrivalDate : "10/18/2011", departureDate : "10/20/2011", searchRadius : 50, searchRadiusUnit : "MI"}
-    
+  # Required: lat, lng, arrival_date, departure_date
+  # Optional: radius
+  # example = {lat : "37.000000", lng : "122.000000", arrival_date : "10/18/2011", departure_date : "10/20/2011", searchRadius : 50, searchRadiusUnit : "MI"}
   def hotels
+    params[:latitude] = "%6f" % params[:lat]
+    params[:longitude] = "%6f" % params[:lng]
+    params[:arrivalDate] = Time.parse(params[:arrival_date]).strftime("%m/%d/%Y")
+    params[:departureDate] = Time.parse(params[:departure_date]).strftime("%m/%d/%Y")
+    params[:searchRadius] = params[:radius]
+    
     render :json => Expedia::Hotel.search_by_coordinate(params).to_json
   end
   
   # POST /search/cars
-  # params = {rentals : {cityCode: "LAX", classCode: "S", dropOffDate: "8/26/2011", dropOffTime: "9AM", pickUpDate: "8/22/2011", pickUpTime: "9PM", sortMethod: "0"}}
+  # Required: pickUpCity, pickUpDate, pickUpTime, dropOffDate, dropOffTime
+  # Optional: dropOffCity, classCode, typeCode, sortMethod, currencyCode, corpDiscountCode, promoCouponCode
+  # Docs: http://developer.ean.com/docs/read/car_rentals/cars_200820/resources/get_available_cars
+  # 
+  # example = {cityCode: "LAX", classCode: "S", dropOffDate: "8/26/2011", dropOffTime: "9AM", pickUpDate: "8/22/2011", pickUpTime: "9PM", sortMethod: "0"}
   def cars
+    params[:cityCode] = params[:pickUpCity]
+    params[:dropOffCode] = params[:dropOffCity]
+    
     render :json => {
-      :rentals => Expedia::Car.rentals(params[:rentals]),
+      :rentals => Expedia::Car.rentals(params),
       :zipcar => false
     }.to_json
   end

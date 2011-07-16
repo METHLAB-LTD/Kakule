@@ -4,7 +4,7 @@ if (!kakule) {
 
 kakule.current = {
     lat: 0,
-    long: 0,
+    lng: 0,
     location: undefined
 };
 
@@ -56,11 +56,11 @@ kakule.util = {
 	lookupLocationName : function(position) {
 	    /* Save to temporary variables */
 	    kakule.current.lat = position.coords.latitude;
-	    kakule.current.long = position.coords.longitude;
+	    kakule.current.lng = position.coords.longitude;
 
 	    /* Find location name */
 	    $.post("/search/locations", 
-	        {lat: kakule.current.lat, long: kakule.current.long},  
+	        {lat: kakule.current.lat, lng: kakule.current.lng},  
             
             function(data) {
                 kakule.current.location = data.location;
@@ -83,7 +83,7 @@ kakule.util = {
 	
 	addCurrentLocationData : function(data){
 		data.lat = kakule.current.lat;
-		data.long = kakule.current.long;
+		data.lng = kakule.current.lng;
 	}
 };
 
