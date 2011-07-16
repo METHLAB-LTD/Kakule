@@ -84,7 +84,7 @@ class SearchController < ApplicationController
     
     render :json => {
       :rentals => Expedia::Car.rentals(params),
-      :zipcar => false
+      :zipcar => !!(Zipcar.has_car?(params[:pickUpCity] if params[:dropOffCity].blank?) #zipcar can't be returned at another city
     }.to_json
   end
 
