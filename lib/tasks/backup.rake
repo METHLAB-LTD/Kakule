@@ -3,7 +3,7 @@ namespace :db do
     
     def interesting_tables
       ActiveRecord::Base.connection.tables.sort.reject do |tbl|
-        ['schema_migrations', 'schema_info', 'public_exceptions'].include?(tbl)
+        ['schema_migrations', 'schema_info', 'public_exceptions', 'user_sessions'].include?(tbl)
       end
     end
   

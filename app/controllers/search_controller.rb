@@ -77,7 +77,7 @@ class SearchController < ApplicationController
   # Optional: dropOffCity, classCode, typeCode, sortMethod, currencyCode, corpDiscountCode, promoCouponCode
   # Docs: http://developer.ean.com/docs/read/car_rentals/cars_200820/resources/get_available_cars
   # 
-  # example = {cityCode: "LAX", classCode: "S", dropOffDate: "8/26/2011", dropOffTime: "9AM", pickUpDate: "8/22/2011", pickUpTime: "9PM", sortMethod: "0"}
+  # example = {pickUpCity: "LAX", dropOffDate: "8/26/2011", dropOffTime: "9AM", pickUpDate: "8/22/2011", pickUpTime: "9PM"}
   def cars
     params[:cityCode] = params[:pickUpCity]
     params[:dropOffCode] = params[:dropOffCity]

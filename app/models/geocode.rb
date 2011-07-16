@@ -7,6 +7,6 @@ class Geocode < ActiveRecord::Base
   end
   
   def full_name
-    "#{name}, #{country.capitalize}"
+    "#{name}, #{!state.blank? ? state+", " : ""}#{country}"
   end
 end
