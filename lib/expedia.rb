@@ -68,13 +68,10 @@ module Expedia
   end
 
   module Hotel
-    #p = {:latitude => "037.000000", :longitude => "122.000000", :searchRadius => "50", :searchRadiusUnit => "MI", :arrivalDate => "10/18/2011", :departureDate => "10/20/2011", :numberOfResults => 50}
     HOTEL_URL = "http://api.ean.com/ean-services/rs/hotel/v3/"
     
     def self.search_by_coordinate(params)
-      puts params.inspect
       params.reject!{|k, v| not %w(arrivalDate departureDate latitude longitude searchRadius searchRadiusUnit numberOfResults).include?(k)}
-      puts params.inspect
       return if params["arrivalDate"].nil? || params["departureDate"].nil? || params["latitude"].nil? || params["longitude"].nil?
       params["searchRadius"] ||= "25"
       params["searchRadiusUnit"] ||= "MI"
@@ -99,28 +96,27 @@ module Expedia
 
   module Car
     CAR_URL = "http://api.ean.com/ean-services/rs/car/200820/xmlinterface.jsp?cid=#{EXPEDIA_CID}&resType=car200820&intfc=ws&apiKey=#{EXPEDIA_CAR_API_KEY}&xml="
-    XML_TEMPLATE = "<CarSessionRequest method='getCarAvailability'>
-       <CarAvailabilityQuery>
-        <cityCode>[CITYCODE]</cityCode>
-        <pickUpDate>[PICKUPDATE]</pickUpDate>
-        <dropOffDate>[DROPOFFDATE]</dropOffDate>
-        <classCode>[CLASSCODE]</classCode>
-        <pickUpTime>[PICKUPTIME]</pickUpTime>
-        <dropOffTime>[DROPOFFTIME]</dropOffTime>
-        <sortMethod>[SORTMETHOD]</sortMethod>
-        <currencyCode>[CURRENCYCODE]</currencyCode>
-       </CarAvailabilityQuery>
-    </CarSessionRequest>"
+    # XML_TEMPLATE = "<CarSessionRequest method='getCarAvailability'>
+    #    <CarAvailabilityQuery>
+    #     <cityCode>[CITYCODE]</cityCode>
+    #     <pickUpDate>[PICKUPDATE]</pickUpDate>
+    #     <dropOffDate>[DROPOFFDATE]</dropOffDate>
+    #     <classCode>[CLASSCODE]</classCode>
+    #     <pickUpTime>[PICKUPTIME]</pickUpTime>
+    #     <dropOffTime>[DROPOFFTIME]</dropOffTime>
+    #     <sortMethod>[SORTMETHOD]</sortMethod>
+    #     <currencyCode>[CURRENCYCODE]</currencyCode>
+    #    </CarAvailabilityQuery>
+    # </CarSessionRequest>"
 
  #   p = {:cityCode => "LAX", :pickUpDate => "8/22/2011", :dropOffDate => "8/26/2011", :classCode => "S", :pickUpTime => "9PM", :dropOffTime => "9AM", :sortMethod => "0"}
     def self.rentals(params)
-      parse(Expedia::Util.get(CAR_URL, create_xml_request(params, XML_TEMPLATE)))
+      params.reject!{|k, v| not %w(cityCode pickUpDate dropOffDate pickUpTime dropOffTime companyCode classCode typeCode sortMethod currencyCode dropOffCode corpDiscountCode promoCouponCode).include?(k)}
+      parse(Expedia::Util.get(CAR_URL, create_xml_request(params)))
     end
     
-    def self.create_xml_request(params, template)
-      t = template.dup
-      params.each{|k, v| t.gsub!("[#{k.to_s.upcase}]", v)}
-      return t
+    def self.create_xml_request(params)
+      "<CarSessionRequest method='getCarAvailability'><CarAvailabilityQuery>" + params.map{|k, v| Expedia::Util.construct_xml_node(k, v)}.join + "</CarAvailabilityQuery></CarSessionRequest>"
     end
     
     def self.parse(xml)
@@ -155,5 +151,8 @@ module Expedia
       return h
     end
     
+    def construct_xml_node(name, value)
+      "<#{name}>#{value}</#{name}>"
+    end
   end   
 end

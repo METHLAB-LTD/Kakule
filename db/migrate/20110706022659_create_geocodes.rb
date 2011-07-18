@@ -5,6 +5,7 @@ class CreateGeocodes < ActiveRecord::Migration
       t.string :name
       t.float :latitude
       t.float :longitude
+      t.string :state
       t.string :country
       t.integer :population
       t.integer :gtopo30

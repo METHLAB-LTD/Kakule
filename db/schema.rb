@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110710190404) do
+ActiveRecord::Schema.define(:version => 20110716084008) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20110710190404) do
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "state"
     t.string   "country"
     t.integer  "population"
     t.integer  "gtopo30"
@@ -82,8 +83,8 @@ ActiveRecord::Schema.define(:version => 20110710190404) do
 
   create_table "timezones", :force => true do |t|
     t.string   "name"
-    t.string   "gmt_offset"
-    t.string   "dst_offset"
+    t.float    "gmt_offset"
+    t.float    "dst_offset"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -110,5 +111,12 @@ ActiveRecord::Schema.define(:version => 20110710190404) do
   end
 
   add_index "users", ["is_guest"], :name => "users_is_guest_index"
+
+  create_table "zipcars", :force => true do |t|
+    t.string   "location"
+    t.string   "closest_airport"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

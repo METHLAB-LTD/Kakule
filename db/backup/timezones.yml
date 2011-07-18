@@ -1,0 +1,2461 @@
+--- 
+- name: Africa/Abidjan
+  created_at: 2011-07-16 06:33:56.849487 Z
+  updated_at: 2011-07-16 06:33:56.849487 Z
+  gmt_offset: 0.0
+  id: 1
+  dst_offset: 0.0
+- name: Africa/Accra
+  created_at: 2011-07-16 06:33:56.854107 Z
+  updated_at: 2011-07-16 06:33:56.854107 Z
+  gmt_offset: 0.0
+  id: 2
+  dst_offset: 0.0
+- name: Africa/Addis_Ababa
+  created_at: 2011-07-16 06:33:56.858083 Z
+  updated_at: 2011-07-16 06:33:56.858083 Z
+  gmt_offset: 3.0
+  id: 3
+  dst_offset: 3.0
+- name: Africa/Algiers
+  created_at: 2011-07-16 06:33:56.862363 Z
+  updated_at: 2011-07-16 06:33:56.862363 Z
+  gmt_offset: 1.0
+  id: 4
+  dst_offset: 1.0
+- name: Africa/Asmara
+  created_at: 2011-07-16 06:33:56.866586 Z
+  updated_at: 2011-07-16 06:33:56.866586 Z
+  gmt_offset: 3.0
+  id: 5
+  dst_offset: 3.0
+- name: Africa/Bamako
+  created_at: 2011-07-16 06:33:56.871737 Z
+  updated_at: 2011-07-16 06:33:56.871737 Z
+  gmt_offset: 0.0
+  id: 6
+  dst_offset: 0.0
+- name: Africa/Bangui
+  created_at: 2011-07-16 06:33:56.875939 Z
+  updated_at: 2011-07-16 06:33:56.875939 Z
+  gmt_offset: 1.0
+  id: 7
+  dst_offset: 1.0
+- name: Africa/Banjul
+  created_at: 2011-07-16 06:33:56.880166 Z
+  updated_at: 2011-07-16 06:33:56.880166 Z
+  gmt_offset: 0.0
+  id: 8
+  dst_offset: 0.0
+- name: Africa/Bissau
+  created_at: 2011-07-16 06:33:56.885046 Z
+  updated_at: 2011-07-16 06:33:56.885046 Z
+  gmt_offset: 0.0
+  id: 9
+  dst_offset: 0.0
+- name: Africa/Blantyre
+  created_at: 2011-07-16 06:33:56.888892 Z
+  updated_at: 2011-07-16 06:33:56.888892 Z
+  gmt_offset: 2.0
+  id: 10
+  dst_offset: 2.0
+- name: Africa/Brazzaville
+  created_at: 2011-07-16 06:33:56.892723 Z
+  updated_at: 2011-07-16 06:33:56.892723 Z
+  gmt_offset: 1.0
+  id: 11
+  dst_offset: 1.0
+- name: Africa/Bujumbura
+  created_at: 2011-07-16 06:33:56.896783 Z
+  updated_at: 2011-07-16 06:33:56.896783 Z
+  gmt_offset: 2.0
+  id: 12
+  dst_offset: 2.0
+- name: Africa/Cairo
+  created_at: 2011-07-16 06:33:56.901754 Z
+  updated_at: 2011-07-16 06:33:56.901754 Z
+  gmt_offset: 2.0
+  id: 13
+  dst_offset: 3.0
+- name: Africa/Casablanca
+  created_at: 2011-07-16 06:33:56.907003 Z
+  updated_at: 2011-07-16 06:33:56.907003 Z
+  gmt_offset: 0.0
+  id: 14
+  dst_offset: 0.0
+- name: Africa/Ceuta
+  created_at: 2011-07-16 06:33:56.911526 Z
+  updated_at: 2011-07-16 06:33:56.911526 Z
+  gmt_offset: 1.0
+  id: 15
+  dst_offset: 2.0
+- name: Africa/Conakry
+  created_at: 2011-07-16 06:33:56.915665 Z
+  updated_at: 2011-07-16 06:33:56.915665 Z
+  gmt_offset: 0.0
+  id: 16
+  dst_offset: 0.0
+- name: Africa/Dakar
+  created_at: 2011-07-16 06:33:56.919839 Z
+  updated_at: 2011-07-16 06:33:56.919839 Z
+  gmt_offset: 0.0
+  id: 17
+  dst_offset: 0.0
+- name: Africa/Dar_es_Salaam
+  created_at: 2011-07-16 06:33:56.923569 Z
+  updated_at: 2011-07-16 06:33:56.923569 Z
+  gmt_offset: 3.0
+  id: 18
+  dst_offset: 3.0
+- name: Africa/Djibouti
+  created_at: 2011-07-16 06:33:56.927395 Z
+  updated_at: 2011-07-16 06:33:56.927395 Z
+  gmt_offset: 3.0
+  id: 19
+  dst_offset: 3.0
+- name: Africa/Douala
+  created_at: 2011-07-16 06:33:56.931794 Z
+  updated_at: 2011-07-16 06:33:56.931794 Z
+  gmt_offset: 1.0
+  id: 20
+  dst_offset: 1.0
+- name: Africa/El_Aaiun
+  created_at: 2011-07-16 06:33:56.937444 Z
+  updated_at: 2011-07-16 06:33:56.937444 Z
+  gmt_offset: 0.0
+  id: 21
+  dst_offset: 0.0
+- name: Africa/Freetown
+  created_at: 2011-07-16 06:33:56.942204 Z
+  updated_at: 2011-07-16 06:33:56.942204 Z
+  gmt_offset: 0.0
+  id: 22
+  dst_offset: 0.0
+- name: Africa/Gaborone
+  created_at: 2011-07-16 06:33:56.946659 Z
+  updated_at: 2011-07-16 06:33:56.946659 Z
+  gmt_offset: 2.0
+  id: 23
+  dst_offset: 2.0
+- name: Africa/Harare
+  created_at: 2011-07-16 06:33:56.951172 Z
+  updated_at: 2011-07-16 06:33:56.951172 Z
+  gmt_offset: 2.0
+  id: 24
+  dst_offset: 2.0
+- name: Africa/Johannesburg
+  created_at: 2011-07-16 06:33:56.955392 Z
+  updated_at: 2011-07-16 06:33:56.955392 Z
+  gmt_offset: 2.0
+  id: 25
+  dst_offset: 2.0
+- name: Africa/Kampala
+  created_at: 2011-07-16 06:33:56.959364 Z
+  updated_at: 2011-07-16 06:33:56.959364 Z
+  gmt_offset: 3.0
+  id: 26
+  dst_offset: 3.0
+- name: Africa/Khartoum
+  created_at: 2011-07-16 06:33:56.966058 Z
+  updated_at: 2011-07-16 06:33:56.966058 Z
+  gmt_offset: 3.0
+  id: 27
+  dst_offset: 3.0
+- name: Africa/Kigali
+  created_at: 2011-07-16 06:33:56.976213 Z
+  updated_at: 2011-07-16 06:33:56.976213 Z
+  gmt_offset: 2.0
+  id: 28
+  dst_offset: 2.0
+- name: Africa/Kinshasa
+  created_at: 2011-07-16 06:33:56.981634 Z
+  updated_at: 2011-07-16 06:33:56.981634 Z
+  gmt_offset: 1.0
+  id: 29
+  dst_offset: 1.0
+- name: Africa/Lagos
+  created_at: 2011-07-16 06:33:56.986051 Z
+  updated_at: 2011-07-16 06:33:56.986051 Z
+  gmt_offset: 1.0
+  id: 30
+  dst_offset: 1.0
+- name: Africa/Libreville
+  created_at: 2011-07-16 06:33:56.992615 Z
+  updated_at: 2011-07-16 06:33:56.992615 Z
+  gmt_offset: 1.0
+  id: 31
+  dst_offset: 1.0
+- name: Africa/Lome
+  created_at: 2011-07-16 06:33:56.997488 Z
+  updated_at: 2011-07-16 06:33:56.997488 Z
+  gmt_offset: 0.0
+  id: 32
+  dst_offset: 0.0
+- name: Africa/Luanda
+  created_at: 2011-07-16 06:33:57.002279 Z
+  updated_at: 2011-07-16 06:33:57.002279 Z
+  gmt_offset: 1.0
+  id: 33
+  dst_offset: 1.0
+- name: Africa/Lubumbashi
+  created_at: 2011-07-16 06:33:57.008484 Z
+  updated_at: 2011-07-16 06:33:57.008484 Z
+  gmt_offset: 2.0
+  id: 34
+  dst_offset: 2.0
+- name: Africa/Lusaka
+  created_at: 2011-07-16 06:33:57.012724 Z
+  updated_at: 2011-07-16 06:33:57.012724 Z
+  gmt_offset: 2.0
+  id: 35
+  dst_offset: 2.0
+- name: Africa/Malabo
+  created_at: 2011-07-16 06:33:57.017911 Z
+  updated_at: 2011-07-16 06:33:57.017911 Z
+  gmt_offset: 1.0
+  id: 36
+  dst_offset: 1.0
+- name: Africa/Maputo
+  created_at: 2011-07-16 06:33:57.022306 Z
+  updated_at: 2011-07-16 06:33:57.022306 Z
+  gmt_offset: 2.0
+  id: 37
+  dst_offset: 2.0
+- name: Africa/Maseru
+  created_at: 2011-07-16 06:33:57.026435 Z
+  updated_at: 2011-07-16 06:33:57.026435 Z
+  gmt_offset: 2.0
+  id: 38
+  dst_offset: 2.0
+- name: Africa/Mbabane
+  created_at: 2011-07-16 06:33:57.030685 Z
+  updated_at: 2011-07-16 06:33:57.030685 Z
+  gmt_offset: 2.0
+  id: 39
+  dst_offset: 2.0
+- name: Africa/Mogadishu
+  created_at: 2011-07-16 06:33:57.035196 Z
+  updated_at: 2011-07-16 06:33:57.035196 Z
+  gmt_offset: 3.0
+  id: 40
+  dst_offset: 3.0
+- name: Africa/Monrovia
+  created_at: 2011-07-16 06:33:57.040466 Z
+  updated_at: 2011-07-16 06:33:57.040466 Z
+  gmt_offset: 0.0
+  id: 41
+  dst_offset: 0.0
+- name: Africa/Nairobi
+  created_at: 2011-07-16 06:33:57.044689 Z
+  updated_at: 2011-07-16 06:33:57.044689 Z
+  gmt_offset: 3.0
+  id: 42
+  dst_offset: 3.0
+- name: Africa/Ndjamena
+  created_at: 2011-07-16 06:33:57.048986 Z
+  updated_at: 2011-07-16 06:33:57.048986 Z
+  gmt_offset: 1.0
+  id: 43
+  dst_offset: 1.0
+- name: Africa/Niamey
+  created_at: 2011-07-16 06:33:57.053320 Z
+  updated_at: 2011-07-16 06:33:57.053320 Z
+  gmt_offset: 1.0
+  id: 44
+  dst_offset: 1.0
+- name: Africa/Nouakchott
+  created_at: 2011-07-16 06:33:57.057545 Z
+  updated_at: 2011-07-16 06:33:57.057545 Z
+  gmt_offset: 0.0
+  id: 45
+  dst_offset: 0.0
+- name: Africa/Ouagadougou
+  created_at: 2011-07-16 06:33:57.061688 Z
+  updated_at: 2011-07-16 06:33:57.061688 Z
+  gmt_offset: 0.0
+  id: 46
+  dst_offset: 0.0
+- name: Africa/Porto-Novo
+  created_at: 2011-07-16 06:33:57.067046 Z
+  updated_at: 2011-07-16 06:33:57.067046 Z
+  gmt_offset: 1.0
+  id: 47
+  dst_offset: 1.0
+- name: Africa/Sao_Tome
+  created_at: 2011-07-16 06:33:57.071815 Z
+  updated_at: 2011-07-16 06:33:57.071815 Z
+  gmt_offset: 0.0
+  id: 48
+  dst_offset: 0.0
+- name: Africa/Tripoli
+  created_at: 2011-07-16 06:33:57.076198 Z
+  updated_at: 2011-07-16 06:33:57.076198 Z
+  gmt_offset: 2.0
+  id: 49
+  dst_offset: 2.0
+- name: Africa/Tunis
+  created_at: 2011-07-16 06:33:57.080474 Z
+  updated_at: 2011-07-16 06:33:57.080474 Z
+  gmt_offset: 1.0
+  id: 50
+  dst_offset: 1.0
+- name: Africa/Windhoek
+  created_at: 2011-07-16 06:33:57.084673 Z
+  updated_at: 2011-07-16 06:33:57.084673 Z
+  gmt_offset: 2.0
+  id: 51
+  dst_offset: 1.0
+- name: America/Adak
+  created_at: 2011-07-16 06:33:57.089223 Z
+  updated_at: 2011-07-16 06:33:57.089223 Z
+  gmt_offset: -10.0
+  id: 52
+  dst_offset: -9.0
+- name: America/Anchorage
+  created_at: 2011-07-16 06:33:57.093407 Z
+  updated_at: 2011-07-16 06:33:57.093407 Z
+  gmt_offset: -9.0
+  id: 53
+  dst_offset: -8.0
+- name: America/Anguilla
+  created_at: 2011-07-16 06:33:57.097499 Z
+  updated_at: 2011-07-16 06:33:57.097499 Z
+  gmt_offset: -4.0
+  id: 54
+  dst_offset: -4.0
+- name: America/Antigua
+  created_at: 2011-07-16 06:33:57.103713 Z
+  updated_at: 2011-07-16 06:33:57.103713 Z
+  gmt_offset: -4.0
+  id: 55
+  dst_offset: -4.0
+- name: America/Araguaina
+  created_at: 2011-07-16 06:33:57.108493 Z
+  updated_at: 2011-07-16 06:33:57.108493 Z
+  gmt_offset: -3.0
+  id: 56
+  dst_offset: -3.0
+- name: America/Argentina/Buenos_Aires
+  created_at: 2011-07-16 06:33:57.112643 Z
+  updated_at: 2011-07-16 06:33:57.112643 Z
+  gmt_offset: -3.0
+  id: 57
+  dst_offset: -3.0
+- name: America/Argentina/Catamarca
+  created_at: 2011-07-16 06:33:57.193644 Z
+  updated_at: 2011-07-16 06:33:57.193644 Z
+  gmt_offset: -3.0
+  id: 58
+  dst_offset: -3.0
+- name: America/Argentina/Cordoba
+  created_at: 2011-07-16 06:33:57.198065 Z
+  updated_at: 2011-07-16 06:33:57.198065 Z
+  gmt_offset: -3.0
+  id: 59
+  dst_offset: -3.0
+- name: America/Argentina/Jujuy
+  created_at: 2011-07-16 06:33:57.205421 Z
+  updated_at: 2011-07-16 06:33:57.205421 Z
+  gmt_offset: -3.0
+  id: 60
+  dst_offset: -3.0
+- name: America/Argentina/La_Rioja
+  created_at: 2011-07-16 06:33:57.210519 Z
+  updated_at: 2011-07-16 06:33:57.210519 Z
+  gmt_offset: -3.0
+  id: 61
+  dst_offset: -3.0
+- name: America/Argentina/Mendoza
+  created_at: 2011-07-16 06:33:57.215446 Z
+  updated_at: 2011-07-16 06:33:57.215446 Z
+  gmt_offset: -3.0
+  id: 62
+  dst_offset: -3.0
+- name: America/Argentina/Rio_Gallegos
+  created_at: 2011-07-16 06:33:57.219739 Z
+  updated_at: 2011-07-16 06:33:57.219739 Z
+  gmt_offset: -3.0
+  id: 63
+  dst_offset: -3.0
+- name: America/Argentina/Salta
+  created_at: 2011-07-16 06:33:57.224116 Z
+  updated_at: 2011-07-16 06:33:57.224116 Z
+  gmt_offset: -3.0
+  id: 64
+  dst_offset: -3.0
+- name: America/Argentina/San_Juan
+  created_at: 2011-07-16 06:33:57.228185 Z
+  updated_at: 2011-07-16 06:33:57.228185 Z
+  gmt_offset: -3.0
+  id: 65
+  dst_offset: -3.0
+- name: America/Argentina/San_Luis
+  created_at: 2011-07-16 06:33:57.232653 Z
+  updated_at: 2011-07-16 06:33:57.232653 Z
+  gmt_offset: -3.0
+  id: 66
+  dst_offset: -3.0
+- name: America/Argentina/Tucuman
+  created_at: 2011-07-16 06:33:57.240331 Z
+  updated_at: 2011-07-16 06:33:57.240331 Z
+  gmt_offset: -3.0
+  id: 67
+  dst_offset: -3.0
+- name: America/Argentina/Ushuaia
+  created_at: 2011-07-16 06:33:57.244780 Z
+  updated_at: 2011-07-16 06:33:57.244780 Z
+  gmt_offset: -3.0
+  id: 68
+  dst_offset: -3.0
+- name: America/Aruba
+  created_at: 2011-07-16 06:33:57.248890 Z
+  updated_at: 2011-07-16 06:33:57.248890 Z
+  gmt_offset: -4.0
+  id: 69
+  dst_offset: -4.0
+- name: America/Asuncion
+  created_at: 2011-07-16 06:33:57.253182 Z
+  updated_at: 2011-07-16 06:33:57.253182 Z
+  gmt_offset: -3.0
+  id: 70
+  dst_offset: -4.0
+- name: America/Atikokan
+  created_at: 2011-07-16 06:33:57.257650 Z
+  updated_at: 2011-07-16 06:33:57.257650 Z
+  gmt_offset: -5.0
+  id: 71
+  dst_offset: -5.0
+- name: America/Bahia
+  created_at: 2011-07-16 06:33:57.261805 Z
+  updated_at: 2011-07-16 06:33:57.261805 Z
+  gmt_offset: -3.0
+  id: 72
+  dst_offset: -3.0
+- name: America/Bahia_Banderas
+  created_at: 2011-07-16 06:33:57.266302 Z
+  updated_at: 2011-07-16 06:33:57.266302 Z
+  gmt_offset: -6.0
+  id: 73
+  dst_offset: -5.0
+- name: America/Barbados
+  created_at: 2011-07-16 06:33:57.272385 Z
+  updated_at: 2011-07-16 06:33:57.272385 Z
+  gmt_offset: -4.0
+  id: 74
+  dst_offset: -4.0
+- name: America/Belem
+  created_at: 2011-07-16 06:33:57.276839 Z
+  updated_at: 2011-07-16 06:33:57.276839 Z
+  gmt_offset: -3.0
+  id: 75
+  dst_offset: -3.0
+- name: America/Belize
+  created_at: 2011-07-16 06:33:57.281174 Z
+  updated_at: 2011-07-16 06:33:57.281174 Z
+  gmt_offset: -6.0
+  id: 76
+  dst_offset: -6.0
+- name: America/Blanc-Sablon
+  created_at: 2011-07-16 06:33:57.285518 Z
+  updated_at: 2011-07-16 06:33:57.285518 Z
+  gmt_offset: -4.0
+  id: 77
+  dst_offset: -4.0
+- name: America/Boa_Vista
+  created_at: 2011-07-16 06:33:57.289436 Z
+  updated_at: 2011-07-16 06:33:57.289436 Z
+  gmt_offset: -4.0
+  id: 78
+  dst_offset: -4.0
+- name: America/Bogota
+  created_at: 2011-07-16 06:33:57.293573 Z
+  updated_at: 2011-07-16 06:33:57.293573 Z
+  gmt_offset: -5.0
+  id: 79
+  dst_offset: -5.0
+- name: America/Boise
+  created_at: 2011-07-16 06:33:57.297906 Z
+  updated_at: 2011-07-16 06:33:57.297906 Z
+  gmt_offset: -7.0
+  id: 80
+  dst_offset: -6.0
+- name: America/Cambridge_Bay
+  created_at: 2011-07-16 06:33:57.302846 Z
+  updated_at: 2011-07-16 06:33:57.302846 Z
+  gmt_offset: -7.0
+  id: 81
+  dst_offset: -6.0
+- name: America/Campo_Grande
+  created_at: 2011-07-16 06:33:57.308810 Z
+  updated_at: 2011-07-16 06:33:57.308810 Z
+  gmt_offset: -3.0
+  id: 82
+  dst_offset: -4.0
+- name: America/Cancun
+  created_at: 2011-07-16 06:33:57.312699 Z
+  updated_at: 2011-07-16 06:33:57.312699 Z
+  gmt_offset: -6.0
+  id: 83
+  dst_offset: -5.0
+- name: America/Caracas
+  created_at: 2011-07-16 06:33:57.316564 Z
+  updated_at: 2011-07-16 06:33:57.316564 Z
+  gmt_offset: -4.5
+  id: 84
+  dst_offset: -4.5
+- name: America/Cayenne
+  created_at: 2011-07-16 06:33:57.320805 Z
+  updated_at: 2011-07-16 06:33:57.320805 Z
+  gmt_offset: -3.0
+  id: 85
+  dst_offset: -3.0
+- name: America/Cayman
+  created_at: 2011-07-16 06:33:57.324768 Z
+  updated_at: 2011-07-16 06:33:57.324768 Z
+  gmt_offset: -5.0
+  id: 86
+  dst_offset: -5.0
+- name: America/Chicago
+  created_at: 2011-07-16 06:33:57.328908 Z
+  updated_at: 2011-07-16 06:33:57.328908 Z
+  gmt_offset: -6.0
+  id: 87
+  dst_offset: -5.0
+- name: America/Chihuahua
+  created_at: 2011-07-16 06:33:57.333061 Z
+  updated_at: 2011-07-16 06:33:57.333061 Z
+  gmt_offset: -7.0
+  id: 88
+  dst_offset: -6.0
+- name: America/Costa_Rica
+  created_at: 2011-07-16 06:33:57.337711 Z
+  updated_at: 2011-07-16 06:33:57.337711 Z
+  gmt_offset: -6.0
+  id: 89
+  dst_offset: -6.0
+- name: America/Cuiaba
+  created_at: 2011-07-16 06:33:57.342312 Z
+  updated_at: 2011-07-16 06:33:57.342312 Z
+  gmt_offset: -3.0
+  id: 90
+  dst_offset: -4.0
+- name: America/Curacao
+  created_at: 2011-07-16 06:33:57.346576 Z
+  updated_at: 2011-07-16 06:33:57.346576 Z
+  gmt_offset: -4.0
+  id: 91
+  dst_offset: -4.0
+- name: America/Danmarkshavn
+  created_at: 2011-07-16 06:33:57.351303 Z
+  updated_at: 2011-07-16 06:33:57.351303 Z
+  gmt_offset: 0.0
+  id: 92
+  dst_offset: 0.0
+- name: America/Dawson
+  created_at: 2011-07-16 06:33:57.355477 Z
+  updated_at: 2011-07-16 06:33:57.355477 Z
+  gmt_offset: -8.0
+  id: 93
+  dst_offset: -7.0
+- name: America/Dawson_Creek
+  created_at: 2011-07-16 06:33:57.359669 Z
+  updated_at: 2011-07-16 06:33:57.359669 Z
+  gmt_offset: -7.0
+  id: 94
+  dst_offset: -7.0
+- name: America/Denver
+  created_at: 2011-07-16 06:33:57.364051 Z
+  updated_at: 2011-07-16 06:33:57.364051 Z
+  gmt_offset: -7.0
+  id: 95
+  dst_offset: -6.0
+- name: America/Detroit
+  created_at: 2011-07-16 06:33:57.368469 Z
+  updated_at: 2011-07-16 06:33:57.368469 Z
+  gmt_offset: -5.0
+  id: 96
+  dst_offset: -4.0
+- name: America/Dominica
+  created_at: 2011-07-16 06:33:57.373324 Z
+  updated_at: 2011-07-16 06:33:57.373324 Z
+  gmt_offset: -4.0
+  id: 97
+  dst_offset: -4.0
+- name: America/Edmonton
+  created_at: 2011-07-16 06:33:57.377585 Z
+  updated_at: 2011-07-16 06:33:57.377585 Z
+  gmt_offset: -7.0
+  id: 98
+  dst_offset: -6.0
+- name: America/Eirunepe
+  created_at: 2011-07-16 06:33:57.381831 Z
+  updated_at: 2011-07-16 06:33:57.381831 Z
+  gmt_offset: -4.0
+  id: 99
+  dst_offset: -4.0
+- name: America/El_Salvador
+  created_at: 2011-07-16 06:33:57.386527 Z
+  updated_at: 2011-07-16 06:33:57.386527 Z
+  gmt_offset: -6.0
+  id: 100
+  dst_offset: -6.0
+- name: America/Fortaleza
+  created_at: 2011-07-16 06:33:57.390535 Z
+  updated_at: 2011-07-16 06:33:57.390535 Z
+  gmt_offset: -3.0
+  id: 101
+  dst_offset: -3.0
+- name: America/Glace_Bay
+  created_at: 2011-07-16 06:33:57.394543 Z
+  updated_at: 2011-07-16 06:33:57.394543 Z
+  gmt_offset: -4.0
+  id: 102
+  dst_offset: -3.0
+- name: America/Godthab
+  created_at: 2011-07-16 06:33:57.399563 Z
+  updated_at: 2011-07-16 06:33:57.399563 Z
+  gmt_offset: -3.0
+  id: 103
+  dst_offset: -2.0
+- name: America/Goose_Bay
+  created_at: 2011-07-16 06:33:57.404240 Z
+  updated_at: 2011-07-16 06:33:57.404240 Z
+  gmt_offset: -4.0
+  id: 104
+  dst_offset: -3.0
+- name: America/Grand_Turk
+  created_at: 2011-07-16 06:33:57.408572 Z
+  updated_at: 2011-07-16 06:33:57.408572 Z
+  gmt_offset: -5.0
+  id: 105
+  dst_offset: -4.0
+- name: America/Grenada
+  created_at: 2011-07-16 06:33:57.412967 Z
+  updated_at: 2011-07-16 06:33:57.412967 Z
+  gmt_offset: -4.0
+  id: 106
+  dst_offset: -4.0
+- name: America/Guadeloupe
+  created_at: 2011-07-16 06:33:57.417555 Z
+  updated_at: 2011-07-16 06:33:57.417555 Z
+  gmt_offset: -4.0
+  id: 107
+  dst_offset: -4.0
+- name: America/Guatemala
+  created_at: 2011-07-16 06:33:57.421936 Z
+  updated_at: 2011-07-16 06:33:57.421936 Z
+  gmt_offset: -6.0
+  id: 108
+  dst_offset: -6.0
+- name: America/Guayaquil
+  created_at: 2011-07-16 06:33:57.425945 Z
+  updated_at: 2011-07-16 06:33:57.425945 Z
+  gmt_offset: -5.0
+  id: 109
+  dst_offset: -5.0
+- name: America/Guyana
+  created_at: 2011-07-16 06:33:57.429794 Z
+  updated_at: 2011-07-16 06:33:57.429794 Z
+  gmt_offset: -4.0
+  id: 110
+  dst_offset: -4.0
+- name: America/Halifax
+  created_at: 2011-07-16 06:33:57.434862 Z
+  updated_at: 2011-07-16 06:33:57.434862 Z
+  gmt_offset: -4.0
+  id: 111
+  dst_offset: -3.0
+- name: America/Havana
+  created_at: 2011-07-16 06:33:57.439467 Z
+  updated_at: 2011-07-16 06:33:57.439467 Z
+  gmt_offset: -5.0
+  id: 112
+  dst_offset: -4.0
+- name: America/Hermosillo
+  created_at: 2011-07-16 06:33:57.444024 Z
+  updated_at: 2011-07-16 06:33:57.444024 Z
+  gmt_offset: -7.0
+  id: 113
+  dst_offset: -7.0
+- name: America/Indiana/Indianapolis
+  created_at: 2011-07-16 06:33:57.448199 Z
+  updated_at: 2011-07-16 06:33:57.448199 Z
+  gmt_offset: -5.0
+  id: 114
+  dst_offset: -4.0
+- name: America/Indiana/Knox
+  created_at: 2011-07-16 06:33:57.452617 Z
+  updated_at: 2011-07-16 06:33:57.452617 Z
+  gmt_offset: -6.0
+  id: 115
+  dst_offset: -5.0
+- name: America/Indiana/Marengo
+  created_at: 2011-07-16 06:33:57.457509 Z
+  updated_at: 2011-07-16 06:33:57.457509 Z
+  gmt_offset: -5.0
+  id: 116
+  dst_offset: -4.0
+- name: America/Indiana/Petersburg
+  created_at: 2011-07-16 06:33:57.461581 Z
+  updated_at: 2011-07-16 06:33:57.461581 Z
+  gmt_offset: -5.0
+  id: 117
+  dst_offset: -4.0
+- name: America/Indiana/Tell_City
+  created_at: 2011-07-16 06:33:57.466264 Z
+  updated_at: 2011-07-16 06:33:57.466264 Z
+  gmt_offset: -6.0
+  id: 118
+  dst_offset: -5.0
+- name: America/Indiana/Vevay
+  created_at: 2011-07-16 06:33:57.471867 Z
+  updated_at: 2011-07-16 06:33:57.471867 Z
+  gmt_offset: -5.0
+  id: 119
+  dst_offset: -4.0
+- name: America/Indiana/Vincennes
+  created_at: 2011-07-16 06:33:57.476592 Z
+  updated_at: 2011-07-16 06:33:57.476592 Z
+  gmt_offset: -5.0
+  id: 120
+  dst_offset: -4.0
+- name: America/Indiana/Winamac
+  created_at: 2011-07-16 06:33:57.480815 Z
+  updated_at: 2011-07-16 06:33:57.480815 Z
+  gmt_offset: -5.0
+  id: 121
+  dst_offset: -4.0
+- name: America/Inuvik
+  created_at: 2011-07-16 06:33:57.485225 Z
+  updated_at: 2011-07-16 06:33:57.485225 Z
+  gmt_offset: -7.0
+  id: 122
+  dst_offset: -6.0
+- name: America/Iqaluit
+  created_at: 2011-07-16 06:33:57.489278 Z
+  updated_at: 2011-07-16 06:33:57.489278 Z
+  gmt_offset: -5.0
+  id: 123
+  dst_offset: -4.0
+- name: America/Jamaica
+  created_at: 2011-07-16 06:33:57.493670 Z
+  updated_at: 2011-07-16 06:33:57.493670 Z
+  gmt_offset: -5.0
+  id: 124
+  dst_offset: -5.0
+- name: America/Juneau
+  created_at: 2011-07-16 06:33:57.498264 Z
+  updated_at: 2011-07-16 06:33:57.498264 Z
+  gmt_offset: -9.0
+  id: 125
+  dst_offset: -8.0
+- name: America/Kentucky/Louisville
+  created_at: 2011-07-16 06:33:57.502802 Z
+  updated_at: 2011-07-16 06:33:57.502802 Z
+  gmt_offset: -5.0
+  id: 126
+  dst_offset: -4.0
+- name: America/Kentucky/Monticello
+  created_at: 2011-07-16 06:33:57.508368 Z
+  updated_at: 2011-07-16 06:33:57.508368 Z
+  gmt_offset: -5.0
+  id: 127
+  dst_offset: -4.0
+- name: America/La_Paz
+  created_at: 2011-07-16 06:33:57.512877 Z
+  updated_at: 2011-07-16 06:33:57.512877 Z
+  gmt_offset: -4.0
+  id: 128
+  dst_offset: -4.0
+- name: America/Lima
+  created_at: 2011-07-16 06:33:57.517476 Z
+  updated_at: 2011-07-16 06:33:57.517476 Z
+  gmt_offset: -5.0
+  id: 129
+  dst_offset: -5.0
+- name: America/Los_Angeles
+  created_at: 2011-07-16 06:33:57.521792 Z
+  updated_at: 2011-07-16 06:33:57.521792 Z
+  gmt_offset: -8.0
+  id: 130
+  dst_offset: -7.0
+- name: America/Maceio
+  created_at: 2011-07-16 06:33:57.526034 Z
+  updated_at: 2011-07-16 06:33:57.526034 Z
+  gmt_offset: -3.0
+  id: 131
+  dst_offset: -3.0
+- name: America/Managua
+  created_at: 2011-07-16 06:33:57.530323 Z
+  updated_at: 2011-07-16 06:33:57.530323 Z
+  gmt_offset: -6.0
+  id: 132
+  dst_offset: -6.0
+- name: America/Manaus
+  created_at: 2011-07-16 06:33:57.534611 Z
+  updated_at: 2011-07-16 06:33:57.534611 Z
+  gmt_offset: -4.0
+  id: 133
+  dst_offset: -4.0
+- name: America/Marigot
+  created_at: 2011-07-16 06:33:57.540888 Z
+  updated_at: 2011-07-16 06:33:57.540888 Z
+  gmt_offset: -4.0
+  id: 134
+  dst_offset: -4.0
+- name: America/Martinique
+  created_at: 2011-07-16 06:33:57.545412 Z
+  updated_at: 2011-07-16 06:33:57.545412 Z
+  gmt_offset: -4.0
+  id: 135
+  dst_offset: -4.0
+- name: America/Matamoros
+  created_at: 2011-07-16 06:33:57.549817 Z
+  updated_at: 2011-07-16 06:33:57.549817 Z
+  gmt_offset: -6.0
+  id: 136
+  dst_offset: -5.0
+- name: America/Mazatlan
+  created_at: 2011-07-16 06:33:57.554041 Z
+  updated_at: 2011-07-16 06:33:57.554041 Z
+  gmt_offset: -7.0
+  id: 137
+  dst_offset: -6.0
+- name: America/Menominee
+  created_at: 2011-07-16 06:33:57.557922 Z
+  updated_at: 2011-07-16 06:33:57.557922 Z
+  gmt_offset: -6.0
+  id: 138
+  dst_offset: -5.0
+- name: America/Merida
+  created_at: 2011-07-16 06:33:57.561828 Z
+  updated_at: 2011-07-16 06:33:57.561828 Z
+  gmt_offset: -6.0
+  id: 139
+  dst_offset: -5.0
+- name: America/Metlakatla
+  created_at: 2011-07-16 06:33:57.566206 Z
+  updated_at: 2011-07-16 06:33:57.566206 Z
+  gmt_offset: 0.0
+  id: 140
+  dst_offset: 0.0
+- name: America/Mexico_City
+  created_at: 2011-07-16 06:33:57.570782 Z
+  updated_at: 2011-07-16 06:33:57.570782 Z
+  gmt_offset: -6.0
+  id: 141
+  dst_offset: -5.0
+- name: America/Miquelon
+  created_at: 2011-07-16 06:33:57.575809 Z
+  updated_at: 2011-07-16 06:33:57.575809 Z
+  gmt_offset: -3.0
+  id: 142
+  dst_offset: -2.0
+- name: America/Moncton
+  created_at: 2011-07-16 06:33:57.580046 Z
+  updated_at: 2011-07-16 06:33:57.580046 Z
+  gmt_offset: -4.0
+  id: 143
+  dst_offset: -3.0
+- name: America/Monterrey
+  created_at: 2011-07-16 06:33:57.584782 Z
+  updated_at: 2011-07-16 06:33:57.584782 Z
+  gmt_offset: -6.0
+  id: 144
+  dst_offset: -5.0
+- name: America/Montevideo
+  created_at: 2011-07-16 06:33:57.589263 Z
+  updated_at: 2011-07-16 06:33:57.589263 Z
+  gmt_offset: -2.0
+  id: 145
+  dst_offset: -3.0
+- name: America/Montreal
+  created_at: 2011-07-16 06:33:57.593360 Z
+  updated_at: 2011-07-16 06:33:57.593360 Z
+  gmt_offset: -5.0
+  id: 146
+  dst_offset: -4.0
+- name: America/Montserrat
+  created_at: 2011-07-16 06:33:57.598728 Z
+  updated_at: 2011-07-16 06:33:57.598728 Z
+  gmt_offset: -4.0
+  id: 147
+  dst_offset: -4.0
+- name: America/Nassau
+  created_at: 2011-07-16 06:33:57.603799 Z
+  updated_at: 2011-07-16 06:33:57.603799 Z
+  gmt_offset: -5.0
+  id: 148
+  dst_offset: -4.0
+- name: America/New_York
+  created_at: 2011-07-16 06:33:57.608379 Z
+  updated_at: 2011-07-16 06:33:57.608379 Z
+  gmt_offset: -5.0
+  id: 149
+  dst_offset: -4.0
+- name: America/Nipigon
+  created_at: 2011-07-16 06:33:57.612511 Z
+  updated_at: 2011-07-16 06:33:57.612511 Z
+  gmt_offset: -5.0
+  id: 150
+  dst_offset: -4.0
+- name: America/Nome
+  created_at: 2011-07-16 06:33:57.616499 Z
+  updated_at: 2011-07-16 06:33:57.616499 Z
+  gmt_offset: -9.0
+  id: 151
+  dst_offset: -8.0
+- name: America/Noronha
+  created_at: 2011-07-16 06:33:57.620560 Z
+  updated_at: 2011-07-16 06:33:57.620560 Z
+  gmt_offset: -2.0
+  id: 152
+  dst_offset: -2.0
+- name: America/North_Dakota/Beulah
+  created_at: 2011-07-16 06:33:57.624844 Z
+  updated_at: 2011-07-16 06:33:57.624844 Z
+  gmt_offset: -6.0
+  id: 153
+  dst_offset: -5.0
+- name: America/North_Dakota/Center
+  created_at: 2011-07-16 06:33:57.628978 Z
+  updated_at: 2011-07-16 06:33:57.628978 Z
+  gmt_offset: -6.0
+  id: 154
+  dst_offset: -5.0
+- name: America/North_Dakota/New_Salem
+  created_at: 2011-07-16 06:33:57.634052 Z
+  updated_at: 2011-07-16 06:33:57.634052 Z
+  gmt_offset: -6.0
+  id: 155
+  dst_offset: -5.0
+- name: America/Ojinaga
+  created_at: 2011-07-16 06:33:57.638926 Z
+  updated_at: 2011-07-16 06:33:57.638926 Z
+  gmt_offset: -7.0
+  id: 156
+  dst_offset: -6.0
+- name: America/Panama
+  created_at: 2011-07-16 06:33:57.643505 Z
+  updated_at: 2011-07-16 06:33:57.643505 Z
+  gmt_offset: -5.0
+  id: 157
+  dst_offset: -5.0
+- name: America/Pangnirtung
+  created_at: 2011-07-16 06:33:57.648118 Z
+  updated_at: 2011-07-16 06:33:57.648118 Z
+  gmt_offset: -5.0
+  id: 158
+  dst_offset: -4.0
+- name: America/Paramaribo
+  created_at: 2011-07-16 06:33:57.652603 Z
+  updated_at: 2011-07-16 06:33:57.652603 Z
+  gmt_offset: -3.0
+  id: 159
+  dst_offset: -3.0
+- name: America/Phoenix
+  created_at: 2011-07-16 06:33:57.658943 Z
+  updated_at: 2011-07-16 06:33:57.658943 Z
+  gmt_offset: -7.0
+  id: 160
+  dst_offset: -7.0
+- name: America/Port-au-Prince
+  created_at: 2011-07-16 06:33:57.755923 Z
+  updated_at: 2011-07-16 06:33:57.755923 Z
+  gmt_offset: -5.0
+  id: 161
+  dst_offset: -5.0
+- name: America/Port_of_Spain
+  created_at: 2011-07-16 06:33:57.762821 Z
+  updated_at: 2011-07-16 06:33:57.762821 Z
+  gmt_offset: -4.0
+  id: 162
+  dst_offset: -4.0
+- name: America/Porto_Velho
+  created_at: 2011-07-16 06:33:57.768131 Z
+  updated_at: 2011-07-16 06:33:57.768131 Z
+  gmt_offset: -4.0
+  id: 163
+  dst_offset: -4.0
+- name: America/Puerto_Rico
+  created_at: 2011-07-16 06:33:57.773531 Z
+  updated_at: 2011-07-16 06:33:57.773531 Z
+  gmt_offset: -4.0
+  id: 164
+  dst_offset: -4.0
+- name: America/Rainy_River
+  created_at: 2011-07-16 06:33:57.779488 Z
+  updated_at: 2011-07-16 06:33:57.779488 Z
+  gmt_offset: -6.0
+  id: 165
+  dst_offset: -5.0
+- name: America/Rankin_Inlet
+  created_at: 2011-07-16 06:33:57.784972 Z
+  updated_at: 2011-07-16 06:33:57.784972 Z
+  gmt_offset: -6.0
+  id: 166
+  dst_offset: -5.0
+- name: America/Recife
+  created_at: 2011-07-16 06:33:57.789257 Z
+  updated_at: 2011-07-16 06:33:57.789257 Z
+  gmt_offset: -3.0
+  id: 167
+  dst_offset: -3.0
+- name: America/Regina
+  created_at: 2011-07-16 06:33:57.793431 Z
+  updated_at: 2011-07-16 06:33:57.793431 Z
+  gmt_offset: -6.0
+  id: 168
+  dst_offset: -6.0
+- name: America/Resolute
+  created_at: 2011-07-16 06:33:57.797733 Z
+  updated_at: 2011-07-16 06:33:57.797733 Z
+  gmt_offset: -5.0
+  id: 169
+  dst_offset: -5.0
+- name: America/Rio_Branco
+  created_at: 2011-07-16 06:33:57.805119 Z
+  updated_at: 2011-07-16 06:33:57.805119 Z
+  gmt_offset: -4.0
+  id: 170
+  dst_offset: -4.0
+- name: America/Santa_Isabel
+  created_at: 2011-07-16 06:33:57.809303 Z
+  updated_at: 2011-07-16 06:33:57.809303 Z
+  gmt_offset: -8.0
+  id: 171
+  dst_offset: -7.0
+- name: America/Santarem
+  created_at: 2011-07-16 06:33:57.813646 Z
+  updated_at: 2011-07-16 06:33:57.813646 Z
+  gmt_offset: -3.0
+  id: 172
+  dst_offset: -3.0
+- name: America/Santiago
+  created_at: 2011-07-16 06:33:57.817783 Z
+  updated_at: 2011-07-16 06:33:57.817783 Z
+  gmt_offset: -3.0
+  id: 173
+  dst_offset: -4.0
+- name: America/Santo_Domingo
+  created_at: 2011-07-16 06:33:57.821972 Z
+  updated_at: 2011-07-16 06:33:57.821972 Z
+  gmt_offset: -4.0
+  id: 174
+  dst_offset: -4.0
+- name: America/Sao_Paulo
+  created_at: 2011-07-16 06:33:57.826163 Z
+  updated_at: 2011-07-16 06:33:57.826163 Z
+  gmt_offset: -2.0
+  id: 175
+  dst_offset: -3.0
+- name: America/Scoresbysund
+  created_at: 2011-07-16 06:33:57.830475 Z
+  updated_at: 2011-07-16 06:33:57.830475 Z
+  gmt_offset: -1.0
+  id: 176
+  dst_offset: 0.0
+- name: America/Shiprock
+  created_at: 2011-07-16 06:33:57.835558 Z
+  updated_at: 2011-07-16 06:33:57.835558 Z
+  gmt_offset: -7.0
+  id: 177
+  dst_offset: -6.0
+- name: America/Sitka
+  created_at: 2011-07-16 06:33:57.841798 Z
+  updated_at: 2011-07-16 06:33:57.841798 Z
+  gmt_offset: 0.0
+  id: 178
+  dst_offset: 0.0
+- name: America/St_Barthelemy
+  created_at: 2011-07-16 06:33:57.846059 Z
+  updated_at: 2011-07-16 06:33:57.846059 Z
+  gmt_offset: -4.0
+  id: 179
+  dst_offset: -4.0
+- name: America/St_Johns
+  created_at: 2011-07-16 06:33:57.850600 Z
+  updated_at: 2011-07-16 06:33:57.850600 Z
+  gmt_offset: -3.5
+  id: 180
+  dst_offset: -2.5
+- name: America/St_Kitts
+  created_at: 2011-07-16 06:33:57.854739 Z
+  updated_at: 2011-07-16 06:33:57.854739 Z
+  gmt_offset: -4.0
+  id: 181
+  dst_offset: -4.0
+- name: America/St_Lucia
+  created_at: 2011-07-16 06:33:57.858754 Z
+  updated_at: 2011-07-16 06:33:57.858754 Z
+  gmt_offset: -4.0
+  id: 182
+  dst_offset: -4.0
+- name: America/St_Thomas
+  created_at: 2011-07-16 06:33:57.863802 Z
+  updated_at: 2011-07-16 06:33:57.863802 Z
+  gmt_offset: -4.0
+  id: 183
+  dst_offset: -4.0
+- name: America/St_Vincent
+  created_at: 2011-07-16 06:33:57.868574 Z
+  updated_at: 2011-07-16 06:33:57.868574 Z
+  gmt_offset: -4.0
+  id: 184
+  dst_offset: -4.0
+- name: America/Swift_Current
+  created_at: 2011-07-16 06:33:57.876389 Z
+  updated_at: 2011-07-16 06:33:57.876389 Z
+  gmt_offset: -6.0
+  id: 185
+  dst_offset: -6.0
+- name: America/Tegucigalpa
+  created_at: 2011-07-16 06:33:57.880875 Z
+  updated_at: 2011-07-16 06:33:57.880875 Z
+  gmt_offset: -6.0
+  id: 186
+  dst_offset: -6.0
+- name: America/Thule
+  created_at: 2011-07-16 06:33:57.885055 Z
+  updated_at: 2011-07-16 06:33:57.885055 Z
+  gmt_offset: -4.0
+  id: 187
+  dst_offset: -3.0
+- name: America/Thunder_Bay
+  created_at: 2011-07-16 06:33:57.889395 Z
+  updated_at: 2011-07-16 06:33:57.889395 Z
+  gmt_offset: -5.0
+  id: 188
+  dst_offset: -4.0
+- name: America/Tijuana
+  created_at: 2011-07-16 06:33:57.893440 Z
+  updated_at: 2011-07-16 06:33:57.893440 Z
+  gmt_offset: -8.0
+  id: 189
+  dst_offset: -7.0
+- name: America/Toronto
+  created_at: 2011-07-16 06:33:57.897607 Z
+  updated_at: 2011-07-16 06:33:57.897607 Z
+  gmt_offset: -5.0
+  id: 190
+  dst_offset: -4.0
+- name: America/Tortola
+  created_at: 2011-07-16 06:33:57.904028 Z
+  updated_at: 2011-07-16 06:33:57.904028 Z
+  gmt_offset: -4.0
+  id: 191
+  dst_offset: -4.0
+- name: America/Vancouver
+  created_at: 2011-07-16 06:33:57.908622 Z
+  updated_at: 2011-07-16 06:33:57.908622 Z
+  gmt_offset: -8.0
+  id: 192
+  dst_offset: -7.0
+- name: America/Whitehorse
+  created_at: 2011-07-16 06:33:57.913018 Z
+  updated_at: 2011-07-16 06:33:57.913018 Z
+  gmt_offset: -8.0
+  id: 193
+  dst_offset: -7.0
+- name: America/Winnipeg
+  created_at: 2011-07-16 06:33:57.917250 Z
+  updated_at: 2011-07-16 06:33:57.917250 Z
+  gmt_offset: -6.0
+  id: 194
+  dst_offset: -5.0
+- name: America/Yakutat
+  created_at: 2011-07-16 06:33:57.921897 Z
+  updated_at: 2011-07-16 06:33:57.921897 Z
+  gmt_offset: -9.0
+  id: 195
+  dst_offset: -8.0
+- name: America/Yellowknife
+  created_at: 2011-07-16 06:33:57.926946 Z
+  updated_at: 2011-07-16 06:33:57.926946 Z
+  gmt_offset: -7.0
+  id: 196
+  dst_offset: -6.0
+- name: Antarctica/Casey
+  created_at: 2011-07-16 06:33:57.931026 Z
+  updated_at: 2011-07-16 06:33:57.931026 Z
+  gmt_offset: 8.0
+  id: 197
+  dst_offset: 8.0
+- name: Antarctica/Davis
+  created_at: 2011-07-16 06:33:57.936418 Z
+  updated_at: 2011-07-16 06:33:57.936418 Z
+  gmt_offset: 7.0
+  id: 198
+  dst_offset: 7.0
+- name: Antarctica/DumontDUrville
+  created_at: 2011-07-16 06:33:57.941092 Z
+  updated_at: 2011-07-16 06:33:57.941092 Z
+  gmt_offset: 10.0
+  id: 199
+  dst_offset: 10.0
+- name: Antarctica/Macquarie
+  created_at: 2011-07-16 06:33:57.945403 Z
+  updated_at: 2011-07-16 06:33:57.945403 Z
+  gmt_offset: 11.0
+  id: 200
+  dst_offset: 11.0
+- name: Antarctica/Mawson
+  created_at: 2011-07-16 06:33:57.949895 Z
+  updated_at: 2011-07-16 06:33:57.949895 Z
+  gmt_offset: 5.0
+  id: 201
+  dst_offset: 5.0
+- name: Antarctica/McMurdo
+  created_at: 2011-07-16 06:33:57.953939 Z
+  updated_at: 2011-07-16 06:33:57.953939 Z
+  gmt_offset: 13.0
+  id: 202
+  dst_offset: 12.0
+- name: Antarctica/Palmer
+  created_at: 2011-07-16 06:33:57.957856 Z
+  updated_at: 2011-07-16 06:33:57.957856 Z
+  gmt_offset: -3.0
+  id: 203
+  dst_offset: -4.0
+- name: Antarctica/Rothera
+  created_at: 2011-07-16 06:33:57.962462 Z
+  updated_at: 2011-07-16 06:33:57.962462 Z
+  gmt_offset: -3.0
+  id: 204
+  dst_offset: -3.0
+- name: Antarctica/South_Pole
+  created_at: 2011-07-16 06:33:57.966711 Z
+  updated_at: 2011-07-16 06:33:57.966711 Z
+  gmt_offset: 13.0
+  id: 205
+  dst_offset: 12.0
+- name: Antarctica/Syowa
+  created_at: 2011-07-16 06:33:57.972266 Z
+  updated_at: 2011-07-16 06:33:57.972266 Z
+  gmt_offset: 3.0
+  id: 206
+  dst_offset: 3.0
+- name: Antarctica/Vostok
+  created_at: 2011-07-16 06:33:57.976756 Z
+  updated_at: 2011-07-16 06:33:57.976756 Z
+  gmt_offset: 6.0
+  id: 207
+  dst_offset: 6.0
+- name: Arctic/Longyearbyen
+  created_at: 2011-07-16 06:33:57.980779 Z
+  updated_at: 2011-07-16 06:33:57.980779 Z
+  gmt_offset: 1.0
+  id: 208
+  dst_offset: 2.0
+- name: Asia/Aden
+  created_at: 2011-07-16 06:33:57.984980 Z
+  updated_at: 2011-07-16 06:33:57.984980 Z
+  gmt_offset: 3.0
+  id: 209
+  dst_offset: 3.0
+- name: Asia/Almaty
+  created_at: 2011-07-16 06:33:57.989307 Z
+  updated_at: 2011-07-16 06:33:57.989307 Z
+  gmt_offset: 6.0
+  id: 210
+  dst_offset: 6.0
+- name: Asia/Amman
+  created_at: 2011-07-16 06:33:57.993947 Z
+  updated_at: 2011-07-16 06:33:57.993947 Z
+  gmt_offset: 2.0
+  id: 211
+  dst_offset: 3.0
+- name: Asia/Anadyr
+  created_at: 2011-07-16 06:33:57.998324 Z
+  updated_at: 2011-07-16 06:33:57.998324 Z
+  gmt_offset: 11.0
+  id: 212
+  dst_offset: 12.0
+- name: Asia/Aqtau
+  created_at: 2011-07-16 06:33:58.003269 Z
+  updated_at: 2011-07-16 06:33:58.003269 Z
+  gmt_offset: 5.0
+  id: 213
+  dst_offset: 5.0
+- name: Asia/Aqtobe
+  created_at: 2011-07-16 06:33:58.009476 Z
+  updated_at: 2011-07-16 06:33:58.009476 Z
+  gmt_offset: 5.0
+  id: 214
+  dst_offset: 5.0
+- name: Asia/Ashgabat
+  created_at: 2011-07-16 06:33:58.014191 Z
+  updated_at: 2011-07-16 06:33:58.014191 Z
+  gmt_offset: 5.0
+  id: 215
+  dst_offset: 5.0
+- name: Asia/Baghdad
+  created_at: 2011-07-16 06:33:58.018406 Z
+  updated_at: 2011-07-16 06:33:58.018406 Z
+  gmt_offset: 3.0
+  id: 216
+  dst_offset: 3.0
+- name: Asia/Bahrain
+  created_at: 2011-07-16 06:33:58.022294 Z
+  updated_at: 2011-07-16 06:33:58.022294 Z
+  gmt_offset: 3.0
+  id: 217
+  dst_offset: 3.0
+- name: Asia/Baku
+  created_at: 2011-07-16 06:33:58.026596 Z
+  updated_at: 2011-07-16 06:33:58.026596 Z
+  gmt_offset: 4.0
+  id: 218
+  dst_offset: 5.0
+- name: Asia/Bangkok
+  created_at: 2011-07-16 06:33:58.031068 Z
+  updated_at: 2011-07-16 06:33:58.031068 Z
+  gmt_offset: 7.0
+  id: 219
+  dst_offset: 7.0
+- name: Asia/Beirut
+  created_at: 2011-07-16 06:33:58.036007 Z
+  updated_at: 2011-07-16 06:33:58.036007 Z
+  gmt_offset: 2.0
+  id: 220
+  dst_offset: 3.0
+- name: Asia/Bishkek
+  created_at: 2011-07-16 06:33:58.041963 Z
+  updated_at: 2011-07-16 06:33:58.041963 Z
+  gmt_offset: 6.0
+  id: 221
+  dst_offset: 6.0
+- name: Asia/Brunei
+  created_at: 2011-07-16 06:33:58.046734 Z
+  updated_at: 2011-07-16 06:33:58.046734 Z
+  gmt_offset: 8.0
+  id: 222
+  dst_offset: 8.0
+- name: Asia/Choibalsan
+  created_at: 2011-07-16 06:33:58.052218 Z
+  updated_at: 2011-07-16 06:33:58.052218 Z
+  gmt_offset: 8.0
+  id: 223
+  dst_offset: 8.0
+- name: Asia/Chongqing
+  created_at: 2011-07-16 06:33:58.056423 Z
+  updated_at: 2011-07-16 06:33:58.056423 Z
+  gmt_offset: 8.0
+  id: 224
+  dst_offset: 8.0
+- name: Asia/Colombo
+  created_at: 2011-07-16 06:33:58.061295 Z
+  updated_at: 2011-07-16 06:33:58.061295 Z
+  gmt_offset: 5.5
+  id: 225
+  dst_offset: 5.5
+- name: Asia/Damascus
+  created_at: 2011-07-16 06:33:58.065857 Z
+  updated_at: 2011-07-16 06:33:58.065857 Z
+  gmt_offset: 2.0
+  id: 226
+  dst_offset: 3.0
+- name: Asia/Dhaka
+  created_at: 2011-07-16 06:33:58.071034 Z
+  updated_at: 2011-07-16 06:33:58.071034 Z
+  gmt_offset: 6.0
+  id: 227
+  dst_offset: 6.0
+- name: Asia/Dili
+  created_at: 2011-07-16 06:33:58.075992 Z
+  updated_at: 2011-07-16 06:33:58.075992 Z
+  gmt_offset: 9.0
+  id: 228
+  dst_offset: 9.0
+- name: Asia/Dubai
+  created_at: 2011-07-16 06:33:58.080338 Z
+  updated_at: 2011-07-16 06:33:58.080338 Z
+  gmt_offset: 4.0
+  id: 229
+  dst_offset: 4.0
+- name: Asia/Dushanbe
+  created_at: 2011-07-16 06:33:58.085017 Z
+  updated_at: 2011-07-16 06:33:58.085017 Z
+  gmt_offset: 5.0
+  id: 230
+  dst_offset: 5.0
+- name: Asia/Gaza
+  created_at: 2011-07-16 06:33:58.089295 Z
+  updated_at: 2011-07-16 06:33:58.089295 Z
+  gmt_offset: 2.0
+  id: 231
+  dst_offset: 3.0
+- name: Asia/Harbin
+  created_at: 2011-07-16 06:33:58.093459 Z
+  updated_at: 2011-07-16 06:33:58.093459 Z
+  gmt_offset: 8.0
+  id: 232
+  dst_offset: 8.0
+- name: Asia/Ho_Chi_Minh
+  created_at: 2011-07-16 06:33:58.097913 Z
+  updated_at: 2011-07-16 06:33:58.097913 Z
+  gmt_offset: 7.0
+  id: 233
+  dst_offset: 7.0
+- name: Asia/Hong_Kong
+  created_at: 2011-07-16 06:33:58.102328 Z
+  updated_at: 2011-07-16 06:33:58.102328 Z
+  gmt_offset: 8.0
+  id: 234
+  dst_offset: 8.0
+- name: Asia/Hovd
+  created_at: 2011-07-16 06:33:58.107208 Z
+  updated_at: 2011-07-16 06:33:58.107208 Z
+  gmt_offset: 7.0
+  id: 235
+  dst_offset: 7.0
+- name: Asia/Irkutsk
+  created_at: 2011-07-16 06:33:58.111566 Z
+  updated_at: 2011-07-16 06:33:58.111566 Z
+  gmt_offset: 8.0
+  id: 236
+  dst_offset: 9.0
+- name: Asia/Jakarta
+  created_at: 2011-07-16 06:33:58.115858 Z
+  updated_at: 2011-07-16 06:33:58.115858 Z
+  gmt_offset: 7.0
+  id: 237
+  dst_offset: 7.0
+- name: Asia/Jayapura
+  created_at: 2011-07-16 06:33:58.120211 Z
+  updated_at: 2011-07-16 06:33:58.120211 Z
+  gmt_offset: 9.0
+  id: 238
+  dst_offset: 9.0
+- name: Asia/Jerusalem
+  created_at: 2011-07-16 06:33:58.124366 Z
+  updated_at: 2011-07-16 06:33:58.124366 Z
+  gmt_offset: 2.0
+  id: 239
+  dst_offset: 3.0
+- name: Asia/Kabul
+  created_at: 2011-07-16 06:33:58.128355 Z
+  updated_at: 2011-07-16 06:33:58.128355 Z
+  gmt_offset: 4.5
+  id: 240
+  dst_offset: 4.5
+- name: Asia/Kamchatka
+  created_at: 2011-07-16 06:33:58.133217 Z
+  updated_at: 2011-07-16 06:33:58.133217 Z
+  gmt_offset: 11.0
+  id: 241
+  dst_offset: 12.0
+- name: Asia/Karachi
+  created_at: 2011-07-16 06:33:58.138660 Z
+  updated_at: 2011-07-16 06:33:58.138660 Z
+  gmt_offset: 5.0
+  id: 242
+  dst_offset: 5.0
+- name: Asia/Kashgar
+  created_at: 2011-07-16 06:33:58.143283 Z
+  updated_at: 2011-07-16 06:33:58.143283 Z
+  gmt_offset: 8.0
+  id: 243
+  dst_offset: 8.0
+- name: Asia/Kathmandu
+  created_at: 2011-07-16 06:33:58.148275 Z
+  updated_at: 2011-07-16 06:33:58.148275 Z
+  gmt_offset: 5.75
+  id: 244
+  dst_offset: 5.75
+- name: Asia/Kolkata
+  created_at: 2011-07-16 06:33:58.152552 Z
+  updated_at: 2011-07-16 06:33:58.152552 Z
+  gmt_offset: 5.5
+  id: 245
+  dst_offset: 5.5
+- name: Asia/Krasnoyarsk
+  created_at: 2011-07-16 06:33:58.158314 Z
+  updated_at: 2011-07-16 06:33:58.158314 Z
+  gmt_offset: 7.0
+  id: 246
+  dst_offset: 8.0
+- name: Asia/Kuala_Lumpur
+  created_at: 2011-07-16 06:33:58.162526 Z
+  updated_at: 2011-07-16 06:33:58.162526 Z
+  gmt_offset: 8.0
+  id: 247
+  dst_offset: 8.0
+- name: Asia/Kuching
+  created_at: 2011-07-16 06:33:58.167270 Z
+  updated_at: 2011-07-16 06:33:58.167270 Z
+  gmt_offset: 8.0
+  id: 248
+  dst_offset: 8.0
+- name: Asia/Kuwait
+  created_at: 2011-07-16 06:33:58.172437 Z
+  updated_at: 2011-07-16 06:33:58.172437 Z
+  gmt_offset: 3.0
+  id: 249
+  dst_offset: 3.0
+- name: Asia/Macau
+  created_at: 2011-07-16 06:33:58.177058 Z
+  updated_at: 2011-07-16 06:33:58.177058 Z
+  gmt_offset: 8.0
+  id: 250
+  dst_offset: 8.0
+- name: Asia/Magadan
+  created_at: 2011-07-16 06:33:58.181530 Z
+  updated_at: 2011-07-16 06:33:58.181530 Z
+  gmt_offset: 11.0
+  id: 251
+  dst_offset: 12.0
+- name: Asia/Makassar
+  created_at: 2011-07-16 06:33:58.185889 Z
+  updated_at: 2011-07-16 06:33:58.185889 Z
+  gmt_offset: 8.0
+  id: 252
+  dst_offset: 8.0
+- name: Asia/Manila
+  created_at: 2011-07-16 06:33:58.190237 Z
+  updated_at: 2011-07-16 06:33:58.190237 Z
+  gmt_offset: 8.0
+  id: 253
+  dst_offset: 8.0
+- name: Asia/Muscat
+  created_at: 2011-07-16 06:33:58.194620 Z
+  updated_at: 2011-07-16 06:33:58.194620 Z
+  gmt_offset: 4.0
+  id: 254
+  dst_offset: 4.0
+- name: Asia/Nicosia
+  created_at: 2011-07-16 06:33:58.199003 Z
+  updated_at: 2011-07-16 06:33:58.199003 Z
+  gmt_offset: 2.0
+  id: 255
+  dst_offset: 3.0
+- name: Asia/Novokuznetsk
+  created_at: 2011-07-16 06:33:58.206428 Z
+  updated_at: 2011-07-16 06:33:58.206428 Z
+  gmt_offset: 6.0
+  id: 256
+  dst_offset: 7.0
+- name: Asia/Novosibirsk
+  created_at: 2011-07-16 06:33:58.211116 Z
+  updated_at: 2011-07-16 06:33:58.211116 Z
+  gmt_offset: 6.0
+  id: 257
+  dst_offset: 7.0
+- name: Asia/Omsk
+  created_at: 2011-07-16 06:33:58.215532 Z
+  updated_at: 2011-07-16 06:33:58.215532 Z
+  gmt_offset: 6.0
+  id: 258
+  dst_offset: 7.0
+- name: Asia/Oral
+  created_at: 2011-07-16 06:33:58.219739 Z
+  updated_at: 2011-07-16 06:33:58.219739 Z
+  gmt_offset: 5.0
+  id: 259
+  dst_offset: 5.0
+- name: Asia/Phnom_Penh
+  created_at: 2011-07-16 06:33:58.224002 Z
+  updated_at: 2011-07-16 06:33:58.224002 Z
+  gmt_offset: 7.0
+  id: 260
+  dst_offset: 7.0
+- name: Asia/Pontianak
+  created_at: 2011-07-16 06:33:58.228187 Z
+  updated_at: 2011-07-16 06:33:58.228187 Z
+  gmt_offset: 7.0
+  id: 261
+  dst_offset: 7.0
+- name: Asia/Pyongyang
+  created_at: 2011-07-16 06:33:58.232544 Z
+  updated_at: 2011-07-16 06:33:58.232544 Z
+  gmt_offset: 9.0
+  id: 262
+  dst_offset: 9.0
+- name: Asia/Qatar
+  created_at: 2011-07-16 06:33:58.238262 Z
+  updated_at: 2011-07-16 06:33:58.238262 Z
+  gmt_offset: 3.0
+  id: 263
+  dst_offset: 3.0
+- name: Asia/Qyzylorda
+  created_at: 2011-07-16 06:33:58.242975 Z
+  updated_at: 2011-07-16 06:33:58.242975 Z
+  gmt_offset: 6.0
+  id: 264
+  dst_offset: 6.0
+- name: Asia/Rangoon
+  created_at: 2011-07-16 06:33:58.336678 Z
+  updated_at: 2011-07-16 06:33:58.336678 Z
+  gmt_offset: 6.5
+  id: 265
+  dst_offset: 6.5
+- name: Asia/Riyadh
+  created_at: 2011-07-16 06:33:58.342714 Z
+  updated_at: 2011-07-16 06:33:58.342714 Z
+  gmt_offset: 3.0
+  id: 266
+  dst_offset: 3.0
+- name: Asia/Sakhalin
+  created_at: 2011-07-16 06:33:58.347029 Z
+  updated_at: 2011-07-16 06:33:58.347029 Z
+  gmt_offset: 10.0
+  id: 267
+  dst_offset: 11.0
+- name: Asia/Samarkand
+  created_at: 2011-07-16 06:33:58.353113 Z
+  updated_at: 2011-07-16 06:33:58.353113 Z
+  gmt_offset: 5.0
+  id: 268
+  dst_offset: 5.0
+- name: Asia/Seoul
+  created_at: 2011-07-16 06:33:58.357383 Z
+  updated_at: 2011-07-16 06:33:58.357383 Z
+  gmt_offset: 9.0
+  id: 269
+  dst_offset: 9.0
+- name: Asia/Shanghai
+  created_at: 2011-07-16 06:33:58.361769 Z
+  updated_at: 2011-07-16 06:33:58.361769 Z
+  gmt_offset: 8.0
+  id: 270
+  dst_offset: 8.0
+- name: Asia/Singapore
+  created_at: 2011-07-16 06:33:58.366563 Z
+  updated_at: 2011-07-16 06:33:58.366563 Z
+  gmt_offset: 8.0
+  id: 271
+  dst_offset: 8.0
+- name: Asia/Taipei
+  created_at: 2011-07-16 06:33:58.372036 Z
+  updated_at: 2011-07-16 06:33:58.372036 Z
+  gmt_offset: 8.0
+  id: 272
+  dst_offset: 8.0
+- name: Asia/Tashkent
+  created_at: 2011-07-16 06:33:58.377409 Z
+  updated_at: 2011-07-16 06:33:58.377409 Z
+  gmt_offset: 5.0
+  id: 273
+  dst_offset: 5.0
+- name: Asia/Tbilisi
+  created_at: 2011-07-16 06:33:58.381782 Z
+  updated_at: 2011-07-16 06:33:58.381782 Z
+  gmt_offset: 4.0
+  id: 274
+  dst_offset: 4.0
+- name: Asia/Tehran
+  created_at: 2011-07-16 06:33:58.386542 Z
+  updated_at: 2011-07-16 06:33:58.386542 Z
+  gmt_offset: 3.5
+  id: 275
+  dst_offset: 4.5
+- name: Asia/Thimphu
+  created_at: 2011-07-16 06:33:58.390744 Z
+  updated_at: 2011-07-16 06:33:58.390744 Z
+  gmt_offset: 6.0
+  id: 276
+  dst_offset: 6.0
+- name: Asia/Tokyo
+  created_at: 2011-07-16 06:33:58.395093 Z
+  updated_at: 2011-07-16 06:33:58.395093 Z
+  gmt_offset: 9.0
+  id: 277
+  dst_offset: 9.0
+- name: Asia/Ulaanbaatar
+  created_at: 2011-07-16 06:33:58.399761 Z
+  updated_at: 2011-07-16 06:33:58.399761 Z
+  gmt_offset: 8.0
+  id: 278
+  dst_offset: 8.0
+- name: Asia/Urumqi
+  created_at: 2011-07-16 06:33:58.404716 Z
+  updated_at: 2011-07-16 06:33:58.404716 Z
+  gmt_offset: 8.0
+  id: 279
+  dst_offset: 8.0
+- name: Asia/Vientiane
+  created_at: 2011-07-16 06:33:58.409680 Z
+  updated_at: 2011-07-16 06:33:58.409680 Z
+  gmt_offset: 7.0
+  id: 280
+  dst_offset: 7.0
+- name: Asia/Vladivostok
+  created_at: 2011-07-16 06:33:58.414042 Z
+  updated_at: 2011-07-16 06:33:58.414042 Z
+  gmt_offset: 10.0
+  id: 281
+  dst_offset: 11.0
+- name: Asia/Yakutsk
+  created_at: 2011-07-16 06:33:58.418538 Z
+  updated_at: 2011-07-16 06:33:58.418538 Z
+  gmt_offset: 9.0
+  id: 282
+  dst_offset: 10.0
+- name: Asia/Yekaterinburg
+  created_at: 2011-07-16 06:33:58.422756 Z
+  updated_at: 2011-07-16 06:33:58.422756 Z
+  gmt_offset: 5.0
+  id: 283
+  dst_offset: 6.0
+- name: Asia/Yerevan
+  created_at: 2011-07-16 06:33:58.426958 Z
+  updated_at: 2011-07-16 06:33:58.426958 Z
+  gmt_offset: 4.0
+  id: 284
+  dst_offset: 5.0
+- name: Atlantic/Azores
+  created_at: 2011-07-16 06:33:58.431357 Z
+  updated_at: 2011-07-16 06:33:58.431357 Z
+  gmt_offset: -1.0
+  id: 285
+  dst_offset: 0.0
+- name: Atlantic/Bermuda
+  created_at: 2011-07-16 06:33:58.436032 Z
+  updated_at: 2011-07-16 06:33:58.436032 Z
+  gmt_offset: -4.0
+  id: 286
+  dst_offset: -3.0
+- name: Atlantic/Canary
+  created_at: 2011-07-16 06:33:58.440469 Z
+  updated_at: 2011-07-16 06:33:58.440469 Z
+  gmt_offset: 0.0
+  id: 287
+  dst_offset: 1.0
+- name: Atlantic/Cape_Verde
+  created_at: 2011-07-16 06:33:58.445643 Z
+  updated_at: 2011-07-16 06:33:58.445643 Z
+  gmt_offset: -1.0
+  id: 288
+  dst_offset: -1.0
+- name: Atlantic/Faroe
+  created_at: 2011-07-16 06:33:58.449786 Z
+  updated_at: 2011-07-16 06:33:58.449786 Z
+  gmt_offset: 0.0
+  id: 289
+  dst_offset: 1.0
+- name: Atlantic/Madeira
+  created_at: 2011-07-16 06:33:58.454052 Z
+  updated_at: 2011-07-16 06:33:58.454052 Z
+  gmt_offset: 0.0
+  id: 290
+  dst_offset: 1.0
+- name: Atlantic/Reykjavik
+  created_at: 2011-07-16 06:33:58.458030 Z
+  updated_at: 2011-07-16 06:33:58.458030 Z
+  gmt_offset: 0.0
+  id: 291
+  dst_offset: 0.0
+- name: Atlantic/South_Georgia
+  created_at: 2011-07-16 06:33:58.462205 Z
+  updated_at: 2011-07-16 06:33:58.462205 Z
+  gmt_offset: -2.0
+  id: 292
+  dst_offset: -2.0
+- name: Atlantic/St_Helena
+  created_at: 2011-07-16 06:33:58.467832 Z
+  updated_at: 2011-07-16 06:33:58.467832 Z
+  gmt_offset: 0.0
+  id: 293
+  dst_offset: 0.0
+- name: Atlantic/Stanley
+  created_at: 2011-07-16 06:33:58.472330 Z
+  updated_at: 2011-07-16 06:33:58.472330 Z
+  gmt_offset: -3.0
+  id: 294
+  dst_offset: -4.0
+- name: Australia/Adelaide
+  created_at: 2011-07-16 06:33:58.476455 Z
+  updated_at: 2011-07-16 06:33:58.476455 Z
+  gmt_offset: 10.5
+  id: 295
+  dst_offset: 9.5
+- name: Australia/Brisbane
+  created_at: 2011-07-16 06:33:58.481056 Z
+  updated_at: 2011-07-16 06:33:58.481056 Z
+  gmt_offset: 10.0
+  id: 296
+  dst_offset: 10.0
+- name: Australia/Broken_Hill
+  created_at: 2011-07-16 06:33:58.485344 Z
+  updated_at: 2011-07-16 06:33:58.485344 Z
+  gmt_offset: 10.5
+  id: 297
+  dst_offset: 9.5
+- name: Australia/Currie
+  created_at: 2011-07-16 06:33:58.489300 Z
+  updated_at: 2011-07-16 06:33:58.489300 Z
+  gmt_offset: 11.0
+  id: 298
+  dst_offset: 10.0
+- name: Australia/Darwin
+  created_at: 2011-07-16 06:33:58.493438 Z
+  updated_at: 2011-07-16 06:33:58.493438 Z
+  gmt_offset: 9.5
+  id: 299
+  dst_offset: 9.5
+- name: Australia/Eucla
+  created_at: 2011-07-16 06:33:58.497485 Z
+  updated_at: 2011-07-16 06:33:58.497485 Z
+  gmt_offset: 8.75
+  id: 300
+  dst_offset: 8.75
+- name: Australia/Hobart
+  created_at: 2011-07-16 06:33:58.503758 Z
+  updated_at: 2011-07-16 06:33:58.503758 Z
+  gmt_offset: 11.0
+  id: 301
+  dst_offset: 10.0
+- name: Australia/Lindeman
+  created_at: 2011-07-16 06:33:58.509359 Z
+  updated_at: 2011-07-16 06:33:58.509359 Z
+  gmt_offset: 10.0
+  id: 302
+  dst_offset: 10.0
+- name: Australia/Lord_Howe
+  created_at: 2011-07-16 06:33:58.513889 Z
+  updated_at: 2011-07-16 06:33:58.513889 Z
+  gmt_offset: 11.0
+  id: 303
+  dst_offset: 10.5
+- name: Australia/Melbourne
+  created_at: 2011-07-16 06:33:58.518649 Z
+  updated_at: 2011-07-16 06:33:58.518649 Z
+  gmt_offset: 11.0
+  id: 304
+  dst_offset: 10.0
+- name: Australia/Perth
+  created_at: 2011-07-16 06:33:58.522821 Z
+  updated_at: 2011-07-16 06:33:58.522821 Z
+  gmt_offset: 8.0
+  id: 305
+  dst_offset: 8.0
+- name: Australia/Sydney
+  created_at: 2011-07-16 06:33:58.527027 Z
+  updated_at: 2011-07-16 06:33:58.527027 Z
+  gmt_offset: 11.0
+  id: 306
+  dst_offset: 10.0
+- name: Europe/Amsterdam
+  created_at: 2011-07-16 06:33:58.531212 Z
+  updated_at: 2011-07-16 06:33:58.531212 Z
+  gmt_offset: 1.0
+  id: 307
+  dst_offset: 2.0
+- name: Europe/Andorra
+  created_at: 2011-07-16 06:33:58.536836 Z
+  updated_at: 2011-07-16 06:33:58.536836 Z
+  gmt_offset: 1.0
+  id: 308
+  dst_offset: 2.0
+- name: Europe/Athens
+  created_at: 2011-07-16 06:33:58.541822 Z
+  updated_at: 2011-07-16 06:33:58.541822 Z
+  gmt_offset: 2.0
+  id: 309
+  dst_offset: 3.0
+- name: Europe/Belgrade
+  created_at: 2011-07-16 06:33:58.545930 Z
+  updated_at: 2011-07-16 06:33:58.545930 Z
+  gmt_offset: 1.0
+  id: 310
+  dst_offset: 2.0
+- name: Europe/Berlin
+  created_at: 2011-07-16 06:33:58.550224 Z
+  updated_at: 2011-07-16 06:33:58.550224 Z
+  gmt_offset: 1.0
+  id: 311
+  dst_offset: 2.0
+- name: Europe/Bratislava
+  created_at: 2011-07-16 06:33:58.554227 Z
+  updated_at: 2011-07-16 06:33:58.554227 Z
+  gmt_offset: 1.0
+  id: 312
+  dst_offset: 2.0
+- name: Europe/Brussels
+  created_at: 2011-07-16 06:33:58.558370 Z
+  updated_at: 2011-07-16 06:33:58.558370 Z
+  gmt_offset: 1.0
+  id: 313
+  dst_offset: 2.0
+- name: Europe/Bucharest
+  created_at: 2011-07-16 06:33:58.563496 Z
+  updated_at: 2011-07-16 06:33:58.563496 Z
+  gmt_offset: 2.0
+  id: 314
+  dst_offset: 3.0
+- name: Europe/Budapest
+  created_at: 2011-07-16 06:33:58.568084 Z
+  updated_at: 2011-07-16 06:33:58.568084 Z
+  gmt_offset: 1.0
+  id: 315
+  dst_offset: 2.0
+- name: Europe/Chisinau
+  created_at: 2011-07-16 06:33:58.577306 Z
+  updated_at: 2011-07-16 06:33:58.577306 Z
+  gmt_offset: 2.0
+  id: 316
+  dst_offset: 3.0
+- name: Europe/Copenhagen
+  created_at: 2011-07-16 06:33:58.581839 Z
+  updated_at: 2011-07-16 06:33:58.581839 Z
+  gmt_offset: 1.0
+  id: 317
+  dst_offset: 2.0
+- name: Europe/Dublin
+  created_at: 2011-07-16 06:33:58.586796 Z
+  updated_at: 2011-07-16 06:33:58.586796 Z
+  gmt_offset: 0.0
+  id: 318
+  dst_offset: 1.0
+- name: Europe/Gibraltar
+  created_at: 2011-07-16 06:33:58.590874 Z
+  updated_at: 2011-07-16 06:33:58.590874 Z
+  gmt_offset: 1.0
+  id: 319
+  dst_offset: 2.0
+- name: Europe/Guernsey
+  created_at: 2011-07-16 06:33:58.595103 Z
+  updated_at: 2011-07-16 06:33:58.595103 Z
+  gmt_offset: 0.0
+  id: 320
+  dst_offset: 1.0
+- name: Europe/Helsinki
+  created_at: 2011-07-16 06:33:58.600589 Z
+  updated_at: 2011-07-16 06:33:58.600589 Z
+  gmt_offset: 2.0
+  id: 321
+  dst_offset: 3.0
+- name: Europe/Isle_of_Man
+  created_at: 2011-07-16 06:33:58.604987 Z
+  updated_at: 2011-07-16 06:33:58.604987 Z
+  gmt_offset: 0.0
+  id: 322
+  dst_offset: 1.0
+- name: Europe/Istanbul
+  created_at: 2011-07-16 06:33:58.609196 Z
+  updated_at: 2011-07-16 06:33:58.609196 Z
+  gmt_offset: 2.0
+  id: 323
+  dst_offset: 3.0
+- name: Europe/Jersey
+  created_at: 2011-07-16 06:33:58.613492 Z
+  updated_at: 2011-07-16 06:33:58.613492 Z
+  gmt_offset: 0.0
+  id: 324
+  dst_offset: 1.0
+- name: Europe/Kaliningrad
+  created_at: 2011-07-16 06:33:58.617735 Z
+  updated_at: 2011-07-16 06:33:58.617735 Z
+  gmt_offset: 2.0
+  id: 325
+  dst_offset: 3.0
+- name: Europe/Kiev
+  created_at: 2011-07-16 06:33:58.621849 Z
+  updated_at: 2011-07-16 06:33:58.621849 Z
+  gmt_offset: 2.0
+  id: 326
+  dst_offset: 3.0
+- name: Europe/Lisbon
+  created_at: 2011-07-16 06:33:58.626309 Z
+  updated_at: 2011-07-16 06:33:58.626309 Z
+  gmt_offset: 0.0
+  id: 327
+  dst_offset: 1.0
+- name: Europe/Ljubljana
+  created_at: 2011-07-16 06:33:58.630265 Z
+  updated_at: 2011-07-16 06:33:58.630265 Z
+  gmt_offset: 1.0
+  id: 328
+  dst_offset: 2.0
+- name: Europe/London
+  created_at: 2011-07-16 06:33:58.635130 Z
+  updated_at: 2011-07-16 06:33:58.635130 Z
+  gmt_offset: 0.0
+  id: 329
+  dst_offset: 1.0
+- name: Europe/Luxembourg
+  created_at: 2011-07-16 06:33:58.640422 Z
+  updated_at: 2011-07-16 06:33:58.640422 Z
+  gmt_offset: 1.0
+  id: 330
+  dst_offset: 2.0
+- name: Europe/Madrid
+  created_at: 2011-07-16 06:33:58.644823 Z
+  updated_at: 2011-07-16 06:33:58.644823 Z
+  gmt_offset: 1.0
+  id: 331
+  dst_offset: 2.0
+- name: Europe/Malta
+  created_at: 2011-07-16 06:33:58.649435 Z
+  updated_at: 2011-07-16 06:33:58.649435 Z
+  gmt_offset: 1.0
+  id: 332
+  dst_offset: 2.0
+- name: Europe/Mariehamn
+  created_at: 2011-07-16 06:33:58.653417 Z
+  updated_at: 2011-07-16 06:33:58.653417 Z
+  gmt_offset: 2.0
+  id: 333
+  dst_offset: 3.0
+- name: Europe/Minsk
+  created_at: 2011-07-16 06:33:58.657574 Z
+  updated_at: 2011-07-16 06:33:58.657574 Z
+  gmt_offset: 2.0
+  id: 334
+  dst_offset: 3.0
+- name: Europe/Monaco
+  created_at: 2011-07-16 06:33:58.661845 Z
+  updated_at: 2011-07-16 06:33:58.661845 Z
+  gmt_offset: 1.0
+  id: 335
+  dst_offset: 2.0
+- name: Europe/Moscow
+  created_at: 2011-07-16 06:33:58.666303 Z
+  updated_at: 2011-07-16 06:33:58.666303 Z
+  gmt_offset: 3.0
+  id: 336
+  dst_offset: 4.0
+- name: Europe/Oslo
+  created_at: 2011-07-16 06:33:58.670794 Z
+  updated_at: 2011-07-16 06:33:58.670794 Z
+  gmt_offset: 1.0
+  id: 337
+  dst_offset: 2.0
+- name: Europe/Paris
+  created_at: 2011-07-16 06:33:58.675154 Z
+  updated_at: 2011-07-16 06:33:58.675154 Z
+  gmt_offset: 1.0
+  id: 338
+  dst_offset: 2.0
+- name: Europe/Podgorica
+  created_at: 2011-07-16 06:33:58.679350 Z
+  updated_at: 2011-07-16 06:33:58.679350 Z
+  gmt_offset: 1.0
+  id: 339
+  dst_offset: 2.0
+- name: Europe/Prague
+  created_at: 2011-07-16 06:33:58.683940 Z
+  updated_at: 2011-07-16 06:33:58.683940 Z
+  gmt_offset: 1.0
+  id: 340
+  dst_offset: 2.0
+- name: Europe/Riga
+  created_at: 2011-07-16 06:33:58.688159 Z
+  updated_at: 2011-07-16 06:33:58.688159 Z
+  gmt_offset: 2.0
+  id: 341
+  dst_offset: 3.0
+- name: Europe/Rome
+  created_at: 2011-07-16 06:33:58.692091 Z
+  updated_at: 2011-07-16 06:33:58.692091 Z
+  gmt_offset: 1.0
+  id: 342
+  dst_offset: 2.0
+- name: Europe/Samara
+  created_at: 2011-07-16 06:33:58.696252 Z
+  updated_at: 2011-07-16 06:33:58.696252 Z
+  gmt_offset: 3.0
+  id: 343
+  dst_offset: 4.0
+- name: Europe/San_Marino
+  created_at: 2011-07-16 06:33:58.701298 Z
+  updated_at: 2011-07-16 06:33:58.701298 Z
+  gmt_offset: 1.0
+  id: 344
+  dst_offset: 2.0
+- name: Europe/Sarajevo
+  created_at: 2011-07-16 06:33:58.705869 Z
+  updated_at: 2011-07-16 06:33:58.705869 Z
+  gmt_offset: 1.0
+  id: 345
+  dst_offset: 2.0
+- name: Europe/Simferopol
+  created_at: 2011-07-16 06:33:58.710239 Z
+  updated_at: 2011-07-16 06:33:58.710239 Z
+  gmt_offset: 2.0
+  id: 346
+  dst_offset: 3.0
+- name: Europe/Skopje
+  created_at: 2011-07-16 06:33:58.714967 Z
+  updated_at: 2011-07-16 06:33:58.714967 Z
+  gmt_offset: 1.0
+  id: 347
+  dst_offset: 2.0
+- name: Europe/Sofia
+  created_at: 2011-07-16 06:33:58.719351 Z
+  updated_at: 2011-07-16 06:33:58.719351 Z
+  gmt_offset: 2.0
+  id: 348
+  dst_offset: 3.0
+- name: Europe/Stockholm
+  created_at: 2011-07-16 06:33:58.723191 Z
+  updated_at: 2011-07-16 06:33:58.723191 Z
+  gmt_offset: 1.0
+  id: 349
+  dst_offset: 2.0
+- name: Europe/Tallinn
+  created_at: 2011-07-16 06:33:58.727204 Z
+  updated_at: 2011-07-16 06:33:58.727204 Z
+  gmt_offset: 2.0
+  id: 350
+  dst_offset: 3.0
+- name: Europe/Tirane
+  created_at: 2011-07-16 06:33:58.731507 Z
+  updated_at: 2011-07-16 06:33:58.731507 Z
+  gmt_offset: 1.0
+  id: 351
+  dst_offset: 2.0
+- name: Europe/Uzhgorod
+  created_at: 2011-07-16 06:33:58.736782 Z
+  updated_at: 2011-07-16 06:33:58.736782 Z
+  gmt_offset: 2.0
+  id: 352
+  dst_offset: 3.0
+- name: Europe/Vaduz
+  created_at: 2011-07-16 06:33:58.741718 Z
+  updated_at: 2011-07-16 06:33:58.741718 Z
+  gmt_offset: 1.0
+  id: 353
+  dst_offset: 2.0
+- name: Europe/Vatican
+  created_at: 2011-07-16 06:33:58.746295 Z
+  updated_at: 2011-07-16 06:33:58.746295 Z
+  gmt_offset: 1.0
+  id: 354
+  dst_offset: 2.0
+- name: Europe/Vienna
+  created_at: 2011-07-16 06:33:58.750915 Z
+  updated_at: 2011-07-16 06:33:58.750915 Z
+  gmt_offset: 1.0
+  id: 355
+  dst_offset: 2.0
+- name: Europe/Vilnius
+  created_at: 2011-07-16 06:33:58.757956 Z
+  updated_at: 2011-07-16 06:33:58.757956 Z
+  gmt_offset: 2.0
+  id: 356
+  dst_offset: 3.0
+- name: Europe/Volgograd
+  created_at: 2011-07-16 06:33:58.762676 Z
+  updated_at: 2011-07-16 06:33:58.762676 Z
+  gmt_offset: 3.0
+  id: 357
+  dst_offset: 4.0
+- name: Europe/Warsaw
+  created_at: 2011-07-16 06:33:58.775808 Z
+  updated_at: 2011-07-16 06:33:58.775808 Z
+  gmt_offset: 1.0
+  id: 358
+  dst_offset: 2.0
+- name: Europe/Zagreb
+  created_at: 2011-07-16 06:33:58.780314 Z
+  updated_at: 2011-07-16 06:33:58.780314 Z
+  gmt_offset: 1.0
+  id: 359
+  dst_offset: 2.0
+- name: Europe/Zaporozhye
+  created_at: 2011-07-16 06:33:58.784909 Z
+  updated_at: 2011-07-16 06:33:58.784909 Z
+  gmt_offset: 2.0
+  id: 360
+  dst_offset: 3.0
+- name: Europe/Zurich
+  created_at: 2011-07-16 06:33:58.789218 Z
+  updated_at: 2011-07-16 06:33:58.789218 Z
+  gmt_offset: 1.0
+  id: 361
+  dst_offset: 2.0
+- name: Indian/Antananarivo
+  created_at: 2011-07-16 06:33:58.793334 Z
+  updated_at: 2011-07-16 06:33:58.793334 Z
+  gmt_offset: 3.0
+  id: 362
+  dst_offset: 3.0
+- name: Indian/Chagos
+  created_at: 2011-07-16 06:33:58.797775 Z
+  updated_at: 2011-07-16 06:33:58.797775 Z
+  gmt_offset: 6.0
+  id: 363
+  dst_offset: 6.0
+- name: Indian/Christmas
+  created_at: 2011-07-16 06:33:58.804846 Z
+  updated_at: 2011-07-16 06:33:58.804846 Z
+  gmt_offset: 7.0
+  id: 364
+  dst_offset: 7.0
+- name: Indian/Cocos
+  created_at: 2011-07-16 06:33:58.809803 Z
+  updated_at: 2011-07-16 06:33:58.809803 Z
+  gmt_offset: 6.5
+  id: 365
+  dst_offset: 6.5
+- name: Indian/Comoro
+  created_at: 2011-07-16 06:33:58.813970 Z
+  updated_at: 2011-07-16 06:33:58.813970 Z
+  gmt_offset: 3.0
+  id: 366
+  dst_offset: 3.0
+- name: Indian/Kerguelen
+  created_at: 2011-07-16 06:33:58.818333 Z
+  updated_at: 2011-07-16 06:33:58.818333 Z
+  gmt_offset: 5.0
+  id: 367
+  dst_offset: 5.0
+- name: Indian/Mahe
+  created_at: 2011-07-16 06:33:58.822688 Z
+  updated_at: 2011-07-16 06:33:58.822688 Z
+  gmt_offset: 4.0
+  id: 368
+  dst_offset: 4.0
+- name: Indian/Maldives
+  created_at: 2011-07-16 06:33:58.916521 Z
+  updated_at: 2011-07-16 06:33:58.916521 Z
+  gmt_offset: 5.0
+  id: 369
+  dst_offset: 5.0
+- name: Indian/Mauritius
+  created_at: 2011-07-16 06:33:58.922566 Z
+  updated_at: 2011-07-16 06:33:58.922566 Z
+  gmt_offset: 4.0
+  id: 370
+  dst_offset: 4.0
+- name: Indian/Mayotte
+  created_at: 2011-07-16 06:33:58.927748 Z
+  updated_at: 2011-07-16 06:33:58.927748 Z
+  gmt_offset: 3.0
+  id: 371
+  dst_offset: 3.0
+- name: Indian/Reunion
+  created_at: 2011-07-16 06:33:58.932103 Z
+  updated_at: 2011-07-16 06:33:58.932103 Z
+  gmt_offset: 4.0
+  id: 372
+  dst_offset: 4.0
+- name: Pacific/Apia
+  created_at: 2011-07-16 06:33:58.937250 Z
+  updated_at: 2011-07-16 06:33:58.937250 Z
+  gmt_offset: -10.0
+  id: 373
+  dst_offset: -11.0
+- name: Pacific/Auckland
+  created_at: 2011-07-16 06:33:58.942165 Z
+  updated_at: 2011-07-16 06:33:58.942165 Z
+  gmt_offset: 13.0
+  id: 374
+  dst_offset: 12.0
+- name: Pacific/Chatham
+  created_at: 2011-07-16 06:33:58.946596 Z
+  updated_at: 2011-07-16 06:33:58.946596 Z
+  gmt_offset: 13.75
+  id: 375
+  dst_offset: 12.75
+- name: Pacific/Chuuk
+  created_at: 2011-07-16 06:33:58.951045 Z
+  updated_at: 2011-07-16 06:33:58.951045 Z
+  gmt_offset: 10.0
+  id: 376
+  dst_offset: 10.0
+- name: Pacific/Easter
+  created_at: 2011-07-16 06:33:58.955296 Z
+  updated_at: 2011-07-16 06:33:58.955296 Z
+  gmt_offset: -5.0
+  id: 377
+  dst_offset: -6.0
+- name: Pacific/Efate
+  created_at: 2011-07-16 06:33:58.959549 Z
+  updated_at: 2011-07-16 06:33:58.959549 Z
+  gmt_offset: 11.0
+  id: 378
+  dst_offset: 11.0
+- name: Pacific/Enderbury
+  created_at: 2011-07-16 06:33:58.964153 Z
+  updated_at: 2011-07-16 06:33:58.964153 Z
+  gmt_offset: 13.0
+  id: 379
+  dst_offset: 13.0
+- name: Pacific/Fakaofo
+  created_at: 2011-07-16 06:33:58.976551 Z
+  updated_at: 2011-07-16 06:33:58.976551 Z
+  gmt_offset: -10.0
+  id: 380
+  dst_offset: -10.0
+- name: Pacific/Fiji
+  created_at: 2011-07-16 06:33:58.981476 Z
+  updated_at: 2011-07-16 06:33:58.981476 Z
+  gmt_offset: 13.0
+  id: 381
+  dst_offset: 12.0
+- name: Pacific/Funafuti
+  created_at: 2011-07-16 06:33:58.988887 Z
+  updated_at: 2011-07-16 06:33:58.988887 Z
+  gmt_offset: 12.0
+  id: 382
+  dst_offset: 12.0
+- name: Pacific/Galapagos
+  created_at: 2011-07-16 06:33:58.994026 Z
+  updated_at: 2011-07-16 06:33:58.994026 Z
+  gmt_offset: -6.0
+  id: 383
+  dst_offset: -6.0
+- name: Pacific/Gambier
+  created_at: 2011-07-16 06:33:58.999130 Z
+  updated_at: 2011-07-16 06:33:58.999130 Z
+  gmt_offset: -9.0
+  id: 384
+  dst_offset: -9.0
+- name: Pacific/Guadalcanal
+  created_at: 2011-07-16 06:33:59.005194 Z
+  updated_at: 2011-07-16 06:33:59.005194 Z
+  gmt_offset: 11.0
+  id: 385
+  dst_offset: 11.0
+- name: Pacific/Guam
+  created_at: 2011-07-16 06:33:59.009431 Z
+  updated_at: 2011-07-16 06:33:59.009431 Z
+  gmt_offset: 10.0
+  id: 386
+  dst_offset: 10.0
+- name: Pacific/Honolulu
+  created_at: 2011-07-16 06:33:59.013342 Z
+  updated_at: 2011-07-16 06:33:59.013342 Z
+  gmt_offset: -10.0
+  id: 387
+  dst_offset: -10.0
+- name: Pacific/Johnston
+  created_at: 2011-07-16 06:33:59.018035 Z
+  updated_at: 2011-07-16 06:33:59.018035 Z
+  gmt_offset: -10.0
+  id: 388
+  dst_offset: -10.0
+- name: Pacific/Kiritimati
+  created_at: 2011-07-16 06:33:59.022242 Z
+  updated_at: 2011-07-16 06:33:59.022242 Z
+  gmt_offset: 14.0
+  id: 389
+  dst_offset: 14.0
+- name: Pacific/Kosrae
+  created_at: 2011-07-16 06:33:59.026473 Z
+  updated_at: 2011-07-16 06:33:59.026473 Z
+  gmt_offset: 11.0
+  id: 390
+  dst_offset: 11.0
+- name: Pacific/Kwajalein
+  created_at: 2011-07-16 06:33:59.030771 Z
+  updated_at: 2011-07-16 06:33:59.030771 Z
+  gmt_offset: 12.0
+  id: 391
+  dst_offset: 12.0
+- name: Pacific/Majuro
+  created_at: 2011-07-16 06:33:59.035868 Z
+  updated_at: 2011-07-16 06:33:59.035868 Z
+  gmt_offset: 12.0
+  id: 392
+  dst_offset: 12.0
+- name: Pacific/Marquesas
+  created_at: 2011-07-16 06:33:59.040206 Z
+  updated_at: 2011-07-16 06:33:59.040206 Z
+  gmt_offset: -9.5
+  id: 393
+  dst_offset: -9.5
+- name: Pacific/Midway
+  created_at: 2011-07-16 06:33:59.044483 Z
+  updated_at: 2011-07-16 06:33:59.044483 Z
+  gmt_offset: -11.0
+  id: 394
+  dst_offset: -11.0
+- name: Pacific/Nauru
+  created_at: 2011-07-16 06:33:59.048760 Z
+  updated_at: 2011-07-16 06:33:59.048760 Z
+  gmt_offset: 12.0
+  id: 395
+  dst_offset: 12.0
+- name: Pacific/Niue
+  created_at: 2011-07-16 06:33:59.053153 Z
+  updated_at: 2011-07-16 06:33:59.053153 Z
+  gmt_offset: -11.0
+  id: 396
+  dst_offset: -11.0
+- name: Pacific/Norfolk
+  created_at: 2011-07-16 06:33:59.057084 Z
+  updated_at: 2011-07-16 06:33:59.057084 Z
+  gmt_offset: 11.5
+  id: 397
+  dst_offset: 11.5
+- name: Pacific/Noumea
+  created_at: 2011-07-16 06:33:59.061077 Z
+  updated_at: 2011-07-16 06:33:59.061077 Z
+  gmt_offset: 11.0
+  id: 398
+  dst_offset: 11.0
+- name: Pacific/Pago_Pago
+  created_at: 2011-07-16 06:33:59.065709 Z
+  updated_at: 2011-07-16 06:33:59.065709 Z
+  gmt_offset: -11.0
+  id: 399
+  dst_offset: -11.0
+- name: Pacific/Palau
+  created_at: 2011-07-16 06:33:59.070782 Z
+  updated_at: 2011-07-16 06:33:59.070782 Z
+  gmt_offset: 9.0
+  id: 400
+  dst_offset: 9.0
+- name: Pacific/Pitcairn
+  created_at: 2011-07-16 06:33:59.075288 Z
+  updated_at: 2011-07-16 06:33:59.075288 Z
+  gmt_offset: -8.0
+  id: 401
+  dst_offset: -8.0
+- name: Pacific/Pohnpei
+  created_at: 2011-07-16 06:33:59.079460 Z
+  updated_at: 2011-07-16 06:33:59.079460 Z
+  gmt_offset: 11.0
+  id: 402
+  dst_offset: 11.0
+- name: Pacific/Port_Moresby
+  created_at: 2011-07-16 06:33:59.084022 Z
+  updated_at: 2011-07-16 06:33:59.084022 Z
+  gmt_offset: 10.0
+  id: 403
+  dst_offset: 10.0
+- name: Pacific/Rarotonga
+  created_at: 2011-07-16 06:33:59.088385 Z
+  updated_at: 2011-07-16 06:33:59.088385 Z
+  gmt_offset: -10.0
+  id: 404
+  dst_offset: -10.0
+- name: Pacific/Saipan
+  created_at: 2011-07-16 06:33:59.092638 Z
+  updated_at: 2011-07-16 06:33:59.092638 Z
+  gmt_offset: 10.0
+  id: 405
+  dst_offset: 10.0
+- name: Pacific/Tahiti
+  created_at: 2011-07-16 06:33:59.096789 Z
+  updated_at: 2011-07-16 06:33:59.096789 Z
+  gmt_offset: -10.0
+  id: 406
+  dst_offset: -10.0
+- name: Pacific/Tarawa
+  created_at: 2011-07-16 06:33:59.101538 Z
+  updated_at: 2011-07-16 06:33:59.101538 Z
+  gmt_offset: 12.0
+  id: 407
+  dst_offset: 12.0
+- name: Pacific/Tongatapu
+  created_at: 2011-07-16 06:33:59.106493 Z
+  updated_at: 2011-07-16 06:33:59.106493 Z
+  gmt_offset: 13.0
+  id: 408
+  dst_offset: 13.0
+- name: Pacific/Wake
+  created_at: 2011-07-16 06:33:59.110591 Z
+  updated_at: 2011-07-16 06:33:59.110591 Z
+  gmt_offset: 12.0
+  id: 409
+  dst_offset: 12.0
+- name: Pacific/Wallis
+  created_at: 2011-07-16 06:33:59.115095 Z
+  updated_at: 2011-07-16 06:33:59.115095 Z
+  gmt_offset: 12.0
+  id: 410
+  dst_offset: 12.0

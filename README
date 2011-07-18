@@ -4,12 +4,13 @@
 	make sure bundle is installed (gem install bundle)
 	bundle install
 	rake db:schema:dump
-2. Populating Data (always seed first)
+2. Populating Data
+  rake db:backup:load (can take up to 10 minutes)
+3. (optional) Refetch and reparse data
   rake db:seed
-  Geolocation data => see lib/script_geoname.rb
-  Eventful data => see lib/script_eventful.rb (Infinite script. Control-c to stop fetching.)
-  Attraction data => (TODO)
-
+	Geolocation data => see lib/script_geoname.rb
+	Eventful data => see lib/script_eventful.rb (Infinite script. Control-c to stop fetching.)
+	Attraction data => (TODO)
   
 
   
