@@ -24,18 +24,14 @@ gem "nokogiri", "~> 1.5.0"
 gem "curb", "~> 0.7.15"
 gem "hirb", :require => nil
 gem 'event-calendar', '2.3.3', :path => ('vendor/gems/event-calendar-2.3.3'), :require => 'event_calendar'
-#gem 'authlogic', :git => 'git://github.com/binarylogic/authlogic.git' #, :ref => '0297e1c005c626c1e37b'
+gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 gem "simplegeo", "~> 0.5.3"
 #gem "songkick", "~> 0.0.2"
 gem "httparty", "~> 0.7.8"
 gem "yelp", "~> 1.0.0"
 
-gem "ruby-openid"
-gem "rack-openid", ">=0.2.1", :require => "rack/openid"
-gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
-gem "oauth"
 gem "oauth2"
-gem "authlogic-connect"
+gem "koala"
 
 
 # gem 'bj'	

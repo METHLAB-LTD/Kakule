@@ -14,6 +14,10 @@ Kakule::Application.routes.draw do
   post "search/hotels"
   post "search/cars"
   
+  
+  get 'facebook/auth'
+  get 'facebook/callback', :as => :facebook_callback
+  
   resources :attractions, :events, :itineraries, :users, :user_sessions
 
   # The priority is based upon order of creation:

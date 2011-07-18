@@ -147,5 +147,23 @@ $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
+
+
+		// FB.init({
+		// 	    appId  : '190781907646255',
+		// 	    status : true, // check login status
+		// 	    cookie : true, // enable cookies to allow the server to access the session
+		// 	    xfbml  : true  // parse XFBML
+		// 	  });
+		// 	
+		// FB.login(function(response) {
+		//   if (response.session) {
+		// 		console.log(response.session.access_token);
+		// 		//POST this access_token to server, and log user in
+		//   } else {
+		//     // user cancelled login
+		//   }
+		// });
+		
 });
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716084008) do
+ActiveRecord::Schema.define(:version => 20110718053654) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "state"
     t.string   "country"
     t.integer  "population"
     t.integer  "gtopo30"
@@ -82,8 +83,8 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
 
   create_table "timezones", :force => true do |t|
     t.string   "name"
-    t.string   "gmt_offset"
-    t.string   "dst_offset"
+    t.float    "gmt_offset"
+    t.float    "dst_offset"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -94,7 +95,6 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "username"
     t.string   "email"
     t.string   "crypted_password"
     t.string   "password_salt"
@@ -106,10 +106,14 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
     t.datetime "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_guest",          :default => false
+    t.boolean  "is_guest",              :default => false
+    t.string   "facebook_access_token"
+    t.float    "timezone"
+    t.string   "locale"
+    t.string   "facebook_url"
   end
 
-  add_index "users", ["is_guest"], :name => "users_is_guest_index"
+  add_index "users", ["is_guest"], :name => "altered_users_is_guest_index"
 
   create_table "zipcars", :force => true do |t|
     t.string   "location"

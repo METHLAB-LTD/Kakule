@@ -38,6 +38,10 @@ Kakule::Application.configure do
   EXPEDIA_HOTEL_API_KEY = "cfhk5quqg46dxr3am35kd39b"
   EXPEDIA_CID = "55505"
   
+  FACEBOOK_API_KEY = "190781907646255"
+  FACEBOOK_API_SECRET = "44c651314e3cd91d93e4321b207348ea"
+  
+  
   SimpleGeo::Client.set_credentials(SIMPLEGEO_OAUTH_KEY, SIMPLEGEO_SECRET)
 end
 
