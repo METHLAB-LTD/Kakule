@@ -9,6 +9,9 @@ Modernizr.load([
     }
   }, 
   {
+    load: '/javascripts/jquery.editinplace.js'
+  }, 
+  {
     load: '/javascripts/application.js'
   }, 
   { load: '/javascripts/event_calendar.js'

@@ -35,6 +35,13 @@ kakule.init = {
 	        $("#meals .search").toggle();
 	    });
 	},
+
+    attachEditHandlers : function() {
+        $("#itinerary-name").editInPlace({
+		    url: '/itineraries/edit_name',
+		    show_buttons: true
+	    });
+    },
 	
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
@@ -144,5 +151,6 @@ $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
+    kakule.init.attachEditHandlers();
 });
 

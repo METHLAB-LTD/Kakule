@@ -15,28 +15,12 @@ class ApplicationController < ActionController::Base
       end
     end
 
-    def find_or_create_itinerary
-      find_or_create_guest_user
-      itinerary = current_itinerary || create_itinerary
-    end
-
-    def create_itinerary
-      itinerary = Itinerary.create_itinerary(current_user)
-      session[:itinerary] = itinerary.id
-      return itinerary
-    end
+    ### Methods for user sessions
 
     def current_itinerary
-        return @current_itinerary if defined?(@current_itinerary)
-        if session[:itinerary]
-          itinerary = Itinerary.find(session[:itinerary])
-          @current_itinerary = current_user.can_update_itinerary(itinerary) && itinerary
-        end
-        
-        return @current_itinerary
+        find_or_create_guest_user
+        current_user.itineraries.last
     end
-
-    ### Methods for user sessions
 
     def current_user_session
       return @current_user_session if defined?(@current_user_session)

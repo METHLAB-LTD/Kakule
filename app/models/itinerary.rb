@@ -19,7 +19,7 @@ class Itinerary < ActiveRecord::Base
   @@defaults = {
     :name => "Default Title",
     :permission_level => 1,
-    :parent_id => nil
+    :parent_id => 0 
   }
   
   def self.permissions(str)
@@ -29,6 +29,9 @@ class Itinerary < ActiveRecord::Base
   def self.create_itinerary(user)
     itinerary = Itinerary.new(@@defaults)
     itinerary.owner = user
+
+    puts itinerary.save
+    puts itinerary.errors
     return itinerary
   end
 

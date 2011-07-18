@@ -1,11 +1,18 @@
 Kakule::Application.routes.draw do
   match 'calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
-  match 'itineraries/render_day/' => 'itineraries#render_day'
+  get "home/index" 
   get "user_sessions/new", :as => "new_user_session"
   get "users/show", :as => "dashboard"
-  get "home/index" 
+
+  # Calendar
   get "calendar/render_calendar"
+
+  # Itineraries
+  get 'itineraries/render_day' 
+  post 'itineraries/edit_name'
+
+  # Search
   post "search/events"
   post "search/locations"
   get "search/render_geocoding"
@@ -13,7 +20,7 @@ Kakule::Application.routes.draw do
   post "search/flights"
   post "search/hotels"
   post "search/cars"
-  
+
   resources :attractions, :events, :itineraries, :users, :user_sessions
 
   # The priority is based upon order of creation:

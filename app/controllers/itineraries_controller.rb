@@ -73,6 +73,16 @@ class ItinerariesController < ApplicationController
     end
   end
 
+  # POST /itineraries/edit_name
+  def edit_name
+    new_name = params[:update_value]
+    itinerary = current_itinerary
+    itinerary.name = new_name
+    itinerary.save
+
+    render :text => itinerary.name
+  end
+
   # DELETE /itineraries/1
   def destroy
     @itinerary = Itinerary.find(params[:id])
