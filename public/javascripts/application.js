@@ -35,6 +35,13 @@ kakule.init = {
 	        $("#meals .search").toggle();
 	    });
 	},
+
+    attachEditHandlers : function() {
+        $("#itinerary-name").editInPlace({
+		    url: '/itineraries/edit_name',
+		    show_buttons: true
+	    });
+    },
 	
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
@@ -95,8 +102,7 @@ kakule.search = {
 		function callback (response){
             kakule.ui.repopulateAttractions(response);
 		};
-        //kakule.server.searchAttractions({lat : 37.782455, lng : -122.405855}, callback);
-		kakule.server.searchAttractions({'lat': kakule.current.lat, 'long': kakule.current.lng}, callback);
+		kakule.server.searchAttractions({'query': query, 'lat': kakule.current.lat, 'lng': kakule.current.lng}, callback);
 	},
 	
 	locations : function(query){
@@ -126,13 +132,11 @@ kakule.server = {
 
 kakule.ui = {
 	repopulateLocations : function(data) {
-	    console.log(data);
         $("#locations .results").empty();
         $("#locations .results").append(data.html);
 	},
 
     repopulateAttractions : function(data) {
-        console.log(data);
         $("#attractions .results").empty();
         $("#attractions .results").append(data.html);
     },
@@ -147,8 +151,8 @@ $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
-
-
+		kakule.init.attachEditHandlers();
+		
 		// FB.init({
 		// 	    appId  : '190781907646255',
 		// 	    status : true, // check login status
@@ -164,6 +168,8 @@ $(document).ready(function() {
 		//     // user cancelled login
 		//   }
 		// });
-		
+
+    
+
 });
 
