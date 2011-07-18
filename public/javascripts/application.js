@@ -39,14 +39,14 @@ kakule.init = {
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
 	  
-		search_fields.keydown(function(evt){
+		$("body").delegate(".search_field", "keydown", function(evt){
 			var text_box = $(this);
 			var css_class = text_box.attr("id");
 			func = css_class.split("_")[1];
 			kakule.search[func](text_box.val());
 		});
 
-        $(".search_form").submit(function(e) {
+        $("body").delegate(".search_form", "submit", function(e) {
             e.preventDefault();
         });
 	}
@@ -93,7 +93,9 @@ kakule.search = {
 		function callback (response){
             kakule.ui.repopulateAttractions(response);
 		};
-		kakule.server.searchAttractions({'query' : query, 'radius' : 100}, callback);
+        console.log(kakule.current.lat);
+        console.log(kakule.current.long);
+		kakule.server.searchAttractions({'query' : query, 'lat': kakule.current.lat, 'long': kakule.current.long, 'radius' : 10}, callback);
 	},
 	
 	locations : function(query){
@@ -113,7 +115,7 @@ kakule.server = {
 	
 	searchAttractions : function(data, callback) {
 		kakule.util.addCurrentLocationData(data);
-    $.post("/search/events", data, callback);
+       $.get("/search/render_attractions", data, callback);
 	},
 	
 	searchMeals : function(data, callback) {
@@ -130,6 +132,8 @@ kakule.ui = {
 
     repopulateAttractions : function(data) {
         console.log(data);
+        $("#attractions .results").empty();
+        $("#attractions .results").append(data.html);
     },
 
     setLocation : function(location) {

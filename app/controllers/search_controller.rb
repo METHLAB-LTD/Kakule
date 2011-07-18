@@ -21,10 +21,20 @@ class SearchController < ApplicationController
   def events
     @events = Event.find_by_custom_params(params)
     @attractions = Attraction.find_by_custom_params(params)
+
+    results = {:events => @events, :attractions => @attractions }
+    
+    #render :json => {
+    #  :events => @events,
+    #  :attractions => @attractions
+    #}
+  end
+
+  def render_attractions
+    results = events
     
     render :json => {
-      :events => @events,
-      :attractions => @attractions
+        :html => (render_to_string :partial => "attractions", :locals => {:event_data => results[:events], :attraction_data => results[:attractions]})
     }
   end
   
