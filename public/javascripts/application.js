@@ -74,7 +74,9 @@ kakule.util = {
 	},
 
     hasCachedLocationData : function() {
-        if (typeof kakule.current.location === "undefined") {
+        if (typeof kakule.current.location === "undefined" ||
+            typeof kakule.current.lat === "undefined" ||
+            typeof kakule.current.lng === "undefined") {
             return false;
         } else {
             return true;
@@ -93,9 +95,8 @@ kakule.search = {
 		function callback (response){
             kakule.ui.repopulateAttractions(response);
 		};
-        console.log(kakule.current.lat);
-        console.log(kakule.current.long);
-		kakule.server.searchAttractions({'query' : query, 'lat': kakule.current.lat, 'long': kakule.current.long, 'radius' : 10}, callback);
+        //kakule.server.searchAttractions({lat : 37.782455, lng : -122.405855}, callback);
+		kakule.server.searchAttractions({'lat': kakule.current.lat, 'long': kakule.current.lng}, callback);
 	},
 	
 	locations : function(query){

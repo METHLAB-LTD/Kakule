@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
-    t.string   "state"
     t.string   "country"
     t.integer  "population"
     t.integer  "gtopo30"
@@ -83,8 +82,8 @@ ActiveRecord::Schema.define(:version => 20110716084008) do
 
   create_table "timezones", :force => true do |t|
     t.string   "name"
-    t.float    "gmt_offset"
-    t.float    "dst_offset"
+    t.string   "gmt_offset"
+    t.string   "dst_offset"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
