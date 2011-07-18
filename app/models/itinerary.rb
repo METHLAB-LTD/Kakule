@@ -4,7 +4,7 @@ class Itinerary < ActiveRecord::Base
   has_many :likes, :as => :likable
 
   validates_presence_of :owner_id
-  validates_presence_of :parent_id
+  #validates_presence_of :parent_id
   
   def is_root?
     self.parent.nil?

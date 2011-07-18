@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
 
     def current_itinerary
         find_or_create_guest_user
-        current_user.itineraries.last
+        current_user.itineraries.last || current_user.itineraries.build.save
     end
 
     def current_user_session
