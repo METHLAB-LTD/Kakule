@@ -95,8 +95,7 @@ kakule.search = {
 		function callback (response){
             kakule.ui.repopulateAttractions(response);
 		};
-        //kakule.server.searchAttractions({lat : 37.782455, lng : -122.405855}, callback);
-		kakule.server.searchAttractions({'lat': kakule.current.lat, 'long': kakule.current.lng}, callback);
+		kakule.server.searchAttractions({'query': query, 'lat': kakule.current.lat, 'lng': kakule.current.lng}, callback);
 	},
 	
 	locations : function(query){
@@ -126,13 +125,11 @@ kakule.server = {
 
 kakule.ui = {
 	repopulateLocations : function(data) {
-	    console.log(data);
         $("#locations .results").empty();
         $("#locations .results").append(data.html);
 	},
 
     repopulateAttractions : function(data) {
-        console.log(data);
         $("#attractions .results").empty();
         $("#attractions .results").append(data.html);
     },
