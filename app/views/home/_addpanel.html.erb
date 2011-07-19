@@ -10,12 +10,12 @@ Current location: <span id="current_location">Loading...</span>
 <div id="locations" class="addpane">
     <div class="heading">
         <span id="location_icon" class="icon"></span>
-        <label>Search Locations</label>
+        <label>
+		    <%= render :partial => "home/search_form", :locals => {:id => "locations", :value => "Search for a location ex. San Francisco"} %>
+        </label>
+
     </div>
     <div class="search">
-        <div class="panel">
-		    <%= render :partial => "home/search_form", :locals => {:id => "locations"}%>
-        </div>
         <div class="results">
         </div>
     </div>
@@ -23,12 +23,14 @@ Current location: <span id="current_location">Loading...</span>
 <div id="attractions" class="addpane">
     <div class="heading">
         <span id="attractions_icon" class="icon"></span>
-        <label>Add Events or Attractions</label>
+        <label>
+		    <%= render :partial => "home/search_form", :locals => {:id => "attractions", :value => "Search for events or attractions"} %>
+        </label>
+        <span class="near-label">
+            within 10 miles of <span id="attractions-near">San Francisco</span>
+        </span>
     </div>
     <div class="search">
-        <div class="panel">
-            <%= render :partial => "home/search_form", :locals => {:id => "attractions"}%>
-        </div>
         <div class="results">
         </div>
     </div>
@@ -36,12 +38,14 @@ Current location: <span id="current_location">Loading...</span>
 <div id="meals" class="addpane">
     <div class="heading">
         <span id="meals_icon" class="icon"></span>
-        <label>Add Meals</label>
+        <label>
+		    <%= render :partial => "home/search_form", :locals => {:id => "meals", :value => "Search for something to eat"} %>
+        </label>
+        <span class="near-label">
+            within 10 miles of <span id="meals-near">San Francisco</span>
+        </span>
     </div>
     <div class="search">
-        <div class="panel">
-            <%= render :partial => "home/search_form", :locals => {:id => "meals"}%>
-        </div>
         <div class="results">
         </div>
     </div>

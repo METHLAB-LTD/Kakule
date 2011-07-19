@@ -83,8 +83,15 @@ a:hover {
 }
 
 #logo {
+    float: left;
     width: 192px;
     height: 29px;
+}
+
+#userbar {
+    float: right;
+    margin-right: 2em;
+    margin-top: 1em;
 }
 
 #calendar {
@@ -114,6 +121,19 @@ a:hover {
 
 #itinerary-title {
     margin: 0.7em 0.8em; 
+}
+
+#edit-icon {
+    background: url("../images/icons/edit_icon.png");
+    width: 13px;
+    height: 15px;
+    top: 1px;
+    left: 0.5em;
+    opacity: 0.8;
+}
+
+#edit-icon:hover {
+    opacity: 1;
 }
 
 #addpanel {
@@ -163,18 +183,24 @@ a:hover {
 .search_field {
     padding: 5px;
     border-radius: 2px;
-    width: 70%;
+    width: 100%;
 
     outline: 0px;
-    border: 0px;
+    border: 1px solid #eee;
+
+    margin-left: 5px;
 }
 
 .addpane label{
-    text-transform: uppercase;
+    display: inline-block;
+    width: 80%;
 }
 
-#locations label{
-    color: #FFA8A8;
+.near-label {
+    display: none;
+    margin-left: 2.2em;
+    font-size: 0.9em;
+    color: #999;
 }
 
 #location_icon {
@@ -183,8 +209,8 @@ a:hover {
     background: url("../images/icons/location_icon.png");
 }
 
-#attractions label{
-    color: #8BC5C5;
+#search_locations {
+    color: #FFA8A8;
 }
 
 #attractions_icon {
@@ -193,14 +219,18 @@ a:hover {
     background: url("../images/icons/attraction_icon.png");
 }
 
-#meals label{
-    color: #FFCF75;
+#search_attractions {
+    color: #8BC5C5;
 }
 
 #meals_icon {
     width: 11px;
     height: 16px;
     background: url("../images/icons/food_icon.png");
+}
+
+#search_meals {
+    color: #FFCF75;
 }
 
 #savepanel {

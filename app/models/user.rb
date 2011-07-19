@@ -44,7 +44,8 @@ class User < ActiveRecord::Base
   
   
   def name
-    "#{first_name} #{last_name}"
+     return "Guest" if is_guest?
+     return "#{first_name} #{last_name}"
   end
   
 end
