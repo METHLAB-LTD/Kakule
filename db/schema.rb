@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110718053654) do
+ActiveRecord::Schema.define(:version => 20110719031042) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -81,10 +81,38 @@ ActiveRecord::Schema.define(:version => 20110718053654) do
     t.datetime "updated_at"
   end
 
+  create_table "selected_attractions", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "attraction_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "selected_events", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "event_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "timezones", :force => true do |t|
     t.string   "name"
     t.float    "gmt_offset"
     t.float    "dst_offset"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transportations", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "mode"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.text     "extra_data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
