@@ -167,15 +167,11 @@ a:hover {
 }
 
 #addpanel .search {
-    display: none;
+    margin-left: 1.6em;
 }
 
 #locations .search {
     display: block;
-}
-
-.search {
-    margin-left: 10px;
 }
 
 .search_field {

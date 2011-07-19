@@ -7,11 +7,7 @@ kakule.current = {
     lng: 0,
     location: undefined,
     geocode_data: undefined,
-    pinned_location: {
-        name: undefined,
-        lat: undefined,
-        lng: undefined
-    }
+    pinned_location: undefined
 };
 
 kakule.init = {
@@ -35,11 +31,11 @@ kakule.init = {
             var i = 0;
 
             // Save location
-            kakule.current.pinned_location.name = kakule.current.geocode_data[i].geocode.name;
-            kakule.current.pinned_location.lat = kakule.current.geocode_data[i].geocode.latitude;
-            kakule.current.pinned_location.lng = kakule.current.geocode_data[i].geocode.longitude;
+            kakule.current.pinned_location = kakule.current.geocode_data[i].geocode.name;
+            kakule.current.lat = kakule.current.geocode_data[i].geocode.latitude;
+            kakule.current.lng = kakule.current.geocode_data[i].geocode.longitude;
 
-            var location_name = kakule.current.pinned_location.name;
+            var location_name = kakule.current.pinned_location;
             // Replace text box
             $("#locations .search_form").hide();
             $("#locations .results").hide();
@@ -50,8 +46,8 @@ kakule.init = {
             $(".near-label span").text(location_name);
             $(".near-label").show();
             
-            // TODO: Search for attractions/meals
-            
+            kakule.search.attractions("");
+            // TODO: Search for meals
 	    });
 
         $("body").delegate("#location-change", "click", function() {
