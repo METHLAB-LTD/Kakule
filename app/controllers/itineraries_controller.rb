@@ -18,12 +18,12 @@ class ItinerariesController < ApplicationController
   # GET /itineraries/1
   # GET /itineraries/1.xml
   def show
-    @itinerary = itinerary.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @itinerary }
-    end
+    @itinerary = Itinerary.find(params[:id])
+    render :json => @itinerary.timeline.to_json
+    # respond_to do |format|
+    #       format.html # show.html.erb
+    #       format.xml  { render :xml => @itinerary }
+    #     end
   end
 
   # # GET /itineraries/new
