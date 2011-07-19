@@ -1,7 +1,9 @@
+<% i = 0 %>
 <% for location in data %>
     <div class="result">
-        <%= link_to "[pin]", "#" %> <%= location.full_name %>
+        <span class="location-pin" id="<%= i %>">[add]</span> <%= location.full_name %>
     </div>
+    <% i = i + 1 %>
 <% end %>
 
 <% if data.empty? %>

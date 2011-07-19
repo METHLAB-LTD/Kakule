@@ -5,7 +5,13 @@ if (!kakule) {
 kakule.current = {
     lat: 0,
     lng: 0,
-    location: undefined
+    location: undefined,
+    geocode_data: undefined,
+    pinned_location: {
+        name: undefined,
+        lat: undefined,
+        lng: undefined
+    }
 };
 
 kakule.init = {
@@ -24,15 +30,29 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-	    $("body").delegate("#attractions .heading", "click", function() {
-	        $("#attractions .search").toggle();
-	        // if(kakule.util.openAction("attractions")) {
-	        //     kakule.server.searchAttractions(kakule.ui.repopulateList);
-	        // }
-	    });
+	    $("body").delegate(".location-pin", "click", function() {
+            // FIXME: Figure out how to parse String -> int
+            var i = 0;
 
-	    $("body").delegate("#meals .heading", "click", function() {
-	        $("#meals .search").toggle();
+            // Save location
+            kakule.current.pinned_location.name = kakule.current.geocode_data[i].geocode.name;
+            kakule.current.pinned_location.lat = kakule.current.geocode_data[i].geocode.latitude;
+            kakule.current.pinned_location.lng = kakule.current.geocode_data[i].geocode.longitude;
+
+            var location_name = kakule.current.pinned_location.name;
+            // Replace text box
+            // TODO: Leave option to re-edit
+            $("#locations .search_form").hide();
+            $("#locations .results").hide();
+            $("#pinned_location_name").text(location_name);
+            $("#pinned_location").show();
+
+            // Open attractions/meals search
+            $(".near-label span").text(location_name);
+            $(".near-label").show();
+            
+            // TODO: Search for attractions/meals
+            
 	    });
 	},
 
@@ -42,7 +62,7 @@ kakule.init = {
 		    show_buttons: true
 	    });
     },
-	
+    
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
 	  
@@ -108,6 +128,7 @@ kakule.search = {
 	locations : function(query){
 		function callback (response){
             kakule.ui.repopulateLocations(response);
+            kakule.current.geocode_data = response.data;
 		};
 		kakule.server.searchLocations({'query' : query}, callback);
 	}
@@ -151,7 +172,7 @@ $(document).ready(function() {
     kakule.init.getLocation();
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
-		kakule.init.attachEditHandlers();
+	kakule.init.attachEditHandlers();
 		
 		// FB.init({
 		// 	    appId  : '190781907646255',

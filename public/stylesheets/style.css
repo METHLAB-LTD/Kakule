@@ -161,8 +161,6 @@ a:hover {
 
 #addpanel .heading {
     margin-bottom: 5px;
-    
-    cursor: pointer;
 }
 
 #addpanel .heading:hover {
@@ -207,6 +205,15 @@ a:hover {
     width: 11px;
     height: 16px;
     background: url("../images/icons/location_icon.png");
+}
+
+.location-pin {
+    color: #FFA8A8;
+    cursor: pointer;
+}
+
+#pinned_location {
+    margin-left: 8px;
 }
 
 #search_locations {

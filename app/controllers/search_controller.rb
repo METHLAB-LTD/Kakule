@@ -56,7 +56,8 @@ class SearchController < ApplicationController
   def render_geocoding
     results = geocoding
     render :json => {
-        :html => (render_to_string :partial => "geocoding", :locals => {:data => results})
+        :html => (render_to_string :partial => "geocoding", :locals => {:data => results}),
+        :data => results
     }
   end
   
