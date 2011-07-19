@@ -10,6 +10,7 @@ class Itinerary < ActiveRecord::Base
   has_many :transportations
 
   validates_presence_of :owner_id
+  #validates_presence_of :parent_id
   
   def is_root?
     self.parent.nil?
@@ -24,7 +25,7 @@ class Itinerary < ActiveRecord::Base
   @@defaults = {
     :name => "Default Title",
     :permission_level => 1,
-    :parent_id => nil 
+    :parent_id => nil
   }
   
   def timeline
@@ -44,10 +45,7 @@ class Itinerary < ActiveRecord::Base
   def self.create_itinerary(user)
     itinerary = Itinerary.new(@@defaults)
     itinerary.owner = user
-
-    puts itinerary.save
-    puts itinerary.errors
-    return itinerary
+    itinerary.save
   end
 
 end

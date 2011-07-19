@@ -6,12 +6,10 @@ class User < ActiveRecord::Base
     config.merge_validates_format_of_email_field_options :unless => :is_guest?
   end
 
-  has_many :itineraries, :foreign_key => "owner_id"
+  has_many :itineraries, :foreign_key => 'owner_id'
   has_many :calendar_events, :through => :itineraries
   has_many :likes
    
-
-  
   def can_bypass_validation?
     is_guest? || registered_using_facebook?
   end
@@ -37,7 +35,12 @@ class User < ActiveRecord::Base
   end
   
   def self.create_guest
-    User.create(:is_guest => true)
+
+    guest = User.create(:is_guest => true)
+    itinerary = Itinerary.create_itinerary(guest)
+    session = UserSession.create(guest, true)
+
+    return guest
 
   end
   
