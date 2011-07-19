@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   include Kakule
-  filter_parameter_logging :password, :password_confirmation
   protect_from_forgery
   helper_method :current_user_session, :current_user, :require_user, :current_itinerary
 
