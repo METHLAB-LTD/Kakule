@@ -3,7 +3,7 @@ class Itinerary < ActiveRecord::Base
   belongs_to :parent, :class_name => 'Itinerary'
   has_many :likes, :as => :likable
 
-  validates_presence_of :owner_id
+  #validates_presence_of :owner_id
   #validates_presence_of :parent_id
   
   def is_root?
@@ -18,8 +18,7 @@ class Itinerary < ActiveRecord::Base
 
   @@defaults = {
     :name => "Default Title",
-    :permission_level => 1,
-    :parent_id => 0 
+    :permission_level => 1
   }
   
   def self.permissions(str)
@@ -29,10 +28,7 @@ class Itinerary < ActiveRecord::Base
   def self.create_itinerary(user)
     itinerary = Itinerary.new(@@defaults)
     itinerary.owner = user
-
-    puts itinerary.save
-    puts itinerary.errors
-    return itinerary
+    itinerary.save
   end
 
 end

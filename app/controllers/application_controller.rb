@@ -11,7 +11,9 @@ class ApplicationController < ActionController::Base
 
     def find_or_create_guest_user
       unless current_user
-        User.create_guest
+        user = User.create_guest
+        Itinerary.create_itinerary(user)
+        @current_user = user
       end
     end
 
@@ -19,7 +21,9 @@ class ApplicationController < ActionController::Base
 
     def current_itinerary
         find_or_create_guest_user
-        current_user.itineraries.last || current_user.itineraries.build.save
+        puts current_user
+        puts current_user.itineraries.count
+        current_user.itineraries.last 
     end
 
     def current_user_session
