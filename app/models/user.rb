@@ -1,9 +1,9 @@
 class User < ActiveRecord::Base
   acts_as_authentic do |config|
-    config.merge_validates_format_of_login_field_options :unless => :can_bypass_validation?
-    config.merge_validates_length_of_login_field_options :unless => :can_bypass_validation?
-    config.merge_validates_length_of_password_field_options :unless => :can_bypass_validation?
-    config.merge_validates_format_of_email_field_options :unless => :can_bypass_validation?
+    config.merge_validates_format_of_login_field_options :unless => :is_guest?
+    config.merge_validates_length_of_login_field_options :unless => :is_guest?
+    config.merge_validates_length_of_password_field_options :unless => :is_guest?
+    config.merge_validates_format_of_email_field_options :unless => :is_guest?
   end
 
   has_many :itineraries, :foreign_key => "owner_id"
@@ -37,9 +37,8 @@ class User < ActiveRecord::Base
   end
   
   def self.create_guest
-    guest = User.create(:is_guest => true)
-    itinerary = Itinerary.create_itinerary(guest)
-    UserSession.create(guest, true)
+    User.create(:is_guest => true)
+
   end
   
   

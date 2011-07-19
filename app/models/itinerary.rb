@@ -24,16 +24,16 @@ class Itinerary < ActiveRecord::Base
   @@defaults = {
     :name => "Default Title",
     :permission_level => 1,
-    :parent_id => 0 
+    :parent_id => nil 
   }
   
   def timeline
     return {
-      :transportations =>  transportations,
       :selected_events => selected_events,
       :events => events,
       :selected_attractions => selected_attractions,
-      :attractions => attractions
+      :attractions => attractions,
+      :transportations =>  transportations
     }
   end
   
