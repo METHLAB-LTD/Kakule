@@ -21,8 +21,6 @@ class ApplicationController < ActionController::Base
 
     def current_itinerary
         find_or_create_guest_user
-        puts current_user
-        puts current_user.itineraries.count
         current_user.itineraries.last 
     end
 
