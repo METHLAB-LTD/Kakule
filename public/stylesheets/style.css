@@ -207,12 +207,13 @@ a:hover {
     background: url("../images/icons/location_icon.png");
 }
 
-.location-pin {
+.location-pin, #location-change {
     color: #FFA8A8;
     cursor: pointer;
 }
 
 #pinned_location {
+    display: none;
     margin-left: 8px;
 }
 

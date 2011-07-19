@@ -41,7 +41,6 @@ kakule.init = {
 
             var location_name = kakule.current.pinned_location.name;
             // Replace text box
-            // TODO: Leave option to re-edit
             $("#locations .search_form").hide();
             $("#locations .results").hide();
             $("#pinned_location_name").text(location_name);
@@ -54,6 +53,12 @@ kakule.init = {
             // TODO: Search for attractions/meals
             
 	    });
+
+        $("body").delegate("#location-change", "click", function() {
+            $("#pinned_location").hide();
+            $("#locations .search_form").show();
+            $("#locations .results").show();
+        });
 	},
 
     attachEditHandlers : function() {
