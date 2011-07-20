@@ -20,6 +20,7 @@ Kakule::Application.routes.draw do
   post "search/flights"
   post "search/hotels"
   post "search/cars"
+  post "search/meals"
 
   get 'facebook/auth'
   get 'facebook/callback', :as => :facebook_callback

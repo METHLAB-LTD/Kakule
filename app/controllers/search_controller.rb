@@ -100,5 +100,27 @@ class SearchController < ApplicationController
       :zipcar => !!(Zipcar.has_car?(params[:pickUpCity]) if params[:dropOffCity].blank?) #zipcar can't be returned at another city
     }.to_json
   end
+  
+  
+  # POST /search/meals
+  # Required: lat, lng
+  # Optional: radius (miles), query, category
+  # 
+  # Possible Categories: http://www.yelp.com/developers/documentation/category_list
+  def meals
+    client  = Yelp::Client.new
+    request = Yelp::Review::Request::GeoPoint.new(
+     :latitude => params[:lat],
+     :longitude => params[:lng],
+     :radius => params[:radius],
+     :term => params[:query],
+     :category => params[:category] || ["food"],
+     :yws_id => YELP_API_KEY)
+    render :json => client.search(request).to_json
+  end
+  
+  
+  
+  
 
 end
