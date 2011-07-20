@@ -25,7 +25,7 @@ class FacebookController < ApplicationController
       :locale => fb_user["locale"],
       :facebook_url => fb_user["link"],
       :facebook_access_token => access_token.token
-    }) #unless @user.updated_at < 2.days.ago
+    }) unless @user.updated_at < 2.days.ago
     
     @user_session = UserSession.create(@user, true)
     

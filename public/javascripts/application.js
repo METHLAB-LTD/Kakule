@@ -46,16 +46,16 @@ kakule.init = {
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
 	  
-		$("body").delegate(".search_field", "keydown", function(evt){
+		$("body").delegate(".search_field", "keyup", function(evt){
 			var text_box = $(this);
 			var css_class = text_box.attr("id");
 			func = css_class.split("_")[1];
 			kakule.search[func](text_box.val());
 		});
 
-        $("body").delegate(".search_form", "submit", function(e) {
-            e.preventDefault();
-        });
+    $("body").delegate(".search_form", "submit", function(e) {
+        e.preventDefault();
+    });
 	}
 };
 
@@ -122,7 +122,7 @@ kakule.server = {
 	
 	searchAttractions : function(data, callback) {
 		kakule.util.addCurrentLocationData(data);
-       $.get("/search/render_attractions", data, callback);
+    $.get("/search/render_attractions", data, callback);
 	},
 	
 	searchMeals : function(data, callback) {
@@ -136,14 +136,14 @@ kakule.ui = {
         $("#locations .results").append(data.html);
 	},
 
-    repopulateAttractions : function(data) {
-        $("#attractions .results").empty();
-        $("#attractions .results").append(data.html);
-    },
+  repopulateAttractions : function(data) {
+      $("#attractions .results").empty();
+      $("#attractions .results").append(data.html);
+  },
 
-    setLocation : function(location) {
-	     $("#current_location").text(location);
-    }
+  setLocation : function(location) {
+    $("#current_location").text(location);
+  }
 	
 };
 
