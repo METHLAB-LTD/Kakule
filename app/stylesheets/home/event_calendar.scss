@@ -32,13 +32,17 @@
 
 .ec-month-name {
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: bold; 
+  text-align: center;
+}
 
 .ec-month-nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  text-decoration: none; }
+  text-decoration: none; 
+  text-align: center;
+}
 
 /* Containers */
 
@@ -56,10 +60,13 @@
   table-layout: fixed;
   padding: 2px 0;
   color: #999;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+}
 
 .ec-day-name {
-  font-weight: normal; }
+  font-weight: normal; 
+  text-align: center;
+}
 
 /* Rows container and Row */
 
@@ -107,15 +114,25 @@
   cursor: pointer;
   background: #eee;
   &:hover {
-    color: #FFCF75;
-    background: #FEF6B8; } }
+    color: $light_orange;
+    background: $light_yellow; } 
+  &:active {
+	  color: darken($light_red, 10%);
+	  background-color: lighten($light_red, 2%);
+  }
+}
 
 a.ec-day-link {
   color: #444; }
 
 .ec-today-header {
-  color: #FFA8A8;
-  background-color: #FFD9D7; }
+  color: darken($light_red, 10%);
+  background-color: $light_red;
+  &:hover {
+	  color: darken($light_red, 10%);
+	  background-color: $light_red;
+  }
+ }
 
 .ec-weekend-day-header {}
 

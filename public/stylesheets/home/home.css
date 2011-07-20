@@ -1,35 +1,24 @@
 /*
-Syntax error: Undefined variable: "$light_orange".
-        on line 117 of /Users/anzhu/Rails/kakule/app/stylesheets/home/event_calendar.scss
+Syntax error: Undefined variable: "$red".
+        on line 101 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss
 
-112:   line-height: 63px;
-113:   overflow: hidden;
-114:   cursor: pointer;
-115:   background: #eee;
-116:   &:hover {
-117:     color: $light_orange;
-118:     background: $light_yellow; } 
-119:   &:active {
-120: 	  color: darken($light_red, 10%);
-121: 	  background-color: lighten($light_red, 2%);
-122:   }
+96: 
+97: .addpane label {
+98:   text-transform: uppercase; }
+99: 
+100: #locations label {
+101:   color: $red; }
+102: 
+103: #location_icon {
+104:   width: 11px;
+105:   height: 16px;
+106:   background: url("../images/icons/location_icon.png"); }
 
 Backtrace:
-/Users/anzhu/Rails/kakule/app/stylesheets/home/event_calendar.scss:117
+/Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss:101
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:230:in `visit_rule'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
@@ -124,4 +113,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light_orange\".\A         on line 117 of /Users/anzhu/Rails/kakule/app/stylesheets/home/event_calendar.scss\A \A 112:   line-height: 63px;\A 113:   overflow: hidden;\A 114:   cursor: pointer;\A 115:   background: #eee;\A 116:   &:hover {\A 117:     color: $light_orange;\A 118:     background: $light_yellow; } \A 119:   &:active {\A 120: 	  color: darken($light_red, 10%);\A 121: 	  background-color: lighten($light_red, 2%);\A 122:   }"; }
+  content: "Syntax error: Undefined variable: \"$red\".\A         on line 101 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss\A \A 96: \A 97: .addpane label {\A 98:   text-transform: uppercase; }\A 99: \A 100: #locations label {\A 101:   color: $red; }\A 102: \A 103: #location_icon {\A 104:   width: 11px;\A 105:   height: 16px;\A 106:   background: url(\"../images/icons/location_icon.png\"); }"; }

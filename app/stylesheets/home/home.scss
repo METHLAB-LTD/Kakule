@@ -1,0 +1,136 @@
+
+/* Home styles 
+ * @home
+ */
+
+#wrapper {
+  position: relative;
+  top: 50px;
+  width: 900px;
+  margin: auto; }
+
+#header {
+  margin-left: 0.5em;
+  margin-bottom: 2em; }
+
+#logo {
+  width: 192px;
+  height: 29px; }
+
+#calendar {
+  float: left; 
+	table {
+	  border-collapse: separate;
+	  border-spacing: 5px;
+	}
+}
+
+#toppanel {
+  margin-bottom: 1.5em; }
+
+#bottompanel {
+  margin-left: 0.5em; }
+
+
+/* Calendar styles 
+ * @calendar
+ */
+
+/* Right panel styles 
+ * @right 
+ */
+
+#right {
+  float: left;
+  margin-left: 2em; }
+
+#itinerary-title {
+  margin: 0.9em 0.8em; }
+
+#addpanel {
+  width: 320px;
+  background: #f3f3f3;
+  border: 1px solid #ededed;
+  min-height: 240px;
+  padding: 15px;
+  #title {
+    border-bottom: 1px solid #dedede;
+    margin: 1px 0; } 
+  p{
+	  margin: 12px 0;
+  }
+}
+
+#current_location {
+  color: #333; }
+
+.addpane {
+  margin-bottom: 15px;
+  .results div:hover {
+    background: #CCC; } }
+
+#addpanel {
+  .heading {
+    margin-bottom: 5px;
+    cursor: pointer;
+    &:hover {} 
+    label{
+	    cursor: pointer;
+		}
+  }
+  .search {
+    display: none; } }
+
+#locations .search {
+  display: block; }
+
+.search {
+  margin-left: 10px; }
+
+.search_field {
+  padding: 5px;
+  border-radius: 2px;
+  width: 70%;
+  outline: 0px;
+  border: 0px; }
+
+.addpane label {
+  text-transform: uppercase; }
+
+#locations label {
+  color: $red; }
+
+#location_icon {
+  width: 11px;
+  height: 16px;
+  background: url("../images/icons/location_icon.png"); }
+
+#attractions label {
+  color: $light_teal; }
+
+#attractions_icon {
+  width: 13px;
+  height: 15px;
+  background: url("../images/icons/attraction_icon.png"); }
+
+#meals label {
+  color: $light_orange; }
+
+#meals_icon {
+  width: 11px;
+  height: 16px;
+  background: url("../images/icons/food_icon.png"); }
+
+#savepanel {
+  margin-top: 1em;
+  .button {
+    width: 44.5%;
+    background: #D3E9E9;
+    color: #5EBFC5;
+    text-transform: uppercase;
+    text-align: center; 
+  }
+}
+
+.highlight {
+  background: $light_yellow; }
