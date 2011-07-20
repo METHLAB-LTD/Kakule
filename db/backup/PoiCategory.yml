@@ -1,0 +1,21 @@
+--- 
+- name: Theme Park
+  created_at: 2011-07-20 21:57:54.605065 Z
+  updated_at: 2011-07-20 21:57:54.605065 Z
+  id: 1
+- name: Water Park
+  created_at: 2011-07-20 21:57:54.621716 Z
+  updated_at: 2011-07-20 21:57:54.621716 Z
+  id: 2
+- name: Golf
+  created_at: 2011-07-20 21:57:54.624362 Z
+  updated_at: 2011-07-20 21:57:54.624362 Z
+  id: 3
+- name: State Park
+  created_at: 2011-07-20 21:57:54.626877 Z
+  updated_at: 2011-07-20 21:57:54.626877 Z
+  id: 4
+- name: National Park
+  created_at: 2011-07-20 21:57:54.629003 Z
+  updated_at: 2011-07-20 21:57:54.629003 Z
+  id: 5

@@ -1,2 +1,4369 @@
---- []
-
+--- 
+- name: Adventure City
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.084310 Z
+  updated_at: 2011-07-20 21:52:01.084310 Z
+  id: 1
+  category_id: 1
+  longitude: -119.270233
+- name: Balboa Fun Zone
+  latitude: 33.601349
+  created_at: 2011-07-20 21:52:01.093118 Z
+  updated_at: 2011-07-20 21:52:01.093118 Z
+  id: 2
+  category_id: 1
+  longitude: -117.901131
+- name: Belmont Park
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.097130 Z
+  updated_at: 2011-07-20 21:52:01.097130 Z
+  id: 3
+  category_id: 1
+  longitude: -119.270233
+- name: Boomers/Camelot/Family Fun Centers
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.103564 Z
+  updated_at: 2011-07-20 21:52:01.103564 Z
+  id: 4
+  category_id: 1
+  longitude: -119.270233
+- name: Castle Amusement Park
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.106769 Z
+  updated_at: 2011-07-20 21:52:01.106769 Z
+  id: 5
+  category_id: 1
+  longitude: -119.270233
+- name: Children s Fairyland
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.109406 Z
+  updated_at: 2011-07-20 21:52:01.109406 Z
+  id: 6
+  category_id: 1
+  longitude: -119.270233
+- name: Disneyland/Disney s California Adventure
+  latitude: 33.80637
+  created_at: 2011-07-20 21:52:01.112095 Z
+  updated_at: 2011-07-20 21:52:01.112095 Z
+  id: 7
+  category_id: 1
+  longitude: -117.920631
+- name: Fairytale Town
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.115025 Z
+  updated_at: 2011-07-20 21:52:01.115025 Z
+  id: 8
+  category_id: 1
+  longitude: -119.270233
+- name: Funderland
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.117887 Z
+  updated_at: 2011-07-20 21:52:01.117887 Z
+  id: 9
+  category_id: 1
+  longitude: -119.270233
+- name: Gilroy Gardens Theme Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:01.120912 Z
+  updated_at: 2011-07-20 21:52:01.120912 Z
+  id: 10
+  category_id: 1
+  longitude: -121.898003
+- name: Great America
+  latitude: 38.167098
+  created_at: 2011-07-20 21:52:01.124324 Z
+  updated_at: 2011-07-20 21:52:01.124324 Z
+  id: 11
+  category_id: 1
+  longitude: -122.252657
+- name: Knott s Berry Farm
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.127248 Z
+  updated_at: 2011-07-20 21:52:01.127248 Z
+  id: 12
+  category_id: 1
+  longitude: -119.270233
+- name: Legoland
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.130242 Z
+  updated_at: 2011-07-20 21:52:01.130242 Z
+  id: 13
+  category_id: 1
+  longitude: -119.270233
+- name: Mountasia Family Fun Center
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.132931 Z
+  updated_at: 2011-07-20 21:52:01.132931 Z
+  id: 14
+  category_id: 1
+  longitude: -119.270233
+- name: Nut Tree Family Park
+  latitude: 38.371059
+  created_at: 2011-07-20 21:52:01.136167 Z
+  updated_at: 2011-07-20 21:52:01.136167 Z
+  id: 15
+  category_id: 1
+  longitude: -121.960991
+- name: Pacific Park
+  latitude: 34.188438
+  created_at: 2011-07-20 21:52:01.139084 Z
+  updated_at: 2011-07-20 21:52:01.139084 Z
+  id: 16
+  category_id: 1
+  longitude: -118.351471
+- name: Pharaohs Lost Kingdom
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.141983 Z
+  updated_at: 2011-07-20 21:52:01.141983 Z
+  id: 17
+  category_id: 1
+  longitude: -119.270233
+- name: Pier 39
+  latitude: 37.809662
+  created_at: 2011-07-20 21:52:01.144599 Z
+  updated_at: 2011-07-20 21:52:01.144599 Z
+  id: 18
+  category_id: 1
+  longitude: -122.410408
+- name: Pixie Woods
+  latitude: 37.429205
+  created_at: 2011-07-20 21:52:01.147435 Z
+  updated_at: 2011-07-20 21:52:01.147435 Z
+  id: 19
+  category_id: 1
+  longitude: -122.251688
+- name: Pixieland Amusement Park
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.150046 Z
+  updated_at: 2011-07-20 21:52:01.150046 Z
+  id: 20
+  category_id: 1
+  longitude: -119.270233
+- name: Rotary Storyland & Playland
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.152529 Z
+  updated_at: 2011-07-20 21:52:01.152529 Z
+  id: 21
+  category_id: 1
+  longitude: -119.270233
+- name: Santa Cruz Beach Boardwalk
+  latitude: 36.96413
+  created_at: 2011-07-20 21:52:01.155492 Z
+  updated_at: 2011-07-20 21:52:01.155492 Z
+  id: 22
+  category_id: 1
+  longitude: -122.020073
+- name: Scandia Amusement Park
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.158455 Z
+  updated_at: 2011-07-20 21:52:01.158455 Z
+  id: 23
+  category_id: 1
+  longitude: -119.270233
+- name: SeaWorld
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.161722 Z
+  updated_at: 2011-07-20 21:52:01.161722 Z
+  id: 24
+  category_id: 1
+  longitude: -119.270233
+- name: Six Flags Discovery Kingdom
+  latitude: 41.901196
+  created_at: 2011-07-20 21:52:01.164796 Z
+  updated_at: 2011-07-20 21:52:01.164796 Z
+  id: 25
+  category_id: 1
+  longitude: -89.390227
+- name: Six Flags Magic Mountain
+  latitude: 48.686155
+  created_at: 2011-07-20 21:52:01.167192 Z
+  updated_at: 2011-07-20 21:52:01.167192 Z
+  id: 26
+  category_id: 1
+  longitude: -97.862104
+- name: Sonoma Traintown
+  latitude: 38.485771
+  created_at: 2011-07-20 21:52:01.170037 Z
+  updated_at: 2011-07-20 21:52:01.170037 Z
+  id: 27
+  category_id: 1
+  longitude: -122.852501
+- name: Studio Park Hollywood
+  latitude: 34.724526
+  created_at: 2011-07-20 21:52:01.172938 Z
+  updated_at: 2011-07-20 21:52:01.172938 Z
+  id: 28
+  category_id: 1
+  longitude: -85.972693
+- name: Trees of Mystery
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.175787 Z
+  updated_at: 2011-07-20 21:52:01.175787 Z
+  id: 29
+  category_id: 1
+  longitude: -119.270233
+- name: Universal Studios Hollywood
+  latitude: 34.13394
+  created_at: 2011-07-20 21:52:01.178622 Z
+  updated_at: 2011-07-20 21:52:01.178622 Z
+  id: 30
+  category_id: 1
+  longitude: -118.352014
+- name: Antioch Waterpark
+  latitude: 38.01582
+  created_at: 2011-07-20 21:52:01.181296 Z
+  updated_at: 2011-07-20 21:52:01.181296 Z
+  id: 31
+  category_id: 2
+  longitude: -121.819702
+- name: The Island Waterpark
+  latitude: 43.289768
+  created_at: 2011-07-20 21:52:01.184039 Z
+  updated_at: 2011-07-20 21:52:01.184039 Z
+  id: 32
+  category_id: 2
+  longitude: -72.79303
+- name: Knotts Soak City USA - Orange County
+  latitude: 33.8286
+  created_at: 2011-07-20 21:52:01.186933 Z
+  updated_at: 2011-07-20 21:52:01.186933 Z
+  id: 33
+  category_id: 2
+  longitude: -102.027684
+- name: Knotts Soak City USA - Palm Springs
+  latitude: 33.823215
+  created_at: 2011-07-20 21:52:01.189733 Z
+  updated_at: 2011-07-20 21:52:01.189733 Z
+  id: 34
+  category_id: 2
+  longitude: -116.512114
+- name: Knotts Soak City USA - San Diego
+  latitude: 32.587021
+  created_at: 2011-07-20 21:52:01.192643 Z
+  updated_at: 2011-07-20 21:52:01.192643 Z
+  id: 35
+  category_id: 2
+  longitude: -117.009819
+- name: Manteca Waterslides
+  latitude: 37.799198
+  created_at: 2011-07-20 21:52:01.195788 Z
+  updated_at: 2011-07-20 21:52:01.195788 Z
+  id: 36
+  category_id: 2
+  longitude: -121.233124
+- name: Mustang Waterslides
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.198515 Z
+  updated_at: 2011-07-20 21:52:01.198515 Z
+  id: 37
+  category_id: 2
+  longitude: -119.270233
+- name: Outrageous Waters
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.201169 Z
+  updated_at: 2011-07-20 21:52:01.201169 Z
+  id: 38
+  category_id: 2
+  longitude: -119.270233
+- name: Raging Waters
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.204018 Z
+  updated_at: 2011-07-20 21:52:01.204018 Z
+  id: 39
+  category_id: 2
+  longitude: -119.270233
+- name: Sengme Oaks Family WaterPark
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.206922 Z
+  updated_at: 2011-07-20 21:52:01.206922 Z
+  id: 40
+  category_id: 2
+  longitude: -119.270233
+- name: Six Flags Hurricane Harbor
+  latitude: 37.50206
+  created_at: 2011-07-20 21:52:01.209742 Z
+  updated_at: 2011-07-20 21:52:01.209742 Z
+  id: 41
+  category_id: 2
+  longitude: -122.202698
+- name: Waterworld
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.212562 Z
+  updated_at: 2011-07-20 21:52:01.212562 Z
+  id: 42
+  category_id: 2
+  longitude: -119.270233
+- name: Waterworld USA
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.215373 Z
+  updated_at: 2011-07-20 21:52:01.215373 Z
+  id: 43
+  category_id: 2
+  longitude: -119.270233
+- name: The Wave
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:01.218296 Z
+  updated_at: 2011-07-20 21:52:01.218296 Z
+  id: 44
+  category_id: 2
+  longitude: -119.270233
+- name: Wild Rivers
+  latitude: 34.010033
+  created_at: 2011-07-20 21:52:01.221205 Z
+  updated_at: 2011-07-20 21:52:01.221205 Z
+  id: 45
+  category_id: 2
+  longitude: -117.468559
+- name: Wild Water Adventures
+  latitude: 36.80621
+  created_at: 2011-07-20 21:52:01.223962 Z
+  updated_at: 2011-07-20 21:52:01.223962 Z
+  id: 46
+  category_id: 2
+  longitude: -119.581467
+- name: Forest Lake Golf Course
+  latitude: 38.17472
+  created_at: 2011-07-20 21:52:01.226971 Z
+  updated_at: 2011-07-20 21:52:01.226971 Z
+  id: 47
+  category_id: 
+  longitude: -121.274454
+- name: Chuck Corica Golf Complex
+  latitude: 37.766585
+  created_at: 2011-07-20 21:52:01.230017 Z
+  updated_at: 2011-07-20 21:52:01.230017 Z
+  id: 48
+  category_id: 
+  longitude: -122.244739
+- name: Alhambra Municipal Golf Course
+  latitude: 34.0937
+  created_at: 2011-07-20 21:52:01.232858 Z
+  updated_at: 2011-07-20 21:52:01.232858 Z
+  id: 49
+  category_id: 
+  longitude: -118.127269
+- name: Aliso Viejo Golf Club
+  latitude: 33.57036
+  created_at: 2011-07-20 21:52:01.235567 Z
+  updated_at: 2011-07-20 21:52:01.235567 Z
+  id: 50
+  category_id: 
+  longitude: -117.705939
+- name: Dad Miller Golf Course
+  latitude: 33.83276
+  created_at: 2011-07-20 21:52:01.238036 Z
+  updated_at: 2011-07-20 21:52:01.238036 Z
+  id: 51
+  category_id: 
+  longitude: -117.915719
+- name: Anaheim Hills Public Country Club
+  latitude: 33.83276
+  created_at: 2011-07-20 21:52:01.240981 Z
+  updated_at: 2011-07-20 21:52:01.240981 Z
+  id: 52
+  category_id: 
+  longitude: -117.915719
+- name: Antelope Greens Golf Course
+  latitude: 38.711999
+  created_at: 2011-07-20 21:52:01.243664 Z
+  updated_at: 2011-07-20 21:52:01.243664 Z
+  id: 53
+  category_id: 
+  longitude: -121.364354
+- name: Golf Club At Roddy Ranch
+  latitude: 37.92638
+  created_at: 2011-07-20 21:52:01.246237 Z
+  updated_at: 2011-07-20 21:52:01.246237 Z
+  id: 54
+  category_id: 
+  longitude: -121.803307
+- name: Lone Tree Golf Course
+  latitude: 37.967588
+  created_at: 2011-07-20 21:52:01.249081 Z
+  updated_at: 2011-07-20 21:52:01.249081 Z
+  id: 55
+  category_id: 
+  longitude: -121.797453
+- name: Jess Ranch Golf Course
+  latitude: 34.523211
+  created_at: 2011-07-20 21:52:01.251936 Z
+  updated_at: 2011-07-20 21:52:01.251936 Z
+  id: 56
+  category_id: 
+  longitude: -117.215742
+- name: Aptos Seascape Golf Course
+  latitude: 36.975665
+  created_at: 2011-07-20 21:52:01.254689 Z
+  updated_at: 2011-07-20 21:52:01.254689 Z
+  id: 57
+  category_id: 
+  longitude: -121.886291
+- name: Arcadia Golf Course
+  latitude: 34.136165
+  created_at: 2011-07-20 21:52:01.257533 Z
+  updated_at: 2011-07-20 21:52:01.257533 Z
+  id: 58
+  category_id: 
+  longitude: -118.038854
+- name: Santa Anita Golf Course
+  latitude: 34.136165
+  created_at: 2011-07-20 21:52:01.261270 Z
+  updated_at: 2011-07-20 21:52:01.261270 Z
+  id: 59
+  category_id: 
+  longitude: -118.038854
+- name: Cypress Ridge
+  latitude: 35.070107
+  created_at: 2011-07-20 21:52:01.264204 Z
+  updated_at: 2011-07-20 21:52:01.264204 Z
+  id: 60
+  category_id: 
+  longitude: -120.578058
+- name: Sycamore Canyon Golf Course
+  latitude: 35.209027
+  created_at: 2011-07-20 21:52:01.266864 Z
+  updated_at: 2011-07-20 21:52:01.266864 Z
+  id: 61
+  category_id: 
+  longitude: -118.828986
+- name: Chalk Mountain Golf Course
+  latitude: 35.488695
+  created_at: 2011-07-20 21:52:01.269472 Z
+  updated_at: 2011-07-20 21:52:01.269472 Z
+  id: 62
+  category_id: 
+  longitude: -120.669064
+- name: Azusa Greens Country Club
+  latitude: 34.13361
+  created_at: 2011-07-20 21:52:01.272272 Z
+  updated_at: 2011-07-20 21:52:01.272272 Z
+  id: 63
+  category_id: 
+  longitude: -117.905879
+- name: James C. Haggerty North Kern Golf Course
+  latitude: 35.36697
+  created_at: 2011-07-20 21:52:01.275092 Z
+  updated_at: 2011-07-20 21:52:01.275092 Z
+  id: 64
+  category_id: 
+  longitude: -119.018863
+- name: Kern River Golf Course
+  latitude: 35.36697
+  created_at: 2011-07-20 21:52:01.277772 Z
+  updated_at: 2011-07-20 21:52:01.277772 Z
+  id: 65
+  category_id: 
+  longitude: -119.018863
+- name: Links At River Lakes Ranch
+  latitude: 35.366959
+  created_at: 2011-07-20 21:52:01.280431 Z
+  updated_at: 2011-07-20 21:52:01.280431 Z
+  id: 66
+  category_id: 
+  longitude: -119.01886
+- name: Valle Grande Golf Course
+  latitude: 35.36697
+  created_at: 2011-07-20 21:52:01.283007 Z
+  updated_at: 2011-07-20 21:52:01.283007 Z
+  id: 67
+  category_id: 
+  longitude: -119.018863
+- name: Oak Valley Golf Club
+  latitude: 33.929375
+  created_at: 2011-07-20 21:52:01.285625 Z
+  updated_at: 2011-07-20 21:52:01.285625 Z
+  id: 68
+  category_id: 
+  longitude: -116.975059
+- name: Tilden Park Golf Course
+  latitude: 37.869885
+  created_at: 2011-07-20 21:52:01.288173 Z
+  updated_at: 2011-07-20 21:52:01.288173 Z
+  id: 69
+  category_id: 
+  longitude: -122.270539
+- name: Blythe Golf Course
+  latitude: 33.610395
+  created_at: 2011-07-20 21:52:01.290907 Z
+  updated_at: 2011-07-20 21:52:01.290907 Z
+  id: 70
+  category_id: 
+  longitude: -114.598849
+- name: Bonita Golf Club
+  latitude: 32.67414
+  created_at: 2011-07-20 21:52:01.294309 Z
+  updated_at: 2011-07-20 21:52:01.294309 Z
+  id: 71
+  category_id: 
+  longitude: -117.017312
+- name: Chula Vista Golf Course
+  latitude: 32.67414
+  created_at: 2011-07-20 21:52:01.297059 Z
+  updated_at: 2011-07-20 21:52:01.297059 Z
+  id: 72
+  category_id: 
+  longitude: -117.017312
+- name: Birch Hills Golf Course
+  latitude: 33.917421
+  created_at: 2011-07-20 21:52:01.299667 Z
+  updated_at: 2011-07-20 21:52:01.299667 Z
+  id: 73
+  category_id: 
+  longitude: -117.888215
+- name: Imperial Golf Course
+  latitude: 33.917421
+  created_at: 2011-07-20 21:52:01.302561 Z
+  updated_at: 2011-07-20 21:52:01.302561 Z
+  id: 74
+  category_id: 
+  longitude: -117.888215
+- name: Brentwood Country Club
+  latitude: 36.042137
+  created_at: 2011-07-20 21:52:01.305592 Z
+  updated_at: 2011-07-20 21:52:01.305592 Z
+  id: 75
+  category_id: 
+  longitude: -86.776103
+- name: Shadow Lakes Golf Club
+  latitude: 37.934055
+  created_at: 2011-07-20 21:52:01.308320 Z
+  updated_at: 2011-07-20 21:52:01.308320 Z
+  id: 76
+  category_id: 
+  longitude: -121.692719
+- name: De Bell Municipal Golf Course -Regulation
+  latitude: 34.18147
+  created_at: 2011-07-20 21:52:01.311124 Z
+  updated_at: 2011-07-20 21:52:01.311124 Z
+  id: 77
+  category_id: 
+  longitude: -118.308124
+- name: Tierra Del Sol Golf Club  City
+  latitude: 35.12894
+  created_at: 2011-07-20 21:52:01.313787 Z
+  updated_at: 2011-07-20 21:52:01.313787 Z
+  id: 78
+  category_id: 3
+  longitude: -117.985629
+- name: Calimesa Country Club
+  latitude: 33.991915
+  created_at: 2011-07-20 21:52:01.316663 Z
+  updated_at: 2011-07-20 21:52:01.316663 Z
+  id: 79
+  category_id: 
+  longitude: -117.039959
+- name: Pga Of Southern California At Oak Valley
+  latitude: 39.802391
+  created_at: 2011-07-20 21:52:01.319357 Z
+  updated_at: 2011-07-20 21:52:01.319357 Z
+  id: 80
+  category_id: 
+  longitude: -75.165688
+- name: Camarillo Springs Golf Course
+  latitude: 34.2048
+  created_at: 2011-07-20 21:52:01.321900 Z
+  updated_at: 2011-07-20 21:52:01.321900 Z
+  id: 81
+  category_id: 
+  longitude: -118.984109
+- name: Sterling Hills Golf Club
+  latitude: 34.243806
+  created_at: 2011-07-20 21:52:01.325266 Z
+  updated_at: 2011-07-20 21:52:01.325266 Z
+  id: 82
+  category_id: 
+  longitude: -119.089639
+- name: Apple Mountain Golf Resort
+  latitude: 38.73836
+  created_at: 2011-07-20 21:52:01.328591 Z
+  updated_at: 2011-07-20 21:52:01.328591 Z
+  id: 83
+  category_id: 
+  longitude: -120.666079
+- name: Apple Mountain Golf Resort
+  latitude: 38.73836
+  created_at: 2011-07-20 21:52:01.331189 Z
+  updated_at: 2011-07-20 21:52:01.331189 Z
+  id: 84
+  category_id: 
+  longitude: -120.666079
+- name: Rancho Carlsbad Country Club
+  latitude: 33.165887
+  created_at: 2011-07-20 21:52:01.334017 Z
+  updated_at: 2011-07-20 21:52:01.334017 Z
+  id: 85
+  category_id: 
+  longitude: -117.338225
+- name: Rancho Canada Golf Club
+  latitude: 52.223418
+  created_at: 2011-07-20 21:52:01.337224 Z
+  updated_at: 2011-07-20 21:52:01.337224 Z
+  id: 86
+  category_id: 
+  longitude: -105.352852
+- name: Ancil Hoffman Golf Course
+  latitude: 38.625205
+  created_at: 2011-07-20 21:52:01.339973 Z
+  updated_at: 2011-07-20 21:52:01.339973 Z
+  id: 87
+  category_id: 
+  longitude: -121.328399
+- name: Dominguez Golf & Practice Center
+  latitude: 33.831612
+  created_at: 2011-07-20 21:52:01.342776 Z
+  updated_at: 2011-07-20 21:52:01.342776 Z
+  id: 88
+  category_id: 
+  longitude: -118.262123
+- name: Victoria Golf Course
+  latitude: 33.83161
+  created_at: 2011-07-20 21:52:01.345425 Z
+  updated_at: 2011-07-20 21:52:01.345425 Z
+  id: 89
+  category_id: 
+  longitude: -118.262119
+- name: Cimarron Golf Club
+  latitude: 33.781015
+  created_at: 2011-07-20 21:52:01.348244 Z
+  updated_at: 2011-07-20 21:52:01.348244 Z
+  id: 90
+  category_id: 
+  longitude: -116.464079
+- name: River Oaks Golf Course
+  latitude: 37.59476
+  created_at: 2011-07-20 21:52:01.351026 Z
+  updated_at: 2011-07-20 21:52:01.351026 Z
+  id: 91
+  category_id: 
+  longitude: -120.956299
+- name: Bidwell Park Golf Course
+  latitude: 39.77784
+  created_at: 2011-07-20 21:52:01.353732 Z
+  updated_at: 2011-07-20 21:52:01.353732 Z
+  id: 92
+  category_id: 
+  longitude: -121.77182
+- name: El Prado Golf Courses
+  latitude: 34.012811
+  created_at: 2011-07-20 21:52:01.356366 Z
+  updated_at: 2011-07-20 21:52:01.356366 Z
+  id: 93
+  category_id: 
+  longitude: -117.689328
+- name: Los Serranos Golf & Country Club
+  latitude: 33.962771
+  created_at: 2011-07-20 21:52:01.362372 Z
+  updated_at: 2011-07-20 21:52:01.362372 Z
+  id: 94
+  category_id: 
+  longitude: -117.694727
+- name: Pheasant Run Golf Course
+  latitude: 37.123195
+  created_at: 2011-07-20 21:52:01.365599 Z
+  updated_at: 2011-07-20 21:52:01.365599 Z
+  id: 95
+  category_id: 
+  longitude: -120.259619
+- name: Auld Course
+  latitude: 33.20204
+  created_at: 2011-07-20 21:52:01.368323 Z
+  updated_at: 2011-07-20 21:52:01.368323 Z
+  id: 96
+  category_id: 
+  longitude: -117.233962
+- name: Eastlake Country Club
+  latitude: 32.617045
+  created_at: 2011-07-20 21:52:01.371248 Z
+  updated_at: 2011-07-20 21:52:01.371248 Z
+  id: 97
+  category_id: 
+  longitude: -117.058419
+- name: Colton Golf Club
+  latitude: 34.071735
+  created_at: 2011-07-20 21:52:01.374385 Z
+  updated_at: 2011-07-20 21:52:01.374385 Z
+  id: 98
+  category_id: 
+  longitude: -117.323309
+- name: Diablo Creek Golf Course
+  latitude: 35.662913
+  created_at: 2011-07-20 21:52:01.377164 Z
+  updated_at: 2011-07-20 21:52:01.377164 Z
+  id: 99
+  category_id: 
+  longitude: -91.848972
+- name: Cresta Verde Golf Club
+  latitude: 33.877895
+  created_at: 2011-07-20 21:52:01.379991 Z
+  updated_at: 2011-07-20 21:52:01.379991 Z
+  id: 100
+  category_id: 
+  longitude: -117.575039
+- name: "Green River Golf Club\xA0"
+  latitude: 33.877895
+  created_at: 2011-07-20 21:52:01.382746 Z
+  updated_at: 2011-07-20 21:52:01.382746 Z
+  id: 101
+  category_id: 
+  longitude: -117.575039
+- name: Mountain View Country Club
+  latitude: 33.877895
+  created_at: 2011-07-20 21:52:01.385466 Z
+  updated_at: 2011-07-20 21:52:01.385466 Z
+  id: 102
+  category_id: 
+  longitude: -117.575039
+- name: Coronado Golf Course
+  latitude: 32.676235
+  created_at: 2011-07-20 21:52:01.388024 Z
+  updated_at: 2011-07-20 21:52:01.388024 Z
+  id: 103
+  category_id: 
+  longitude: -117.170959
+- name: Coyote Creek
+  latitude: 37.213591
+  created_at: 2011-07-20 21:52:01.390956 Z
+  updated_at: 2011-07-20 21:52:01.390956 Z
+  id: 104
+  category_id: 
+  longitude: -121.736242
+- name: Deep Cliff Golf Course
+  latitude: 37.31884
+  created_at: 2011-07-20 21:52:01.393926 Z
+  updated_at: 2011-07-20 21:52:01.393926 Z
+  id: 105
+  category_id: 
+  longitude: -122.029244
+- name: Seal Beach Navy Golf Course -Destroyer
+  latitude: 33.824345
+  created_at: 2011-07-20 21:52:01.396809 Z
+  updated_at: 2011-07-20 21:52:01.396809 Z
+  id: 106
+  category_id: 
+  longitude: -118.037489
+- name: Davis Golf Course
+  latitude: 38.546644
+  created_at: 2011-07-20 21:52:01.399375 Z
+  updated_at: 2011-07-20 21:52:01.399375 Z
+  id: 107
+  category_id: 
+  longitude: -121.744807
+- name: Desert Dunes Golf Course
+  latitude: 33.9614
+  created_at: 2011-07-20 21:52:01.402066 Z
+  updated_at: 2011-07-20 21:52:01.402066 Z
+  id: 108
+  category_id: 
+  longitude: -116.510729
+- name: Diamond Bar Golf Course
+  latitude: 33.999257
+  created_at: 2011-07-20 21:52:01.404869 Z
+  updated_at: 2011-07-20 21:52:01.404869 Z
+  id: 109
+  category_id: 
+  longitude: -117.831459
+- name: Los Amigos Country Club
+  latitude: 33.940035
+  created_at: 2011-07-20 21:52:01.592176 Z
+  updated_at: 2011-07-20 21:52:01.592176 Z
+  id: 110
+  category_id: 
+  longitude: -118.128234
+- name: Rio Hondo Golf Club
+  latitude: 33.940035
+  created_at: 2011-07-20 21:52:01.597744 Z
+  updated_at: 2011-07-20 21:52:01.597744 Z
+  id: 111
+  category_id: 
+  longitude: -118.128234
+- name: Cottonwood At Rancho San Diego
+  latitude: 32.746349
+  created_at: 2011-07-20 21:52:01.600786 Z
+  updated_at: 2011-07-20 21:52:01.600786 Z
+  id: 112
+  category_id: 
+  longitude: -116.938619
+- name: El Dorado Hills Golf Course
+  latitude: 38.677049
+  created_at: 2011-07-20 21:52:01.604080 Z
+  updated_at: 2011-07-20 21:52:01.604080 Z
+  id: 113
+  category_id: 
+  longitude: -121.07781
+- name: Cherry Island Golf Course
+  latitude: 38.70969
+  created_at: 2011-07-20 21:52:01.606729 Z
+  updated_at: 2011-07-20 21:52:01.606729 Z
+  id: 114
+  category_id: 
+  longitude: -121.44573
+- name: Encinitas Ranch Golf Course
+  latitude: 33.045436
+  created_at: 2011-07-20 21:52:01.609476 Z
+  updated_at: 2011-07-20 21:52:01.609476 Z
+  id: 115
+  category_id: 
+  longitude: -117.292518
+- name: Sepulveda Golf Complex
+  latitude: 34.164971
+  created_at: 2011-07-20 21:52:01.612240 Z
+  updated_at: 2011-07-20 21:52:01.612240 Z
+  id: 116
+  category_id: 
+  longitude: -118.525809
+- name: Eagle Crest Golf Club
+  latitude: 33.12316
+  created_at: 2011-07-20 21:52:01.614821 Z
+  updated_at: 2011-07-20 21:52:01.614821 Z
+  id: 117
+  category_id: 
+  longitude: -117.082169
+- name: Vineyard At Escondido
+  latitude: 33.123161
+  created_at: 2011-07-20 21:52:01.617555 Z
+  updated_at: 2011-07-20 21:52:01.617555 Z
+  id: 118
+  category_id: 
+  longitude: -117.082169
+- name: Eureka Municipal Golf Course
+  latitude: 40.803255
+  created_at: 2011-07-20 21:52:01.620235 Z
+  updated_at: 2011-07-20 21:52:01.620235 Z
+  id: 119
+  category_id: 
+  longitude: -124.159554
+- name: Paradise Valley Golf Course
+  latitude: 38.300015
+  created_at: 2011-07-20 21:52:01.622711 Z
+  updated_at: 2011-07-20 21:52:01.622711 Z
+  id: 120
+  category_id: 
+  longitude: -122.032719
+- name: Rancho Solano Golf Course
+  latitude: 38.289815
+  created_at: 2011-07-20 21:52:01.626832 Z
+  updated_at: 2011-07-20 21:52:01.626832 Z
+  id: 121
+  category_id: 
+  longitude: -122.074752
+- name: Fallbrook Golf Club
+  latitude: 33.384659
+  created_at: 2011-07-20 21:52:01.629780 Z
+  updated_at: 2011-07-20 21:52:01.629780 Z
+  id: 122
+  category_id: 
+  longitude: -117.253124
+- name: Sierra Lakes Golf Course
+  latitude: 34.10205
+  created_at: 2011-07-20 21:52:01.632331 Z
+  updated_at: 2011-07-20 21:52:01.632331 Z
+  id: 123
+  category_id: 
+  longitude: -117.435759
+- name: David L. Baker Memorial Golf
+  latitude: 33.70907
+  created_at: 2011-07-20 21:52:01.635093 Z
+  updated_at: 2011-07-20 21:52:01.635093 Z
+  id: 124
+  category_id: 
+  longitude: -117.950664
+- name: Mile Square Golf Course
+  latitude: 45.390655
+  created_at: 2011-07-20 21:52:01.638132 Z
+  updated_at: 2011-07-20 21:52:01.638132 Z
+  id: 125
+  category_id: 
+  longitude: -63.201774
+- name: Airways Golf Course
+  latitude: 36.740685
+  created_at: 2011-07-20 21:52:01.640491 Z
+  updated_at: 2011-07-20 21:52:01.640491 Z
+  id: 126
+  category_id: 
+  longitude: -119.785734
+- name: Palm Lakes Golf Course
+  latitude: 36.740685
+  created_at: 2011-07-20 21:52:01.643078 Z
+  updated_at: 2011-07-20 21:52:01.643078 Z
+  id: 127
+  category_id: 
+  longitude: -119.785734
+- name: Riverside Golf Course Of Fresno
+  latitude: 36.740685
+  created_at: 2011-07-20 21:52:01.645792 Z
+  updated_at: 2011-07-20 21:52:01.645792 Z
+  id: 128
+  category_id: 
+  longitude: -119.785734
+- name: Coyote Hills Golf Course
+  latitude: 33.870325
+  created_at: 2011-07-20 21:52:01.648453 Z
+  updated_at: 2011-07-20 21:52:01.648453 Z
+  id: 129
+  category_id: 
+  longitude: -117.929104
+- name: Fullerton Golf Course
+  latitude: 33.886852
+  created_at: 2011-07-20 21:52:01.650978 Z
+  updated_at: 2011-07-20 21:52:01.650978 Z
+  id: 130
+  category_id: 
+  longitude: -117.891509
+- name: Dry Creek Ranch Golf Course
+  latitude: 38.252745
+  created_at: 2011-07-20 21:52:01.653653 Z
+  updated_at: 2011-07-20 21:52:01.653653 Z
+  id: 131
+  category_id: 
+  longitude: -121.300814
+- name: Eagle Ridge Golf Club
+  latitude: 37.004385
+  created_at: 2011-07-20 21:52:01.656206 Z
+  updated_at: 2011-07-20 21:52:01.656206 Z
+  id: 132
+  category_id: 
+  longitude: -121.571669
+- name: Scholl Canyon Golf & Tennis Club
+  latitude: 33.538582
+  created_at: 2011-07-20 21:52:01.659627 Z
+  updated_at: 2011-07-20 21:52:01.659627 Z
+  id: 133
+  category_id: 
+  longitude: -112.186279
+- name: Sandpiper Golf Course
+  latitude: 34.435682
+  created_at: 2011-07-20 21:52:01.662392 Z
+  updated_at: 2011-07-20 21:52:01.662392 Z
+  id: 134
+  category_id: 
+  longitude: -119.824105
+- name: Plumas Pines Golf Resort
+  latitude: 39.766467
+  created_at: 2011-07-20 21:52:01.665100 Z
+  updated_at: 2011-07-20 21:52:01.665100 Z
+  id: 135
+  category_id: 
+  longitude: -120.618865
+- name: Knollwood Golf Course
+  latitude: 34.26394
+  created_at: 2011-07-20 21:52:01.667824 Z
+  updated_at: 2011-07-20 21:52:01.667824 Z
+  id: 136
+  category_id: 
+  longitude: -118.497943
+- name: Skywest Golf Course
+  latitude: 37.667795
+  created_at: 2011-07-20 21:52:01.670712 Z
+  updated_at: 2011-07-20 21:52:01.670712 Z
+  id: 137
+  category_id: 
+  longitude: -122.119404
+- name: Diamond Valley Golf Club
+  latitude: 33.6748
+  created_at: 2011-07-20 21:52:01.673490 Z
+  updated_at: 2011-07-20 21:52:01.673490 Z
+  id: 138
+  category_id: 
+  longitude: -116.983694
+- name: Seven Hills Golf Club
+  latitude: 33.74937
+  created_at: 2011-07-20 21:52:01.676207 Z
+  updated_at: 2011-07-20 21:52:01.676207 Z
+  id: 139
+  category_id: 
+  longitude: -116.967889
+- name: San Juan Oaks Golf Club
+  latitude: 36.852535
+  created_at: 2011-07-20 21:52:01.678992 Z
+  updated_at: 2011-07-20 21:52:01.678992 Z
+  id: 140
+  category_id: 
+  longitude: -121.403259
+- name: Meadowlark Golf Course
+  latitude: 46.9193
+  created_at: 2011-07-20 21:52:01.681454 Z
+  updated_at: 2011-07-20 21:52:01.681454 Z
+  id: 141
+  category_id: 
+  longitude: -104.006124
+- name: Indio Golf Club
+  latitude: 33.721702
+  created_at: 2011-07-20 21:52:01.683958 Z
+  updated_at: 2011-07-20 21:52:01.683958 Z
+  id: 142
+  category_id: 
+  longitude: -116.219425
+- name: Landmark Golf Club
+  latitude: 33.721702
+  created_at: 2011-07-20 21:52:01.686716 Z
+  updated_at: 2011-07-20 21:52:01.686716 Z
+  id: 143
+  category_id: 
+  longitude: -116.219425
+- name: Castle Oaks Golf Club
+  latitude: 38.35238
+  created_at: 2011-07-20 21:52:01.689348 Z
+  updated_at: 2011-07-20 21:52:01.689348 Z
+  id: 144
+  category_id: 
+  longitude: -120.933249
+- name: El Toro Golf Course
+  latitude: 33.686887
+  created_at: 2011-07-20 21:52:01.692413 Z
+  updated_at: 2011-07-20 21:52:01.692413 Z
+  id: 145
+  category_id: 
+  longitude: -117.825348
+- name: Oak Creek Golf Club
+  latitude: 33.686887
+  created_at: 2011-07-20 21:52:01.695265 Z
+  updated_at: 2011-07-20 21:52:01.695265 Z
+  id: 146
+  category_id: 
+  longitude: -117.825348
+- name: Rancho San Joaquin Golf Course
+  latitude: 33.686887
+  created_at: 2011-07-20 21:52:01.698027 Z
+  updated_at: 2011-07-20 21:52:01.698027 Z
+  id: 147
+  category_id: 
+  longitude: -117.825348
+- name: Strawberry Farms Golf Club
+  latitude: 33.649572
+  created_at: 2011-07-20 21:52:01.700599 Z
+  updated_at: 2011-07-20 21:52:01.700599 Z
+  id: 148
+  category_id: 
+  longitude: -117.796291
+- name: Fresno West Golf Course
+  latitude: 36.72856
+  created_at: 2011-07-20 21:52:01.703204 Z
+  updated_at: 2011-07-20 21:52:01.703204 Z
+  id: 149
+  category_id: 
+  longitude: -120.060269
+- name: Torrey Pines Municipal Golf Course
+  latitude: 32.842592
+  created_at: 2011-07-20 21:52:01.705989 Z
+  updated_at: 2011-07-20 21:52:01.705989 Z
+  id: 150
+  category_id: 
+  longitude: -117.272276
+- name: La Mirada Golf Club
+  latitude: 33.90707
+  created_at: 2011-07-20 21:52:01.708767 Z
+  updated_at: 2011-07-20 21:52:01.708767 Z
+  id: 151
+  category_id: 
+  longitude: -118.011719
+- name: Palm Royale Country Club
+  latitude: 33.67814
+  created_at: 2011-07-20 21:52:01.711429 Z
+  updated_at: 2011-07-20 21:52:01.711429 Z
+  id: 152
+  category_id: 
+  longitude: -116.297229
+- name: Marshall Canyon Golf Club
+  latitude: 34.112905
+  created_at: 2011-07-20 21:52:01.713868 Z
+  updated_at: 2011-07-20 21:52:01.713868 Z
+  id: 153
+  category_id: 
+  longitude: -117.765259
+- name: Bailey Creek Golf Course
+  latitude: 40.287735
+  created_at: 2011-07-20 21:52:01.716480 Z
+  updated_at: 2011-07-20 21:52:01.716480 Z
+  id: 154
+  category_id: 
+  longitude: -121.145833
+- name: Lake Elizabeth Golf Club
+  latitude: 36.333128
+  created_at: 2011-07-20 21:52:01.719162 Z
+  updated_at: 2011-07-20 21:52:01.719162 Z
+  id: 155
+  category_id: 
+  longitude: -92.096778
+- name: Lake San Marcos Resort & Executive Golf Course
+  latitude: 33.125309
+  created_at: 2011-07-20 21:52:01.722009 Z
+  updated_at: 2011-07-20 21:52:01.722009 Z
+  id: 156
+  category_id: 
+  longitude: -117.210533
+- name: Barona Creek Golf Club
+  latitude: 34.136225
+  created_at: 2011-07-20 21:52:01.725172 Z
+  updated_at: 2011-07-20 21:52:01.725172 Z
+  id: 157
+  category_id: 
+  longitude: -109.950879
+- name: Lakewood Country Club
+  latitude: 32.811901
+  created_at: 2011-07-20 21:52:01.727930 Z
+  updated_at: 2011-07-20 21:52:01.727930 Z
+  id: 158
+  category_id: 
+  longitude: -96.744621
+- name: Alondra Park Golf Course
+  latitude: 33.887329
+  created_at: 2011-07-20 21:52:01.730508 Z
+  updated_at: 2011-07-20 21:52:01.730508 Z
+  id: 159
+  category_id: 
+  longitude: -118.33989
+- name: Lemoore Golf Course
+  latitude: 36.30101
+  created_at: 2011-07-20 21:52:01.732999 Z
+  updated_at: 2011-07-20 21:52:01.732999 Z
+  id: 160
+  category_id: 
+  longitude: -119.786369
+- name: Turkey Creek Golf Club
+  latitude: 38.89109
+  created_at: 2011-07-20 21:52:01.736004 Z
+  updated_at: 2011-07-20 21:52:01.736004 Z
+  id: 161
+  category_id: 
+  longitude: -121.263995
+- name: Turkey Creek Golf Course
+  latitude: 38.89109
+  created_at: 2011-07-20 21:52:01.738917 Z
+  updated_at: 2011-07-20 21:52:01.738917 Z
+  id: 162
+  category_id: 
+  longitude: -121.263995
+- name: Course At Wente Vineyards
+  latitude: 37.67524
+  created_at: 2011-07-20 21:52:01.741518 Z
+  updated_at: 2011-07-20 21:52:01.741518 Z
+  id: 163
+  category_id: 
+  longitude: -121.757828
+- name: Las Positas Golf Course -Regulation
+  latitude: 37.675245
+  created_at: 2011-07-20 21:52:01.744224 Z
+  updated_at: 2011-07-20 21:52:01.744224 Z
+  id: 164
+  category_id: 
+  longitude: -121.757829
+- name: "Poppy Ridge Golf Course\xA0"
+  latitude: 37.675245
+  created_at: 2011-07-20 21:52:01.746709 Z
+  updated_at: 2011-07-20 21:52:01.746709 Z
+  id: 165
+  category_id: 
+  longitude: -121.757829
+- name: Lockeford Springs Golf Course
+  latitude: 38.130155
+  created_at: 2011-07-20 21:52:01.749426 Z
+  updated_at: 2011-07-20 21:52:01.749426 Z
+  id: 166
+  category_id: 
+  longitude: -121.275969
+- name: Micke Grove Golf Links
+  latitude: 38.130155
+  created_at: 2011-07-20 21:52:01.752160 Z
+  updated_at: 2011-07-20 21:52:01.752160 Z
+  id: 167
+  category_id: 
+  longitude: -121.275969
+- name: La Purisima Golf Course
+  latitude: 34.639805
+  created_at: 2011-07-20 21:52:01.754708 Z
+  updated_at: 2011-07-20 21:52:01.754708 Z
+  id: 168
+  category_id: 
+  longitude: -120.457879
+- name: El Dorado Park Golf Club
+  latitude: 33.810299
+  created_at: 2011-07-20 21:52:01.758832 Z
+  updated_at: 2011-07-20 21:52:01.758832 Z
+  id: 169
+  category_id: 
+  longitude: -118.086983
+- name: Heartwell Golf Course
+  latitude: 46.9193
+  created_at: 2011-07-20 21:52:01.761883 Z
+  updated_at: 2011-07-20 21:52:01.761883 Z
+  id: 170
+  category_id: 
+  longitude: -104.006124
+- name: Recreation Park American Golf Club
+  latitude: 33.775291
+  created_at: 2011-07-20 21:52:01.764482 Z
+  updated_at: 2011-07-20 21:52:01.764482 Z
+  id: 171
+  category_id: 
+  longitude: -118.136093
+- name: Skylinks Golf Course
+  latitude: 46.9193
+  created_at: 2011-07-20 21:52:01.767081 Z
+  updated_at: 2011-07-20 21:52:01.767081 Z
+  id: 172
+  category_id: 
+  longitude: -104.006124
+- name: Cypress Golf Club
+  latitude: 33.803165
+  created_at: 2011-07-20 21:52:01.770134 Z
+  updated_at: 2011-07-20 21:52:01.770134 Z
+  id: 173
+  category_id: 
+  longitude: -118.076624
+- name: Chester Washington Golf Course
+  latitude: 34.05349
+  created_at: 2011-07-20 21:52:01.772899 Z
+  updated_at: 2011-07-20 21:52:01.772899 Z
+  id: 174
+  category_id: 
+  longitude: -118.245319
+- name: Griffith Park Golf Courses
+  latitude: 34.122379
+  created_at: 2011-07-20 21:52:01.775635 Z
+  updated_at: 2011-07-20 21:52:01.775635 Z
+  id: 175
+  category_id: 
+  longitude: -118.274162
+- name: Rancho Park Golf Course
+  latitude: 34.05349
+  created_at: 2011-07-20 21:52:01.778260 Z
+  updated_at: 2011-07-20 21:52:01.778260 Z
+  id: 176
+  category_id: 
+  longitude: -118.245319
+- name: Madera Municipal Golf Course
+  latitude: 36.989159
+  created_at: 2011-07-20 21:52:01.780910 Z
+  updated_at: 2011-07-20 21:52:01.780910 Z
+  id: 177
+  category_id: 
+  longitude: -120.108902
+- name: Riverbend Golf Club
+  latitude: 36.962055
+  created_at: 2011-07-20 21:52:01.783403 Z
+  updated_at: 2011-07-20 21:52:01.783403 Z
+  id: 178
+  category_id: 
+  longitude: -120.063994
+- name: Malibu Country Club
+  latitude: 34.039584
+  created_at: 2011-07-20 21:52:01.786062 Z
+  updated_at: 2011-07-20 21:52:01.786062 Z
+  id: 179
+  category_id: 
+  longitude: -118.712725
+- name: Manteca Park Golf Course
+  latitude: 37.79917
+  created_at: 2011-07-20 21:52:01.788476 Z
+  updated_at: 2011-07-20 21:52:01.788476 Z
+  id: 180
+  category_id: 
+  longitude: -121.232189
+- name: Mather Golf Course
+  latitude: 38.570795
+  created_at: 2011-07-20 21:52:01.791735 Z
+  updated_at: 2011-07-20 21:52:01.791735 Z
+  id: 181
+  category_id: 
+  longitude: -121.297969
+- name: Merced Hills Golf Club
+  latitude: 37.30127
+  created_at: 2011-07-20 21:52:01.794625 Z
+  updated_at: 2011-07-20 21:52:01.794625 Z
+  id: 182
+  category_id: 
+  longitude: -120.486199
+- name: Spring Valley Golf Course
+  latitude: 37.432805
+  created_at: 2011-07-20 21:52:01.797359 Z
+  updated_at: 2011-07-20 21:52:01.797359 Z
+  id: 183
+  category_id: 
+  longitude: -121.897259
+- name: Summitpointe Golf Course
+  latitude: 37.432805
+  created_at: 2011-07-20 21:52:01.800198 Z
+  updated_at: 2011-07-20 21:52:01.800198 Z
+  id: 184
+  category_id: 
+  longitude: -121.897259
+- name: Goose Creek Golf Club
+  latitude: 33.9927
+  created_at: 2011-07-20 21:52:01.802755 Z
+  updated_at: 2011-07-20 21:52:01.802755 Z
+  id: 185
+  category_id: 
+  longitude: -117.518369
+- name: Casta Del Sol Golf Course
+  latitude: 33.616258
+  created_at: 2011-07-20 21:52:01.805492 Z
+  updated_at: 2011-07-20 21:52:01.805492 Z
+  id: 186
+  category_id: 
+  longitude: -117.650522
+- name: Modesto Creekside Golf Course
+  latitude: 37.6383
+  created_at: 2011-07-20 21:52:01.808179 Z
+  updated_at: 2011-07-20 21:52:01.808179 Z
+  id: 187
+  category_id: 
+  longitude: -120.999589
+- name: Modesto Dryden Park Golf Course
+  latitude: 37.6383
+  created_at: 2011-07-20 21:52:01.810618 Z
+  updated_at: 2011-07-20 21:52:01.810618 Z
+  id: 188
+  category_id: 
+  longitude: -120.999589
+- name: Montebello Country Club
+  latitude: 41.116382
+  created_at: 2011-07-20 21:52:01.813334 Z
+  updated_at: 2011-07-20 21:52:01.813334 Z
+  id: 189
+  category_id: 
+  longitude: -74.104565
+- name: Laguna Seca Golf Club
+  latitude: 36.581316
+  created_at: 2011-07-20 21:52:01.816058 Z
+  updated_at: 2011-07-20 21:52:01.816058 Z
+  id: 190
+  category_id: 
+  longitude: -121.756992
+- name: Morro Bay Golf Course
+  latitude: 35.36692
+  created_at: 2011-07-20 21:52:01.818796 Z
+  updated_at: 2011-07-20 21:52:01.818796 Z
+  id: 191
+  category_id: 
+  longitude: -120.847109
+- name: Forest Meadows Golf Course
+  latitude: 38.163347
+  created_at: 2011-07-20 21:52:01.821415 Z
+  updated_at: 2011-07-20 21:52:01.821415 Z
+  id: 192
+  category_id: 
+  longitude: -120.412216
+- name: Scga Member s Club At Rancho California
+  latitude: 33.558151
+  created_at: 2011-07-20 21:52:01.824252 Z
+  updated_at: 2011-07-20 21:52:01.824252 Z
+  id: 193
+  category_id: 
+  longitude: -117.211479
+- name: Chardonnay Golf Club
+  latitude: 38.298855
+  created_at: 2011-07-20 21:52:01.826853 Z
+  updated_at: 2011-07-20 21:52:01.826853 Z
+  id: 194
+  category_id: 
+  longitude: -122.285194
+- name: Napa Golf Course At Kennedy Park
+  latitude: 38.298851
+  created_at: 2011-07-20 21:52:01.829435 Z
+  updated_at: 2011-07-20 21:52:01.829435 Z
+  id: 195
+  category_id: 
+  longitude: -122.285187
+- name: Needles Municipal Golf Course
+  latitude: 34.83847
+  created_at: 2011-07-20 21:52:01.831972 Z
+  updated_at: 2011-07-20 21:52:01.831972 Z
+  id: 196
+  category_id: 
+  longitude: -114.604334
+- name: Newport Beach Golf Course
+  latitude: 33.61655
+  created_at: 2011-07-20 21:52:01.834520 Z
+  updated_at: 2011-07-20 21:52:01.834520 Z
+  id: 197
+  category_id: 
+  longitude: -117.930371
+- name: Blacklake Golf Course
+  latitude: 35.042485
+  created_at: 2011-07-20 21:52:01.837365 Z
+  updated_at: 2011-07-20 21:52:01.837365 Z
+  id: 198
+  category_id: 
+  longitude: -120.476594
+- name: Hidden Valley Golf Club
+  latitude: 33.897545
+  created_at: 2011-07-20 21:52:01.839896 Z
+  updated_at: 2011-07-20 21:52:01.839896 Z
+  id: 199
+  category_id: 
+  longitude: -117.542678
+- name: Indian Valley Golf Club
+  latitude: 38.090199
+  created_at: 2011-07-20 21:52:01.842346 Z
+  updated_at: 2011-07-20 21:52:01.842346 Z
+  id: 200
+  category_id: 
+  longitude: -122.579579
+- name: Stonetree Golf Club
+  latitude: 38.106075
+  created_at: 2011-07-20 21:52:01.844938 Z
+  updated_at: 2011-07-20 21:52:01.844938 Z
+  id: 201
+  category_id: 
+  longitude: -122.567889
+- name: Lake Chabot Municipal Golf Course -Regulation
+  latitude: 36.460165
+  created_at: 2011-07-20 21:52:01.847638 Z
+  updated_at: 2011-07-20 21:52:01.847638 Z
+  id: 202
+  category_id: 
+  longitude: -92.569119
+- name: Emerald Isle Golf Course
+  latitude: 33.19715
+  created_at: 2011-07-20 21:52:01.850318 Z
+  updated_at: 2011-07-20 21:52:01.850318 Z
+  id: 203
+  category_id: 
+  longitude: -117.380584
+- name: Oceanside Center City Golf Course
+  latitude: 33.19715
+  created_at: 2011-07-20 21:52:01.852860 Z
+  updated_at: 2011-07-20 21:52:01.852860 Z
+  id: 204
+  category_id: 
+  longitude: -117.380584
+- name: Oceanside Golf Course
+  latitude: 33.19291
+  created_at: 2011-07-20 21:52:01.855169 Z
+  updated_at: 2011-07-20 21:52:01.855169 Z
+  id: 205
+  category_id: 
+  longitude: -117.386659
+- name: Soule Park Golf Club
+  latitude: 34.443821
+  created_at: 2011-07-20 21:52:01.858525 Z
+  updated_at: 2011-07-20 21:52:01.858525 Z
+  id: 206
+  category_id: 
+  longitude: -119.246666
+- name: Table Mountain Golf Club
+  latitude: 39.53447
+  created_at: 2011-07-20 21:52:01.861520 Z
+  updated_at: 2011-07-20 21:52:01.861520 Z
+  id: 207
+  category_id: 
+  longitude: -121.575529
+- name: River Ridge Golf Club
+  latitude: 34.20034
+  created_at: 2011-07-20 21:52:01.864452 Z
+  updated_at: 2011-07-20 21:52:01.864452 Z
+  id: 208
+  category_id: 
+  longitude: -119.180439
+- name: Pacific Grove Municipal Golf Course
+  latitude: 36.61933
+  created_at: 2011-07-20 21:52:01.866978 Z
+  updated_at: 2011-07-20 21:52:01.866978 Z
+  id: 209
+  category_id: 
+  longitude: -121.918594
+- name: Sharp Park Golf Course
+  latitude: 37.635265
+  created_at: 2011-07-20 21:52:01.869412 Z
+  updated_at: 2011-07-20 21:52:01.869412 Z
+  id: 210
+  category_id: 
+  longitude: -122.491114
+- name: Hansen Dam Golf Course
+  latitude: 34.26089
+  created_at: 2011-07-20 21:52:01.872279 Z
+  updated_at: 2011-07-20 21:52:01.872279 Z
+  id: 211
+  category_id: 
+  longitude: -118.429249
+- name: Desert Willow Golf Resort
+  latitude: 33.728913
+  created_at: 2011-07-20 21:52:01.874951 Z
+  updated_at: 2011-07-20 21:52:01.874951 Z
+  id: 212
+  category_id: 
+  longitude: -116.380319
+- name: Palo Alto Municipal Golf Course
+  latitude: 34.465754
+  created_at: 2011-07-20 21:52:01.877459 Z
+  updated_at: 2011-07-20 21:52:01.877459 Z
+  id: 213
+  category_id: 
+  longitude: -83.576051
+- name: Brookside Golf Club
+  latitude: 34.147235
+  created_at: 2011-07-20 21:52:01.880039 Z
+  updated_at: 2011-07-20 21:52:01.880039 Z
+  id: 214
+  category_id: 
+  longitude: -118.144264
+- name: Hunter Ranch Golf Course
+  latitude: 35.625095
+  created_at: 2011-07-20 21:52:01.882730 Z
+  updated_at: 2011-07-20 21:52:01.882730 Z
+  id: 215
+  category_id: 
+  longitude: -120.691264
+- name: Links Course At Paso Robles
+  latitude: 35.625092
+  created_at: 2011-07-20 21:52:01.885268 Z
+  updated_at: 2011-07-20 21:52:01.885268 Z
+  id: 216
+  category_id: 
+  longitude: -120.691261
+- name: Paso Robles Golf Club
+  latitude: 35.625095
+  created_at: 2011-07-20 21:52:01.887737 Z
+  updated_at: 2011-07-20 21:52:01.887737 Z
+  id: 217
+  category_id: 
+  longitude: -120.691264
+- name: Diablo Grande
+  latitude: 37.443435
+  created_at: 2011-07-20 21:52:01.890481 Z
+  updated_at: 2011-07-20 21:52:01.890481 Z
+  id: 218
+  category_id: 
+  longitude: -121.194498
+- name: Poppy Hills Golf Course
+  latitude: 46.9193
+  created_at: 2011-07-20 21:52:01.893619 Z
+  updated_at: 2011-07-20 21:52:01.893619 Z
+  id: 219
+  category_id: 
+  longitude: -104.006124
+- name: Adobe Creek Golf Course
+  latitude: 38.232471
+  created_at: 2011-07-20 21:52:01.896141 Z
+  updated_at: 2011-07-20 21:52:01.896141 Z
+  id: 220
+  category_id: 
+  longitude: -122.644448
+- name: Rooster Run Golf Club
+  latitude: 38.232471
+  created_at: 2011-07-20 21:52:01.898767 Z
+  updated_at: 2011-07-20 21:52:01.898767 Z
+  id: 221
+  category_id: 
+  longitude: -122.644448
+- name: Pittsburg s Delta View Golf Course
+  latitude: 38.01905
+  created_at: 2011-07-20 21:52:01.901259 Z
+  updated_at: 2011-07-20 21:52:01.901259 Z
+  id: 222
+  category_id: 
+  longitude: -121.888669
+- name: Mountain Meadows Golf Course
+  latitude: 34.05483
+  created_at: 2011-07-20 21:52:01.904111 Z
+  updated_at: 2011-07-20 21:52:01.904111 Z
+  id: 223
+  category_id: 
+  longitude: -117.750034
+- name: Mt. Woodson Country Club
+  latitude: 46.679489
+  created_at: 2011-07-20 21:52:01.906621 Z
+  updated_at: 2011-07-20 21:52:01.906621 Z
+  id: 224
+  category_id: 
+  longitude: -110.04454
+- name: Empire Lakes Golf Course
+  latitude: 34.102617
+  created_at: 2011-07-20 21:52:01.909253 Z
+  updated_at: 2011-07-20 21:52:01.909253 Z
+  id: 225
+  category_id: 
+  longitude: -117.573839
+- name: Los Verdes Golf Course
+  latitude: 33.745264
+  created_at: 2011-07-20 21:52:01.911947 Z
+  updated_at: 2011-07-20 21:52:01.911947 Z
+  id: 226
+  category_id: 
+  longitude: -118.403783
+- name: Ocean Trails Golf Club
+  latitude: 33.745264
+  created_at: 2011-07-20 21:52:01.914642 Z
+  updated_at: 2011-07-20 21:52:01.914642 Z
+  id: 227
+  category_id: 
+  longitude: -118.403783
+- name: Tijeras Creek Golf Club
+  latitude: 33.634317
+  created_at: 2011-07-20 21:52:01.917060 Z
+  updated_at: 2011-07-20 21:52:01.917060 Z
+  id: 228
+  category_id: 
+  longitude: -117.603406
+- name: Oak Creek Golf Course
+  latitude: 40.177975
+  created_at: 2011-07-20 21:52:01.919596 Z
+  updated_at: 2011-07-20 21:52:01.919596 Z
+  id: 229
+  category_id: 
+  longitude: -122.235314
+- name: El Rancho Verde Country Club
+  latitude: 34.099655
+  created_at: 2011-07-20 21:52:01.922313 Z
+  updated_at: 2011-07-20 21:52:01.922313 Z
+  id: 230
+  category_id: 
+  longitude: -117.372829
+- name: Rio Vista Golf Club
+  latitude: 38.155435
+  created_at: 2011-07-20 21:52:01.924875 Z
+  updated_at: 2011-07-20 21:52:01.924875 Z
+  id: 231
+  category_id: 
+  longitude: -121.690299
+- name: Jack Tone Golf
+  latitude: 37.804925
+  created_at: 2011-07-20 21:52:01.927676 Z
+  updated_at: 2011-07-20 21:52:01.927676 Z
+  id: 232
+  category_id: 
+  longitude: -121.143449
+- name: El Rivino Country Club
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.930347 Z
+  updated_at: 2011-07-20 21:52:01.930347 Z
+  id: 233
+  category_id: 
+  longitude: -86.198286
+- name: General Old Golf Course
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.932907 Z
+  updated_at: 2011-07-20 21:52:01.932907 Z
+  id: 234
+  category_id: 
+  longitude: -86.198286
+- name: Indian Hills Country Club
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.935442 Z
+  updated_at: 2011-07-20 21:52:01.935442 Z
+  id: 235
+  category_id: 
+  longitude: -86.198286
+- name: Jurupa Hills Country Club
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.937961 Z
+  updated_at: 2011-07-20 21:52:01.937961 Z
+  id: 236
+  category_id: 
+  longitude: -86.198286
+- name: Landmark Golf Club At Oak Quarry
+  latitude: 33.981628
+  created_at: 2011-07-20 21:52:01.940610 Z
+  updated_at: 2011-07-20 21:52:01.940610 Z
+  id: 237
+  category_id: 
+  longitude: -117.373878
+- name: Paradise Knolls
+  latitude: -26.286904
+  created_at: 2011-07-20 21:52:01.943402 Z
+  updated_at: 2011-07-20 21:52:01.943402 Z
+  id: 238
+  category_id: 
+  longitude: 28.394425
+- name: Riverside Golf Club
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.945946 Z
+  updated_at: 2011-07-20 21:52:01.945946 Z
+  id: 239
+  category_id: 
+  longitude: -86.198286
+- name: Sky Links Golf Course
+  latitude: 33.600426
+  created_at: 2011-07-20 21:52:01.948296 Z
+  updated_at: 2011-07-20 21:52:01.948296 Z
+  id: 240
+  category_id: 
+  longitude: -86.198286
+- name: Franklin Canyon Golf Course
+  latitude: 38.010754
+  created_at: 2011-07-20 21:52:01.950784 Z
+  updated_at: 2011-07-20 21:52:01.950784 Z
+  id: 241
+  category_id: 
+  longitude: -122.227841
+- name: Diamond Oaks Municipal Golf Course
+  latitude: 38.748529
+  created_at: 2011-07-20 21:52:01.953136 Z
+  updated_at: 2011-07-20 21:52:01.953136 Z
+  id: 242
+  category_id: 
+  longitude: -121.284558
+- name: Pajaro Valley Golf Club
+  latitude: 35.636845
+  created_at: 2011-07-20 21:52:01.955652 Z
+  updated_at: 2011-07-20 21:52:01.955652 Z
+  id: 243
+  category_id: 
+  longitude: -87.046242
+- name: Bartley Cavanaugh Golf Course
+  latitude: 38.579065
+  created_at: 2011-07-20 21:52:01.958493 Z
+  updated_at: 2011-07-20 21:52:01.958493 Z
+  id: 244
+  category_id: 
+  longitude: -121.491014
+- name: Bing Maloney Golf Course -Eighteen
+  latitude: 38.535945
+  created_at: 2011-07-20 21:52:01.961118 Z
+  updated_at: 2011-07-20 21:52:01.961118 Z
+  id: 245
+  category_id: 
+  longitude: -121.454324
+- name: Cordova Golf Course
+  latitude: 38.582975
+  created_at: 2011-07-20 21:52:01.963814 Z
+  updated_at: 2011-07-20 21:52:01.963814 Z
+  id: 246
+  category_id: 
+  longitude: -121.321734
+- name: Teal Bend Golf Club
+  latitude: 38.57906
+  created_at: 2011-07-20 21:52:01.966498 Z
+  updated_at: 2011-07-20 21:52:01.966498 Z
+  id: 247
+  category_id: 
+  longitude: -121.491013
+- name: Salinas Fairways Golf Course
+  latitude: 36.67088
+  created_at: 2011-07-20 21:52:01.969277 Z
+  updated_at: 2011-07-20 21:52:01.969277 Z
+  id: 248
+  category_id: 
+  longitude: -121.654819
+- name: Palm Meadows Golf Course
+  latitude: 34.105245
+  created_at: 2011-07-20 21:52:01.972382 Z
+  updated_at: 2011-07-20 21:52:01.972382 Z
+  id: 249
+  category_id: 
+  longitude: -117.294124
+- name: San Bernardino Golf Club
+  latitude: 34.07756
+  created_at: 2011-07-20 21:52:01.975524 Z
+  updated_at: 2011-07-20 21:52:01.975524 Z
+  id: 250
+  category_id: 
+  longitude: -117.241019
+- name: Shandin Hills Golf Club
+  latitude: 34.161211
+  created_at: 2011-07-20 21:52:01.978299 Z
+  updated_at: 2011-07-20 21:52:01.978299 Z
+  id: 251
+  category_id: 
+  longitude: -117.30771
+- name: San Clemente Municipal Golf Course
+  latitude: 33.41852
+  created_at: 2011-07-20 21:52:01.981180 Z
+  updated_at: 2011-07-20 21:52:01.981180 Z
+  id: 252
+  category_id: 
+  longitude: -117.621979
+- name: Shorecliffs Golf Club
+  latitude: 33.428628
+  created_at: 2011-07-20 21:52:01.983757 Z
+  updated_at: 2011-07-20 21:52:01.983757 Z
+  id: 253
+  category_id: 
+  longitude: -117.607327
+- name: Talega Golf Club
+  latitude: 33.428628
+  created_at: 2011-07-20 21:52:01.987083 Z
+  updated_at: 2011-07-20 21:52:01.987083 Z
+  id: 254
+  category_id: 
+  longitude: -117.607327
+- name: Balboa Park Municipal Golf Club
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:01.989913 Z
+  updated_at: 2011-07-20 21:52:01.989913 Z
+  id: 255
+  category_id: 
+  longitude: -117.161719
+- name: Carmel Mountain Ranch Country Club
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:01.992850 Z
+  updated_at: 2011-07-20 21:52:01.992850 Z
+  id: 256
+  category_id: 
+  longitude: -117.161719
+- name: Colina Park Golf Course
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:01.995518 Z
+  updated_at: 2011-07-20 21:52:01.995518 Z
+  id: 257
+  category_id: 
+  longitude: -117.161719
+- name: Mission Bay Golf Course
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:01.997954 Z
+  updated_at: 2011-07-20 21:52:01.997954 Z
+  id: 258
+  category_id: 
+  longitude: -117.161719
+- name: Mission Trails Golf Course
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:02.000581 Z
+  updated_at: 2011-07-20 21:52:02.000581 Z
+  id: 259
+  category_id: 
+  longitude: -117.161719
+- name: "Oaks North Golf Course\xA0"
+  latitude: 33.032878
+  created_at: 2011-07-20 21:52:02.003662 Z
+  updated_at: 2011-07-20 21:52:02.003662 Z
+  id: 260
+  category_id: 
+  longitude: -117.058994
+- name: Presidio Hills Golf Course
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:02.006193 Z
+  updated_at: 2011-07-20 21:52:02.006193 Z
+  id: 261
+  category_id: 
+  longitude: -117.161719
+- name: Riverwalk Golf Club
+  latitude: 32.715695
+  created_at: 2011-07-20 21:52:02.008757 Z
+  updated_at: 2011-07-20 21:52:02.008757 Z
+  id: 262
+  category_id: 
+  longitude: -117.161719
+- name: Tecolote Canyon Golf Course
+  latitude: 32.798988
+  created_at: 2011-07-20 21:52:02.011246 Z
+  updated_at: 2011-07-20 21:52:02.011246 Z
+  id: 263
+  category_id: 
+  longitude: -117.187531
+- name: San Dimas Canyon Golf Course
+  latitude: 34.145667
+  created_at: 2011-07-20 21:52:02.014030 Z
+  updated_at: 2011-07-20 21:52:02.014030 Z
+  id: 264
+  category_id: 
+  longitude: -117.776199
+- name: Harding Park Golf Course -Harding
+  latitude: 38.334149
+  created_at: 2011-07-20 21:52:02.016547 Z
+  updated_at: 2011-07-20 21:52:02.016547 Z
+  id: 265
+  category_id: 
+  longitude: -87.45021
+- name: Presidio Golf Course
+  latitude: 37.79142
+  created_at: 2011-07-20 21:52:02.019125 Z
+  updated_at: 2011-07-20 21:52:02.019125 Z
+  id: 266
+  category_id: 
+  longitude: -122.466759
+- name: San Geronimo Golf Club
+  latitude: 38.014411
+  created_at: 2011-07-20 21:52:02.021666 Z
+  updated_at: 2011-07-20 21:52:02.021666 Z
+  id: 267
+  category_id: 
+  longitude: -122.66847
+- name: Cinnabar Hills Golf Club
+  latitude: 37.165872
+  created_at: 2011-07-20 21:52:02.025249 Z
+  updated_at: 2011-07-20 21:52:02.025249 Z
+  id: 268
+  category_id: 
+  longitude: -121.802868
+- name: Pleasant Hills Golf Course
+  latitude: 37.338475
+  created_at: 2011-07-20 21:52:02.028092 Z
+  updated_at: 2011-07-20 21:52:02.028092 Z
+  id: 269
+  category_id: 
+  longitude: -121.885794
+- name: San Jose Municipal Golf Course
+  latitude: 37.338475
+  created_at: 2011-07-20 21:52:02.030583 Z
+  updated_at: 2011-07-20 21:52:02.030583 Z
+  id: 270
+  category_id: 
+  longitude: -121.885794
+- name: Cabo Del Sol Golf Course -Ocean
+  latitude: 35.429108
+  created_at: 2011-07-20 21:52:02.033201 Z
+  updated_at: 2011-07-20 21:52:02.033201 Z
+  id: 271
+  category_id: 
+  longitude: -88.470486
+- name: San Juan Hills Country Club
+  latitude: 33.495582
+  created_at: 2011-07-20 21:52:02.035680 Z
+  updated_at: 2011-07-20 21:52:02.035680 Z
+  id: 272
+  category_id: 
+  longitude: -117.665328
+- name: Monarch Bay Golf Club -Tony Lema
+  latitude: 37.72802
+  created_at: 2011-07-20 21:52:02.038348 Z
+  updated_at: 2011-07-20 21:52:02.038348 Z
+  id: 273
+  category_id: 
+  longitude: -122.158344
+- name: Dairy Creek Golf Course
+  latitude: 35.28552
+  created_at: 2011-07-20 21:52:02.040956 Z
+  updated_at: 2011-07-20 21:52:02.040956 Z
+  id: 274
+  category_id: 
+  longitude: -120.662519
+- name: Twin Oaks Golf Course
+  latitude: 33.213338
+  created_at: 2011-07-20 21:52:02.043595 Z
+  updated_at: 2011-07-20 21:52:02.043595 Z
+  id: 275
+  category_id: 
+  longitude: -117.168389
+- name: Poplar Creek Golf Course
+  latitude: 37.54703
+  created_at: 2011-07-20 21:52:02.046963 Z
+  updated_at: 2011-07-20 21:52:02.046963 Z
+  id: 276
+  category_id: 
+  longitude: -122.314834
+- name: Bridges At Gale Ranch
+  latitude: 37.776859
+  created_at: 2011-07-20 21:52:02.049668 Z
+  updated_at: 2011-07-20 21:52:02.049668 Z
+  id: 277
+  category_id: 
+  longitude: -121.967293
+- name: Canyon Lakes Country Club
+  latitude: 37.776864
+  created_at: 2011-07-20 21:52:02.052038 Z
+  updated_at: 2011-07-20 21:52:02.052038 Z
+  id: 278
+  category_id: 
+  longitude: -121.967299
+- name: San Ramon Royal Vista Golf Course
+  latitude: 37.776864
+  created_at: 2011-07-20 21:52:02.054701 Z
+  updated_at: 2011-07-20 21:52:02.054701 Z
+  id: 279
+  category_id: 
+  longitude: -121.967299
+- name: Sherwood Forest Golf Course
+  latitude: 36.708485
+  created_at: 2011-07-20 21:52:02.058053 Z
+  updated_at: 2011-07-20 21:52:02.058053 Z
+  id: 280
+  category_id: 
+  longitude: -119.556349
+- name: River View Golf Course
+  latitude: 33.749074
+  created_at: 2011-07-20 21:52:02.060854 Z
+  updated_at: 2011-07-20 21:52:02.060854 Z
+  id: 281
+  category_id: 
+  longitude: -117.873943
+- name: Glen Annie Golf Club
+  latitude: 34.419255
+  created_at: 2011-07-20 21:52:02.063580 Z
+  updated_at: 2011-07-20 21:52:02.063580 Z
+  id: 282
+  category_id: 
+  longitude: -119.698869
+- name: Santa Barbara Golf Club
+  latitude: 34.432515
+  created_at: 2011-07-20 21:52:02.066073 Z
+  updated_at: 2011-07-20 21:52:02.066073 Z
+  id: 283
+  category_id: 
+  longitude: -119.711794
+- name: Santa Clara Golf & Tennis Club
+  latitude: 37.355499
+  created_at: 2011-07-20 21:52:02.068851 Z
+  updated_at: 2011-07-20 21:52:02.068851 Z
+  id: 284
+  category_id: 
+  longitude: -121.954262
+- name: Robinson Ranch -Mountain
+  latitude: 34.411129
+  created_at: 2011-07-20 21:52:02.071502 Z
+  updated_at: 2011-07-20 21:52:02.071502 Z
+  id: 285
+  category_id: 
+  longitude: -118.412698
+- name: Robinson Ranch -Valley
+  latitude: 34.411129
+  created_at: 2011-07-20 21:52:02.074055 Z
+  updated_at: 2011-07-20 21:52:02.074055 Z
+  id: 286
+  category_id: 
+  longitude: -118.412698
+- name: De Laveaga Golf Course
+  latitude: 36.974025
+  created_at: 2011-07-20 21:52:02.076935 Z
+  updated_at: 2011-07-20 21:52:02.076935 Z
+  id: 287
+  category_id: 
+  longitude: -122.030954
+- name: Bennett Valley Golf Course
+  latitude: 38.427079
+  created_at: 2011-07-20 21:52:02.079826 Z
+  updated_at: 2011-07-20 21:52:02.079826 Z
+  id: 288
+  category_id: 
+  longitude: -122.675127
+- name: Bayonet/Black Horse Golf Course
+  latitude: 36.603883
+  created_at: 2011-07-20 21:52:02.082396 Z
+  updated_at: 2011-07-20 21:52:02.082396 Z
+  id: 289
+  category_id: 
+  longitude: -121.852664
+- name: Selma Valley Golf Course
+  latitude: 32.41179
+  created_at: 2011-07-20 21:52:02.084884 Z
+  updated_at: 2011-07-20 21:52:02.084884 Z
+  id: 290
+  category_id: 
+  longitude: -87.022234
+- name: Lost Canyons Golf Club
+  latitude: 34.28946
+  created_at: 2011-07-20 21:52:02.087718 Z
+  updated_at: 2011-07-20 21:52:02.087718 Z
+  id: 291
+  category_id: 
+  longitude: -118.717659
+- name: Simi Hills Golf Course
+  latitude: 34.28946
+  created_at: 2011-07-20 21:52:02.094199 Z
+  updated_at: 2011-07-20 21:52:02.094199 Z
+  id: 292
+  category_id: 
+  longitude: -118.717659
+- name: Lomas Santa Fe Executive Golf Course
+  latitude: 46.9193
+  created_at: 2011-07-20 21:52:02.097014 Z
+  updated_at: 2011-07-20 21:52:02.097014 Z
+  id: 293
+  category_id: 
+  longitude: -104.006124
+- name: River Course At Alisal
+  latitude: 34.596062
+  created_at: 2011-07-20 21:52:02.099759 Z
+  updated_at: 2011-07-20 21:52:02.099759 Z
+  id: 294
+  category_id: 
+  longitude: -120.144562
+- name: Sonoma Mission Inn & Golf Course
+  latitude: 38.29187
+  created_at: 2011-07-20 21:52:02.102276 Z
+  updated_at: 2011-07-20 21:52:02.102276 Z
+  id: 295
+  category_id: 
+  longitude: -122.457237
+- name: Lake Tahoe Golf Course
+  latitude: 38.910709
+  created_at: 2011-07-20 21:52:02.104938 Z
+  updated_at: 2011-07-20 21:52:02.104938 Z
+  id: 296
+  category_id: 
+  longitude: -120.007126
+- name: Tahoe Paradise Golf Course
+  latitude: 38.910709
+  created_at: 2011-07-20 21:52:02.107498 Z
+  updated_at: 2011-07-20 21:52:02.107498 Z
+  id: 297
+  category_id: 
+  longitude: -120.007126
+- name: Arroyo Seco Golf Course
+  latitude: 34.147235
+  created_at: 2011-07-20 21:52:02.110224 Z
+  updated_at: 2011-07-20 21:52:02.110224 Z
+  id: 298
+  category_id: 
+  longitude: -118.144264
+- name: Stevinson Ranch
+  latitude: 37.32863
+  created_at: 2011-07-20 21:52:02.112926 Z
+  updated_at: 2011-07-20 21:52:02.112926 Z
+  id: 299
+  category_id: 
+  longitude: -120.851129
+- name: Swenson Park Golf Course -Swenson Golf
+  latitude: 30.994815
+  created_at: 2011-07-20 21:52:02.115497 Z
+  updated_at: 2011-07-20 21:52:02.115497 Z
+  id: 300
+  category_id: 
+  longitude: -87.857824
+- name: Van Buskirk Park Golf Course
+  latitude: 37.920349
+  created_at: 2011-07-20 21:52:02.118304 Z
+  updated_at: 2011-07-20 21:52:02.118304 Z
+  id: 301
+  category_id: 
+  longitude: -121.293129
+- name: Sunnyvale Municipal Golf Course
+  latitude: 37.398338
+  created_at: 2011-07-20 21:52:02.121310 Z
+  updated_at: 2011-07-20 21:52:02.121310 Z
+  id: 302
+  category_id: 
+  longitude: -122.04158
+- name: Sunol Valley Golf Course
+  latitude: 37.594027
+  created_at: 2011-07-20 21:52:02.123974 Z
+  updated_at: 2011-07-20 21:52:02.123974 Z
+  id: 303
+  category_id: 
+  longitude: -121.887562
+- name: Cascades Golf Club
+  latitude: 34.310032
+  created_at: 2011-07-20 21:52:02.126499 Z
+  updated_at: 2011-07-20 21:52:02.126499 Z
+  id: 304
+  category_id: 
+  longitude: -118.45285
+- name: El Cariso Golf Course
+  latitude: 34.31003
+  created_at: 2011-07-20 21:52:02.129210 Z
+  updated_at: 2011-07-20 21:52:02.129210 Z
+  id: 305
+  category_id: 
+  longitude: -118.452854
+- name: Buena Vista Golf Course
+  latitude: 35.142475
+  created_at: 2011-07-20 21:52:02.131749 Z
+  updated_at: 2011-07-20 21:52:02.131749 Z
+  id: 306
+  category_id: 
+  longitude: -119.457434
+- name: Redhawk Golf Club
+  latitude: 33.502486
+  created_at: 2011-07-20 21:52:02.134340 Z
+  updated_at: 2011-07-20 21:52:02.134340 Z
+  id: 307
+  category_id: 
+  longitude: -117.166931
+- name: Temeku Hills Golf Course
+  latitude: 33.502486
+  created_at: 2011-07-20 21:52:02.136941 Z
+  updated_at: 2011-07-20 21:52:02.136941 Z
+  id: 308
+  category_id: 
+  longitude: -117.166931
+- name: Los Robles Greens Golf Course
+  latitude: 39.197182
+  created_at: 2011-07-20 21:52:02.139663 Z
+  updated_at: 2011-07-20 21:52:02.139663 Z
+  id: 309
+  category_id: 
+  longitude: -94.573576
+- name: Coyote Moon Golf Club
+  latitude: 39.326125
+  created_at: 2011-07-20 21:52:02.142098 Z
+  updated_at: 2011-07-20 21:52:02.142098 Z
+  id: 310
+  category_id: 
+  longitude: -120.212149
+- name: Verdugo Hills Golf Course
+  latitude: 34.251838
+  created_at: 2011-07-20 21:52:02.144761 Z
+  updated_at: 2011-07-20 21:52:02.144761 Z
+  id: 311
+  category_id: 
+  longitude: -118.29097
+- name: Tulare Golf Course
+  latitude: 36.206495
+  created_at: 2011-07-20 21:52:02.147334 Z
+  updated_at: 2011-07-20 21:52:02.147334 Z
+  id: 312
+  category_id: 
+  longitude: -119.343049
+- name: Tustin Ranch Golf Club
+  latitude: 33.728795
+  created_at: 2011-07-20 21:52:02.150055 Z
+  updated_at: 2011-07-20 21:52:02.150055 Z
+  id: 313
+  category_id: 
+  longitude: -117.789469
+- name: Ukiah Municipal Golf Course
+  latitude: 39.128189
+  created_at: 2011-07-20 21:52:02.152517 Z
+  updated_at: 2011-07-20 21:52:02.152517 Z
+  id: 314
+  category_id: 
+  longitude: -123.204231
+- name: Vista Valencia Golf Course -Executive
+  latitude: 34.403655
+  created_at: 2011-07-20 21:52:02.155275 Z
+  updated_at: 2011-07-20 21:52:02.155275 Z
+  id: 315
+  category_id: 
+  longitude: -118.552477
+- name: Blue Rock Springs Golf Course
+  latitude: 38.10083
+  created_at: 2011-07-20 21:52:02.157963 Z
+  updated_at: 2011-07-20 21:52:02.157963 Z
+  id: 316
+  category_id: 
+  longitude: -122.254954
+- name: Hiddenbrooke Golf Club
+  latitude: 38.10083
+  created_at: 2011-07-20 21:52:02.160539 Z
+  updated_at: 2011-07-20 21:52:02.160539 Z
+  id: 317
+  category_id: 
+  longitude: -122.254954
+- name: Mare Island Golf Club
+  latitude: 38.10083
+  created_at: 2011-07-20 21:52:02.163109 Z
+  updated_at: 2011-07-20 21:52:02.163109 Z
+  id: 318
+  category_id: 
+  longitude: -122.254954
+- name: Van Nuys Golf Course -Eighteen Hole
+  latitude: 34.18416
+  created_at: 2011-07-20 21:52:02.165810 Z
+  updated_at: 2011-07-20 21:52:02.165810 Z
+  id: 319
+  category_id: 
+  longitude: -118.446517
+- name: Buenaventura Golf Course
+  latitude: 34.280825
+  created_at: 2011-07-20 21:52:02.168662 Z
+  updated_at: 2011-07-20 21:52:02.168662 Z
+  id: 320
+  category_id: 
+  longitude: -119.292324
+- name: Olivas Park Golf Course
+  latitude: 34.280825
+  created_at: 2011-07-20 21:52:02.171149 Z
+  updated_at: 2011-07-20 21:52:02.171149 Z
+  id: 321
+  category_id: 
+  longitude: -119.292324
+- name: Green Tree Golf Course
+  latitude: 34.510622
+  created_at: 2011-07-20 21:52:02.173508 Z
+  updated_at: 2011-07-20 21:52:02.173508 Z
+  id: 322
+  category_id: 
+  longitude: -117.32364
+- name: Sierra View Golf Course
+  latitude: 36.33377
+  created_at: 2011-07-20 21:52:02.176078 Z
+  updated_at: 2011-07-20 21:52:02.176078 Z
+  id: 323
+  category_id: 
+  longitude: -119.292914
+- name: Valley Oaks Golf Club
+  latitude: 36.33377
+  created_at: 2011-07-20 21:52:02.178702 Z
+  updated_at: 2011-07-20 21:52:02.178702 Z
+  id: 324
+  category_id: 
+  longitude: -119.292914
+- name: Boundary Oak Golf Course
+  latitude: 37.90118
+  created_at: 2011-07-20 21:52:02.181418 Z
+  updated_at: 2011-07-20 21:52:02.181418 Z
+  id: 325
+  category_id: 
+  longitude: -122.061628
+- name: Spring Hills Golf Course
+  latitude: 36.908715
+  created_at: 2011-07-20 21:52:02.183915 Z
+  updated_at: 2011-07-20 21:52:02.183915 Z
+  id: 326
+  category_id: 
+  longitude: -121.755164
+- name: Lighthouse Golf & Country Club
+  latitude: 38.579065
+  created_at: 2011-07-20 21:52:02.186676 Z
+  updated_at: 2011-07-20 21:52:02.186676 Z
+  id: 327
+  category_id: 
+  longitude: -121.491014
+- name: Hank s Woodlake Ranch
+  latitude: 36.416475
+  created_at: 2011-07-20 21:52:02.189175 Z
+  updated_at: 2011-07-20 21:52:02.189175 Z
+  id: 328
+  category_id: 
+  longitude: -119.098889
+- name: Black Gold Golf Club
+  latitude: 33.90829
+  created_at: 2011-07-20 21:52:02.191830 Z
+  updated_at: 2011-07-20 21:52:02.191830 Z
+  id: 329
+  category_id: 
+  longitude: -117.816669
+- name: Admiral William Standley State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.194668 Z
+  updated_at: 2011-07-20 21:52:02.194668 Z
+  id: 330
+  category_id: 4
+  longitude: -119.270233
+- name: Ahjumawi Lava Springs State Park
+  latitude: 41.10714
+  created_at: 2011-07-20 21:52:02.197358 Z
+  updated_at: 2011-07-20 21:52:02.197358 Z
+  id: 331
+  category_id: 4
+  longitude: -121.468513
+- name: Albany State Marine Reserve
+  latitude: 37.88728
+  created_at: 2011-07-20 21:52:02.200093 Z
+  updated_at: 2011-07-20 21:52:02.200093 Z
+  id: 332
+  category_id: 4
+  longitude: -122.297997
+- name: Anderson Marsh State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.202380 Z
+  updated_at: 2011-07-20 21:52:02.202380 Z
+  id: 333
+  category_id: 4
+  longitude: -121.898003
+- name: Andrew Molera State Park
+  latitude: 36.288521
+  created_at: 2011-07-20 21:52:02.204942 Z
+  updated_at: 2011-07-20 21:52:02.204942 Z
+  id: 334
+  category_id: 4
+  longitude: -121.844292
+- name: Angel Island State Park
+  latitude: 37.873539
+  created_at: 2011-07-20 21:52:02.207590 Z
+  updated_at: 2011-07-20 21:52:02.207590 Z
+  id: 335
+  category_id: 4
+  longitude: -122.455727
+- name: Annadel State Park
+  latitude: 38.45105
+  created_at: 2011-07-20 21:52:02.210304 Z
+  updated_at: 2011-07-20 21:52:02.210304 Z
+  id: 336
+  category_id: 4
+  longitude: -122.63176
+- name: "A\xF1o Nuevo State Reserve"
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.212997 Z
+  updated_at: 2011-07-20 21:52:02.212997 Z
+  id: 337
+  category_id: 4
+  longitude: -119.270233
+- name: "A\xF1o Nuevo State Park"
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.215409 Z
+  updated_at: 2011-07-20 21:52:02.215409 Z
+  id: 338
+  category_id: 4
+  longitude: -121.898003
+- name: Antelope Valley California Poppy Reserve
+  latitude: 34.740822
+  created_at: 2011-07-20 21:52:02.217989 Z
+  updated_at: 2011-07-20 21:52:02.217989 Z
+  id: 339
+  category_id: 4
+  longitude: -118.375671
+- name: Antelope Valley Indian Museum State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.220649 Z
+  updated_at: 2011-07-20 21:52:02.220649 Z
+  id: 340
+  category_id: 4
+  longitude: -121.898003
+- name: Anza-Borrego Desert State Park
+  latitude: 33.070621
+  created_at: 2011-07-20 21:52:02.223092 Z
+  updated_at: 2011-07-20 21:52:02.223092 Z
+  id: 341
+  category_id: 4
+  longitude: -116.300133
+- name: Armstrong Redwoods State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.226374 Z
+  updated_at: 2011-07-20 21:52:02.226374 Z
+  id: 342
+  category_id: 4
+  longitude: -119.270233
+- name: Arthur B. Ripley Desert Woodland State Park
+  latitude: 35.008492
+  created_at: 2011-07-20 21:52:02.229403 Z
+  updated_at: 2011-07-20 21:52:02.229403 Z
+  id: 343
+  category_id: 4
+  longitude: -116.367592
+- name: Asilomar State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.232008 Z
+  updated_at: 2011-07-20 21:52:02.232008 Z
+  id: 344
+  category_id: 4
+  longitude: -118.020721
+- name: Auburn State Recreation Area
+  latitude: 38.882751
+  created_at: 2011-07-20 21:52:02.234565 Z
+  updated_at: 2011-07-20 21:52:02.234565 Z
+  id: 345
+  category_id: 4
+  longitude: -121.065552
+- name: Austin Creek State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.237345 Z
+  updated_at: 2011-07-20 21:52:02.237345 Z
+  id: 346
+  category_id: 4
+  longitude: -119.270233
+- name: Azalea State Reserve
+  latitude: 40.917938
+  created_at: 2011-07-20 21:52:02.239940 Z
+  updated_at: 2011-07-20 21:52:02.239940 Z
+  id: 347
+  category_id: 4
+  longitude: -124.082207
+- name: Baldwin Hills Scenic Overlook
+  latitude: 32.771041
+  created_at: 2011-07-20 21:52:02.242488 Z
+  updated_at: 2011-07-20 21:52:02.242488 Z
+  id: 348
+  category_id: 4
+  longitude: -117.197936
+- name: Bale Grist Mill State Historic Park
+  latitude: 38.539181
+  created_at: 2011-07-20 21:52:02.245188 Z
+  updated_at: 2011-07-20 21:52:02.245188 Z
+  id: 349
+  category_id: 4
+  longitude: -122.508102
+- name: Bean Hollow State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.247648 Z
+  updated_at: 2011-07-20 21:52:02.247648 Z
+  id: 350
+  category_id: 4
+  longitude: -118.020721
+- name: Benbow Lake State Recreation Area
+  latitude: 40.058239
+  created_at: 2011-07-20 21:52:02.250197 Z
+  updated_at: 2011-07-20 21:52:02.250197 Z
+  id: 351
+  category_id: 4
+  longitude: -123.792702
+- name: Benicia State Recreation Area
+  latitude: 38.05241
+  created_at: 2011-07-20 21:52:02.252809 Z
+  updated_at: 2011-07-20 21:52:02.252809 Z
+  id: 352
+  category_id: 4
+  longitude: -122.152542
+- name: Benicia Capitol State Historic Park
+  latitude: 38.049931
+  created_at: 2011-07-20 21:52:02.255184 Z
+  updated_at: 2011-07-20 21:52:02.255184 Z
+  id: 353
+  category_id: 4
+  longitude: -122.158852
+- name: Bethany Reservoir State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.258204 Z
+  updated_at: 2011-07-20 21:52:02.258204 Z
+  id: 354
+  category_id: 4
+  longitude: -119.270233
+- name: Bidwell Mansion State Historic Park
+  latitude: 39.732922
+  created_at: 2011-07-20 21:52:02.260996 Z
+  updated_at: 2011-07-20 21:52:02.260996 Z
+  id: 355
+  category_id: 4
+  longitude: -121.844116
+- name: Bidwell-Sacramento River State Park
+  latitude: 39.66198
+  created_at: 2011-07-20 21:52:02.263813 Z
+  updated_at: 2011-07-20 21:52:02.263813 Z
+  id: 356
+  category_id: 4
+  longitude: -121.93634
+- name: Big Basin Redwoods State Park
+  latitude: 37.169971
+  created_at: 2011-07-20 21:52:02.266372 Z
+  updated_at: 2011-07-20 21:52:02.266372 Z
+  id: 357
+  category_id: 4
+  longitude: -122.222359
+- name: Big River State Park
+  latitude: 34.128819
+  created_at: 2011-07-20 21:52:02.268902 Z
+  updated_at: 2011-07-20 21:52:02.268902 Z
+  id: 358
+  category_id: 4
+  longitude: -114.372169
+- name: Bodie State Historic Park
+  latitude: 38.210251
+  created_at: 2011-07-20 21:52:02.271539 Z
+  updated_at: 2011-07-20 21:52:02.271539 Z
+  id: 359
+  category_id: 4
+  longitude: -119.014481
+- name: Bolsa Chica State Beach
+  latitude: 33.697948
+  created_at: 2011-07-20 21:52:02.273903 Z
+  updated_at: 2011-07-20 21:52:02.273903 Z
+  id: 360
+  category_id: 4
+  longitude: -118.03746
+- name: Border Field State Park
+  latitude: 32.536049
+  created_at: 2011-07-20 21:52:02.276595 Z
+  updated_at: 2011-07-20 21:52:02.276595 Z
+  id: 361
+  category_id: 4
+  longitude: -117.12056
+- name: Bothe-Napa Valley State Park
+  latitude: 38.553398
+  created_at: 2011-07-20 21:52:02.279225 Z
+  updated_at: 2011-07-20 21:52:02.279225 Z
+  id: 362
+  category_id: 4
+  longitude: -122.525642
+- name: Brannan Island State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.281851 Z
+  updated_at: 2011-07-20 21:52:02.281851 Z
+  id: 363
+  category_id: 4
+  longitude: -119.270233
+- name: Burleigh H. Murray Ranch
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.284744 Z
+  updated_at: 2011-07-20 21:52:02.284744 Z
+  id: 364
+  category_id: 4
+  longitude: -119.270233
+- name: Burton Creek State Park
+  latitude: 39.18206
+  created_at: 2011-07-20 21:52:02.287436 Z
+  updated_at: 2011-07-20 21:52:02.287436 Z
+  id: 365
+  category_id: 4
+  longitude: -120.128723
+- name: Butano State Park
+  latitude: 37.20142
+  created_at: 2011-07-20 21:52:02.290602 Z
+  updated_at: 2011-07-20 21:52:02.290602 Z
+  id: 366
+  category_id: 4
+  longitude: -122.341171
+- name: Calaveras Big Trees State Park
+  latitude: 38.2617
+  created_at: 2011-07-20 21:52:02.293774 Z
+  updated_at: 2011-07-20 21:52:02.293774 Z
+  id: 367
+  category_id: 4
+  longitude: -120.268097
+- name: California Citrus State Historic Park
+  latitude: 33.895401
+  created_at: 2011-07-20 21:52:02.296618 Z
+  updated_at: 2011-07-20 21:52:02.296618 Z
+  id: 368
+  category_id: 4
+  longitude: -117.417542
+- name: California Mining and Mineral Museum
+  latitude: 40.34943
+  created_at: 2011-07-20 21:52:02.299262 Z
+  updated_at: 2011-07-20 21:52:02.299262 Z
+  id: 369
+  category_id: 4
+  longitude: -121.590172
+- name: California State Capitol
+  latitude: 36.974347
+  created_at: 2011-07-20 21:52:02.302262 Z
+  updated_at: 2011-07-20 21:52:02.302262 Z
+  id: 370
+  category_id: 4
+  longitude: -121.953519
+- name: California State Capitol Museum
+  latitude: 38.576611
+  created_at: 2011-07-20 21:52:02.305054 Z
+  updated_at: 2011-07-20 21:52:02.305054 Z
+  id: 371
+  category_id: 4
+  longitude: -121.493889
+- name: California State Indian Museum
+  latitude: 38.573109
+  created_at: 2011-07-20 21:52:02.307870 Z
+  updated_at: 2011-07-20 21:52:02.307870 Z
+  id: 372
+  category_id: 4
+  longitude: -121.472183
+- name: California State Railroad Museum
+  latitude: 38.584782
+  created_at: 2011-07-20 21:52:02.310634 Z
+  updated_at: 2011-07-20 21:52:02.310634 Z
+  id: 373
+  category_id: 4
+  longitude: -121.50386
+- name: Candlestick Point State Recreation Area
+  latitude: 37.716679
+  created_at: 2011-07-20 21:52:02.313352 Z
+  updated_at: 2011-07-20 21:52:02.313352 Z
+  id: 374
+  category_id: 4
+  longitude: -122.378197
+- name: Cardiff State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.421234 Z
+  updated_at: 2011-07-20 21:52:02.421234 Z
+  id: 375
+  category_id: 4
+  longitude: -118.020721
+- name: Carlsbad State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.427230 Z
+  updated_at: 2011-07-20 21:52:02.427230 Z
+  id: 376
+  category_id: 4
+  longitude: -118.020721
+- name: Carmel River State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.430225 Z
+  updated_at: 2011-07-20 21:52:02.430225 Z
+  id: 377
+  category_id: 4
+  longitude: -118.020721
+- name: Carnegie State Vehicular Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.433077 Z
+  updated_at: 2011-07-20 21:52:02.433077 Z
+  id: 378
+  category_id: 4
+  longitude: -119.270233
+- name: Carpinteria State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.436033 Z
+  updated_at: 2011-07-20 21:52:02.436033 Z
+  id: 379
+  category_id: 4
+  longitude: -118.020721
+- name: Caspar Headlands State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.438657 Z
+  updated_at: 2011-07-20 21:52:02.438657 Z
+  id: 380
+  category_id: 4
+  longitude: -119.270233
+- name: Caspar Headlands State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.441424 Z
+  updated_at: 2011-07-20 21:52:02.441424 Z
+  id: 381
+  category_id: 4
+  longitude: -118.020721
+- name: Castaic Lake State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.443822 Z
+  updated_at: 2011-07-20 21:52:02.443822 Z
+  id: 382
+  category_id: 4
+  longitude: -119.270233
+- name: Castle Crags State Park
+  latitude: 41.149269
+  created_at: 2011-07-20 21:52:02.446869 Z
+  updated_at: 2011-07-20 21:52:02.446869 Z
+  id: 383
+  category_id: 4
+  longitude: -122.317467
+- name: Castle Rock State Park
+  latitude: 37.23032
+  created_at: 2011-07-20 21:52:02.449483 Z
+  updated_at: 2011-07-20 21:52:02.449483 Z
+  id: 384
+  category_id: 4
+  longitude: -122.094543
+- name: Castro Adobe
+  latitude: 34.16198
+  created_at: 2011-07-20 21:52:02.452004 Z
+  updated_at: 2011-07-20 21:52:02.452004 Z
+  id: 385
+  category_id: 4
+  longitude: -116.057129
+- name: Caswell Memorial State Park
+  latitude: 37.702702
+  created_at: 2011-07-20 21:52:02.455072 Z
+  updated_at: 2011-07-20 21:52:02.455072 Z
+  id: 386
+  category_id: 4
+  longitude: -121.18177
+- name: Cayucos State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.458559 Z
+  updated_at: 2011-07-20 21:52:02.458559 Z
+  id: 387
+  category_id: 4
+  longitude: -118.020721
+- name: China Camp State Park
+  latitude: 38.003609
+  created_at: 2011-07-20 21:52:02.461517 Z
+  updated_at: 2011-07-20 21:52:02.461517 Z
+  id: 388
+  category_id: 4
+  longitude: -122.467003
+- name: Chino Hills State Park
+  latitude: 33.91217
+  created_at: 2011-07-20 21:52:02.464274 Z
+  updated_at: 2011-07-20 21:52:02.464274 Z
+  id: 389
+  category_id: 4
+  longitude: -117.74028
+- name: Chumash Painted Cave State Historic Park
+  latitude: 34.505249
+  created_at: 2011-07-20 21:52:02.467196 Z
+  updated_at: 2011-07-20 21:52:02.467196 Z
+  id: 390
+  category_id: 4
+  longitude: -119.788513
+- name: Clay Pit State Vehicular Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.470168 Z
+  updated_at: 2011-07-20 21:52:02.470168 Z
+  id: 391
+  category_id: 4
+  longitude: -119.270233
+- name: Clear Lake State Park
+  latitude: 39.0098
+  created_at: 2011-07-20 21:52:02.472977 Z
+  updated_at: 2011-07-20 21:52:02.472977 Z
+  id: 392
+  category_id: 4
+  longitude: -122.814049
+- name: Colonel Allensworth State Historic Park
+  latitude: 35.866112
+  created_at: 2011-07-20 21:52:02.475845 Z
+  updated_at: 2011-07-20 21:52:02.475845 Z
+  id: 393
+  category_id: 4
+  longitude: -119.38623
+- name: Columbia State Historic Park
+  latitude: 38.034031
+  created_at: 2011-07-20 21:52:02.478823 Z
+  updated_at: 2011-07-20 21:52:02.478823 Z
+  id: 394
+  category_id: 4
+  longitude: -120.40081
+- name: Colusa-Sacramento River State Recreation Area
+  latitude: 39.005878
+  created_at: 2011-07-20 21:52:02.481541 Z
+  updated_at: 2011-07-20 21:52:02.481541 Z
+  id: 395
+  category_id: 4
+  longitude: -121.816994
+- name: Cornfield State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.484287 Z
+  updated_at: 2011-07-20 21:52:02.484287 Z
+  id: 396
+  category_id: 4
+  longitude: -121.898003
+- name: Corona del Mar State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.487698 Z
+  updated_at: 2011-07-20 21:52:02.487698 Z
+  id: 397
+  category_id: 4
+  longitude: -118.020721
+- name: Cowell Ranch/John Marsh State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.491233 Z
+  updated_at: 2011-07-20 21:52:02.491233 Z
+  id: 398
+  category_id: 4
+  longitude: -121.898003
+- name: Crystal Cove State Park
+  latitude: 33.564281
+  created_at: 2011-07-20 21:52:02.494402 Z
+  updated_at: 2011-07-20 21:52:02.494402 Z
+  id: 399
+  category_id: 4
+  longitude: -117.825623
+- name: Cuyamaca Rancho State Park
+  latitude: 32.933762
+  created_at: 2011-07-20 21:52:02.497063 Z
+  updated_at: 2011-07-20 21:52:02.497063 Z
+  id: 400
+  category_id: 4
+  longitude: -116.562607
+- name: D. L. Bliss State Park
+  latitude: 38.97224
+  created_at: 2011-07-20 21:52:02.499964 Z
+  updated_at: 2011-07-20 21:52:02.499964 Z
+  id: 401
+  category_id: 4
+  longitude: -120.098267
+- name: Del Norte Coast Redwoods State Park
+  latitude: 41.66325
+  created_at: 2011-07-20 21:52:02.502445 Z
+  updated_at: 2011-07-20 21:52:02.502445 Z
+  id: 402
+  category_id: 4
+  longitude: -124.112671
+- name: Delta Meadows
+  latitude: 37.923245
+  created_at: 2011-07-20 21:52:02.505086 Z
+  updated_at: 2011-07-20 21:52:02.505086 Z
+  id: 403
+  category_id: 4
+  longitude: -122.507769
+- name: Dockweiler State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.507849 Z
+  updated_at: 2011-07-20 21:52:02.507849 Z
+  id: 404
+  category_id: 4
+  longitude: -118.020721
+- name: Doheny State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.510503 Z
+  updated_at: 2011-07-20 21:52:02.510503 Z
+  id: 405
+  category_id: 4
+  longitude: -118.020721
+- name: Donner Memorial State Park
+  latitude: 39.32386
+  created_at: 2011-07-20 21:52:02.513035 Z
+  updated_at: 2011-07-20 21:52:02.513035 Z
+  id: 406
+  category_id: 4
+  longitude: -120.22834
+- name: Eastshore State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.515634 Z
+  updated_at: 2011-07-20 21:52:02.515634 Z
+  id: 407
+  category_id: 4
+  longitude: -121.898003
+- name: "El Capit\xE1n State Beach"
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.518154 Z
+  updated_at: 2011-07-20 21:52:02.518154 Z
+  id: 408
+  category_id: 4
+  longitude: -118.020721
+- name: El Escorpion State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.521093 Z
+  updated_at: 2011-07-20 21:52:02.521093 Z
+  id: 409
+  category_id: 4
+  longitude: -121.898003
+- name: El Presidio de Santa Barbara State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.523730 Z
+  updated_at: 2011-07-20 21:52:02.523730 Z
+  id: 410
+  category_id: 4
+  longitude: -121.898003
+- name: Emerald Bay State Park
+  latitude: 38.948898
+  created_at: 2011-07-20 21:52:02.526474 Z
+  updated_at: 2011-07-20 21:52:02.526474 Z
+  id: 411
+  category_id: 4
+  longitude: -120.087914
+- name: Emeryville Crescent State Marine Reserve
+  latitude: 37.83717
+  created_at: 2011-07-20 21:52:02.529287 Z
+  updated_at: 2011-07-20 21:52:02.529287 Z
+  id: 412
+  category_id: 4
+  longitude: -122.302078
+- name: Emma Wood State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.532008 Z
+  updated_at: 2011-07-20 21:52:02.532008 Z
+  id: 413
+  category_id: 4
+  longitude: -118.020721
+- name: Empire Mine State Historic Park
+  latitude: 39.20763
+  created_at: 2011-07-20 21:52:02.534585 Z
+  updated_at: 2011-07-20 21:52:02.534585 Z
+  id: 414
+  category_id: 4
+  longitude: -121.045631
+- name: Estero Bluffs State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.537518 Z
+  updated_at: 2011-07-20 21:52:02.537518 Z
+  id: 415
+  category_id: 4
+  longitude: -121.898003
+- name: Folsom Lake State Recreation Area
+  latitude: 38.738129
+  created_at: 2011-07-20 21:52:02.540076 Z
+  updated_at: 2011-07-20 21:52:02.540076 Z
+  id: 416
+  category_id: 4
+  longitude: -121.130882
+- name: Folsom Powerhouse State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.542672 Z
+  updated_at: 2011-07-20 21:52:02.542672 Z
+  id: 417
+  category_id: 4
+  longitude: -121.898003
+- name: The Forest of Nisene Marks State Park
+  latitude: 37.05101
+  created_at: 2011-07-20 21:52:02.545122 Z
+  updated_at: 2011-07-20 21:52:02.545122 Z
+  id: 418
+  category_id: 4
+  longitude: -121.88636
+- name: Fort Humboldt State Historic Park
+  latitude: 40.777
+  created_at: 2011-07-20 21:52:02.547659 Z
+  updated_at: 2011-07-20 21:52:02.547659 Z
+  id: 419
+  category_id: 4
+  longitude: -124.188721
+- name: Fort Ord Dunes State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.550255 Z
+  updated_at: 2011-07-20 21:52:02.550255 Z
+  id: 420
+  category_id: 4
+  longitude: -121.898003
+- name: Fort Ross State Historic Park
+  latitude: 38.51836
+  created_at: 2011-07-20 21:52:02.552878 Z
+  updated_at: 2011-07-20 21:52:02.552878 Z
+  id: 421
+  category_id: 4
+  longitude: -123.245667
+- name: Fort Tejon State Historic Park
+  latitude: 34.87571
+  created_at: 2011-07-20 21:52:02.555456 Z
+  updated_at: 2011-07-20 21:52:02.555456 Z
+  id: 422
+  category_id: 4
+  longitude: -118.893982
+- name: Franks Tract State Recreation Area
+  latitude: 38.041599
+  created_at: 2011-07-20 21:52:02.558331 Z
+  updated_at: 2011-07-20 21:52:02.558331 Z
+  id: 423
+  category_id: 4
+  longitude: -121.620537
+- name: Fremont Peak State Park
+  latitude: 36.760208
+  created_at: 2011-07-20 21:52:02.561256 Z
+  updated_at: 2011-07-20 21:52:02.561256 Z
+  id: 424
+  category_id: 4
+  longitude: -121.502853
+- name: Garrapata State Park
+  latitude: 36.465889
+  created_at: 2011-07-20 21:52:02.564124 Z
+  updated_at: 2011-07-20 21:52:02.564124 Z
+  id: 425
+  category_id: 4
+  longitude: -121.899429
+- name: Gaviota State Park
+  latitude: 34.475689
+  created_at: 2011-07-20 21:52:02.566804 Z
+  updated_at: 2011-07-20 21:52:02.566804 Z
+  id: 426
+  category_id: 4
+  longitude: -120.228462
+- name: George J. Hatfield State Recreation Area
+  latitude: 37.354759
+  created_at: 2011-07-20 21:52:02.569120 Z
+  updated_at: 2011-07-20 21:52:02.569120 Z
+  id: 427
+  category_id: 4
+  longitude: -120.960693
+- name: Governor s Mansion State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.571898 Z
+  updated_at: 2011-07-20 21:52:02.571898 Z
+  id: 428
+  category_id: 4
+  longitude: -121.898003
+- name: Gray Whale Cove State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.574454 Z
+  updated_at: 2011-07-20 21:52:02.574454 Z
+  id: 429
+  category_id: 4
+  longitude: -118.020721
+- name: Great Valley Grasslands State Park
+  latitude: 37.309589
+  created_at: 2011-07-20 21:52:02.576974 Z
+  updated_at: 2011-07-20 21:52:02.576974 Z
+  id: 430
+  category_id: 4
+  longitude: -120.930908
+- name: Greenwood State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.579519 Z
+  updated_at: 2011-07-20 21:52:02.579519 Z
+  id: 431
+  category_id: 4
+  longitude: -118.020721
+- name: Grizzly Creek Redwoods State Park
+  latitude: 40.486622
+  created_at: 2011-07-20 21:52:02.582148 Z
+  updated_at: 2011-07-20 21:52:02.582148 Z
+  id: 432
+  category_id: 4
+  longitude: -123.903503
+- name: Grover Hot Springs State Park
+  latitude: 38.695229
+  created_at: 2011-07-20 21:52:02.585087 Z
+  updated_at: 2011-07-20 21:52:02.585087 Z
+  id: 433
+  category_id: 4
+  longitude: -119.836777
+- name: Half Moon Bay State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.587738 Z
+  updated_at: 2011-07-20 21:52:02.587738 Z
+  id: 434
+  category_id: 4
+  longitude: -118.020721
+- name: Harmony Headlands State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.590449 Z
+  updated_at: 2011-07-20 21:52:02.590449 Z
+  id: 435
+  category_id: 4
+  longitude: -121.898003
+- name: Harry A. Merlo State Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.593245 Z
+  updated_at: 2011-07-20 21:52:02.593245 Z
+  id: 436
+  category_id: 4
+  longitude: -119.270233
+- name: Hatton Canyon
+  latitude: 37.829112
+  created_at: 2011-07-20 21:52:02.595955 Z
+  updated_at: 2011-07-20 21:52:02.595955 Z
+  id: 437
+  category_id: 4
+  longitude: -122.165361
+- name: Hearst San Simeon State Historical Monument
+  latitude: 35.684429
+  created_at: 2011-07-20 21:52:02.598457 Z
+  updated_at: 2011-07-20 21:52:02.598457 Z
+  id: 438
+  category_id: 4
+  longitude: -121.168427
+- name: Heber Dunes State Vehicular Recreation Area
+  latitude: 32.730671
+  created_at: 2011-07-20 21:52:02.600923 Z
+  updated_at: 2011-07-20 21:52:02.600923 Z
+  id: 439
+  category_id: 4
+  longitude: -115.528168
+- name: Hendy Woods State Park
+  latitude: 39.08514
+  created_at: 2011-07-20 21:52:02.603782 Z
+  updated_at: 2011-07-20 21:52:02.603782 Z
+  id: 440
+  category_id: 4
+  longitude: -123.485069
+- name: Henry Cowell Redwoods State Park
+  latitude: 37.06966
+  created_at: 2011-07-20 21:52:02.606249 Z
+  updated_at: 2011-07-20 21:52:02.606249 Z
+  id: 441
+  category_id: 4
+  longitude: -122.107071
+- name: Henry W. Coe State Park
+  latitude: 37.188801
+  created_at: 2011-07-20 21:52:02.608920 Z
+  updated_at: 2011-07-20 21:52:02.608920 Z
+  id: 442
+  category_id: 4
+  longitude: -121.548813
+- name: Hollister Hills State Vehicular Recreation Area
+  latitude: 36.782532
+  created_at: 2011-07-20 21:52:02.611651 Z
+  updated_at: 2011-07-20 21:52:02.611651 Z
+  id: 443
+  category_id: 4
+  longitude: -121.438141
+- name: Humboldt Lagoons State Park
+  latitude: 41.211651
+  created_at: 2011-07-20 21:52:02.614248 Z
+  updated_at: 2011-07-20 21:52:02.614248 Z
+  id: 444
+  category_id: 4
+  longitude: -124.113731
+- name: Humboldt Redwoods State Park
+  latitude: 40.284721
+  created_at: 2011-07-20 21:52:02.616659 Z
+  updated_at: 2011-07-20 21:52:02.616659 Z
+  id: 445
+  category_id: 4
+  longitude: -124.056976
+- name: Hungry Valley State Vehicular Recreation Area
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.619487 Z
+  updated_at: 2011-07-20 21:52:02.619487 Z
+  id: 446
+  category_id: 4
+  longitude: -119.270233
+- name: Huntington State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.621980 Z
+  updated_at: 2011-07-20 21:52:02.621980 Z
+  id: 447
+  category_id: 4
+  longitude: -118.020721
+- name: Indian Grinding Rock State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.624858 Z
+  updated_at: 2011-07-20 21:52:02.624858 Z
+  id: 448
+  category_id: 4
+  longitude: -121.898003
+- name: Indio Hills Palms
+  latitude: 34.019795
+  created_at: 2011-07-20 21:52:02.627915 Z
+  updated_at: 2011-07-20 21:52:02.627915 Z
+  id: 449
+  category_id: 4
+  longitude: -118.421099
+- name: Jack London State Historic Park
+  latitude: 38.35696
+  created_at: 2011-07-20 21:52:02.630580 Z
+  updated_at: 2011-07-20 21:52:02.630580 Z
+  id: 450
+  category_id: 4
+  longitude: -122.5438
+- name: Jedediah Smith Redwoods State Park
+  latitude: 41.798191
+  created_at: 2011-07-20 21:52:02.633251 Z
+  updated_at: 2011-07-20 21:52:02.633251 Z
+  id: 451
+  category_id: 4
+  longitude: -124.084023
+- name: John B. Dewitt State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.635799 Z
+  updated_at: 2011-07-20 21:52:02.635799 Z
+  id: 452
+  category_id: 4
+  longitude: -119.270233
+- name: John Little State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.638475 Z
+  updated_at: 2011-07-20 21:52:02.638475 Z
+  id: 453
+  category_id: 4
+  longitude: -119.270233
+- name: Jug Handle State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.641194 Z
+  updated_at: 2011-07-20 21:52:02.641194 Z
+  id: 454
+  category_id: 4
+  longitude: -119.270233
+- name: Julia Pfeiffer Burns State Park
+  latitude: 36.160709
+  created_at: 2011-07-20 21:52:02.643694 Z
+  updated_at: 2011-07-20 21:52:02.643694 Z
+  id: 455
+  category_id: 4
+  longitude: -121.668213
+- name: Kenneth Hahn State Recreation Area
+  latitude: 34.00708
+  created_at: 2011-07-20 21:52:02.645980 Z
+  updated_at: 2011-07-20 21:52:02.645980 Z
+  id: 456
+  category_id: 4
+  longitude: -118.365379
+- name: Kings Beach State Recreation Area
+  latitude: 39.232658
+  created_at: 2011-07-20 21:52:02.648556 Z
+  updated_at: 2011-07-20 21:52:02.648556 Z
+  id: 457
+  category_id: 4
+  longitude: -120.016922
+- name: Kruse Rhododendron State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.651202 Z
+  updated_at: 2011-07-20 21:52:02.651202 Z
+  id: 458
+  category_id: 4
+  longitude: -119.270233
+- name: "La Pur\xEDsima Mission State Historic Park"
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.653985 Z
+  updated_at: 2011-07-20 21:52:02.653985 Z
+  id: 459
+  category_id: 4
+  longitude: -121.898003
+- name: Lake Del Valle State Recreation Area
+  latitude: 37.59269
+  created_at: 2011-07-20 21:52:02.656723 Z
+  updated_at: 2011-07-20 21:52:02.656723 Z
+  id: 460
+  category_id: 4
+  longitude: -121.709846
+- name: Lake Oroville State Recreation Area
+  latitude: 39.552399
+  created_at: 2011-07-20 21:52:02.659838 Z
+  updated_at: 2011-07-20 21:52:02.659838 Z
+  id: 461
+  category_id: 4
+  longitude: -121.464401
+- name: Lake Perris State Recreation Area
+  latitude: 33.866322
+  created_at: 2011-07-20 21:52:02.662608 Z
+  updated_at: 2011-07-20 21:52:02.662608 Z
+  id: 462
+  category_id: 4
+  longitude: -117.168427
+- name: Lake Valley State Recreation Area
+  latitude: 38.870159
+  created_at: 2011-07-20 21:52:02.665128 Z
+  updated_at: 2011-07-20 21:52:02.665128 Z
+  id: 463
+  category_id: 4
+  longitude: -120.01313
+- name: Leland Stanford Mansion State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.667835 Z
+  updated_at: 2011-07-20 21:52:02.667835 Z
+  id: 464
+  category_id: 4
+  longitude: -121.898003
+- name: Leo Carrillo State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.670524 Z
+  updated_at: 2011-07-20 21:52:02.670524 Z
+  id: 465
+  category_id: 4
+  longitude: -121.898003
+- name: Leucadia State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.673134 Z
+  updated_at: 2011-07-20 21:52:02.673134 Z
+  id: 466
+  category_id: 4
+  longitude: -118.020721
+- name: Lighthouse Field State Beach
+  latitude: 36.953362
+  created_at: 2011-07-20 21:52:02.675626 Z
+  updated_at: 2011-07-20 21:52:02.675626 Z
+  id: 467
+  category_id: 4
+  longitude: -122.027733
+- name: Limekiln State Park
+  latitude: 36.008579
+  created_at: 2011-07-20 21:52:02.678057 Z
+  updated_at: 2011-07-20 21:52:02.678057 Z
+  id: 468
+  category_id: 4
+  longitude: -121.518127
+- name: Little River State Beach
+  latitude: 41.012508
+  created_at: 2011-07-20 21:52:02.681008 Z
+  updated_at: 2011-07-20 21:52:02.681008 Z
+  id: 469
+  category_id: 4
+  longitude: -124.111511
+- name: "Los Angeles State Historic Park\xA0"
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.683639 Z
+  updated_at: 2011-07-20 21:52:02.683639 Z
+  id: 470
+  category_id: 4
+  longitude: -121.898003
+- name: Los Encinos State Historic Park
+  latitude: 34.1604
+  created_at: 2011-07-20 21:52:02.686316 Z
+  updated_at: 2011-07-20 21:52:02.686316 Z
+  id: 471
+  category_id: 4
+  longitude: -118.498199
+- name: Los Osos Oaks State Reserve
+  latitude: 35.31057
+  created_at: 2011-07-20 21:52:02.688924 Z
+  updated_at: 2011-07-20 21:52:02.688924 Z
+  id: 472
+  category_id: 4
+  longitude: -120.826958
+- name: MacKerricher State Park
+  latitude: 39.48885
+  created_at: 2011-07-20 21:52:02.691971 Z
+  updated_at: 2011-07-20 21:52:02.691971 Z
+  id: 473
+  category_id: 4
+  longitude: -123.789207
+- name: Mailliard Redwoods State Reserve
+  latitude: 38.006699
+  created_at: 2011-07-20 21:52:02.694667 Z
+  updated_at: 2011-07-20 21:52:02.694667 Z
+  id: 474
+  category_id: 4
+  longitude: -122.633102
+- name: Malakoff Diggins State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.697267 Z
+  updated_at: 2011-07-20 21:52:02.697267 Z
+  id: 475
+  category_id: 4
+  longitude: -121.898003
+- name: Malibu Creek State Park
+  latitude: 34.100842
+  created_at: 2011-07-20 21:52:02.699980 Z
+  updated_at: 2011-07-20 21:52:02.699980 Z
+  id: 476
+  category_id: 4
+  longitude: -118.711128
+- name: Malibu Lagoon State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.702697 Z
+  updated_at: 2011-07-20 21:52:02.702697 Z
+  id: 477
+  category_id: 4
+  longitude: -118.020721
+- name: Manchester State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.705186 Z
+  updated_at: 2011-07-20 21:52:02.705186 Z
+  id: 478
+  category_id: 4
+  longitude: -121.898003
+- name: Mandalay State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.707901 Z
+  updated_at: 2011-07-20 21:52:02.707901 Z
+  id: 479
+  category_id: 4
+  longitude: -118.020721
+- name: Manresa State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.710649 Z
+  updated_at: 2011-07-20 21:52:02.710649 Z
+  id: 480
+  category_id: 4
+  longitude: -118.020721
+- name: Marconi Conference Center State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.713255 Z
+  updated_at: 2011-07-20 21:52:02.713255 Z
+  id: 481
+  category_id: 4
+  longitude: -121.898003
+- name: Marina State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.715856 Z
+  updated_at: 2011-07-20 21:52:02.715856 Z
+  id: 482
+  category_id: 4
+  longitude: -118.020721
+- name: Marital Cottle Project
+  latitude: 40.680265
+  created_at: 2011-07-20 21:52:02.718358 Z
+  updated_at: 2011-07-20 21:52:02.718358 Z
+  id: 483
+  category_id: 4
+  longitude: -122.352944
+- name: Marshall Gold Discovery State Historic Park
+  latitude: 38.800388
+  created_at: 2011-07-20 21:52:02.721112 Z
+  updated_at: 2011-07-20 21:52:02.721112 Z
+  id: 484
+  category_id: 4
+  longitude: -120.895042
+- name: McArthur-Burney Falls Memorial State Park
+  latitude: 41.009579
+  created_at: 2011-07-20 21:52:02.723768 Z
+  updated_at: 2011-07-20 21:52:02.723768 Z
+  id: 485
+  category_id: 4
+  longitude: -121.647591
+- name: McConnell State Recreation Area
+  latitude: 37.415619
+  created_at: 2011-07-20 21:52:02.726406 Z
+  updated_at: 2011-07-20 21:52:02.726406 Z
+  id: 486
+  category_id: 4
+  longitude: -120.709846
+- name: McGrath State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.729313 Z
+  updated_at: 2011-07-20 21:52:02.729313 Z
+  id: 487
+  category_id: 4
+  longitude: -118.020721
+- name: Mendocino Headlands State Park
+  latitude: 39.307571
+  created_at: 2011-07-20 21:52:02.731873 Z
+  updated_at: 2011-07-20 21:52:02.731873 Z
+  id: 488
+  category_id: 4
+  longitude: -123.798912
+- name: Mendocino Woodlands State Park
+  latitude: 39.32336
+  created_at: 2011-07-20 21:52:02.734248 Z
+  updated_at: 2011-07-20 21:52:02.734248 Z
+  id: 489
+  category_id: 4
+  longitude: -123.734657
+- name: Millerton Lake State Recreation Area
+  latitude: 37.02169
+  created_at: 2011-07-20 21:52:02.737026 Z
+  updated_at: 2011-07-20 21:52:02.737026 Z
+  id: 490
+  category_id: 4
+  longitude: -119.671761
+- name: Mono Lake Tufa State Reserve
+  latitude: 38.01387
+  created_at: 2011-07-20 21:52:02.739742 Z
+  updated_at: 2011-07-20 21:52:02.739742 Z
+  id: 491
+  category_id: 4
+  longitude: -119.024513
+- name: "Monta\xF1a de Oro State Park"
+  latitude: 35.300529
+  created_at: 2011-07-20 21:52:02.742473 Z
+  updated_at: 2011-07-20 21:52:02.742473 Z
+  id: 492
+  category_id: 4
+  longitude: -120.862556
+- name: Montara State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.745015 Z
+  updated_at: 2011-07-20 21:52:02.745015 Z
+  id: 493
+  category_id: 4
+  longitude: -118.020721
+- name: Monterey State Historic Park
+  latitude: 36.602852
+  created_at: 2011-07-20 21:52:02.747725 Z
+  updated_at: 2011-07-20 21:52:02.747725 Z
+  id: 494
+  category_id: 4
+  longitude: -121.893517
+- name: Monterey State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.750311 Z
+  updated_at: 2011-07-20 21:52:02.750311 Z
+  id: 495
+  category_id: 4
+  longitude: -118.020721
+- name: Montgomery Woods State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.752905 Z
+  updated_at: 2011-07-20 21:52:02.752905 Z
+  id: 496
+  category_id: 4
+  longitude: -119.270233
+- name: Moonlight State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.755434 Z
+  updated_at: 2011-07-20 21:52:02.755434 Z
+  id: 497
+  category_id: 4
+  longitude: -118.020721
+- name: Morro Bay State Park
+  latitude: 35.354031
+  created_at: 2011-07-20 21:52:02.758366 Z
+  updated_at: 2011-07-20 21:52:02.758366 Z
+  id: 498
+  category_id: 4
+  longitude: -120.843727
+- name: Morro Strand State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.761873 Z
+  updated_at: 2011-07-20 21:52:02.761873 Z
+  id: 499
+  category_id: 4
+  longitude: -118.020721
+- name: Moss Landing State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.764516 Z
+  updated_at: 2011-07-20 21:52:02.764516 Z
+  id: 500
+  category_id: 4
+  longitude: -118.020721
+- name: Mount Diablo State Park
+  latitude: 37.84433
+  created_at: 2011-07-20 21:52:02.767274 Z
+  updated_at: 2011-07-20 21:52:02.767274 Z
+  id: 501
+  category_id: 4
+  longitude: -121.949982
+- name: Mount San Jacinto State Park
+  latitude: 33.797939
+  created_at: 2011-07-20 21:52:02.769950 Z
+  updated_at: 2011-07-20 21:52:02.769950 Z
+  id: 502
+  category_id: 4
+  longitude: -116.683479
+- name: Mount Tamalpais State Park
+  latitude: 37.90424
+  created_at: 2011-07-20 21:52:02.772490 Z
+  updated_at: 2011-07-20 21:52:02.772490 Z
+  id: 503
+  category_id: 4
+  longitude: -122.604057
+- name: Natural Bridges State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.775107 Z
+  updated_at: 2011-07-20 21:52:02.775107 Z
+  id: 504
+  category_id: 4
+  longitude: -118.020721
+- name: Navarro River Redwoods State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.777890 Z
+  updated_at: 2011-07-20 21:52:02.777890 Z
+  id: 505
+  category_id: 4
+  longitude: -121.898003
+- name: New Brighton State Beach
+  latitude: 36.980511
+  created_at: 2011-07-20 21:52:02.780473 Z
+  updated_at: 2011-07-20 21:52:02.780473 Z
+  id: 506
+  category_id: 4
+  longitude: -121.932907
+- name: Oceano Dunes State Vehicular Recreation Area
+  latitude: 35.10326
+  created_at: 2011-07-20 21:52:02.783247 Z
+  updated_at: 2011-07-20 21:52:02.783247 Z
+  id: 507
+  category_id: 4
+  longitude: -120.630928
+- name: Ocotillo Wells State Vehicular Recreation Area
+  latitude: 33.146839
+  created_at: 2011-07-20 21:52:02.785872 Z
+  updated_at: 2011-07-20 21:52:02.785872 Z
+  id: 508
+  category_id: 4
+  longitude: -116.141586
+- name: Old Sacramento State Historic Park
+  latitude: 38.582272
+  created_at: 2011-07-20 21:52:02.788575 Z
+  updated_at: 2011-07-20 21:52:02.788575 Z
+  id: 509
+  category_id: 4
+  longitude: -121.505478
+- name: Old Town San Diego State Historic Park
+  latitude: 32.753349
+  created_at: 2011-07-20 21:52:02.791604 Z
+  updated_at: 2011-07-20 21:52:02.791604 Z
+  id: 510
+  category_id: 4
+  longitude: -117.195847
+- name: Olompali State Historic Park
+  latitude: 38.151279
+  created_at: 2011-07-20 21:52:02.794383 Z
+  updated_at: 2011-07-20 21:52:02.794383 Z
+  id: 511
+  category_id: 4
+  longitude: -122.568771
+- name: Pacheco State Park
+  latitude: 37.991421
+  created_at: 2011-07-20 21:52:02.797054 Z
+  updated_at: 2011-07-20 21:52:02.797054 Z
+  id: 512
+  category_id: 4
+  longitude: -122.063766
+- name: Pacifica State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.799754 Z
+  updated_at: 2011-07-20 21:52:02.799754 Z
+  id: 513
+  category_id: 4
+  longitude: -118.020721
+- name: Palomar Mountain State Park
+  latitude: 33.331459
+  created_at: 2011-07-20 21:52:02.802284 Z
+  updated_at: 2011-07-20 21:52:02.802284 Z
+  id: 514
+  category_id: 4
+  longitude: -116.903931
+- name: Patrick s Point State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.805002 Z
+  updated_at: 2011-07-20 21:52:02.805002 Z
+  id: 515
+  category_id: 4
+  longitude: -121.898003
+- name: Pelican State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.807534 Z
+  updated_at: 2011-07-20 21:52:02.807534 Z
+  id: 516
+  category_id: 4
+  longitude: -118.020721
+- name: Pescadero State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.810135 Z
+  updated_at: 2011-07-20 21:52:02.810135 Z
+  id: 517
+  category_id: 4
+  longitude: -118.020721
+- name: Petaluma Adobe State Historic Park
+  latitude: 38.255051
+  created_at: 2011-07-20 21:52:02.812655 Z
+  updated_at: 2011-07-20 21:52:02.812655 Z
+  id: 518
+  category_id: 4
+  longitude: -122.584412
+- name: Pfeiffer Big Sur State Park
+  latitude: 36.252602
+  created_at: 2011-07-20 21:52:02.815240 Z
+  updated_at: 2011-07-20 21:52:02.815240 Z
+  id: 519
+  category_id: 4
+  longitude: -121.786972
+- name: Picacho State Recreation Area
+  latitude: 33.03867
+  created_at: 2011-07-20 21:52:02.817728 Z
+  updated_at: 2011-07-20 21:52:02.817728 Z
+  id: 520
+  category_id: 4
+  longitude: -114.643867
+- name: Pigeon Point Light Station State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.820623 Z
+  updated_at: 2011-07-20 21:52:02.820623 Z
+  id: 521
+  category_id: 4
+  longitude: -121.898003
+- name: "P\xEDo Pico State Historic Park"
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.823039 Z
+  updated_at: 2011-07-20 21:52:02.823039 Z
+  id: 522
+  category_id: 4
+  longitude: -121.898003
+- name: Pismo State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.826295 Z
+  updated_at: 2011-07-20 21:52:02.826295 Z
+  id: 523
+  category_id: 4
+  longitude: -118.020721
+- name: Placerita Canyon State Park
+  latitude: 34.371811
+  created_at: 2011-07-20 21:52:02.829147 Z
+  updated_at: 2011-07-20 21:52:02.829147 Z
+  id: 524
+  category_id: 4
+  longitude: -118.44529
+- name: Plumas-Eureka State Park
+  latitude: 39.758339
+  created_at: 2011-07-20 21:52:02.831862 Z
+  updated_at: 2011-07-20 21:52:02.831862 Z
+  id: 525
+  category_id: 4
+  longitude: -120.695381
+- name: Point Cabrillo Light Station
+  latitude: 40.67618
+  created_at: 2011-07-20 21:52:02.834434 Z
+  updated_at: 2011-07-20 21:52:02.834434 Z
+  id: 526
+  category_id: 4
+  longitude: -121.429564
+- name: Point Dume State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.837176 Z
+  updated_at: 2011-07-20 21:52:02.837176 Z
+  id: 527
+  category_id: 4
+  longitude: -118.020721
+- name: Point Lobos State Reserve
+  latitude: 36.518108
+  created_at: 2011-07-20 21:52:02.839916 Z
+  updated_at: 2011-07-20 21:52:02.839916 Z
+  id: 528
+  category_id: 4
+  longitude: -121.935371
+- name: Point Lobos Ranch
+  latitude: 36.518108
+  created_at: 2011-07-20 21:52:02.842527 Z
+  updated_at: 2011-07-20 21:52:02.842527 Z
+  id: 529
+  category_id: 4
+  longitude: -121.935371
+- name: Point Montara Light Station
+  latitude: 40.67618
+  created_at: 2011-07-20 21:52:02.845044 Z
+  updated_at: 2011-07-20 21:52:02.845044 Z
+  id: 530
+  category_id: 4
+  longitude: -121.429564
+- name: Point Mugu State Park
+  latitude: 34.066639
+  created_at: 2011-07-20 21:52:02.847750 Z
+  updated_at: 2011-07-20 21:52:02.847750 Z
+  id: 531
+  category_id: 4
+  longitude: -119.007851
+- name: Point Sal State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.850327 Z
+  updated_at: 2011-07-20 21:52:02.850327 Z
+  id: 532
+  category_id: 4
+  longitude: -118.020721
+- name: Point Sur State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.852895 Z
+  updated_at: 2011-07-20 21:52:02.852895 Z
+  id: 533
+  category_id: 4
+  longitude: -121.898003
+- name: Pomponio State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.855201 Z
+  updated_at: 2011-07-20 21:52:02.855201 Z
+  id: 534
+  category_id: 4
+  longitude: -118.020721
+- name: Portola Redwoods State Park
+  latitude: 37.263351
+  created_at: 2011-07-20 21:52:02.857932 Z
+  updated_at: 2011-07-20 21:52:02.857932 Z
+  id: 535
+  category_id: 4
+  longitude: -122.211143
+- name: Prairie City State Vehicular Recreation Area
+  latitude: 38.64381
+  created_at: 2011-07-20 21:52:02.861006 Z
+  updated_at: 2011-07-20 21:52:02.861006 Z
+  id: 536
+  category_id: 4
+  longitude: -121.15728
+- name: Prairie Creek Redwoods State Park
+  latitude: 41.355499
+  created_at: 2011-07-20 21:52:02.863729 Z
+  updated_at: 2011-07-20 21:52:02.863729 Z
+  id: 537
+  category_id: 4
+  longitude: -124.073677
+- name: Providence Mountains State Recreation Area
+  latitude: 34.950241
+  created_at: 2011-07-20 21:52:02.866508 Z
+  updated_at: 2011-07-20 21:52:02.866508 Z
+  id: 538
+  category_id: 4
+  longitude: -115.511932
+- name: Railtown 1897 State Historic Park
+  latitude: 37.950401
+  created_at: 2011-07-20 21:52:02.868984 Z
+  updated_at: 2011-07-20 21:52:02.868984 Z
+  id: 539
+  category_id: 4
+  longitude: -120.415192
+- name: Red Rock Canyon State Park (California)
+  latitude: 35.31559
+  created_at: 2011-07-20 21:52:02.871709 Z
+  updated_at: 2011-07-20 21:52:02.871709 Z
+  id: 540
+  category_id: 4
+  longitude: -117.983467
+- name: Refugio State Beach
+  latitude: 34.46257
+  created_at: 2011-07-20 21:52:02.874506 Z
+  updated_at: 2011-07-20 21:52:02.874506 Z
+  id: 541
+  category_id: 4
+  longitude: -120.065453
+- name: Reynolds Wayside Campground
+  latitude: 36.227798
+  created_at: 2011-07-20 21:52:02.876999 Z
+  updated_at: 2011-07-20 21:52:02.876999 Z
+  id: 542
+  category_id: 4
+  longitude: -119.0728
+- name: Richardson Grove State Park
+  latitude: 40.0159
+  created_at: 2011-07-20 21:52:02.879603 Z
+  updated_at: 2011-07-20 21:52:02.879603 Z
+  id: 543
+  category_id: 4
+  longitude: -123.791298
+- name: Rio de Los Angeles State Park
+  latitude: 34.05349
+  created_at: 2011-07-20 21:52:02.882232 Z
+  updated_at: 2011-07-20 21:52:02.882232 Z
+  id: 544
+  category_id: 4
+  longitude: -118.245323
+- name: Robert H. Meyer Memorial State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.884981 Z
+  updated_at: 2011-07-20 21:52:02.884981 Z
+  id: 545
+  category_id: 4
+  longitude: -118.020721
+- name: Robert Louis Stevenson State Park
+  latitude: 38.66581
+  created_at: 2011-07-20 21:52:02.887549 Z
+  updated_at: 2011-07-20 21:52:02.887549 Z
+  id: 546
+  category_id: 4
+  longitude: -122.619743
+- name: Robert W. Crown Memorial State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.890181 Z
+  updated_at: 2011-07-20 21:52:02.890181 Z
+  id: 547
+  category_id: 4
+  longitude: -118.020721
+- name: Russian Gulch State Park
+  latitude: 39.33099
+  created_at: 2011-07-20 21:52:02.893643 Z
+  updated_at: 2011-07-20 21:52:02.893643 Z
+  id: 548
+  category_id: 4
+  longitude: -123.805054
+- name: Saddleback Butte State Park
+  latitude: 34.689831
+  created_at: 2011-07-20 21:52:02.896998 Z
+  updated_at: 2011-07-20 21:52:02.896998 Z
+  id: 549
+  category_id: 4
+  longitude: -117.824364
+- name: Salinas River State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.900211 Z
+  updated_at: 2011-07-20 21:52:02.900211 Z
+  id: 550
+  category_id: 4
+  longitude: -118.020721
+- name: Salt Point State Park
+  latitude: 38.580978
+  created_at: 2011-07-20 21:52:02.902685 Z
+  updated_at: 2011-07-20 21:52:02.902685 Z
+  id: 551
+  category_id: 4
+  longitude: -123.332298
+- name: Salton Sea State Recreation Area
+  latitude: 33.424599
+  created_at: 2011-07-20 21:52:02.905453 Z
+  updated_at: 2011-07-20 21:52:02.905453 Z
+  id: 552
+  category_id: 4
+  longitude: -115.848
+- name: Samuel P. Taylor State Park
+  latitude: 38.004662
+  created_at: 2011-07-20 21:52:02.908034 Z
+  updated_at: 2011-07-20 21:52:02.908034 Z
+  id: 553
+  category_id: 4
+  longitude: -122.708542
+- name: San Bruno Mountain State Park
+  latitude: 37.696232
+  created_at: 2011-07-20 21:52:02.910784 Z
+  updated_at: 2011-07-20 21:52:02.910784 Z
+  id: 554
+  category_id: 4
+  longitude: -122.433487
+- name: San Buenaventura State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.913433 Z
+  updated_at: 2011-07-20 21:52:02.913433 Z
+  id: 555
+  category_id: 4
+  longitude: -118.020721
+- name: San Clemente State Beach
+  latitude: 33.403938
+  created_at: 2011-07-20 21:52:02.916178 Z
+  updated_at: 2011-07-20 21:52:02.916178 Z
+  id: 556
+  category_id: 4
+  longitude: -117.601761
+- name: San Elijo State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.918689 Z
+  updated_at: 2011-07-20 21:52:02.918689 Z
+  id: 557
+  category_id: 4
+  longitude: -118.020721
+- name: San Gregorio State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.921505 Z
+  updated_at: 2011-07-20 21:52:02.921505 Z
+  id: 558
+  category_id: 4
+  longitude: -118.020721
+- name: San Juan Bautista State Historic Park
+  latitude: 36.847179
+  created_at: 2011-07-20 21:52:02.924348 Z
+  updated_at: 2011-07-20 21:52:02.924348 Z
+  id: 559
+  category_id: 4
+  longitude: -121.537971
+- name: San Luis Reservoir State Recreation Area
+  latitude: 37.049961
+  created_at: 2011-07-20 21:52:02.927300 Z
+  updated_at: 2011-07-20 21:52:02.927300 Z
+  id: 560
+  category_id: 4
+  longitude: -121.10537
+- name: San Onofre State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.930093 Z
+  updated_at: 2011-07-20 21:52:02.930093 Z
+  id: 561
+  category_id: 4
+  longitude: -118.020721
+- name: San Pasqual Battlefield State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.932647 Z
+  updated_at: 2011-07-20 21:52:02.932647 Z
+  id: 562
+  category_id: 4
+  longitude: -121.898003
+- name: San Simeon State Park
+  latitude: 35.599449
+  created_at: 2011-07-20 21:52:02.935435 Z
+  updated_at: 2011-07-20 21:52:02.935435 Z
+  id: 563
+  category_id: 4
+  longitude: -121.125542
+- name: San Timoteo Canyon
+  latitude: 37.829112
+  created_at: 2011-07-20 21:52:02.938363 Z
+  updated_at: 2011-07-20 21:52:02.938363 Z
+  id: 564
+  category_id: 4
+  longitude: -122.165361
+- name: Santa Cruz Mission State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.940966 Z
+  updated_at: 2011-07-20 21:52:02.940966 Z
+  id: 565
+  category_id: 4
+  longitude: -121.898003
+- name: Santa Monica State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.943633 Z
+  updated_at: 2011-07-20 21:52:02.943633 Z
+  id: 566
+  category_id: 4
+  longitude: -118.020721
+- name: Santa Susana Pass State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.946345 Z
+  updated_at: 2011-07-20 21:52:02.946345 Z
+  id: 567
+  category_id: 4
+  longitude: -121.898003
+- name: Schooner Gulch State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.948946 Z
+  updated_at: 2011-07-20 21:52:02.948946 Z
+  id: 568
+  category_id: 4
+  longitude: -118.020721
+- name: Seacliff State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.951715 Z
+  updated_at: 2011-07-20 21:52:02.951715 Z
+  id: 569
+  category_id: 4
+  longitude: -118.020721
+- name: Shasta State Historic Park
+  latitude: 40.599281
+  created_at: 2011-07-20 21:52:02.954354 Z
+  updated_at: 2011-07-20 21:52:02.954354 Z
+  id: 570
+  category_id: 4
+  longitude: -122.492218
+- name: Silver Strand State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.957083 Z
+  updated_at: 2011-07-20 21:52:02.957083 Z
+  id: 571
+  category_id: 4
+  longitude: -118.020721
+- name: Silverwood Lake State Recreation Area
+  latitude: 34.288761
+  created_at: 2011-07-20 21:52:02.959977 Z
+  updated_at: 2011-07-20 21:52:02.959977 Z
+  id: 572
+  category_id: 4
+  longitude: -117.330299
+- name: Sinkyone Wilderness State Park
+  latitude: 39.971401
+  created_at: 2011-07-20 21:52:02.962545 Z
+  updated_at: 2011-07-20 21:52:02.962545 Z
+  id: 573
+  category_id: 4
+  longitude: -123.969429
+- name: Smithe Redwoods State Reserve
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:02.965194 Z
+  updated_at: 2011-07-20 21:52:02.965194 Z
+  id: 574
+  category_id: 4
+  longitude: -119.270233
+- name: Sonoma State Historic Park
+  latitude: 38.293678
+  created_at: 2011-07-20 21:52:02.967741 Z
+  updated_at: 2011-07-20 21:52:02.967741 Z
+  id: 575
+  category_id: 4
+  longitude: -122.457199
+- name: Sonoma Coast State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.971191 Z
+  updated_at: 2011-07-20 21:52:02.971191 Z
+  id: 576
+  category_id: 4
+  longitude: -118.020721
+- name: South Carlsbad State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.974811 Z
+  updated_at: 2011-07-20 21:52:02.974811 Z
+  id: 577
+  category_id: 4
+  longitude: -118.020721
+- name: South Yuba River State Park
+  latitude: 39.125641
+  created_at: 2011-07-20 21:52:02.977580 Z
+  updated_at: 2011-07-20 21:52:02.977580 Z
+  id: 578
+  category_id: 4
+  longitude: -121.58445
+- name: Standish-Hickey State Recreation Area
+  latitude: 39.879181
+  created_at: 2011-07-20 21:52:02.980287 Z
+  updated_at: 2011-07-20 21:52:02.980287 Z
+  id: 579
+  category_id: 4
+  longitude: -123.731728
+- name: State Indian Museum State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.983261 Z
+  updated_at: 2011-07-20 21:52:02.983261 Z
+  id: 580
+  category_id: 4
+  longitude: -121.898003
+- name: Stone Lake
+  latitude: 39.124722
+  created_at: 2011-07-20 21:52:02.986631 Z
+  updated_at: 2011-07-20 21:52:02.986631 Z
+  id: 581
+  category_id: 4
+  longitude: -122.716927
+- name: Sugar Pine Point State Park
+  latitude: 39.05817
+  created_at: 2011-07-20 21:52:02.989423 Z
+  updated_at: 2011-07-20 21:52:02.989423 Z
+  id: 582
+  category_id: 4
+  longitude: -120.121178
+- name: Sugarloaf Ridge State Park
+  latitude: 38.438351
+  created_at: 2011-07-20 21:52:02.992477 Z
+  updated_at: 2011-07-20 21:52:02.992477 Z
+  id: 583
+  category_id: 4
+  longitude: -122.505074
+- name: Sunset State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:02.995379 Z
+  updated_at: 2011-07-20 21:52:02.995379 Z
+  id: 584
+  category_id: 4
+  longitude: -118.020721
+- name: "Sutter Buttes State Park\xA0"
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:02.997978 Z
+  updated_at: 2011-07-20 21:52:02.997978 Z
+  id: 585
+  category_id: 4
+  longitude: -121.898003
+- name: Sutter s Fort State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.000694 Z
+  updated_at: 2011-07-20 21:52:03.000694 Z
+  id: 586
+  category_id: 4
+  longitude: -121.898003
+- name: Tahoe State Recreation Area
+  latitude: 39.181049
+  created_at: 2011-07-20 21:52:03.003602 Z
+  updated_at: 2011-07-20 21:52:03.003602 Z
+  id: 587
+  category_id: 4
+  longitude: -120.116173
+- name: Thornton State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.006211 Z
+  updated_at: 2011-07-20 21:52:03.006211 Z
+  id: 588
+  category_id: 4
+  longitude: -118.020721
+- name: Tijuana Estuary
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:03.008806 Z
+  updated_at: 2011-07-20 21:52:03.008806 Z
+  id: 589
+  category_id: 4
+  longitude: -119.270233
+- name: Tolowa Dunes State Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.011532 Z
+  updated_at: 2011-07-20 21:52:03.011532 Z
+  id: 590
+  category_id: 4
+  longitude: -121.898003
+- name: Tomales Bay State Park
+  latitude: 38.127682
+  created_at: 2011-07-20 21:52:03.014223 Z
+  updated_at: 2011-07-20 21:52:03.014223 Z
+  id: 591
+  category_id: 4
+  longitude: -122.902313
+- name: Tomo-Kahni State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.016967 Z
+  updated_at: 2011-07-20 21:52:03.016967 Z
+  id: 592
+  category_id: 4
+  longitude: -121.898003
+- name: Topanga State Park
+  latitude: 34.044529
+  created_at: 2011-07-20 21:52:03.019309 Z
+  updated_at: 2011-07-20 21:52:03.019309 Z
+  id: 593
+  category_id: 4
+  longitude: -118.55825
+- name: Torrey Pines State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.022059 Z
+  updated_at: 2011-07-20 21:52:03.022059 Z
+  id: 594
+  category_id: 4
+  longitude: -118.020721
+- name: Torrey Pines State Reserve
+  latitude: 32.90498
+  created_at: 2011-07-20 21:52:03.024893 Z
+  updated_at: 2011-07-20 21:52:03.024893 Z
+  id: 595
+  category_id: 4
+  longitude: -117.24334
+- name: Trinidad State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.028202 Z
+  updated_at: 2011-07-20 21:52:03.028202 Z
+  id: 596
+  category_id: 4
+  longitude: -118.020721
+- name: Tule Elk State Reserve
+  latitude: 35.316608
+  created_at: 2011-07-20 21:52:03.030811 Z
+  updated_at: 2011-07-20 21:52:03.030811 Z
+  id: 597
+  category_id: 4
+  longitude: -119.360619
+- name: Turlock Lake State Recreation Area
+  latitude: 37.62746
+  created_at: 2011-07-20 21:52:03.033607 Z
+  updated_at: 2011-07-20 21:52:03.033607 Z
+  id: 598
+  category_id: 4
+  longitude: -120.575523
+- name: Twin Lakes State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.036156 Z
+  updated_at: 2011-07-20 21:52:03.036156 Z
+  id: 599
+  category_id: 4
+  longitude: -118.020721
+- name: Van Damme State Park
+  latitude: 39.275131
+  created_at: 2011-07-20 21:52:03.038906 Z
+  updated_at: 2011-07-20 21:52:03.038906 Z
+  id: 600
+  category_id: 4
+  longitude: -123.796402
+- name: Verdugo Mountains
+  latitude: 37.271881
+  created_at: 2011-07-20 21:52:03.041601 Z
+  updated_at: 2011-07-20 21:52:03.041601 Z
+  id: 601
+  category_id: 4
+  longitude: -119.270233
+- name: Ward Creek
+  latitude: 40.797092
+  created_at: 2011-07-20 21:52:03.044278 Z
+  updated_at: 2011-07-20 21:52:03.044278 Z
+  id: 602
+  category_id: 4
+  longitude: -121.702267
+- name: Washoe Meadows State Park
+  latitude: 38.861629
+  created_at: 2011-07-20 21:52:03.047113 Z
+  updated_at: 2011-07-20 21:52:03.047113 Z
+  id: 603
+  category_id: 4
+  longitude: -120.022697
+- name: Wassama Round House State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.049590 Z
+  updated_at: 2011-07-20 21:52:03.049590 Z
+  id: 604
+  category_id: 4
+  longitude: -121.898003
+- name: Watts Towers of Simon Rodia State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.052178 Z
+  updated_at: 2011-07-20 21:52:03.052178 Z
+  id: 605
+  category_id: 4
+  longitude: -121.898003
+- name: Weaverville Joss House State Historic Park
+  latitude: 40.73164
+  created_at: 2011-07-20 21:52:03.054851 Z
+  updated_at: 2011-07-20 21:52:03.054851 Z
+  id: 606
+  category_id: 4
+  longitude: -122.940102
+- name: Westport-Union Landing State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.057511 Z
+  updated_at: 2011-07-20 21:52:03.057511 Z
+  id: 607
+  category_id: 4
+  longitude: -118.020721
+- name: Wilder Ranch State Park
+  latitude: 36.96217
+  created_at: 2011-07-20 21:52:03.060855 Z
+  updated_at: 2011-07-20 21:52:03.060855 Z
+  id: 608
+  category_id: 4
+  longitude: -122.080841
+- name: Wildwood Canyon
+  latitude: 34.017941
+  created_at: 2011-07-20 21:52:03.063520 Z
+  updated_at: 2011-07-20 21:52:03.063520 Z
+  id: 609
+  category_id: 4
+  longitude: -117.06636
+- name: Will Rogers State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.066035 Z
+  updated_at: 2011-07-20 21:52:03.066035 Z
+  id: 610
+  category_id: 4
+  longitude: -118.020721
+- name: Will Rogers State Historic Park
+  latitude: 34.053139
+  created_at: 2011-07-20 21:52:03.068760 Z
+  updated_at: 2011-07-20 21:52:03.068760 Z
+  id: 611
+  category_id: 4
+  longitude: -118.514099
+- name: William B. Ide Adobe State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.071554 Z
+  updated_at: 2011-07-20 21:52:03.071554 Z
+  id: 612
+  category_id: 4
+  longitude: -121.898003
+- name: William Randolph Hearst Memorial State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.074318 Z
+  updated_at: 2011-07-20 21:52:03.074318 Z
+  id: 613
+  category_id: 4
+  longitude: -118.020721
+- name: Woodland Opera House State Historic Park
+  latitude: 37.32687
+  created_at: 2011-07-20 21:52:03.076995 Z
+  updated_at: 2011-07-20 21:52:03.076995 Z
+  id: 614
+  category_id: 4
+  longitude: -121.898003
+- name: Woodson Bridge State Recreation Area
+  latitude: 39.91605
+  created_at: 2011-07-20 21:52:03.079805 Z
+  updated_at: 2011-07-20 21:52:03.079805 Z
+  id: 615
+  category_id: 4
+  longitude: -122.095093
+- name: Zmudowski State Beach
+  latitude: 33.670078
+  created_at: 2011-07-20 21:52:03.082323 Z
+  updated_at: 2011-07-20 21:52:03.082323 Z
+  id: 616
+  category_id: 4
+  longitude: -118.020721
+- name: Jashua Tree
+  latitude: 34.134965
+  created_at: 2011-07-20 21:52:03.084927 Z
+  updated_at: 2011-07-20 21:52:03.084927 Z
+  id: 617
+  category_id: 
+  longitude: -116.314604
+- name: Channel Islands
+  latitude: 33.439121
+  created_at: 2011-07-20 21:52:03.087686 Z
+  updated_at: 2011-07-20 21:52:03.087686 Z
+  id: 618
+  category_id: 
+  longitude: -119.346687
+- name: Sequoia Park
+  latitude: 40.777451
+  created_at: 2011-07-20 21:52:03.090321 Z
+  updated_at: 2011-07-20 21:52:03.090321 Z
+  id: 619
+  category_id: 
+  longitude: -124.144493
+- name: Kings Canyon
+  latitude: 36.784698
+  created_at: 2011-07-20 21:52:03.093252 Z
+  updated_at: 2011-07-20 21:52:03.093252 Z
+  id: 620
+  category_id: 
+  longitude: -118.906998
+- name: Yosemite
+  latitude: 37.667542
+  created_at: 2011-07-20 21:52:03.095880 Z
+  updated_at: 2011-07-20 21:52:03.095880 Z
+  id: 621
+  category_id: 
+  longitude: -119.805389
+- name: Lassen Volcanic
+  latitude: 40.44611
+  created_at: 2011-07-20 21:52:03.098351 Z
+  updated_at: 2011-07-20 21:52:03.098351 Z
+  id: 622
+  category_id: 
+  longitude: -120.663841
+- name: Redwood National Park
+  latitude: 41.41893
+  created_at: 2011-07-20 21:52:03.101037 Z
+  updated_at: 2011-07-20 21:52:03.101037 Z
+  id: 623
+  category_id: 
+  longitude: -124.003899
+- name: Death Valley
+  latitude: 36.45695
+  created_at: 2011-07-20 21:52:03.103892 Z
+  updated_at: 2011-07-20 21:52:03.103892 Z
+  id: 624
+  category_id: 5
+  longitude: -116.865133
