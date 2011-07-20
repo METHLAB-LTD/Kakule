@@ -6,8 +6,10 @@ class SearchController < ApplicationController
   # params => {"lat" : 25, "lng" : -120, "ip" : "255.255.255.255"}
   def locations
     if (params[:lat] && params[:lng])
+      RAILS_DEFAULT_LOGGER.info("[API] SimpleGeo Coords")
       data = SimpleGeo::Client.get_context(params[:lat], params[:lng])
     elsif (params[:ip])
+      RAILS_DEFAULT_LOGGER.info("[API] SimpleGeo IP")
       data = SimpleGeo::Client.get_context_ip(params[:ip])
     else
       data = nil  
@@ -109,6 +111,7 @@ class SearchController < ApplicationController
   # Possible Categories: http://www.yelp.com/developers/documentation/category_list
   def meals
     client  = Yelp::Client.new
+    RAILS_DEFAULT_LOGGER.info("[API] Yelp")
     request = Yelp::Review::Request::GeoPoint.new(
      :latitude => params[:lat],
      :longitude => params[:lng],

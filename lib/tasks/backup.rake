@@ -2,9 +2,10 @@ namespace :db do
   namespace :backup do
     
     def interesting_tables
-      ActiveRecord::Base.connection.tables.sort.reject do |tbl|
-        ['schema_migrations', 'schema_info', 'public_exceptions', 'user_sessions'].include?(tbl)
-      end
+      ['geocodes']
+      # ActiveRecord::Base.connection.tables.sort.reject do |tbl|
+      #   ['schema_migrations', 'schema_info', 'public_exceptions', 'user_sessions'].include?(tbl)
+      # end
     end
   
     desc "Dump entire db. Use this on Production"

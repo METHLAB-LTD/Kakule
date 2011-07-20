@@ -130,6 +130,7 @@ module Expedia
    
   module Util
     def self.get(url, xml)
+      RAILS_DEFAULT_LOGGER.info("[API] Expedia: #{url}")
       curl = Curl::Easy.new
       curl.connect_timeout = Expedia::CURL_TIMEOUT
       curl.url = url + CGI.escape(xml)
