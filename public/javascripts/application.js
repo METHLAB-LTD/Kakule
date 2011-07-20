@@ -132,8 +132,13 @@ kakule.server = {
 
 kakule.ui = {
 	repopulateLocations : function(data) {
-        $("#locations .results").empty();
-        $("#locations .results").append(data.html);
+		var resultsDiv =  $("#locations .results");
+    resultsDiv.empty();
+    resultsDiv.append(data.html);
+    $.each($(".name", resultsDiv), function(i, div){
+	    kakule.ui.highlight(div, data.query);
+    });
+		
 	},
 
   repopulateAttractions : function(data) {
@@ -143,6 +148,16 @@ kakule.ui = {
 
   setLocation : function(location) {
     $("#current_location").text(location);
+  },
+
+  highlight : function(location, text){
+	  div = $(location);
+	  if (div.html()){
+			var regex = new RegExp(text, 'ig');
+			div.html(div.html().replace(regex, function(match){
+				return '<span class="highlight">' + match + '</span>';
+			}));
+	  }
   }
 	
 };

@@ -1,6 +1,6 @@
 <% for location in data %>
-    <div class="result">
-        <%= link_to "[pin]", "#" %> <%= location.full_name %>
+    <div class="result <%=location.id%>">
+        <%= link_to "[pin]", "#" %> <span class="name"><%= location.full_name %></span>
     </div>
 <% end %>
 
