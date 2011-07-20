@@ -35,18 +35,14 @@ class User < ActiveRecord::Base
   end
   
   def self.create_guest
-
     guest = User.create(:is_guest => true)
     itinerary = Itinerary.create_itinerary(guest)
     session = UserSession.create(guest, true)
-
     return guest
-
   end
   
-  
   def name
-    first_name && last_name ? "#{first_name} #{last_name}" : "guest"
+    is_guest? ? "Guest" : "#{first_name} #{last_name}"
   end
   
 end

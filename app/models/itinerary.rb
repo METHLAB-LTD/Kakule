@@ -10,6 +10,7 @@ class Itinerary < ActiveRecord::Base
   has_many :transportations
 
   validates_presence_of :owner_id
+  
   #validates_presence_of :parent_id
   
   def is_root?
@@ -38,6 +39,22 @@ class Itinerary < ActiveRecord::Base
     }
   end
   
+  def fork(new_owner)
+    forked = self.clone
+    forked.parent_id = self[:id]
+    forked.owner = new_owner
+    forked.save
+    self.selected_events.map{|s| s2=s.clone; s2.itinerary_id = forked[:id]; s2.save}
+    self.selected_attractions.map{|a| a2=a.clone; a2.itinerary_id = forked[:id]; a2.save}
+    self.transportations.map{|t| t2=t.clone; t2.itinerary_id = forked[:id]; t2.save}
+    return forked
+  end
+  
+  #github style name
+  def fullname
+    "#{self.owner.name} :: #{self.name}"
+  end
+  
   def self.permissions(str)
     @@permissions[str]
   end
@@ -47,5 +64,5 @@ class Itinerary < ActiveRecord::Base
     itinerary.owner = user
     itinerary.save
   end
-
+  
 end
