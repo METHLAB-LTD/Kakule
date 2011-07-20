@@ -3,9 +3,10 @@ if (!kakule) {
 }
 
 kakule.current = {
-    lat: 0,
-    lng: 0,
-    location: undefined
+	lat: 0,
+	lng: 0,
+	location: undefined,
+	localStorage: false
 };
 
 kakule.init = {
@@ -15,7 +16,7 @@ kakule.init = {
         return;
       }
 
-      console.log("Location not cached, using geolocation");
+      //console.log("Location not cached, using geolocation");
 	  if (Modernizr.geolocation) {
 	    navigator.geolocation.getCurrentPosition(kakule.util.lookupLocationName);
 	  } else {
@@ -61,34 +62,39 @@ kakule.init = {
 
 kakule.util = {
 	lookupLocationName : function(position) {
-	    /* Save to temporary variables */
-	    kakule.current.lat = position.coords.latitude;
-	    kakule.current.lng = position.coords.longitude;
+		/* Save to temporary variables */
+		kakule.current.lat = position.coords.latitude;
+		kakule.current.lng = position.coords.longitude;
 
-	    /* Find location name */
-	    $.post("/search/locations", 
-	        {lat: kakule.current.lat, lng: kakule.current.lng},  
-            
-            function(data) {
-                kakule.current.location = data.location;
-                kakule.ui.setLocation(kakule.current.location);
-            }    
-	    );
+		/* Find location name */
+		var cacheName = "currentLocation";
+		var cacheExpirationMin = 60;
+		var cachedLocation = kakule.storage.load(cacheName);
+		var callback = function(data) {
+	    kakule.current.location = data.location;
+			kakule.storage.save(cacheName, data, cacheExpirationMin);
+	    kakule.ui.setLocation(kakule.current.location);
+		}
+		if (cachedLocation){
+			callback(cachedLocation);
+		} else {
+			$.post("/search/locations", {lat: kakule.current.lat, lng: kakule.current.lng}, callback);
+		}
 	},
 
 	openAction : function(search) {
 	    return $("#" + search + " .search").css("display") != "none";
 	},
 
-    hasCachedLocationData : function() {
-        if (typeof kakule.current.location === "undefined" ||
-            typeof kakule.current.lat === "undefined" ||
-            typeof kakule.current.lng === "undefined") {
-            return false;
-        } else {
-            return true;
-        }
-    },
+	hasCachedLocationData : function() {
+	    if (typeof kakule.current.location === "undefined" ||
+	        typeof kakule.current.lat === "undefined" ||
+	        typeof kakule.current.lng === "undefined") {
+	        return false;
+	    } else {
+	        return true;
+	    }
+	},
 	
 	addCurrentLocationData : function(data){
 		data.lat = kakule.current.lat;
@@ -96,6 +102,21 @@ kakule.util = {
 	}
 };
 
+kakule.storage = {
+	save : function(key, jsonData, expirationMin){
+		if (!Modernizr.localstorage){return false;}
+		var expirationMS = expirationMin * 60 * 1000;
+		var record = {value: JSON.stringify(jsonData), timestamp: new Date().getTime() + expirationMS}
+		localStorage.setItem(key, JSON.stringify(record));
+		return jsonData;
+	},
+	load : function(key){
+		if (!Modernizr.localstorage){return false;}
+		var record = JSON.parse(localStorage.getItem(key));
+		if (!record){return false;}
+		return (new Date().getTime() < record.timestamp && JSON.parse(record.value));
+	}
+}
 
 kakule.search = {
 	attractions : function(query){
@@ -174,6 +195,7 @@ $(document).ready(function() {
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
 		kakule.init.attachEditHandlers();
+		
 		
 		// FB.init({
 		// 	    appId  : '190781907646255',
