@@ -3,9 +3,13 @@
 <% end %>
 
 <% for event in event_data %>
-    <div><%= event.name %></div>
+    <div class="<%=event.id%>">
+			<span class="name"><%= event.name %></span>
+		</div>
 <% end %>
 
 <% for attraction in attraction_data %>
-    <div><%= attraction.name %></div>
+    <div class="<%=attraction.id%>">
+			<span class="name"><%= attraction.name %></span>
+		</div>
 <% end %>

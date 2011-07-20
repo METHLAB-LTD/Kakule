@@ -135,6 +135,7 @@ kakule.ui = {
 		var resultsDiv =  $("#locations .results");
     resultsDiv.empty();
     resultsDiv.append(data.html);
+
     $.each($(".name", resultsDiv), function(i, div){
 	    kakule.ui.highlight(div, data.query);
     });
@@ -142,8 +143,14 @@ kakule.ui = {
 	},
 
   repopulateAttractions : function(data) {
-      $("#attractions .results").empty();
-      $("#attractions .results").append(data.html);
+		var resultsDiv = $("#attractions .results")
+    resultsDiv.empty();
+    resultsDiv.append(data.html);
+
+    $.each($(".name", resultsDiv), function(i, div){
+	    kakule.ui.highlight(div, data.query);
+    });
+
   },
 
   setLocation : function(location) {

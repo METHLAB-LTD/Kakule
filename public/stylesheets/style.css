@@ -139,9 +139,11 @@ a:hover {
     margin-bottom: 15px;
 }
 
+.addpane .results div:hover{
+  	background: #CCC;
+}
 #addpanel .heading {
     margin-bottom: 5px;
-    
     cursor: pointer;
 }
 

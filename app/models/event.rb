@@ -25,7 +25,7 @@ class Event < ActiveRecord::Base
         params[:end_time], 
         params[:start_time], 
         nil
-      ], :limit => params[:limit].to_i)
+      ], :limit => params[:limit].to_i, :include => :likes).sort{|a,b| b.likes.length <=> a.likes.length}
     
   end
   

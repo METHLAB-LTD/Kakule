@@ -37,7 +37,8 @@ class SearchController < ApplicationController
     results = events
     
     render :json => {
-        :html => (render_to_string :partial => "attractions", :locals => {:event_data => results[:events], :attraction_data => results[:attractions]})
+        :html => (render_to_string :partial => "attractions", :locals => {:event_data => results[:events], :attraction_data => results[:attractions]}),
+        :query => params[:query]
     }
   end
   
