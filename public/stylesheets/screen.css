@@ -1,0 +1,562 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* 
+  Event Calendar stylesheet
+  
+  Colors:
+  #d5d5d5 - border (gray)
+  #303030 - day names bg (gray)
+  #444 - number (gray)
+  #ecede2 - day header bg (light tan)
+  ##d7d7ba - today header bg (tan)
+  #ffffdd - today bg light (yellow)
+  #777 - other month number (gray)
+  #efefef - other month day header (gray)
+  #2eac6a - hover (green)
+*/
+/* Outer most container */
+/* line 18, ../../app/stylesheets/home/event_calendar.scss */
+.ec-calendar {
+  font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Month name header & links */
+/* line 27, ../../app/stylesheets/home/event_calendar.scss */
+.ec-calendar-header {
+  padding: 5px 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+/* line 33, ../../app/stylesheets/home/event_calendar.scss */
+.ec-month-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 37, ../../app/stylesheets/home/event_calendar.scss */
+.ec-month-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Containers */
+/* line 45, ../../app/stylesheets/home/event_calendar.scss */
+.ec-body {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Day names */
+/* line 51, ../../app/stylesheets/home/event_calendar.scss */
+.ec-day-names {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  table-layout: fixed;
+  padding: 2px 0;
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* line 61, ../../app/stylesheets/home/event_calendar.scss */
+.ec-day-name {
+  font-weight: normal;
+}
+
+/* Rows container and Row */
+/* line 66, ../../app/stylesheets/home/event_calendar.scss */
+.ec-rows {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+/* line 74, ../../app/stylesheets/home/event_calendar.scss */
+.ec-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background */
+/* line 82, ../../app/stylesheets/home/event_calendar.scss */
+.ec-row-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0.8em 0.4em;
+}
+
+/* line 93, ../../app/stylesheets/home/event_calendar.scss */
+.ec-row-table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0.8em 0.8em;
+}
+
+/* Day header */
+/* line 101, ../../app/stylesheets/home/event_calendar.scss */
+.ec-day-header {
+  color: #ccc;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 63px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #eee;
+}
+/* line 109, ../../app/stylesheets/home/event_calendar.scss */
+.ec-day-header:hover {
+  color: #FFCF75;
+  background: #FEF6B8;
+}
+
+/* line 113, ../../app/stylesheets/home/event_calendar.scss */
+a.ec-day-link {
+  color: #444;
+}
+
+/* line 116, ../../app/stylesheets/home/event_calendar.scss */
+.ec-today-header {
+  color: #FFA8A8;
+  background-color: #FFD9D7;
+}
+
+/* line 122, ../../app/stylesheets/home/event_calendar.scss */
+.ec-other-month-header {
+  background: #e2e2e2;
+}
+
+/* Event cell and container */
+/* line 129, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-cell {
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 1px;
+  padding-left: 2px;
+}
+/* line 134, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-cell a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 140, ../../app/stylesheets/home/event_calendar.scss */
+.ec-no-event-cell {
+  cursor: default;
+}
+
+/* line 143, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event {
+  color: white;
+  padding-right: 1px;
+  padding-left: 11px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 152, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event :hover {
+  /* doesn't look as good as js highlighting */
+  /* background-color: #2eac6a; */
+}
+
+/* line 156, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-bg a {
+  color: white;
+}
+
+/* used to distinguish non-all_day events */
+/* line 161, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-no-bg {
+  position: relative;
+  /* padding-left: 5px; */
+}
+/* line 164, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-no-bg a {
+  /* isn't implemented in all browsers */
+  color: inherit;
+}
+
+/* line 168, ../../app/stylesheets/home/event_calendar.scss */
+.ec-event-time {
+  font-size: 85%;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+/* Left and right arrows */
+/* Doesn't work in IE6, use bg images instead */
+/* line 176, ../../app/stylesheets/home/event_calendar.scss */
+.ec-left-arrow, .ec-right-arrow {
+  position: relative;
+  top: 3px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: -8px;
+}
+
+/* line 185, ../../app/stylesheets/home/event_calendar.scss */
+.ec-left-arrow {
+  margin-left: -7px;
+  margin-right: auto;
+}
+
+/* line 189, ../../app/stylesheets/home/event_calendar.scss */
+.ec-right-arrow {
+  margin-left: auto;
+  margin-right: 3px;
+}
+
+/* remove this to not have a bullet */
+/* don't look as good in ie */
+/* line 196, ../../app/stylesheets/home/event_calendar.scss */
+.ec-bullet {
+  position: absolute;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  margin-left: -7px;
+  margin-right: auto;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+/* Fonts
+ * @fonts
+ */
+@font-face {
+  font-family: 'AaarghNormal';
+  src: url("../fonts/aaargh/Aaargh-webfont.eot");
+  src: url("../fonts/aaargh/Aaargh-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aaargh/Aaargh-webfont.woff") format("woff"), url("../fonts/aaargh/Aaargh-webfont.ttf") format("truetype"), url("../fonts/aaargh/Aaargh-webfont.svg#AaarghNormal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global styles 
+ * @global
+ */
+/* line 25, ../../app/stylesheets/screen.scss */
+body {
+  font-family: "Myriad Pro", Helvetica, Arial, serif;
+  color: #666;
+  font-size: 13px;
+}
+
+/* line 30, ../../app/stylesheets/screen.scss */
+h1, h2 {
+  font-weight: normal;
+  color: #999;
+}
+
+/* line 34, ../../app/stylesheets/screen.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 37, ../../app/stylesheets/screen.scss */
+h2 {
+  font-size: 1.2em;
+}
+
+/* line 40, ../../app/stylesheets/screen.scss */
+img {
+  border: 0px;
+}
+
+/* line 43, ../../app/stylesheets/screen.scss */
+.clear {
+  clear: both;
+}
+
+/* line 46, ../../app/stylesheets/screen.scss */
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: AaarghNormal, Helvetica, Arial, serif;
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* line 53, ../../app/stylesheets/screen.scss */
+.button:hover {
+  opacity: 1;
+}
+
+/* line 56, ../../app/stylesheets/screen.scss */
+.icon {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+/* line 61, ../../app/stylesheets/screen.scss */
+a {
+  color: #999;
+}
+/* line 63, ../../app/stylesheets/screen.scss */
+a:hover {
+  color: #333;
+}
+
+/* Home styles 
+ * @home
+ */
+/* line 70, ../../app/stylesheets/screen.scss */
+#wrapper {
+  position: relative;
+  top: 50px;
+  width: 900px;
+  margin: auto;
+}
+
+/* line 76, ../../app/stylesheets/screen.scss */
+#header {
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+}
+
+/* line 80, ../../app/stylesheets/screen.scss */
+#logo {
+  width: 192px;
+  height: 29px;
+}
+
+/* line 84, ../../app/stylesheets/screen.scss */
+#calendar {
+  float: left;
+}
+
+/* line 87, ../../app/stylesheets/screen.scss */
+#toppanel {
+  margin-bottom: 1.5em;
+}
+
+/* line 90, ../../app/stylesheets/screen.scss */
+#bottompanel {
+  margin-left: 0.5em;
+}
+
+/* Calendar styles 
+ * @calendar
+ */
+/* Right panel styles 
+ * @right 
+ */
+/* line 101, ../../app/stylesheets/screen.scss */
+#right {
+  float: left;
+  margin-left: 2em;
+}
+
+/* line 105, ../../app/stylesheets/screen.scss */
+#itinerary-title {
+  margin: 0.7em 0.8em;
+}
+
+/* line 108, ../../app/stylesheets/screen.scss */
+#addpanel {
+  width: 320px;
+  background: #f3f3f3;
+  border: 1px solid #ededed;
+  min-height: 240px;
+  padding: 15px;
+}
+/* line 114, ../../app/stylesheets/screen.scss */
+#addpanel #title {
+  border-bottom: 1px solid #dedede;
+  margin: 0px;
+}
+
+/* line 118, ../../app/stylesheets/screen.scss */
+#current_location {
+  color: #333;
+}
+
+/* line 121, ../../app/stylesheets/screen.scss */
+.addpane {
+  margin-bottom: 15px;
+}
+/* line 123, ../../app/stylesheets/screen.scss */
+.addpane .results div:hover {
+  background: #CCC;
+}
+
+/* line 127, ../../app/stylesheets/screen.scss */
+#addpanel .heading {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+/* line 131, ../../app/stylesheets/screen.scss */
+#addpanel .search {
+  display: none;
+}
+
+/* line 134, ../../app/stylesheets/screen.scss */
+#locations .search {
+  display: block;
+}
+
+/* line 137, ../../app/stylesheets/screen.scss */
+.search {
+  margin-left: 10px;
+}
+
+/* line 140, ../../app/stylesheets/screen.scss */
+.search_field {
+  padding: 5px;
+  border-radius: 2px;
+  width: 70%;
+  outline: 0px;
+  border: 0px;
+}
+
+/* line 147, ../../app/stylesheets/screen.scss */
+.addpane label {
+  text-transform: uppercase;
+}
+
+/* line 150, ../../app/stylesheets/screen.scss */
+#locations label {
+  color: #FFA8A8;
+}
+
+/* line 153, ../../app/stylesheets/screen.scss */
+#location_icon {
+  width: 11px;
+  height: 16px;
+  background: url("../images/icons/location_icon.png");
+}
+
+/* line 158, ../../app/stylesheets/screen.scss */
+#attractions label {
+  color: #8BC5C5;
+}
+
+/* line 161, ../../app/stylesheets/screen.scss */
+#attractions_icon {
+  width: 13px;
+  height: 15px;
+  background: url("../images/icons/attraction_icon.png");
+}
+
+/* line 166, ../../app/stylesheets/screen.scss */
+#meals label {
+  color: #FFCF75;
+}
+
+/* line 169, ../../app/stylesheets/screen.scss */
+#meals_icon {
+  width: 11px;
+  height: 16px;
+  background: url("../images/icons/food_icon.png");
+}
+
+/* line 174, ../../app/stylesheets/screen.scss */
+#savepanel {
+  margin-top: 1em;
+}
+/* line 176, ../../app/stylesheets/screen.scss */
+#savepanel .button {
+  width: 44.5%;
+  background: #D3E9E9;
+  color: #5EBFC5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 183, ../../app/stylesheets/screen.scss */
+.highlight {
+  background: yellow;
+}

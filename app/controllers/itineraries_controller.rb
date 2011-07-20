@@ -72,6 +72,13 @@ class ItinerariesController < ApplicationController
       }
     end
   end
+  
+  # POST /itineraries/fork
+  def fork
+    @original = Itinerary.find(params[:id])
+    @itinerary = @original.fork(current_user)
+    
+  end
 
   # POST /itineraries/edit_name
   def edit_name

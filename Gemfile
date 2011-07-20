@@ -33,6 +33,13 @@ gem "yelp", "~> 1.0.0"
 gem "oauth2"
 gem "koala"
 
+# Compass
+gem "sass", "~> 3.1.4"
+gem "chunky_png", "~> 1.2.0"
+gem "fssm", "~> 0.2.7"
+gem "compass", ">= 0.11.5"
+
+
 
 # gem 'bj'	
 # gem 'sqlite3-ruby', :require => 'sqlite3'

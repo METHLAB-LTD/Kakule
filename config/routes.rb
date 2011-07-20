@@ -1,29 +1,33 @@
 Kakule::Application.routes.draw do
-  match 'calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
-
-  get "home/index" 
-  get "user_sessions/new", :as => "new_user_session"
-  get "users/show", :as => "dashboard"
+  
+  get "home/index"
 
   # Calendar
   get "calendar/render_calendar"
+  match 'calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
   # Itineraries
   get 'itineraries/render_day' 
   post 'itineraries/edit_name'
+  post 'itineraries/fork'
 
   # Search
   post "search/events"
   post "search/locations"
-  get "search/render_geocoding"
-  get "search/render_attractions"
   post "search/flights"
   post "search/hotels"
   post "search/cars"
   post "search/meals"
+  get "search/render_geocoding"
+  get "search/render_attractions"
 
+  # Session
+  get "user_sessions/new", :as => "new_user_session"
+  get "users/show", :as => "dashboard"
+  # Facebook OAuth
   get 'facebook/auth'
   get 'facebook/callback', :as => :facebook_callback
+  
 
   resources :attractions, :events, :itineraries, :users, :user_sessions
 

@@ -51,7 +51,7 @@ class Itinerary < ActiveRecord::Base
   end
   
   #github style name
-  def fullname
+  def full_name
     "#{self.owner.name} :: #{self.name}"
   end
   

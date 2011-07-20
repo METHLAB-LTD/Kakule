@@ -12,48 +12,42 @@
   #efefef - other month day header (gray)
   #2eac6a - hover (green)
 */
+
 /* Outer most container */
-/* line 18, ../../app/stylesheets/event_calendar.scss */
+
 .ec-calendar {
   font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 14px;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /* Month name header & links */
-/* line 27, ../../app/stylesheets/event_calendar.scss */
+
 .ec-calendar-header {
   padding: 5px 0;
   width: 100%;
   table-layout: fixed;
-  border-collapse: separate;
-}
+  border-collapse: separate; }
 
-/* line 33, ../../app/stylesheets/event_calendar.scss */
 .ec-month-name {
   font-size: 16px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* line 37, ../../app/stylesheets/event_calendar.scss */
 .ec-month-nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* Containers */
-/* line 45, ../../app/stylesheets/event_calendar.scss */
+
 .ec-body {
   position: relative;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 /* Day names */
-/* line 51, ../../app/stylesheets/event_calendar.scss */
+
 .ec-day-names {
   position: absolute;
   top: 0;
@@ -62,35 +56,29 @@
   table-layout: fixed;
   padding: 2px 0;
   color: #999;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
-/* line 61, ../../app/stylesheets/event_calendar.scss */
 .ec-day-name {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 /* Rows container and Row */
-/* line 66, ../../app/stylesheets/event_calendar.scss */
+
 .ec-rows {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   background: white;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-/* line 74, ../../app/stylesheets/event_calendar.scss */
 .ec-row {
   position: absolute;
   left: 0;
   width: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Background */
-/* line 82, ../../app/stylesheets/event_calendar.scss */
+
 .ec-row-bg {
   position: absolute;
   top: 0;
@@ -98,19 +86,18 @@
   height: 100%;
   width: 100%;
   table-layout: fixed;
-  border-spacing: 0.8em 0.4em;
-}
+  border-spacing: 0.8em 0.4em; }
 
-/* line 93, ../../app/stylesheets/event_calendar.scss */
+.ec-day-bg, .ec-today-bg {}
+
 .ec-row-table {
   position: relative;
   width: 100%;
   table-layout: fixed;
-  border-spacing: 0.8em 0.8em;
-}
+  border-spacing: 0.8em 0.8em; }
 
 /* Day header */
-/* line 101, ../../app/stylesheets/event_calendar.scss */
+
 .ec-day-header {
   color: #ccc;
   text-align: center;
@@ -119,51 +106,40 @@
   overflow: hidden;
   cursor: pointer;
   background: #eee;
-}
-/* line 109, ../../app/stylesheets/event_calendar.scss */
-.ec-day-header:hover {
-  color: #FFCF75;
-  background: #FEF6B8;
-}
+  &:hover {
+    color: #FFCF75;
+    background: #FEF6B8; } }
 
-/* line 113, ../../app/stylesheets/event_calendar.scss */
 a.ec-day-link {
-  color: #444;
-}
+  color: #444; }
 
-/* line 116, ../../app/stylesheets/event_calendar.scss */
 .ec-today-header {
   color: #FFA8A8;
-  background-color: #FFD9D7;
-}
+  background-color: #FFD9D7; }
 
-/* line 122, ../../app/stylesheets/event_calendar.scss */
+.ec-weekend-day-header {}
+
 .ec-other-month-header {
-  background: #e2e2e2;
-}
+  background: #e2e2e2; }
+
+.ec-other-month-bg {}
 
 /* Event cell and container */
-/* line 129, ../../app/stylesheets/event_calendar.scss */
+
 .ec-event-cell {
   cursor: pointer;
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
-}
-/* line 134, ../../app/stylesheets/event_calendar.scss */
-.ec-event-cell a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%; } }
 
-/* line 140, ../../app/stylesheets/event_calendar.scss */
 .ec-no-event-cell {
-  cursor: default;
-}
+  cursor: default; }
 
-/* line 143, ../../app/stylesheets/event_calendar.scss */
 .ec-event {
   color: white;
   padding-right: 1px;
@@ -173,40 +149,30 @@ a.ec-day-link {
   -moz-border-radius: 3px;
   overflow: hidden;
   white-space: nowrap;
-}
-/* line 152, ../../app/stylesheets/event_calendar.scss */
-.ec-event :hover {
-  /* doesn't look as good as js highlighting */
-  /* background-color: #2eac6a; */
-}
+  :hover {
+    /* doesn't look as good as js highlighting */
+    /* background-color: #2eac6a; */ } }
 
-/* line 156, ../../app/stylesheets/event_calendar.scss */
 .ec-event-bg a {
-  color: white;
-}
+  color: white; }
 
 /* used to distinguish non-all_day events */
-/* line 161, ../../app/stylesheets/event_calendar.scss */
+
 .ec-event-no-bg {
   position: relative;
   /* padding-left: 5px; */
-}
-/* line 164, ../../app/stylesheets/event_calendar.scss */
-.ec-event-no-bg a {
-  /* isn't implemented in all browsers */
-  color: inherit;
-}
+  a {
+    /* isn't implemented in all browsers */
+    color: inherit; } }
 
-/* line 168, ../../app/stylesheets/event_calendar.scss */
 .ec-event-time {
   font-size: 85%;
   font-weight: bold;
-  padding-right: 3px;
-}
+  padding-right: 3px; }
 
 /* Left and right arrows */
 /* Doesn't work in IE6, use bg images instead */
-/* line 176, ../../app/stylesheets/event_calendar.scss */
+
 .ec-left-arrow, .ec-right-arrow {
   position: relative;
   top: 3px;
@@ -214,24 +180,19 @@ a.ec-day-link {
   height: 0;
   font-size: 0;
   line-height: 0;
-  margin-bottom: -8px;
-}
+  margin-bottom: -8px; }
 
-/* line 185, ../../app/stylesheets/event_calendar.scss */
 .ec-left-arrow {
   margin-left: -7px;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
-/* line 189, ../../app/stylesheets/event_calendar.scss */
 .ec-right-arrow {
   margin-left: auto;
-  margin-right: 3px;
-}
+  margin-right: 3px; }
 
 /* remove this to not have a bullet */
 /* don't look as good in ie */
-/* line 196, ../../app/stylesheets/event_calendar.scss */
+
 .ec-bullet {
   position: absolute;
   top: 7px;
@@ -241,5 +202,4 @@ a.ec-day-link {
   margin-right: auto;
   -webkit-border-radius: 2px;
   -khtml-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
+  -moz-border-radius: 2px; }
