@@ -2,6 +2,7 @@ namespace :db do
   namespace :backup do
     
     def interesting_tables
+      #['attractions', 'PoiCategory']
       ActiveRecord::Base.connection.tables.sort.reject do |tbl|
         ['schema_migrations', 'schema_info', 'public_exceptions', 'user_sessions'].include?(tbl)
       end

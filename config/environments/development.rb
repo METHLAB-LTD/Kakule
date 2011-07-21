@@ -41,6 +41,8 @@ Kakule::Application.configure do
   FACEBOOK_API_KEY = "190781907646255"
   FACEBOOK_API_SECRET = "44c651314e3cd91d93e4321b207348ea"
   
+  YELP_API_KEY = "bN4POZR63-9zrSE1vRT6vA"
+  
   
   SimpleGeo::Client.set_credentials(SIMPLEGEO_OAUTH_KEY, SIMPLEGEO_SECRET)
 end

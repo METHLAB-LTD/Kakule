@@ -1,19 +1,2 @@
 <h1>Log In</h1>
-
-<%= form_for(@session) do |f| %>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-
-  <%= f.hidden_field :remember_me, :value => false %>
-  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<%= render :partial => "form", :locals => {:session => @session}%>

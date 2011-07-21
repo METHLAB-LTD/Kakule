@@ -1,5 +1,6 @@
 class Attraction < ActiveRecord::Base
   has_many :likes, :as => :likable
+  belongs_to :category, :class_name => "PoiCategory"
   
   @@default_radius = 10.0
   @@default_search_page = 20

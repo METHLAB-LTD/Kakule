@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
   include Kakule
-  filter_parameter_logging :password, :password_confirmation
   protect_from_forgery
-  helper_method :current_user_session, :current_user, :require_user, :current_itinerary
+  helper_method :current_user_session, :current_user, :require_user, :current_itinerary, :logged_in?
 
   private
     def format_date(date)
@@ -32,6 +31,10 @@ class ApplicationController < ActionController::Base
     def current_user
       return @current_user if defined?(@current_user)
       @current_user = current_user_session && current_user_session.user
+    end
+    
+    def logged_in?
+      current_user && !current_user.is_guest?
     end
 
     def require_user

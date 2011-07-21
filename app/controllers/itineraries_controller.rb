@@ -18,7 +18,7 @@ class ItinerariesController < ApplicationController
   # GET /itineraries/1
   # GET /itineraries/1.xml
   def show
-    @itinerary = Itinerary.find(params[:id])
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
     render :json => @itinerary.timeline.to_json
     # respond_to do |format|
     #       format.html # show.html.erb
@@ -71,6 +71,13 @@ class ItinerariesController < ApplicationController
         :success => false
       }
     end
+  end
+  
+  # POST /itineraries/fork
+  def fork
+    @original = Itinerary.find(params[:id])
+    @itinerary = @original.fork(current_user)
+    
   end
 
   # POST /itineraries/edit_name

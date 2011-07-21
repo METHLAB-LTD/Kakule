@@ -34,6 +34,6 @@ Attraction.create({:name => "Nima's House", :latitude => 38, :longitude => -120}
 SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 1, :start_time => Time.now, :end_time => Time.now + 5.hours})
 SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 2, :start_time => Time.now + 6.hours, :end_time => Time.now + 9.hours})
 SelectedEvent.create({:itinerary_id => 1, :event_id => 1, :start_time => Time.now + 9.hours, :end_time => Time.now + 10.hours})
-Transportation.create({:itinerary_id => 1, :mode => "Rental", :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
+Transportation.create({:itinerary_id => 1, :mode => 1, :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
 
 
