@@ -85,8 +85,9 @@ kakule.init = {
 	  
 		$("body").delegate(".search_field", "keyup", function(evt){
 			var textBox = $(this);
-			var results = $(textBox).parent().parent().siblings(".results").first();
 			var func = textBox.attr("id").split("_")[1];
+			var results = $("#"+func+" .results");
+			
 			
 			switch (evt.keyCode) {
 				case 38: //up arrow
@@ -104,7 +105,7 @@ kakule.init = {
 			var selected = $(".result:nth-child("+ kakule.current.addpanel.selected_search +")", results)
 			if (evt.keyCode == 13) {
 				// Pin location
-				console.log(selected.attr("class").match(/\d+/)[0]);
+				//console.log(selected.attr("class").match(/\d+/)[0]);
 			}
 			
 		  kakule.ui.selectSearchResult(selected);

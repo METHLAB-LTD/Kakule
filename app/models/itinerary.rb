@@ -29,15 +29,21 @@ class Itinerary < ActiveRecord::Base
     :parent_id => nil
   }
   
-  def timeline
-    return {
-      :selected_events => selected_events,
-      :events => events,
-      :selected_attractions => selected_attractions,
-      :attractions => attractions,
-      :transportations =>  transportations
-    }
+  def timeline(month)
+    # return {
+    #   :selected_events => selected_events,
+    #   :events => events,
+    #   :selected_attractions => selected_attractions,
+    #   :attractions => attractions,
+    #   :transportations =>  transportations
+    # }
+    hash = {}
+    selected_events.each do |entry|
+      #hash[]
+    end
+    
   end
+    
   
   def fork(new_owner)
     forked = self.clone
