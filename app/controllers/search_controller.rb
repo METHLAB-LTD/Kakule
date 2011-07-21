@@ -25,7 +25,17 @@ class SearchController < ApplicationController
   # example = {lat : 37.782455, lng : -122.405855, radius : 50, query : "ass", start_time : (new Date()).toLocaleString(), end_time : (new Date(2011,7,2)).toLocaleString(), limit : 20}
   def events
     @events = Event.find_by_custom_params(params)
-    @attractions = Attraction.find_by_custom_params(params)
+    #@attractions = Attraction.find_by_custom_params(params)
+    RAILS_DEFAULT_LOGGER.info("[API] Yelp")
+    client  = Yelp::Client.new
+    request = Yelp::Review::Request::GeoPoint.new(
+     :latitude => params[:lat],
+     :longitude => params[:lng],
+     :radius => 20,
+     :term => params[:query],
+     :category => params[:category] || ["amusementparks"],
+     :yws_id => YELP_API_KEY)
+    @attractions = client.search(request)["businesses"]
 
     results = {:events => @events, :attractions => @attractions }
     
@@ -118,7 +128,7 @@ class SearchController < ApplicationController
      :longitude => params[:lng],
      :radius => params[:radius],
      :term => params[:query],
-     :category => params[:category] || ["food"],
+     :category => params[:category] || ["food", "restaurants"],
      :yws_id => YELP_API_KEY)
     render :json => client.search(request).to_json
   end

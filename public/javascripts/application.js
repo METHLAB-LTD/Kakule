@@ -76,6 +76,9 @@ kakule.init = {
 		
 	  
 		$("body").delegate(".search_field", "keyup", function(evt){
+			if (evt.keyCode != 13 && (evt.keyCode < 37 || evt.keyCode > 90)){
+				return false;
+			}
 			var textBox = $(this);
 			var func = textBox.attr("id").split("_")[1];
 			var results = $("#"+func+" .results");
