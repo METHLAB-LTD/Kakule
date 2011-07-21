@@ -16,14 +16,12 @@ class ItinerariesController < ApplicationController
   # end
 
   # GET /itineraries/1
-  # GET /itineraries/1.xml
+  # /itineraries/:id/:year/:month
   def show
-    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
+    @timeline = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]).timeline
+    
+    
     render :json => @itinerary.timeline.to_json
-    # respond_to do |format|
-    #       format.html # show.html.erb
-    #       format.xml  { render :xml => @itinerary }
-    #     end
   end
 
   # # GET /itineraries/new
