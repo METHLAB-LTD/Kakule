@@ -30,8 +30,7 @@ kakule.init = {
 	
 	attachAddHandlers : function() {
 	    $("body").delegate(".location-pin", "click", function() {
-            // FIXME: Figure out how to parse String -> int
-            var i = 0;
+            var i = parseInt($(this).attr("id"));
 
             // Save location
             kakule.current.pinned_location = kakule.current.geocode_data[i].geocode.name;
