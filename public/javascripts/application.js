@@ -6,7 +6,9 @@ kakule.current = {
 	lat: 0,
 	lng: 0,
 	location: undefined,
-	localStorage: false
+	addpanel : {
+		selected_search : 0
+	}
 };
 
 kakule.init = {
@@ -46,17 +48,58 @@ kakule.init = {
 	
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
+		
+		var selectUp = function(){
+			if (kakule.current.addpanel.selected_search > 1){
+				kakule.current.addpanel.selected_search--;
+			}
+		};
+		
+		var selectDown = function(results){
+			if (kakule.current.addpanel.selected_search < results.children(".result").length){
+				kakule.current.addpanel.selected_search++;
+			}
+		};
+		
 	  
 		$("body").delegate(".search_field", "keyup", function(evt){
-			var text_box = $(this);
-			var css_class = text_box.attr("id");
-			func = css_class.split("_")[1];
-			kakule.search[func](text_box.val());
+			var textBox = $(this);
+			var results = $(textBox).parent().parent().siblings(".results").first();
+			var func = textBox.attr("id").split("_")[1];
+			
+			switch (evt.keyCode) {
+				case 38: //up arrow
+				  selectUp();
+				  break;
+				case 40: //down arrow
+				  selectDown(results);
+				  break;
+				case 13:
+				  break;
+				default:
+				  kakule.search[func](textBox.val());
+			}
+			
+			var selected = $(".result:nth-child("+ kakule.current.addpanel.selected_search +")", results)
+			if (evt.keyCode == 13) {
+				// Pin location
+				console.log(selected.attr("class").match(/\d+/)[0]);
+			}
+			
+		  kakule.ui.selectSearchResult(selected);
 		});
-
+		
     $("body").delegate(".search_form", "submit", function(e) {
         e.preventDefault();
     });
+	},
+	
+	session : function(){
+		var sessionDiv = $("#session");
+		var loginLink = $(".login", sessionDiv);
+		loginLink.click(function(){
+			$(".popup", sessionDiv).toggle(200);
+		});
 	}
 };
 
@@ -179,13 +222,18 @@ kakule.ui = {
   },
 
   highlight : function(location, text){
-	  div = $(location);
+	  var div = $(location);
 	  if (div.html()){
 			var regex = new RegExp(text, 'ig');
 			div.html(div.html().replace(regex, function(match){
 				return '<span class="highlight">' + match + '</span>';
 			}));
 	  }
+  },
+
+  selectSearchResult : function(result){
+	  $(result).siblings().removeClass("selected");
+	  $(result).addClass("selected");
   }
 	
 };
@@ -195,6 +243,7 @@ $(document).ready(function() {
     kakule.init.attachAddHandlers();
     kakule.init.attachSearchHandlers();
 		kakule.init.attachEditHandlers();
+		kakule.init.session()
 		
 		
 		// FB.init({

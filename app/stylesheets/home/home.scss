@@ -66,8 +66,11 @@
 
 .addpane {
   margin-bottom: 15px;
-  .results div:hover {
-    background: #CCC; } }
+  .results {
+	  div:hover, div.selected {
+    background: #CCC; } 
+  }
+}
 
 #addpanel {
   .heading {
@@ -134,3 +137,16 @@
 
 .highlight {
   background: $light_yellow; }
+
+#session{
+	position: relative;
+  .popup{
+		position: absolute;
+		background: white;
+		top: 0.8px;
+		left: 70px;
+		z-index: 9999;
+		border: 1px solid #CCC;
+		padding: 5px;
+	}
+}

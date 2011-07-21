@@ -24,8 +24,10 @@ Kakule::Application.routes.draw do
   # Session
   get "user_sessions/new", :as => "new_user_session"
   get "users/show", :as => "dashboard"
+  match "/logout" => 'user_sessions#destroy', :as => :logout
+  
   # Facebook OAuth
-  get 'facebook/auth'
+  get 'facebook/auth', :as => :facebook_login
   get 'facebook/callback', :as => :facebook_callback
   
 

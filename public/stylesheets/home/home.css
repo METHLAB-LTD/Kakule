@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$red".
-        on line 101 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss
+        on line 104 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss
 
-96: 
-97: .addpane label {
-98:   text-transform: uppercase; }
 99: 
-100: #locations label {
-101:   color: $red; }
+100: .addpane label {
+101:   text-transform: uppercase; }
 102: 
-103: #location_icon {
-104:   width: 11px;
-105:   height: 16px;
-106:   background: url("../images/icons/location_icon.png"); }
+103: #locations label {
+104:   color: $red; }
+105: 
+106: #location_icon {
+107:   width: 11px;
+108:   height: 16px;
+109:   background: url("../images/icons/location_icon.png"); }
 
 Backtrace:
-/Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss:101
+/Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss:104
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Users/anzhu/.rvm/gems/ruby-1.8.7-p352@rails3/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
@@ -113,4 +113,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$red\".\A         on line 101 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss\A \A 96: \A 97: .addpane label {\A 98:   text-transform: uppercase; }\A 99: \A 100: #locations label {\A 101:   color: $red; }\A 102: \A 103: #location_icon {\A 104:   width: 11px;\A 105:   height: 16px;\A 106:   background: url(\"../images/icons/location_icon.png\"); }"; }
+  content: "Syntax error: Undefined variable: \"$red\".\A         on line 104 of /Users/anzhu/Rails/kakule/app/stylesheets/home/home.scss\A \A 99: \A 100: .addpane label {\A 101:   text-transform: uppercase; }\A 102: \A 103: #locations label {\A 104:   color: $red; }\A 105: \A 106: #location_icon {\A 107:   width: 11px;\A 108:   height: 16px;\A 109:   background: url(\"../images/icons/location_icon.png\"); }"; }

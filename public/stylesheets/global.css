@@ -78,3 +78,8 @@ a {
 a:hover {
   color: #333;
 }
+
+/* line 61, ../../app/stylesheets/global.scss */
+.popup {
+  display: none;
+}

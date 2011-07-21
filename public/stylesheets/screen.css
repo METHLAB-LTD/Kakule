@@ -148,6 +148,11 @@ a:hover {
   color: #333;
 }
 
+/* line 61, ../../app/stylesheets/global.scss */
+.popup {
+  display: none;
+}
+
 /* 
   Event Calendar stylesheet
   
@@ -494,36 +499,36 @@ a.ec-day-link {
 .addpane {
   margin-bottom: 15px;
 }
-/* line 69, ../../app/stylesheets/home/home.scss */
-.addpane .results div:hover {
+/* line 70, ../../app/stylesheets/home/home.scss */
+.addpane .results div:hover, .addpane .results div.selected {
   background: #CCC;
 }
 
-/* line 73, ../../app/stylesheets/home/home.scss */
+/* line 76, ../../app/stylesheets/home/home.scss */
 #addpanel .heading {
   margin-bottom: 5px;
   cursor: pointer;
 }
-/* line 77, ../../app/stylesheets/home/home.scss */
+/* line 80, ../../app/stylesheets/home/home.scss */
 #addpanel .heading label {
   cursor: pointer;
 }
-/* line 81, ../../app/stylesheets/home/home.scss */
+/* line 84, ../../app/stylesheets/home/home.scss */
 #addpanel .search {
   display: none;
 }
 
-/* line 84, ../../app/stylesheets/home/home.scss */
+/* line 87, ../../app/stylesheets/home/home.scss */
 #locations .search {
   display: block;
 }
 
-/* line 87, ../../app/stylesheets/home/home.scss */
+/* line 90, ../../app/stylesheets/home/home.scss */
 .search {
   margin-left: 10px;
 }
 
-/* line 90, ../../app/stylesheets/home/home.scss */
+/* line 93, ../../app/stylesheets/home/home.scss */
 .search_field {
   padding: 5px;
   border-radius: 2px;
@@ -532,52 +537,52 @@ a.ec-day-link {
   border: 0px;
 }
 
-/* line 97, ../../app/stylesheets/home/home.scss */
+/* line 100, ../../app/stylesheets/home/home.scss */
 .addpane label {
   text-transform: uppercase;
 }
 
-/* line 100, ../../app/stylesheets/home/home.scss */
+/* line 103, ../../app/stylesheets/home/home.scss */
 #locations label {
   color: #ffa8a8;
 }
 
-/* line 103, ../../app/stylesheets/home/home.scss */
+/* line 106, ../../app/stylesheets/home/home.scss */
 #location_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/location_icon.png");
 }
 
-/* line 108, ../../app/stylesheets/home/home.scss */
+/* line 111, ../../app/stylesheets/home/home.scss */
 #attractions label {
   color: #8bc5c5;
 }
 
-/* line 111, ../../app/stylesheets/home/home.scss */
+/* line 114, ../../app/stylesheets/home/home.scss */
 #attractions_icon {
   width: 13px;
   height: 15px;
   background: url("../images/icons/attraction_icon.png");
 }
 
-/* line 116, ../../app/stylesheets/home/home.scss */
+/* line 119, ../../app/stylesheets/home/home.scss */
 #meals label {
   color: #ffcf75;
 }
 
-/* line 119, ../../app/stylesheets/home/home.scss */
+/* line 122, ../../app/stylesheets/home/home.scss */
 #meals_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/food_icon.png");
 }
 
-/* line 124, ../../app/stylesheets/home/home.scss */
+/* line 127, ../../app/stylesheets/home/home.scss */
 #savepanel {
   margin-top: 1em;
 }
-/* line 126, ../../app/stylesheets/home/home.scss */
+/* line 129, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   width: 44.5%;
   background: #D3E9E9;
@@ -586,7 +591,22 @@ a.ec-day-link {
   text-align: center;
 }
 
-/* line 135, ../../app/stylesheets/home/home.scss */
+/* line 138, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
+}
+
+/* line 141, ../../app/stylesheets/home/home.scss */
+#session {
+  position: relative;
+}
+/* line 143, ../../app/stylesheets/home/home.scss */
+#session .popup {
+  position: absolute;
+  background: white;
+  top: 0.8px;
+  left: 70px;
+  z-index: 9999;
+  border: 1px solid #CCC;
+  padding: 5px;
 }

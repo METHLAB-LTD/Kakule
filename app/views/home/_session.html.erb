@@ -1,0 +1,13 @@
+<!-- <fb:login-button show-faces="true" width="200" max-rows="1" perms="offline_access"></fb:login-button> -->
+<div id="session">
+	<%if logged_in? %>
+    <%= "Welcome, " + current_user.name%>
+		<%= link_to "[log out]", :logout%>
+  <%else%>
+		<%= link_to "[Log in]", 'javascript:null(0));', :class => "login"%>
+    <%= link_to (image_tag("fbconnect.gif"), :facebook_login)%>
+		<div class="popup">
+			<%= render :partial => "user_sessions/form", :locals => {:session => current_user_session}%>
+		</div>
+  <%end%>
+</div>
