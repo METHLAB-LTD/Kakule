@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$red".
-        on line 163 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
+        on line 181 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
 
-158:     height: 16px;
-159:     background: url("../images/icons/location_icon.png");
-160: }
-161: 
-162: .location-pin, #location-change {
-163:     color: $red;
-164:     cursor: pointer;
-165: }
-166: 
-167: #pinned_location {
-168:     display: none;
+176:     height: 16px;
+177:     background: url("../images/icons/location_icon.png");
+178: }
+179: 
+180: .location-pin, #location-change {
+181:     color: $red;
+182:     cursor: pointer;
+183: }
+184: 
+185: #pinned_location {
+186:     display: none;
 
 Backtrace:
-/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:163
+/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:181
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
@@ -113,4 +113,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$red\".\A         on line 163 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 158:     height: 16px;\A 159:     background: url(\"../images/icons/location_icon.png\");\A 160: }\A 161: \A 162: .location-pin, #location-change {\A 163:     color: $red;\A 164:     cursor: pointer;\A 165: }\A 166: \A 167: #pinned_location {\A 168:     display: none;"; }
+  content: "Syntax error: Undefined variable: \"$red\".\A         on line 181 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 176:     height: 16px;\A 177:     background: url(\"../images/icons/location_icon.png\");\A 178: }\A 179: \A 180: .location-pin, #location-change {\A 181:     color: $red;\A 182:     cursor: pointer;\A 183: }\A 184: \A 185: #pinned_location {\A 186:     display: none;"; }
