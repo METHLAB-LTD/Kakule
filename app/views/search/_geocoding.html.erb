@@ -1,7 +1,7 @@
 <% i = 0 %>
 <% for location in data %>
     <div class="result">
-        <span class="location-pin" id="<%= i %>">[add]</span> 
+        <span class="location-pin" id="geocode-<%=location.id%>">[add]</span> 
 				<span class="name"><%= location.full_name %></span>
     </div>
     <% i = i + 1 %>

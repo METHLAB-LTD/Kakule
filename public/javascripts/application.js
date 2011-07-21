@@ -30,12 +30,13 @@ kakule.init = {
 	
 	attachAddHandlers : function() {
 	    $("body").delegate(".location-pin", "click", function() {
-            var i = parseInt($(this).attr("id"));
+            var i = parseInt($(this).attr("id").split("-")[1]);
 
             // Save location
-            kakule.current.pinned_location = kakule.current.geocode_data[i].geocode.name;
-            kakule.current.lat = kakule.current.geocode_data[i].geocode.latitude;
-            kakule.current.lng = kakule.current.geocode_data[i].geocode.longitude;
+						console.log(i);
+            kakule.current.pinned_location = kakule.current.geocode_data[i].name;
+            kakule.current.lat = kakule.current.geocode_data[i].latitude;
+            kakule.current.lng = kakule.current.geocode_data[i].longitude;
 
             var location_name = kakule.current.pinned_location;
             // Replace text box
@@ -193,7 +194,11 @@ kakule.search = {
 	locations : function(query){
 		function callback (response){
             kakule.ui.repopulateLocations(response);
-            kakule.current.geocode_data = response.data;
+						var geocode_data = {};
+						$.each(response.data, function(i, entry){
+							geocode_data[entry.geocode.id] = entry.geocode;
+						});
+					  kakule.current.geocode_data = geocode_data;	
 		};
 		kakule.server.searchLocations({'query' : query}, callback);
 	}
