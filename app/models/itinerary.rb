@@ -29,19 +29,13 @@ class Itinerary < ActiveRecord::Base
     :parent_id => nil
   }
   
+  # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
   def timeline
-    # return {
-    #   :selected_events => selected_events,
-    #   :events => events,
-    #   :selected_attractions => selected_attractions,
-    #   :attractions => attractions,
-    #   :transportations =>  transportations
-    # }
-    month = {}
+    dataset = {}
     
     self.selected_events.each do |entry|
       date = entry.start_time.date
-      month[date] ||= []
+      dataset[date] ||= []
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
@@ -49,12 +43,12 @@ class Itinerary < ActiveRecord::Base
         :type => "event",
         :id => entry.event.id
       }
-      month[date].push(element) 
+      dataset[date].push(element) 
     end
     
     self.selected_attractions.each do |entry|
       date = entry.start_time.date
-      month[date] ||= []
+      dataset[date] ||= []
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
@@ -62,12 +56,12 @@ class Itinerary < ActiveRecord::Base
         :type => "attraction",
         :id => entry.attraction.id
       }
-      month[date].push(element) 
+      dataset[date].push(element) 
     end
     
     self.transportations.each do |entry|
       date = entry.start_time.date
-      month[date] ||= []
+      dataset[date] ||= []
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
@@ -75,10 +69,10 @@ class Itinerary < ActiveRecord::Base
         :type => "transportation",
         :id => entry.id
       }
-      month[date].push(element) 
+      dataset[date].push(element) 
     end
     
-    return month
+    return dataset
     
   end
     

@@ -10,7 +10,7 @@ Kakule::Application.routes.draw do
   get 'itineraries/render_day' 
   post 'itineraries/edit_name'
   post 'itineraries/fork'
-  match 'itineraries/:id' => 'itinerary#show'
+  match 'itineraries/:id' => 'itineraries#show'
 
   # Search
   post "search/events"

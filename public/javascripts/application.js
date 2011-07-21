@@ -93,12 +93,17 @@ kakule.init = {
 				  kakule.search[func](textBox.val());
 			}
 			
-			var selected = $(".result:nth-child("+ kakule.current.addpanel.selected_search +")", results)
+			var selected_search = kakule.current.addpanel.selected_search;
+			var selected = $(".result:nth-child("+ selected_search +")", results)
+			kakule.ui.selectSearchResult(selected);
+			
 			if (evt.keyCode == 13) {
+				if (kakule.current.addpanel.selected_search == 0){
+					selected = $(".result:nth-child("+ (selected_search + 1) +")", results)
+				}
 				kakule.ui.pin.location($(".location-pin", selected));
 			}
-			
-		  kakule.ui.selectSearchResult(selected);
+		  
 		});
 		
     $("body").delegate(".search_form", "submit", function(e) {
