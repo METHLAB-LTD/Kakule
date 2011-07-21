@@ -29,35 +29,15 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-	    $("body").delegate(".location-pin", "click", function() {
-            var i = parseInt($(this).attr("id").split("-")[1]);
+		$("body").delegate(".location-pin", "click", function() {
+			kakule.ui.pin.location(this);
+		});
 
-            // Save location
-						console.log(i);
-            kakule.current.pinned_location = kakule.current.geocode_data[i].name;
-            kakule.current.lat = kakule.current.geocode_data[i].latitude;
-            kakule.current.lng = kakule.current.geocode_data[i].longitude;
-
-            var location_name = kakule.current.pinned_location;
-            // Replace text box
-            $("#locations .search_form").hide();
-            $("#locations .results").hide();
-            $("#pinned_location_name").text(location_name);
-            $("#pinned_location").show();
-
-            // Open attractions/meals search
-            $(".near-label span").text(location_name);
-            $(".near-label").show();
-            
-            kakule.search.attractions("");
-            // TODO: Search for meals
-	    });
-
-        $("body").delegate("#location-change", "click", function() {
-            $("#pinned_location").hide();
-            $("#locations .search_form").show();
-            $("#locations .results").show();
-        });
+		   $("body").delegate("#location-change", "click", function() {
+		       $("#pinned_location").hide();
+		       $("#locations .search_form").show();
+		       $("#locations .results").show();
+		   });
 	},
 
     attachEditHandlers : function() {
@@ -104,8 +84,7 @@ kakule.init = {
 			
 			var selected = $(".result:nth-child("+ kakule.current.addpanel.selected_search +")", results)
 			if (evt.keyCode == 13) {
-				// Pin location
-				//console.log(selected.attr("class").match(/\d+/)[0]);
+				kakule.ui.pin.location($(".location-pin", selected));
 			}
 			
 		  kakule.ui.selectSearchResult(selected);
@@ -114,6 +93,11 @@ kakule.init = {
     $("body").delegate(".search_form", "submit", function(e) {
         e.preventDefault();
     });
+
+		$("body").delegate(".addpane .results", "hover", function(evt){
+		  $(this).children(".result").removeClass("selected");
+		  kakule.current.addpanel.selected_search = 0;
+		});
 	},
 	
 	session : function(){
@@ -261,7 +245,32 @@ kakule.ui = {
   selectSearchResult : function(result){
 	  $(result).siblings().removeClass("selected");
 	  $(result).addClass("selected");
-  }
+  },
+
+  pin : {
+	  location : function(elem){
+		  var i = parseInt($(elem).attr("id").split("-")[1]);
+
+      // Save location
+      kakule.current.pinned_location = kakule.current.geocode_data[i].name;
+      kakule.current.lat = kakule.current.geocode_data[i].latitude;
+      kakule.current.lng = kakule.current.geocode_data[i].longitude;
+
+      var location_name = kakule.current.pinned_location;
+      // Replace text box
+      $("#locations .search_form").hide();
+      $("#locations .results").hide();
+      $("#pinned_location_name").text(location_name);
+      $("#pinned_location").show();
+
+      // Open attractions/meals search
+      $(".near-label span").text(location_name);
+      $(".near-label").show();
+      
+      kakule.search.attractions("");
+      // TODO: Search for meals
+		}
+	}
 	
 };
 
