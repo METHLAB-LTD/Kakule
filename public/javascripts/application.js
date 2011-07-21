@@ -68,7 +68,6 @@ kakule.init = {
 			var func = textBox.attr("id").split("_")[1];
 			var results = $("#"+func+" .results");
 			
-			
 			switch (evt.keyCode) {
 				case 38: //up arrow
 				  selectUp();

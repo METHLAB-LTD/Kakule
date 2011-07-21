@@ -29,7 +29,7 @@ class Itinerary < ActiveRecord::Base
     :parent_id => nil
   }
   
-  def timeline(month)
+  def timeline
     # return {
     #   :selected_events => selected_events,
     #   :events => events,
@@ -37,10 +37,48 @@ class Itinerary < ActiveRecord::Base
     #   :attractions => attractions,
     #   :transportations =>  transportations
     # }
-    hash = {}
-    selected_events.each do |entry|
-      #hash[]
+    month = {}
+    
+    self.selected_events.each do |entry|
+      date = entry.start_time.date
+      month[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.event.name,
+        :type => "event",
+        :id => entry.event.id
+      }
+      month[date].push(element) 
     end
+    
+    self.selected_attractions.each do |entry|
+      date = entry.start_time.date
+      month[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.attraction.name,
+        :type => "attraction",
+        :id => entry.attraction.id
+      }
+      month[date].push(element) 
+    end
+    
+    self.transportations.each do |entry|
+      date = entry.start_time.date
+      month[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.name,
+        :type => "transportation",
+        :id => entry.id
+      }
+      month[date].push(element) 
+    end
+    
+    return month
     
   end
     

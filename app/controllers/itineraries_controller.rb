@@ -16,12 +16,10 @@ class ItinerariesController < ApplicationController
   # end
 
   # GET /itineraries/1
-  # /itineraries/:id/:year/:month
+  # /itineraries/:id/
   def show
     @timeline = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]).timeline
-    
-    
-    render :json => @itinerary.timeline.to_json
+    render :json => @timeline.to_json
   end
 
   # # GET /itineraries/new

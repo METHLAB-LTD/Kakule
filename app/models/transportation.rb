@@ -10,4 +10,9 @@ class Transportation < ActiveRecord::Base
     5 => "Watercraft",
     6 => "Bicycle"
   }
+  
+  def name
+    @@modes[mode]
+  end
+  
 end
