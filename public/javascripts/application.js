@@ -60,9 +60,21 @@ kakule.init = {
 	},
 
     attachEditHandlers : function() {
+        $("#itinerary-name").click(function() {
+            $("#itinerary-name").removeClass("itinerary-name-icon");
+        });
         $("#itinerary-name").editInPlace({
-		    url: '/itineraries/edit_name',
-		    show_buttons: true
+            callback: function(unused, enteredText) { 
+                $.post('/itineraries/edit_name', 
+                       { update_value: enteredText },
+                       function() {
+                        $("#itinerary-name").text(enteredText);
+                       }
+                      );
+                $("#itinerary-name").addClass("itinerary-name-icon");
+                return true;
+            },
+		    show_buttons: false 
 	    });
     },
     

@@ -500,24 +500,40 @@ a.ec-day-link {
 /* line 79, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
   margin: 0.9em 0.8em;
+  height: 1.2em;
 }
 
-/* line 83, ../../app/stylesheets/home/home.scss */
-#edit-icon {
-  background: url("../images/icons/edit_icon.png");
-  width: 13px;
-  height: 15px;
-  top: 1px;
-  left: 0.5em;
-  opacity: 0.8;
+/* line 84, ../../app/stylesheets/home/home.scss */
+#itinerary-name {
+  display: inline-block;
+  min-height: 15px;
 }
-
+/* line 87, ../../app/stylesheets/home/home.scss */
+#itinerary-name .inplace_form {
+  position: relative;
+  left: -5px;
+  top: -5px;
+}
 /* line 92, ../../app/stylesheets/home/home.scss */
+#itinerary-name .inplace_form input {
+  font-size: 0.9em;
+  outline: 0px;
+  border: 0px;
+}
+
+/* line 101, ../../app/stylesheets/home/home.scss */
+.itinerary-name-icon {
+  background: url("../images/icons/edit_icon.png") no-repeat;
+  background-position: right top;
+  padding-right: 20px;
+}
+
+/* line 110, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 96, ../../app/stylesheets/home/home.scss */
+/* line 114, ../../app/stylesheets/home/home.scss */
 #addpanel {
   width: 320px;
   background: #f3f3f3;
@@ -525,55 +541,55 @@ a.ec-day-link {
   min-height: 240px;
   padding: 15px;
 }
-/* line 103, ../../app/stylesheets/home/home.scss */
+/* line 121, ../../app/stylesheets/home/home.scss */
 #addpanel #title {
   border-bottom: 1px solid #dedede;
   margin: 1px 0;
 }
-/* line 108, ../../app/stylesheets/home/home.scss */
+/* line 126, ../../app/stylesheets/home/home.scss */
 #addpanel p {
   margin: 12px 0;
 }
 
-/* line 113, ../../app/stylesheets/home/home.scss */
+/* line 131, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 117, ../../app/stylesheets/home/home.scss */
+/* line 135, ../../app/stylesheets/home/home.scss */
 .addpane {
   margin-bottom: 15px;
 }
-/* line 121, ../../app/stylesheets/home/home.scss */
+/* line 139, ../../app/stylesheets/home/home.scss */
 .addpane .results div:hover, .addpane .results div.selected {
   background: #CCC;
 }
 
-/* line 128, ../../app/stylesheets/home/home.scss */
+/* line 146, ../../app/stylesheets/home/home.scss */
 #addpanel .heading {
   margin-bottom: 5px;
 }
-/* line 131, ../../app/stylesheets/home/home.scss */
+/* line 149, ../../app/stylesheets/home/home.scss */
 #addpanel .heading label {
   display: inline-block;
   width: 80%;
 }
-/* line 136, ../../app/stylesheets/home/home.scss */
+/* line 154, ../../app/stylesheets/home/home.scss */
 #addpanel .search {
   margin-left: 1.6em;
 }
 
-/* line 140, ../../app/stylesheets/home/home.scss */
+/* line 158, ../../app/stylesheets/home/home.scss */
 #locations .search {
   display: block;
 }
 
-/* line 143, ../../app/stylesheets/home/home.scss */
+/* line 161, ../../app/stylesheets/home/home.scss */
 .search {
   margin-left: 10px;
 }
 
-/* line 146, ../../app/stylesheets/home/home.scss */
+/* line 164, ../../app/stylesheets/home/home.scss */
 .search_field {
   padding: 5px;
   width: 100%;
@@ -583,66 +599,66 @@ a.ec-day-link {
   border-radius: 2px;
 }
 
-/* line 156, ../../app/stylesheets/home/home.scss */
+/* line 174, ../../app/stylesheets/home/home.scss */
 #location_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/location_icon.png");
 }
 
-/* line 162, ../../app/stylesheets/home/home.scss */
+/* line 180, ../../app/stylesheets/home/home.scss */
 .location-pin, #location-change {
   color: #ffa8a8;
   cursor: pointer;
 }
 
-/* line 167, ../../app/stylesheets/home/home.scss */
+/* line 185, ../../app/stylesheets/home/home.scss */
 #pinned_location {
   display: none;
   margin-left: 8px;
 }
 
-/* line 172, ../../app/stylesheets/home/home.scss */
+/* line 190, ../../app/stylesheets/home/home.scss */
 .near-label {
   display: none;
   font-size: 0.9em;
   margin-left: 2em;
 }
 
-/* line 178, ../../app/stylesheets/home/home.scss */
+/* line 196, ../../app/stylesheets/home/home.scss */
 #search_locations {
   color: #ffa8a8;
 }
 
-/* line 182, ../../app/stylesheets/home/home.scss */
+/* line 200, ../../app/stylesheets/home/home.scss */
 #attractions_icon {
   width: 13px;
   height: 15px;
   background: url("../images/icons/attraction_icon.png");
 }
 
-/* line 188, ../../app/stylesheets/home/home.scss */
+/* line 206, ../../app/stylesheets/home/home.scss */
 #search_attractions {
   color: #8bc5c5;
 }
 
-/* line 192, ../../app/stylesheets/home/home.scss */
+/* line 210, ../../app/stylesheets/home/home.scss */
 #meals_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/food_icon.png");
 }
 
-/* line 198, ../../app/stylesheets/home/home.scss */
+/* line 216, ../../app/stylesheets/home/home.scss */
 #search_meals {
   color: #ffcf75;
 }
 
-/* line 202, ../../app/stylesheets/home/home.scss */
+/* line 220, ../../app/stylesheets/home/home.scss */
 #savepanel {
   margin-top: 1em;
 }
-/* line 205, ../../app/stylesheets/home/home.scss */
+/* line 223, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   width: 44.5%;
   background: #D3E9E9;
@@ -651,16 +667,16 @@ a.ec-day-link {
   text-align: center;
 }
 
-/* line 214, ../../app/stylesheets/home/home.scss */
+/* line 232, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 217, ../../app/stylesheets/home/home.scss */
+/* line 235, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 219, ../../app/stylesheets/home/home.scss */
+/* line 237, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
