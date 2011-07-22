@@ -19,6 +19,7 @@ Kakule::Application.routes.draw do
   post "search/hotels"
   post "search/cars"
   post "search/meals"
+  get "search/geocoding"
   get "search/render_geocoding"
   get "search/render_attractions"
 

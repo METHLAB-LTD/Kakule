@@ -77,7 +77,6 @@ kakule.init = {
 	  
 		$("body").delegate("#location-search", "keyup", function(evt){
 			var textBox = $(this);
-		    kakule.search.locations(textBox.val());
 			
 			/*switch (evt.keyCode) {
 				case 38: //up arrow
@@ -289,7 +288,27 @@ $(document).ready(function() {
     kakule.init.attachSearchHandlers();
 	kakule.init.attachEditHandlers();
 	kakule.init.session()
-		
+
+    $("#location-search").autocomplete("/search/geocoding", {
+        dataType: 'json',
+        scroll: false,
+        formatItem: function(item) {
+                return item.name;
+            },
+        parse: function(data) {
+                var array = new Array();
+                for(var i = 0; i < data.length; i++) {
+                        array[array.length] = { data: data[i], value: data[i]};
+                }
+                return array;
+        },
+        highlight: function(value, term) { 
+            return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
+        },
+        }).result(function(event, item) {
+            $("#user_id").val(item.id);
+        });
+
 		// FB.init({
 		// 	    appId  : '190781907646255',
 		// 	    status : true, // check login status

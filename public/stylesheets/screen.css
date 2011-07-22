@@ -153,264 +153,6 @@ a:hover {
   display: none;
 }
 
-/* 
-  Event Calendar stylesheet
-  
-  Colors:
-  #d5d5d5 - border (gray)
-  #303030 - day names bg (gray)
-  #444 - number (gray)
-  #ecede2 - day header bg (light tan)
-  ##d7d7ba - today header bg (tan)
-  #ffffdd - today bg light (yellow)
-  #777 - other month number (gray)
-  #efefef - other month day header (gray)
-  #2eac6a - hover (green)
-*/
-/* Outer most container */
-/* line 18, ../../app/stylesheets/home/event_calendar.scss */
-.ec-calendar {
-  font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  line-height: 14px;
-  margin: 0;
-  padding: 0;
-}
-
-/* Month name header & links */
-/* line 27, ../../app/stylesheets/home/event_calendar.scss */
-.ec-calendar-header {
-  padding: 5px 0;
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: separate;
-}
-
-/* line 33, ../../app/stylesheets/home/event_calendar.scss */
-.ec-month-name {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* line 39, ../../app/stylesheets/home/event_calendar.scss */
-.ec-month-nav {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: center;
-}
-
-/* Containers */
-/* line 49, ../../app/stylesheets/home/event_calendar.scss */
-.ec-body {
-  position: relative;
-  white-space: nowrap;
-}
-
-/* Day names */
-/* line 55, ../../app/stylesheets/home/event_calendar.scss */
-.ec-day-names {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  table-layout: fixed;
-  padding: 2px 0;
-  color: #999;
-  text-transform: uppercase;
-}
-
-/* line 66, ../../app/stylesheets/home/event_calendar.scss */
-.ec-day-name {
-  font-weight: normal;
-  text-align: center;
-}
-
-/* Rows container and Row */
-/* line 73, ../../app/stylesheets/home/event_calendar.scss */
-.ec-rows {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: white;
-  overflow: hidden;
-}
-
-/* line 81, ../../app/stylesheets/home/event_calendar.scss */
-.ec-row {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Background */
-/* line 89, ../../app/stylesheets/home/event_calendar.scss */
-.ec-row-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  table-layout: fixed;
-  border-spacing: 0.8em 0.4em;
-}
-
-/* line 100, ../../app/stylesheets/home/event_calendar.scss */
-.ec-row-table {
-  position: relative;
-  width: 100%;
-  table-layout: fixed;
-  border-spacing: 0.8em 0.8em;
-}
-
-/* Day header */
-/* line 108, ../../app/stylesheets/home/event_calendar.scss */
-.ec-day-header {
-  color: #ccc;
-  text-align: center;
-  font-size: 1.8em;
-  overflow: hidden;
-  cursor: pointer;
-  background: #eee;
-}
-/* line 115, ../../app/stylesheets/home/event_calendar.scss */
-.ec-day-header:hover {
-  color: #ffcf75;
-  background: #fef6b8;
-}
-/* line 118, ../../app/stylesheets/home/event_calendar.scss */
-.ec-day-header:active {
-  color: #ffa9a4;
-  background-color: #ffe3e1;
-}
-
-/* line 124, ../../app/stylesheets/home/event_calendar.scss */
-a.ec-day-link {
-  color: #444;
-}
-
-/* line 127, ../../app/stylesheets/home/event_calendar.scss */
-.ec-today-header {
-  color: #ffa9a4;
-  background-color: #ffd9d7;
-}
-/* line 130, ../../app/stylesheets/home/event_calendar.scss */
-.ec-today-header:hover {
-  color: #ffa9a4;
-  background-color: #ffd9d7;
-}
-
-/* line 138, ../../app/stylesheets/home/event_calendar.scss */
-.ec-other-month-header {
-  background: #e2e2e2;
-}
-
-/* Event cell and container */
-/* line 145, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-cell {
-  cursor: pointer;
-  vertical-align: top;
-  padding-right: 1px;
-  padding-left: 2px;
-}
-/* line 150, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-cell a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 156, ../../app/stylesheets/home/event_calendar.scss */
-.ec-no-event-cell {
-  cursor: default;
-}
-
-/* line 159, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event {
-  color: white;
-  padding-right: 1px;
-  padding-left: 11px;
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -moz-border-radius: 3px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-/* line 168, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event :hover {
-  /* doesn't look as good as js highlighting */
-  /* background-color: #2eac6a; */
-}
-
-/* line 172, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-bg a {
-  color: white;
-}
-
-/* used to distinguish non-all_day events */
-/* line 177, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-no-bg {
-  position: relative;
-  /* padding-left: 5px; */
-}
-/* line 180, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-no-bg a {
-  /* isn't implemented in all browsers */
-  color: inherit;
-}
-
-/* line 184, ../../app/stylesheets/home/event_calendar.scss */
-.ec-event-time {
-  font-size: 85%;
-  font-weight: bold;
-  padding-right: 3px;
-}
-
-/* Left and right arrows */
-/* Doesn't work in IE6, use bg images instead */
-/* line 192, ../../app/stylesheets/home/event_calendar.scss */
-.ec-left-arrow, .ec-right-arrow {
-  position: relative;
-  top: 3px;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0;
-  margin-bottom: -8px;
-}
-
-/* line 201, ../../app/stylesheets/home/event_calendar.scss */
-.ec-left-arrow {
-  margin-left: -7px;
-  margin-right: auto;
-}
-
-/* line 205, ../../app/stylesheets/home/event_calendar.scss */
-.ec-right-arrow {
-  margin-left: auto;
-  margin-right: 3px;
-}
-
-/* remove this to not have a bullet */
-/* don't look as good in ie */
-/* line 212, ../../app/stylesheets/home/event_calendar.scss */
-.ec-bullet {
-  position: absolute;
-  top: 7px;
-  width: 4px;
-  height: 4px;
-  margin-left: -7px;
-  margin-right: auto;
-  -webkit-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-
 /* Home styles 
  * @home
  */
@@ -451,8 +193,10 @@ a.ec-day-link {
   background: url("../images/icons/location_icon.png") no-repeat;
   background-position: 5px center;
   -webkit-box-shadow: inset 0 1px 1px 1px #eee;
+  -moz-box-shadow: inset 0 1px 1px 1px #eee;
+  box-shadow: inset 0 1px 1px 1px #eee;
 }
-/* line 41, ../../app/stylesheets/home/home.scss */
+/* line 43, ../../app/stylesheets/home/home.scss */
 #search input {
   width: 90%;
   border: 0px;
@@ -461,26 +205,26 @@ a.ec-day-link {
   font-size: 1.3em;
 }
 
-/* line 52, ../../app/stylesheets/home/home.scss */
+/* line 54, ../../app/stylesheets/home/home.scss */
 #calendar table {
   border-collapse: separate;
   border-spacing: 5px;
 }
 
-/* line 58, ../../app/stylesheets/home/home.scss */
+/* line 60, ../../app/stylesheets/home/home.scss */
 #left {
   float: left;
   width: 60%;
 }
 
-/* line 63, ../../app/stylesheets/home/home.scss */
+/* line 65, ../../app/stylesheets/home/home.scss */
 #content {
   height: 100%;
   background: white;
   border: 1px solid #ccc;
 }
 
-/* line 69, ../../app/stylesheets/home/home.scss */
+/* line 71, ../../app/stylesheets/home/home.scss */
 #right {
   float: right;
   width: 35%;
@@ -491,7 +235,7 @@ a.ec-day-link {
 /* New tutorial styles
  * @new
  */
-/* line 79, ../../app/stylesheets/home/home.scss */
+/* line 81, ../../app/stylesheets/home/home.scss */
 #new-to-kakule {
   display: none;
   margin: auto;
@@ -500,13 +244,13 @@ a.ec-day-link {
   padding: 1em;
   margin-bottom: 1em;
 }
-/* line 88, ../../app/stylesheets/home/home.scss */
+/* line 90, ../../app/stylesheets/home/home.scss */
 #new-to-kakule h2 {
   color: #999;
   margin: 0px;
   font-size: 1.5em;
 }
-/* line 94, ../../app/stylesheets/home/home.scss */
+/* line 96, ../../app/stylesheets/home/home.scss */
 #new-to-kakule .button {
   background: #D3E9E9;
   color: #5EBFC5;
@@ -518,43 +262,43 @@ a.ec-day-link {
 /* Right panel styles 
  * @right 
  */
-/* line 111, ../../app/stylesheets/home/home.scss */
+/* line 113, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
   margin: 0.5em 0.8em;
   height: 1.2em;
 }
 
-/* line 116, ../../app/stylesheets/home/home.scss */
+/* line 118, ../../app/stylesheets/home/home.scss */
 #itinerary-name {
   display: inline-block;
   min-height: 15px;
 }
-/* line 119, ../../app/stylesheets/home/home.scss */
+/* line 121, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form {
   position: relative;
   left: -5px;
   top: -5px;
 }
-/* line 124, ../../app/stylesheets/home/home.scss */
+/* line 126, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
   font-size: 0.9em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 133, ../../app/stylesheets/home/home.scss */
+/* line 135, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
   background-position: right top;
   padding-right: 20px;
 }
 
-/* line 142, ../../app/stylesheets/home/home.scss */
+/* line 144, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 146, ../../app/stylesheets/home/home.scss */
+/* line 148, ../../app/stylesheets/home/home.scss */
 #addpanel {
   width: 320px;
   background: #f3f3f3;
@@ -562,55 +306,55 @@ a.ec-day-link {
   min-height: 240px;
   padding: 15px;
 }
-/* line 153, ../../app/stylesheets/home/home.scss */
+/* line 155, ../../app/stylesheets/home/home.scss */
 #addpanel #title {
   border-bottom: 1px solid #dedede;
   margin: 1px 0;
 }
-/* line 158, ../../app/stylesheets/home/home.scss */
+/* line 160, ../../app/stylesheets/home/home.scss */
 #addpanel p {
   margin: 12px 0;
 }
 
-/* line 163, ../../app/stylesheets/home/home.scss */
+/* line 165, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 167, ../../app/stylesheets/home/home.scss */
+/* line 169, ../../app/stylesheets/home/home.scss */
 .addpane {
   margin-bottom: 15px;
 }
-/* line 171, ../../app/stylesheets/home/home.scss */
+/* line 173, ../../app/stylesheets/home/home.scss */
 .addpane .results div:hover, .addpane .results div.selected {
   background: #CCC;
 }
 
-/* line 178, ../../app/stylesheets/home/home.scss */
+/* line 180, ../../app/stylesheets/home/home.scss */
 #addpanel .heading {
   margin-bottom: 5px;
 }
-/* line 181, ../../app/stylesheets/home/home.scss */
+/* line 183, ../../app/stylesheets/home/home.scss */
 #addpanel .heading label {
   display: inline-block;
   width: 80%;
 }
-/* line 186, ../../app/stylesheets/home/home.scss */
+/* line 188, ../../app/stylesheets/home/home.scss */
 #addpanel .search {
   margin-left: 1.6em;
 }
 
-/* line 190, ../../app/stylesheets/home/home.scss */
+/* line 192, ../../app/stylesheets/home/home.scss */
 #locations .search {
   display: block;
 }
 
-/* line 193, ../../app/stylesheets/home/home.scss */
+/* line 195, ../../app/stylesheets/home/home.scss */
 .search {
   margin-left: 10px;
 }
 
-/* line 196, ../../app/stylesheets/home/home.scss */
+/* line 198, ../../app/stylesheets/home/home.scss */
 .search_field {
   padding: 5px;
   width: 100%;
@@ -620,66 +364,66 @@ a.ec-day-link {
   border-radius: 2px;
 }
 
-/* line 206, ../../app/stylesheets/home/home.scss */
+/* line 208, ../../app/stylesheets/home/home.scss */
 #location_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/location_icon.png");
 }
 
-/* line 212, ../../app/stylesheets/home/home.scss */
+/* line 214, ../../app/stylesheets/home/home.scss */
 .location-pin, #location-change {
   color: #ffa8a8;
   cursor: pointer;
 }
 
-/* line 217, ../../app/stylesheets/home/home.scss */
+/* line 219, ../../app/stylesheets/home/home.scss */
 #pinned_location {
   display: none;
   margin-left: 8px;
 }
 
-/* line 222, ../../app/stylesheets/home/home.scss */
+/* line 224, ../../app/stylesheets/home/home.scss */
 .near-label {
   display: none;
   font-size: 0.9em;
   margin-left: 2em;
 }
 
-/* line 228, ../../app/stylesheets/home/home.scss */
+/* line 230, ../../app/stylesheets/home/home.scss */
 #search_locations {
   color: #ffa8a8;
 }
 
-/* line 232, ../../app/stylesheets/home/home.scss */
+/* line 234, ../../app/stylesheets/home/home.scss */
 #attractions_icon {
   width: 13px;
   height: 15px;
   background: url("../images/icons/attraction_icon.png");
 }
 
-/* line 238, ../../app/stylesheets/home/home.scss */
+/* line 240, ../../app/stylesheets/home/home.scss */
 #search_attractions {
   color: #8bc5c5;
 }
 
-/* line 242, ../../app/stylesheets/home/home.scss */
+/* line 244, ../../app/stylesheets/home/home.scss */
 #meals_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/food_icon.png");
 }
 
-/* line 248, ../../app/stylesheets/home/home.scss */
+/* line 250, ../../app/stylesheets/home/home.scss */
 #search_meals {
   color: #ffcf75;
 }
 
-/* line 252, ../../app/stylesheets/home/home.scss */
+/* line 254, ../../app/stylesheets/home/home.scss */
 #savepanel {
   margin-top: 1em;
 }
-/* line 255, ../../app/stylesheets/home/home.scss */
+/* line 257, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   width: 44.5%;
   background: #D3E9E9;
@@ -688,16 +432,16 @@ a.ec-day-link {
   text-align: center;
 }
 
-/* line 264, ../../app/stylesheets/home/home.scss */
+/* line 266, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 267, ../../app/stylesheets/home/home.scss */
+/* line 269, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 269, ../../app/stylesheets/home/home.scss */
+/* line 271, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -706,4 +450,323 @@ a.ec-day-link {
   z-index: 9999;
   border: 1px solid #CCC;
   padding: 5px;
+}
+
+/* 
+  Event Calendar stylesheet
+  
+  Colors:
+  #d5d5d5 - border (gray)
+  #303030 - day names bg (gray)
+  #444 - number (gray)
+  #ecede2 - day header bg (light tan)
+  ##d7d7ba - today header bg (tan)
+  #ffffdd - today bg light (yellow)
+  #777 - other month number (gray)
+  #efefef - other month day header (gray)
+  #2eac6a - hover (green)
+*/
+/* Outer most container */
+/* line 18, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-calendar {
+  font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Month name header & links */
+/* line 27, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-calendar-header {
+  padding: 5px 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+/* line 33, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-month-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 39, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-month-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Containers */
+/* line 49, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-body {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Day names */
+/* line 55, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-day-names {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  table-layout: fixed;
+  padding: 2px 0;
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* line 66, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-day-name {
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Rows container and Row */
+/* line 73, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-rows {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+/* line 81, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background */
+/* line 89, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-row-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0.8em 0.4em;
+}
+
+/* line 100, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-row-table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0.8em 0.8em;
+}
+
+/* Day header */
+/* line 108, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-day-header {
+  color: #ccc;
+  text-align: center;
+  font-size: 1.8em;
+  overflow: hidden;
+  cursor: pointer;
+  background: #eee;
+}
+/* line 115, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-day-header:hover {
+  color: #ffcf75;
+  background: #fef6b8;
+}
+/* line 118, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-day-header:active {
+  color: #ffa9a4;
+  background-color: #ffe3e1;
+}
+
+/* line 124, ../../app/stylesheets/plugins/event_calendar.scss */
+a.ec-day-link {
+  color: #444;
+}
+
+/* line 127, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-today-header {
+  color: #ffa9a4;
+  background-color: #ffd9d7;
+}
+/* line 130, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-today-header:hover {
+  color: #ffa9a4;
+  background-color: #ffd9d7;
+}
+
+/* line 138, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-other-month-header {
+  background: #e2e2e2;
+}
+
+/* Event cell and container */
+/* line 145, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-cell {
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 1px;
+  padding-left: 2px;
+}
+/* line 150, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-cell a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 156, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-no-event-cell {
+  cursor: default;
+}
+
+/* line 159, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event {
+  color: white;
+  padding-right: 1px;
+  padding-left: 11px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 168, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event :hover {
+  /* doesn't look as good as js highlighting */
+  /* background-color: #2eac6a; */
+}
+
+/* line 172, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-bg a {
+  color: white;
+}
+
+/* used to distinguish non-all_day events */
+/* line 177, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-no-bg {
+  position: relative;
+  /* padding-left: 5px; */
+}
+/* line 180, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-no-bg a {
+  /* isn't implemented in all browsers */
+  color: inherit;
+}
+
+/* line 184, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-event-time {
+  font-size: 85%;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+/* Left and right arrows */
+/* Doesn't work in IE6, use bg images instead */
+/* line 192, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-left-arrow, .ec-right-arrow {
+  position: relative;
+  top: 3px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: -8px;
+}
+
+/* line 201, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-left-arrow {
+  margin-left: -7px;
+  margin-right: auto;
+}
+
+/* line 205, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-right-arrow {
+  margin-left: auto;
+  margin-right: 3px;
+}
+
+/* remove this to not have a bullet */
+/* don't look as good in ie */
+/* line 212, ../../app/stylesheets/plugins/event_calendar.scss */
+.ec-bullet {
+  position: absolute;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  margin-left: -7px;
+  margin-right: auto;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+/* line 1, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_results {
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 99999;
+  color: #bbb;
+  -webkit-box-shadow: inset 0 -1px 0px 1px #eeeeee;
+  -moz-box-shadow: inset 0 -1px 0px 1px #eeeeee;
+  box-shadow: inset 0 -1px 0px 1px #eeeeee;
+}
+
+/* line 15, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_results ul {
+  width: 100%;
+  list-style-position: outside;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 23, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_results li {
+  margin: 0px;
+  padding: 2px 24px;
+  cursor: default;
+  display: block;
+  /* 
+  if width will be 100% horizontal scrollbar will apear 
+  when scroll mode will be used
+  */
+  /*width: 100%;*/
+  font: menu;
+  font-size: 1.2em;
+  /* 
+  it is very important, if line-height not setted or setted 
+  in relative units scroll will be broken in firefox
+  */
+  line-height: 1.3em;
+  overflow: hidden;
+}
+
+/* line 43, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_loading {
+  /*background: white url('indicator.gif') right center no-repeat;*/
+}
+
+/* line 50, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_over {
+  background-color: #8bc5c5;
+  color: white;
+}
+
+/* line 55, ../../app/stylesheets/plugins/jquery.autocomplete.scss */
+.ac_highlight {
+  font-weight: bold;
+  color: #aaa;
 }

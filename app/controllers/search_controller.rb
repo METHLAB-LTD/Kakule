@@ -48,8 +48,9 @@ class SearchController < ApplicationController
   # Required: query
   # example = {"query" : "San Francisco"}
   def geocoding
-    return [] if params[:query].blank? #should let JS handle this eventually (at least 2 chars)
-    geocodes = Geocode.find_by_similar_name(params[:query])
+    render :json => [] if params[:q].blank? #should let JS handle this eventually (at least 2 chars)
+    geocodes = Geocode.find_by_similar_name(params[:q])
+    render :json => geocodes.map {|g| {:name => g.full_name, :id => g.id } }
     # render :json => geocodes
 
     # Return in Ruby format because we want rails to do the
