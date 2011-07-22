@@ -104,6 +104,12 @@ class ItinerariesController < ApplicationController
   end
   
   
+  # GET /itineraries/1/finalize
+  def finalize
+    @itinerary = Itinerary.find(params[:id])
+    
+  end
+  
   private
   def validate_write_permission
     current_user.can_update_itinerary?(Itinerary.find(params[:id]))

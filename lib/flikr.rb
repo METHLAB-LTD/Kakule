@@ -20,11 +20,13 @@ module Flikr
   class Photos
     include Flikr::Util
     
-    #params = {:lat => "37.323", :lng => "-122.03218", :radius => 20}
+
     def initialize
       
     end
     
+    #Example
+    #Flikr::Photos.new.search({"lat" => "48.85341", "lon" => "2.3488", "radius" => 20}).each{|a| puts a[:url]}
     def search(params)
       params = sanitize_params(params)
       params[:radius] ||= 20
