@@ -6,36 +6,74 @@
 #wrapper {
   position: relative;
   top: 50px;
-  width: 900px;
-  margin: auto; }
+  width: 80%;
+  min-width: 800px;
+  margin: auto; 
+}
 
 #header {
-  margin-left: 0.5em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em; 
+}
 
 #logo {
   float: left;
   width: 192px;
-  height: 29px; }
+  height: 29px; 
+}
 
 #userbar {
     float: right;
     margin-top: 1em;
 }
 
+#search {
+    width: 99.5%;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 2px;
+    
+    background: url("../images/icons/location_icon.png") no-repeat;
+    background-position: 5px center;
+
+    -webkit-box-shadow: inset 0 1px 1px 1px #eee;
+    -moz-box-shadow: inset 0 1px 1px 1px #eee;
+    box-shadow: inset 0 1px 1px 1px #eee;
+
+    input {
+        width: 90%;
+        border: 0px;
+        outline: 0px;
+
+        margin-left: 20px;
+        font-size: 1.3em;
+    }
+}
+
 #calendar {
-  float: left; 
 	table {
 	  border-collapse: separate;
 	  border-spacing: 5px;
 	}
 }
 
-#toppanel {
-  margin-bottom: 1.5em; }
+#left {
+    float: left;
+    width: 60%;
+}
 
-#bottompanel {
-  margin-left: 0.5em; }
+#content {
+    height: 100%;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+#right {
+    float: right;
+    width: 35%;
+    padding: 1.5%;
+    border: 1px solid #ccc;
+}
 
 /* New tutorial styles
  * @new
@@ -72,12 +110,8 @@
  * @right 
  */
 
-#right {
-    float: right;
-}
-
 #itinerary-title {
-  margin: 0.9em 0.8em; 
+  margin: 0.5em 0.8em; 
   height: 1.2em;
 }
 

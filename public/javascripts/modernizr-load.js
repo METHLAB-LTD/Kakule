@@ -11,9 +11,13 @@ Modernizr.load([
   {
     load: '/javascripts/jquery.editinplace.js'
   }, 
+  { 
+    load: '/javascripts/jquery.autocomplete.js'
+  },
   {
     load: '/javascripts/application.js'
   }, 
-  { load: '/javascripts/event_calendar.js'
+  { 
+    load: '/javascripts/event_calendar.js'
   }
 ]);

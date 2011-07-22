@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "library";
 @import "global";
-@import "home/event_calendar";
 @import "home/home";
+@import "plugins/event_calendar";
+@import "plugins/jquery.autocomplete";
 

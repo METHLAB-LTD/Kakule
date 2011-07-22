@@ -59,6 +59,7 @@ kakule.init = {
 	    });
     },
     
+
 	attachSearchHandlers : function(){
 		var search_fields = $(".search_field");
 		
@@ -226,7 +227,7 @@ kakule.server = {
 
 kakule.ui = {
 	repopulateLocations : function(data) {
-		var resultsDiv =  $("#locations .results");
+		var resultsDiv =  $("#content");
     resultsDiv.empty();
     resultsDiv.append(data.html);
 
@@ -295,11 +296,35 @@ kakule.ui = {
 
 $(document).ready(function() {
     kakule.init.getLocation();
-    kakule.init.attachAddHandlers();
-    kakule.init.attachSearchHandlers();
 	kakule.init.attachEditHandlers();
 	kakule.init.session()
-		
+
+    $("#location-search").autocomplete("/search/places", {
+        dataType: 'json',
+        scroll: false,
+        formatItem: function(item) {
+                return item.name;
+            },
+        parse: function(data) {
+                var array = new Array();
+                for(var i = 0; i < data.length; i++) {
+                        array[array.length] = { data: data[i], value: data[i]};
+                }
+                return array;
+        },
+        highlight: function(value, term) { 
+            return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
+        },
+        }).result(function(event, item) {
+            $("#location-search").val(item.name);
+            $.get("/search/render_place_by_id", 
+                  {id: item.id},
+                  function(data) {
+                    $("#content").empty();
+                    $("#content").append(data.html);
+                  });
+        });
+
 		// FB.init({
 		// 	    appId  : '190781907646255',
 		// 	    status : true, // check login status
