@@ -17,25 +17,28 @@
     <div class="clear"></div>
 </div>
 
-<div id="content">
-    <div id="toppanel">
-        <div id="calendar">
-            <%= render "calendar" %>
-        </div>
-        <div id="right">
-            <h1 id="itinerary-title"> 
-                <span id="itinerary-name" class="itinerary-name-icon"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
-            </h1>
-            <div id="addpanel">
-                <%= render "addpanel" %>
-            </div>
-            <div id="savepanel">
-                <%= render "savepanel" %>
-            </div>
-        </div>
-        <div class="clear"></div>
+<div id="left">
+    <div id="search">
+        <form>
+            <input id="location-search" type="text"></input>
+        </form>
     </div>
-    <div id="bottompanel">
+    <div id="content">
     </div>
-    
+</div>
+<div id="right">
+    <h1 id="itinerary-title"> 
+        <span id="itinerary-name" class="itinerary-name-icon"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
+    </h1>
+    <div id="calendar">
+        <%= render "calendar" %>
+    </div>
+    <div id="itinerary-day">
+        <%= render "day" %>
+    </div>
+    <div id="savepanel">
+        <%= render "savepanel" %>
+    </div>
+</div>
+    <div class="clear"></div>
 </div>

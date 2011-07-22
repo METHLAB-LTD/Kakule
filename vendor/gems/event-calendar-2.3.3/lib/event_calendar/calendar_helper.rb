@@ -63,8 +63,8 @@ module EventCalendar
 
         # it would be nice to have these in the CSS file
         # but they are needed to perform height calculations
-        :width => nil,
-        :height => 500,
+        :width => 200,
+        :height => 200,
         :day_names_height => 18,
         :day_nums_height => 18,
         :event_height => 18,
@@ -115,7 +115,7 @@ module EventCalendar
 
       # outer calendar container
       cal << %(<div class="ec-calendar")
-      cal << %(style="width: #{options[:width]}px;") if options[:width]
+      cal << %(style="width: 100%;") if options[:width]
       cal << %(>)
 
       # table header, including the monthname and links to prev & next month
@@ -184,7 +184,7 @@ module EventCalendar
           cal << %(ec-other-month-header ) if (day < first) || (day > last)
           cal << %(ec-weekend-day-header) if weekend?(day)
           cal << %(" id="#{day.strftime("%d-%m-%Y")}")
-          cal << %( style="height: #{options[:day_nums_height]}px;">)
+          cal << %( style="height: #{options[:day_nums_height]}px; line-height: #{row_heights[row_num]}px;">)
           if options[:link_to_day_action]
             cal << day_link(day.day, day, options[:link_to_day_action])
           else

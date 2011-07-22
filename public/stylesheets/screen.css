@@ -272,53 +272,52 @@ a:hover {
 .ec-day-header {
   color: #ccc;
   text-align: center;
-  font-size: 2.5em;
-  line-height: 63px;
+  font-size: 1.8em;
   overflow: hidden;
   cursor: pointer;
   background: #eee;
 }
-/* line 116, ../../app/stylesheets/home/event_calendar.scss */
+/* line 115, ../../app/stylesheets/home/event_calendar.scss */
 .ec-day-header:hover {
   color: #ffcf75;
   background: #fef6b8;
 }
-/* line 119, ../../app/stylesheets/home/event_calendar.scss */
+/* line 118, ../../app/stylesheets/home/event_calendar.scss */
 .ec-day-header:active {
   color: #ffa9a4;
   background-color: #ffe3e1;
 }
 
-/* line 125, ../../app/stylesheets/home/event_calendar.scss */
+/* line 124, ../../app/stylesheets/home/event_calendar.scss */
 a.ec-day-link {
   color: #444;
 }
 
-/* line 128, ../../app/stylesheets/home/event_calendar.scss */
+/* line 127, ../../app/stylesheets/home/event_calendar.scss */
 .ec-today-header {
   color: #ffa9a4;
   background-color: #ffd9d7;
 }
-/* line 131, ../../app/stylesheets/home/event_calendar.scss */
+/* line 130, ../../app/stylesheets/home/event_calendar.scss */
 .ec-today-header:hover {
   color: #ffa9a4;
   background-color: #ffd9d7;
 }
 
-/* line 139, ../../app/stylesheets/home/event_calendar.scss */
+/* line 138, ../../app/stylesheets/home/event_calendar.scss */
 .ec-other-month-header {
   background: #e2e2e2;
 }
 
 /* Event cell and container */
-/* line 146, ../../app/stylesheets/home/event_calendar.scss */
+/* line 145, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-cell {
   cursor: pointer;
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
 }
-/* line 151, ../../app/stylesheets/home/event_calendar.scss */
+/* line 150, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-cell a {
   text-decoration: none;
   display: block;
@@ -326,12 +325,12 @@ a.ec-day-link {
   height: 100%;
 }
 
-/* line 157, ../../app/stylesheets/home/event_calendar.scss */
+/* line 156, ../../app/stylesheets/home/event_calendar.scss */
 .ec-no-event-cell {
   cursor: default;
 }
 
-/* line 160, ../../app/stylesheets/home/event_calendar.scss */
+/* line 159, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event {
   color: white;
   padding-right: 1px;
@@ -342,30 +341,30 @@ a.ec-day-link {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 169, ../../app/stylesheets/home/event_calendar.scss */
+/* line 168, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event :hover {
   /* doesn't look as good as js highlighting */
   /* background-color: #2eac6a; */
 }
 
-/* line 173, ../../app/stylesheets/home/event_calendar.scss */
+/* line 172, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-bg a {
   color: white;
 }
 
 /* used to distinguish non-all_day events */
-/* line 178, ../../app/stylesheets/home/event_calendar.scss */
+/* line 177, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-no-bg {
   position: relative;
   /* padding-left: 5px; */
 }
-/* line 181, ../../app/stylesheets/home/event_calendar.scss */
+/* line 180, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-no-bg a {
   /* isn't implemented in all browsers */
   color: inherit;
 }
 
-/* line 185, ../../app/stylesheets/home/event_calendar.scss */
+/* line 184, ../../app/stylesheets/home/event_calendar.scss */
 .ec-event-time {
   font-size: 85%;
   font-weight: bold;
@@ -374,7 +373,7 @@ a.ec-day-link {
 
 /* Left and right arrows */
 /* Doesn't work in IE6, use bg images instead */
-/* line 193, ../../app/stylesheets/home/event_calendar.scss */
+/* line 192, ../../app/stylesheets/home/event_calendar.scss */
 .ec-left-arrow, .ec-right-arrow {
   position: relative;
   top: 3px;
@@ -385,13 +384,13 @@ a.ec-day-link {
   margin-bottom: -8px;
 }
 
-/* line 202, ../../app/stylesheets/home/event_calendar.scss */
+/* line 201, ../../app/stylesheets/home/event_calendar.scss */
 .ec-left-arrow {
   margin-left: -7px;
   margin-right: auto;
 }
 
-/* line 206, ../../app/stylesheets/home/event_calendar.scss */
+/* line 205, ../../app/stylesheets/home/event_calendar.scss */
 .ec-right-arrow {
   margin-left: auto;
   margin-right: 3px;
@@ -399,7 +398,7 @@ a.ec-day-link {
 
 /* remove this to not have a bullet */
 /* don't look as good in ie */
-/* line 213, ../../app/stylesheets/home/event_calendar.scss */
+/* line 212, ../../app/stylesheets/home/event_calendar.scss */
 .ec-bullet {
   position: absolute;
   top: 7px;
@@ -419,53 +418,80 @@ a.ec-day-link {
 #wrapper {
   position: relative;
   top: 50px;
-  width: 900px;
+  width: 80%;
+  min-width: 800px;
   margin: auto;
 }
 
-/* line 12, ../../app/stylesheets/home/home.scss */
+/* line 14, ../../app/stylesheets/home/home.scss */
 #header {
-  margin-left: 0.5em;
   margin-bottom: 2em;
 }
 
-/* line 16, ../../app/stylesheets/home/home.scss */
+/* line 18, ../../app/stylesheets/home/home.scss */
 #logo {
   float: left;
   width: 192px;
   height: 29px;
 }
 
-/* line 21, ../../app/stylesheets/home/home.scss */
+/* line 24, ../../app/stylesheets/home/home.scss */
 #userbar {
   float: right;
   margin-top: 1em;
 }
 
-/* line 26, ../../app/stylesheets/home/home.scss */
-#calendar {
-  float: left;
+/* line 29, ../../app/stylesheets/home/home.scss */
+#search {
+  width: 99.5%;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: 2px;
+  background: url("../images/icons/location_icon.png") no-repeat;
+  background-position: 5px center;
+  -webkit-box-shadow: inset 0 1px 1px 1px #eee;
 }
-/* line 28, ../../app/stylesheets/home/home.scss */
+/* line 41, ../../app/stylesheets/home/home.scss */
+#search input {
+  width: 90%;
+  border: 0px;
+  outline: 0px;
+  margin-left: 20px;
+  font-size: 1.3em;
+}
+
+/* line 52, ../../app/stylesheets/home/home.scss */
 #calendar table {
   border-collapse: separate;
   border-spacing: 5px;
 }
 
-/* line 34, ../../app/stylesheets/home/home.scss */
-#toppanel {
-  margin-bottom: 1.5em;
+/* line 58, ../../app/stylesheets/home/home.scss */
+#left {
+  float: left;
+  width: 60%;
 }
 
-/* line 37, ../../app/stylesheets/home/home.scss */
-#bottompanel {
-  margin-left: 0.5em;
+/* line 63, ../../app/stylesheets/home/home.scss */
+#content {
+  height: 100%;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+/* line 69, ../../app/stylesheets/home/home.scss */
+#right {
+  float: right;
+  width: 35%;
+  padding: 1.5%;
+  border: 1px solid #ccc;
 }
 
 /* New tutorial styles
  * @new
  */
-/* line 43, ../../app/stylesheets/home/home.scss */
+/* line 79, ../../app/stylesheets/home/home.scss */
 #new-to-kakule {
   display: none;
   margin: auto;
@@ -474,13 +500,13 @@ a.ec-day-link {
   padding: 1em;
   margin-bottom: 1em;
 }
-/* line 52, ../../app/stylesheets/home/home.scss */
+/* line 88, ../../app/stylesheets/home/home.scss */
 #new-to-kakule h2 {
   color: #999;
   margin: 0px;
   font-size: 1.5em;
 }
-/* line 58, ../../app/stylesheets/home/home.scss */
+/* line 94, ../../app/stylesheets/home/home.scss */
 #new-to-kakule .button {
   background: #D3E9E9;
   color: #5EBFC5;
@@ -492,48 +518,43 @@ a.ec-day-link {
 /* Right panel styles 
  * @right 
  */
-/* line 75, ../../app/stylesheets/home/home.scss */
-#right {
-  float: right;
-}
-
-/* line 79, ../../app/stylesheets/home/home.scss */
+/* line 111, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
-  margin: 0.9em 0.8em;
+  margin: 0.5em 0.8em;
   height: 1.2em;
 }
 
-/* line 84, ../../app/stylesheets/home/home.scss */
+/* line 116, ../../app/stylesheets/home/home.scss */
 #itinerary-name {
   display: inline-block;
   min-height: 15px;
 }
-/* line 87, ../../app/stylesheets/home/home.scss */
+/* line 119, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form {
   position: relative;
   left: -5px;
   top: -5px;
 }
-/* line 92, ../../app/stylesheets/home/home.scss */
+/* line 124, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
   font-size: 0.9em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 101, ../../app/stylesheets/home/home.scss */
+/* line 133, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
   background-position: right top;
   padding-right: 20px;
 }
 
-/* line 110, ../../app/stylesheets/home/home.scss */
+/* line 142, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 114, ../../app/stylesheets/home/home.scss */
+/* line 146, ../../app/stylesheets/home/home.scss */
 #addpanel {
   width: 320px;
   background: #f3f3f3;
@@ -541,55 +562,55 @@ a.ec-day-link {
   min-height: 240px;
   padding: 15px;
 }
-/* line 121, ../../app/stylesheets/home/home.scss */
+/* line 153, ../../app/stylesheets/home/home.scss */
 #addpanel #title {
   border-bottom: 1px solid #dedede;
   margin: 1px 0;
 }
-/* line 126, ../../app/stylesheets/home/home.scss */
+/* line 158, ../../app/stylesheets/home/home.scss */
 #addpanel p {
   margin: 12px 0;
 }
 
-/* line 131, ../../app/stylesheets/home/home.scss */
+/* line 163, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 135, ../../app/stylesheets/home/home.scss */
+/* line 167, ../../app/stylesheets/home/home.scss */
 .addpane {
   margin-bottom: 15px;
 }
-/* line 139, ../../app/stylesheets/home/home.scss */
+/* line 171, ../../app/stylesheets/home/home.scss */
 .addpane .results div:hover, .addpane .results div.selected {
   background: #CCC;
 }
 
-/* line 146, ../../app/stylesheets/home/home.scss */
+/* line 178, ../../app/stylesheets/home/home.scss */
 #addpanel .heading {
   margin-bottom: 5px;
 }
-/* line 149, ../../app/stylesheets/home/home.scss */
+/* line 181, ../../app/stylesheets/home/home.scss */
 #addpanel .heading label {
   display: inline-block;
   width: 80%;
 }
-/* line 154, ../../app/stylesheets/home/home.scss */
+/* line 186, ../../app/stylesheets/home/home.scss */
 #addpanel .search {
   margin-left: 1.6em;
 }
 
-/* line 158, ../../app/stylesheets/home/home.scss */
+/* line 190, ../../app/stylesheets/home/home.scss */
 #locations .search {
   display: block;
 }
 
-/* line 161, ../../app/stylesheets/home/home.scss */
+/* line 193, ../../app/stylesheets/home/home.scss */
 .search {
   margin-left: 10px;
 }
 
-/* line 164, ../../app/stylesheets/home/home.scss */
+/* line 196, ../../app/stylesheets/home/home.scss */
 .search_field {
   padding: 5px;
   width: 100%;
@@ -599,66 +620,66 @@ a.ec-day-link {
   border-radius: 2px;
 }
 
-/* line 174, ../../app/stylesheets/home/home.scss */
+/* line 206, ../../app/stylesheets/home/home.scss */
 #location_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/location_icon.png");
 }
 
-/* line 180, ../../app/stylesheets/home/home.scss */
+/* line 212, ../../app/stylesheets/home/home.scss */
 .location-pin, #location-change {
   color: #ffa8a8;
   cursor: pointer;
 }
 
-/* line 185, ../../app/stylesheets/home/home.scss */
+/* line 217, ../../app/stylesheets/home/home.scss */
 #pinned_location {
   display: none;
   margin-left: 8px;
 }
 
-/* line 190, ../../app/stylesheets/home/home.scss */
+/* line 222, ../../app/stylesheets/home/home.scss */
 .near-label {
   display: none;
   font-size: 0.9em;
   margin-left: 2em;
 }
 
-/* line 196, ../../app/stylesheets/home/home.scss */
+/* line 228, ../../app/stylesheets/home/home.scss */
 #search_locations {
   color: #ffa8a8;
 }
 
-/* line 200, ../../app/stylesheets/home/home.scss */
+/* line 232, ../../app/stylesheets/home/home.scss */
 #attractions_icon {
   width: 13px;
   height: 15px;
   background: url("../images/icons/attraction_icon.png");
 }
 
-/* line 206, ../../app/stylesheets/home/home.scss */
+/* line 238, ../../app/stylesheets/home/home.scss */
 #search_attractions {
   color: #8bc5c5;
 }
 
-/* line 210, ../../app/stylesheets/home/home.scss */
+/* line 242, ../../app/stylesheets/home/home.scss */
 #meals_icon {
   width: 11px;
   height: 16px;
   background: url("../images/icons/food_icon.png");
 }
 
-/* line 216, ../../app/stylesheets/home/home.scss */
+/* line 248, ../../app/stylesheets/home/home.scss */
 #search_meals {
   color: #ffcf75;
 }
 
-/* line 220, ../../app/stylesheets/home/home.scss */
+/* line 252, ../../app/stylesheets/home/home.scss */
 #savepanel {
   margin-top: 1em;
 }
-/* line 223, ../../app/stylesheets/home/home.scss */
+/* line 255, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   width: 44.5%;
   background: #D3E9E9;
@@ -667,16 +688,16 @@ a.ec-day-link {
   text-align: center;
 }
 
-/* line 232, ../../app/stylesheets/home/home.scss */
+/* line 264, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 235, ../../app/stylesheets/home/home.scss */
+/* line 267, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 237, ../../app/stylesheets/home/home.scss */
+/* line 269, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
