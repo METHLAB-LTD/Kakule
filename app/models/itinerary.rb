@@ -29,18 +29,50 @@ class Itinerary < ActiveRecord::Base
     :parent_id => nil
   }
   
-  def timeline(month)
-    # return {
-    #   :selected_events => selected_events,
-    #   :events => events,
-    #   :selected_attractions => selected_attractions,
-    #   :attractions => attractions,
-    #   :transportations =>  transportations
-    # }
-    hash = {}
-    selected_events.each do |entry|
-      #hash[]
+  # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
+  def timeline
+    dataset = {}
+    
+    self.selected_events.each do |entry|
+      date = entry.start_time.date
+      dataset[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.event.name,
+        :type => "event",
+        :id => entry.event.id
+      }
+      dataset[date].push(element) 
     end
+    
+    self.selected_attractions.each do |entry|
+      date = entry.start_time.date
+      dataset[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.attraction.name,
+        :type => "attraction",
+        :id => entry.attraction.id
+      }
+      dataset[date].push(element) 
+    end
+    
+    self.transportations.each do |entry|
+      date = entry.start_time.date
+      dataset[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.name,
+        :type => "transportation",
+        :id => entry.id
+      }
+      dataset[date].push(element) 
+    end
+    
+    return dataset
     
   end
     

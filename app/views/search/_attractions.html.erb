@@ -4,12 +4,12 @@
 
 <% for event in event_data %>
     <div class="<%=event.id%>">
-			<span class="name"><%= event.name %></span>
+			E: <span class="name"><%= event.name %></span>
 		</div>
 <% end %>
 
 <% for attraction in attraction_data %>
-    <div class="<%=attraction.id%>">
-			<span class="name"><%= attraction.name %></span>
+    <div class="<%=attraction["id"]%>">
+			A: <span class="name"><%= attraction["name"] %></span>
 		</div>
 <% end %>

@@ -10,7 +10,7 @@ Kakule::Application.routes.draw do
   get 'itineraries/render_day' 
   post 'itineraries/edit_name'
   post 'itineraries/fork'
-  match 'itineraries/:id/:year/:month' => 'itinerary#show', :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
+  match 'itineraries/:id' => 'itineraries#show'
 
   # Search
   post "search/events"
@@ -20,6 +20,7 @@ Kakule::Application.routes.draw do
   post "search/cars"
   post "search/meals"
   get "search/geocoding"
+  post "search/photos"
   get "search/render_geocoding"
   get "search/render_attractions"
 
