@@ -59,61 +59,6 @@ kakule.init = {
 	    });
     },
     
-	attachSearchHandlers : function(){
-		var search_fields = $(".search_field");
-		
-		var selectUp = function(){
-			if (kakule.current.addpanel.selected_search > 1){
-				kakule.current.addpanel.selected_search--;
-			}
-		};
-		
-		var selectDown = function(results){
-			if (kakule.current.addpanel.selected_search < results.children(".result").length){
-				kakule.current.addpanel.selected_search++;
-			}
-		};
-		
-	  
-		$("body").delegate("#location-search", "keyup", function(evt){
-			var textBox = $(this);
-			
-			/*switch (evt.keyCode) {
-				case 38: //up arrow
-				  selectUp();
-				  break;
-				case 40: //down arrow
-				  selectDown(results);
-				  break;
-				case 13:
-				  break;
-				default:
-			}
-			
-			var selected_search = kakule.current.addpanel.selected_search;
-			var selected = $(".result:nth-child("+ selected_search +")", results)
-			kakule.ui.selectSearchResult(selected);
-			
-			if (evt.keyCode == 13) {
-				if (kakule.current.addpanel.selected_search == 0){
-					selected = $(".result:nth-child("+ (selected_search + 1) +")", results)
-				}
-				kakule.ui.pin.location($(".location-pin", selected));
-			}
-			
-		  kakule.ui.selectSearchResult(selected);*/
-		});
-		
-    $("body").delegate(".search_form", "submit", function(e) {
-        e.preventDefault();
-    });
-
-		$("body").delegate(".addpane .results", "hover", function(evt){
-		  $(this).children(".result").removeClass("selected");
-		  kakule.current.addpanel.selected_search = 0;
-		});
-	},
-	
 	session : function(){
 		var sessionDiv = $("#session");
 		var loginLink = $(".login", sessionDiv);
@@ -290,12 +235,10 @@ kakule.ui = {
 
 $(document).ready(function() {
     kakule.init.getLocation();
-    kakule.init.attachAddHandlers();
-    kakule.init.attachSearchHandlers();
 	kakule.init.attachEditHandlers();
 	kakule.init.session()
 
-    $("#location-search").autocomplete("/search/geocoding", {
+    $("#location-search").autocomplete("/search/places", {
         dataType: 'json',
         scroll: false,
         formatItem: function(item) {
@@ -312,7 +255,13 @@ $(document).ready(function() {
             return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
         },
         }).result(function(event, item) {
-            $("#user_id").val(item.id);
+            $("#location-search").val(item.name);
+            $.get("/search/render_place_by_id", 
+                  {id: item.id},
+                  function(data) {
+                    $("#content").empty();
+                    $("#content").append(data.html);
+                  });
         });
 
 		// FB.init({

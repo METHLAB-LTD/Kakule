@@ -24,7 +24,7 @@ class Itinerary < ActiveRecord::Base
   }
 
   @@defaults = {
-    :name => "Default Title",
+    :name => "Your Itinerary",
     :permission_level => 1,
     :parent_id => nil
   }

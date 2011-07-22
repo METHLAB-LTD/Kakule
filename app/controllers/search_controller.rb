@@ -57,7 +57,7 @@ class SearchController < ApplicationController
   # POST /search/geocoding
   # Required: query
   # example = {"query" : "San Francisco"}
-  def geocoding
+  def places
     render :json => [] if params[:q].blank? #should let JS handle this eventually (at least 2 chars)
     geocodes = Geocode.find_by_similar_name(params[:q])
     render :json => geocodes.map {|g| {:name => g.full_name, :id => g.id } }
@@ -68,12 +68,10 @@ class SearchController < ApplicationController
   end
 
   # Render partial UI for geocoding results
-  def render_geocoding
-    results = geocoding
+  def render_place_by_id
+    geocode = Geocode.find(params[:id].to_i)
     render :json => {
-        :html => (render_to_string :partial => "geocoding", :locals => {:data => results}),
-        :data => results,
-        :query => params[:query]
+        :html => (render_to_string :partial => "place", :locals => {:place => geocode})
     }
   end
   

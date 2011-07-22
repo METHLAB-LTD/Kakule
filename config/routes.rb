@@ -19,9 +19,9 @@ Kakule::Application.routes.draw do
   post "search/hotels"
   post "search/cars"
   post "search/meals"
-  get "search/geocoding"
+  get "search/places"
   post "search/photos"
-  get "search/render_geocoding"
+  get "search/render_place_by_id"
   get "search/render_attractions"
 
   # Session
