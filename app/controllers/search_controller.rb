@@ -133,7 +133,16 @@ class SearchController < ApplicationController
     render :json => client.search(request).to_json
   end
   
-  
+  # POST /search/photos
+  # Required:
+  # Optional:
+  # 
+  # Possible fields: http://www.flickr.com/services/api/flickr.photos.search.html
+  def photos
+    render :json => {
+      :photos => Flikr::Photos.new.search(params)
+    }
+  end
   
   
 
