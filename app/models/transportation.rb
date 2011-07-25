@@ -40,9 +40,14 @@ class Transportation < ActiveRecord::Base
     end
     
     distances.map! do |dist|
-      puts dist.inspect
       if (dist[:seconds] < 60)
-        
+        if dist[:meters] < 15000
+          :walk
+        elsif dist[:meters] < 500000
+          :drive
+        else
+          :fly
+        end
       else
         if (dist[:meters] / @@speeds[:walk]) + 24.0 * ((dist[:meters] / @@speeds[:walk]) / MOVING_HOURS_PER_DAY).floor < dist[:seconds]/3600
           :walk
