@@ -37,3 +37,11 @@ SelectedEvent.create({:itinerary_id => 1, :event_id => 1, :start_time => Time.no
 Transportation.create({:itinerary_id => 1, :mode => 1, :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
 
 
+
+SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 18, :start_time => Time.now, :end_time => Time.now + 1.hour})
+SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 19, :start_time => Time.now + 2.hours, :end_time => Time.now + 3.hours})
+SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 7, :start_time => Time.now + 4.hours, :end_time => Time.now + 5.hours})
+
+
+
+

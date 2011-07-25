@@ -31,33 +31,7 @@ class Itinerary < ActiveRecord::Base
   
   # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
   def timeline
-    dataset = {}
-    
-    self.selected_events.each do |entry|
-      date = entry.start_time.date
-      dataset[date] ||= []
-      element = {
-        :start_time => entry.start_time,
-        :end_time => entry.end_time,
-        :name => entry.event.name,
-        :type => "event",
-        :id => entry.event.id
-      }
-      dataset[date].push(element) 
-    end
-    
-    self.selected_attractions.each do |entry|
-      date = entry.start_time.date
-      dataset[date] ||= []
-      element = {
-        :start_time => entry.start_time,
-        :end_time => entry.end_time,
-        :name => entry.attraction.name,
-        :type => "attraction",
-        :id => entry.attraction.id
-      }
-      dataset[date].push(element) 
-    end
+    dataset = raw_timeline
     
     self.transportations.each do |entry|
       date = entry.start_time.date
@@ -74,6 +48,40 @@ class Itinerary < ActiveRecord::Base
     
     return dataset
     
+  end
+  
+  def raw_timeline
+    dataset = {}
+     self.selected_events.each do |entry|
+       date = entry.start_time.date
+       dataset[date] ||= []
+       element = {
+         :start_time => entry.start_time,
+         :end_time => entry.end_time,
+         :name => entry.event.name,
+         :type => "event",
+         :id => entry.event.id,
+         :lat => entry.event.latitude,
+         :lng => entry.event.longitude
+       }
+       dataset[date].push(element) 
+     end
+
+     self.selected_attractions.each do |entry|
+       date = entry.start_time.date
+       dataset[date] ||= []
+       element = {
+         :start_time => entry.start_time,
+         :end_time => entry.end_time,
+         :name => entry.attraction.name,
+         :type => "attraction",
+         :id => entry.attraction.id,
+         :lat => entry.attraction.latitude,
+         :lng => entry.attraction.longitude
+       }
+       dataset[date].push(element) 
+     end
+     return dataset
   end
     
   

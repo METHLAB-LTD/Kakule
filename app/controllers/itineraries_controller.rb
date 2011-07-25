@@ -106,7 +106,10 @@ class ItinerariesController < ApplicationController
   
   # GET /itineraries/1/finalize
   def finalize
-    @itinerary = Itinerary.find(params[:id])
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
+
+    
+    
     
   end
   

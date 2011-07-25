@@ -1,5 +1,5 @@
 module KakuleHelper
-  def self.geoDistance(lat1, lon1, lat2, lon2)
+  def self.geo_distance(lat1, lon1, lat2, lon2)
     a = 6378137
     b = 6356752.314245
     f = 1/298.257223563
@@ -36,10 +36,10 @@ module KakuleHelper
     vB = uSq/1024 * (256+uSq*(-128+uSq*(74-47*uSq)))
     deltaSigma = vB*sinSigma*(cos2SigmaM+vB/4*(cosSigma*(-1+2*cos2SigmaM*cos2SigmaM)-vB/6*cos2SigmaM*(-3+4*sinSigma*sinSigma)*(-3+4*cos2SigmaM*cos2SigmaM)))
     s = b*vA*(sigma-deltaSigma)
-    return s/1000; #in kilometers
+    return s; #in meters
   end
 
-  def toRad(deg)
+  def self.toRad(deg)
     deg * Math::PI/180
   end
 end
