@@ -31,23 +31,8 @@ class Itinerary < ActiveRecord::Base
   
   # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
   def timeline
-    dataset = raw_timeline
-    
-    self.transportations.each do |entry|
-      date = entry.start_time.date
-      dataset[date] ||= []
-      element = {
-        :start_time => entry.start_time,
-        :end_time => entry.end_time,
-        :name => entry.name,
-        :type => "transportation",
-        :id => entry.id
-      }
-      dataset[date].push(element) 
-    end
-    
+    dataset = add_transportation(raw_timeline)
     return dataset
-    
   end
   
   def raw_timeline
@@ -82,6 +67,22 @@ class Itinerary < ActiveRecord::Base
        dataset[date].push(element) 
      end
      return dataset
+  end
+  
+  def add_transportation(dataset)
+    self.transportations.each do |entry|
+      date = entry.start_time.date
+      dataset[date] ||= []
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.name,
+        :type => "transportation",
+        :id => entry.id
+      }
+      dataset[date].push(element) 
+    end
+    return dataset
   end
     
   
