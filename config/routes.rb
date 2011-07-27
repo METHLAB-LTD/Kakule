@@ -27,6 +27,7 @@ Kakule::Application.routes.draw do
   get "search/render_place_by_id"
   get "search/render_attractions"
   get "search/render_photos"
+  get "search/render_meals"
 
   # Session
   get "user_sessions/new", :as => "new_user_session"

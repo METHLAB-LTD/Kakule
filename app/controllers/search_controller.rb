@@ -129,7 +129,13 @@ class SearchController < ApplicationController
      :term => params[:query],
      :category => params[:category] || ["food", "restaurants"],
      :yws_id => YELP_API_KEY)
-    render :json => client.search(request).to_json
+    return client.search(request)
+  end
+  
+  def render_meals
+    render :json => {
+      :html => render_to_string (:partial => "meals", :locals => {:meals => meals["businesses"]})
+    }.to_json
   end
   
   # POST /search/photos
