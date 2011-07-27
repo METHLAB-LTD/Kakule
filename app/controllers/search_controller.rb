@@ -36,7 +36,6 @@ class SearchController < ApplicationController
      :category => params[:category] || ["amusementparks"],
      :yws_id => YELP_API_KEY)
     @attractions = client.search(request)["businesses"]
-
     results = {:events => @events, :attractions => @attractions }
     
     #render :json => {

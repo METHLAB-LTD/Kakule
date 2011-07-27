@@ -1,5 +1,6 @@
 <div class="meals">
 	<% meals.map do |meal| %>
+	<%=meal.inspect%>
 	  <%= meal["name"] %> [<%= meal["avg_rating"]%>]
 	<%end%>
 </div>
