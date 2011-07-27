@@ -28,7 +28,7 @@ module Flikr
     #Example
     #Flikr::Photos.new.search({"lat" => "48.85341", "lon" => "2.3488", "radius" => 20}).each{|a| puts a[:url]}
     def search(params)
-      #params = sanitize_params(params)
+      params = sanitize_params(params)
       params[:radius] ||= 20
       params[:radius_units] ||= "mi"
       params[:safe_search] ||= 1
@@ -45,14 +45,14 @@ module Flikr
       rescue => e
         RAILS_DEFAULT_LOGGER.error(response)
         RAILS_DEFAULT_LOGGER.error("[ERROR]: [API] Flikr")
-        RAILS_DEFAULT_LOGGER.error(e.inspect)
-        RAILS_DEFAULT_LOGGER.error(e.backtrace)
+        #RAILS_DEFAULT_LOGGER.error(e.inspect)
+        #RAILS_DEFAULT_LOGGER.error(e.backtrace)
       end
       return response["photos"]["photo"]
     end
     
     def sanitize_params(params)
-      params[:lon] = params[:lng]
+      params["lon"] = params["lng"]
       allowed_fields = %w(user_id tags tag_mode text min_upload_date max_upload_date min_taken_date max_taken_date license sort privacy_filter bbox accuracy safe_search content_type machine_tags machine_tag_mode group_id contacts woe_id place_id media has_geo geo_context lat lon radius radius_units is_commons in_gallery is_getty extras per_page page)
       return params.reject{|k, v| not allowed_fields.include?(k)}
     end

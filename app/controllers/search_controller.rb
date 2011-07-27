@@ -138,9 +138,6 @@ class SearchController < ApplicationController
   # 
   # Possible fields: http://www.flickr.com/services/api/flickr.photos.search.html
   def photos
-    # p={}
-    # p[:lat] = "37"
-    # p[:lon] = "-122"
     return Flikr::Photos.new.search(params)
   end
   
