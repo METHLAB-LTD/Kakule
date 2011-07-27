@@ -129,7 +129,13 @@ class SearchController < ApplicationController
      :term => params[:query],
      :category => params[:category] || ["food", "restaurants"],
      :yws_id => YELP_API_KEY)
-    render :json => client.search(request).to_json
+    return client.search(request)
+  end
+  
+  def render_meals
+    render :json => {
+      :html => render_to_string (:partial => "meals", :locals => {:meals => meals["businesses"]})
+    }.to_json
   end
   
   # POST /search/photos
@@ -138,9 +144,15 @@ class SearchController < ApplicationController
   # 
   # Possible fields: http://www.flickr.com/services/api/flickr.photos.search.html
   def photos
+    return Flikr::Photos.new.search(params)
+  end
+  
+  
+  def render_photos
     render :json => {
-      :photos => Flikr::Photos.new.search(params)
-    }
+      :html => render_to_string (:partial => "photos", :locals => {:photos => photos})
+    }.to_json
+    
   end
   
   

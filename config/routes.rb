@@ -12,6 +12,8 @@ Kakule::Application.routes.draw do
   post 'itineraries/fork'
   match 'itineraries/:id' => 'itineraries#show'
   match 'itineraries/:id/finalize' => 'itineraries#finalize'
+  match 'itineraries/:id/event/create' => 'itineraries#create_event'
+  match 'itineraries/:id/event/update/:event_id' => 'itineraries#update_event'
 
   # Search
   post "search/events"
@@ -24,6 +26,8 @@ Kakule::Application.routes.draw do
   post "search/photos"
   get "search/render_place_by_id"
   get "search/render_attractions"
+  get "search/render_photos"
+  get "search/render_meals"
 
   # Session
   get "user_sessions/new", :as => "new_user_session"
