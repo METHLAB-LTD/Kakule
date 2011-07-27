@@ -116,7 +116,7 @@ class ItinerariesController < ApplicationController
   def render_day
     @date = format_date(params[:date].to_time)
     render :json => {
-        :html => (render_to_string :partial => "home/addpanel")
+        :html => (render_to_string :partial => "home/day")
     }
   end
   
