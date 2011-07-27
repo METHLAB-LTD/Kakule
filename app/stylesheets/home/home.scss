@@ -29,16 +29,16 @@
 #search {
     width: 99.5%;
     margin-bottom: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #C4B6B2;
     border-radius: 1px;
     padding: 2px;
     
-    background: url("../images/icons/location_icon.png") no-repeat;
+    background: white url("../images/icons/location_icon.png") no-repeat;
     background-position: 5px center;
 
-    -webkit-box-shadow: inset 0 1px 1px 1px #eee;
-    -moz-box-shadow: inset 0 1px 1px 1px #eee;
-    box-shadow: inset 0 1px 1px 1px #eee;
+    -webkit-box-shadow: inset 0 1px 1px 1px #dedede;
+    -moz-box-shadow: inset 0 1px 1px 1px #dedede;
+    box-shadow: inset 0 1px 1px 1px #dedede;
 
     input {
         width: 90%;
@@ -65,14 +65,22 @@
 #content {
     height: 100%;
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid #C4B6B2;
+    
+    -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
+    -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
+    box-shadow: 0 2px 5px 1px #CFC0BE;
 }
 
 #right {
     float: right;
     width: 35%;
     padding: 1.5%;
-    border: 1px solid #ccc;
+    border: 1px solid #C4B6B2;
+    background: white;
+    -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
+    -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
+    box-shadow: 0 2px 5px 1px #CFC0BE;
 }
 
 /* New tutorial styles
@@ -145,110 +153,56 @@
     opacity: 1;
 }
 
-#addpanel {
-  width: 320px;
-  background: #f3f3f3;
-  border: 1px solid #ededed;
-  min-height: 240px;
-  padding: 15px;
+.place-header {
+    padding: 1em;
+}
 
-  #title {
-    border-bottom: 1px solid #dedede;
-    margin: 1px 0; 
-  } 
+.header {
+    padding: 0.8em;
+    color: white;
+    text-transform: uppercase;
+}
 
-  p{
-	  margin: 12px 0;
-  }
+.place-content {
+    padding: 1em;
 }
 
 #current_location {
   color: #333; 
 }
 
-.addpane {
-  margin-bottom: 15px;
-
-  .results {
-	  div:hover, div.selected {
-        background: #CCC; 
-      } 
-  }
+.event {
+    padding: 0.5em;
 }
 
-#addpanel {
-  .heading {
-    margin-bottom: 5px;
-    &:hover {} 
-    label{
-        display: inline-block;
-        width: 80%;
+.event-thumbnail {
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    overflow: hidden;
+    float: left;
+}
+
+.event-information {
+    position: relative;
+    margin-left: 50px;
+    padding: 0.5em;
+
+    .name {
+        display: block;
     }
-  }
-  .search {
-    margin-left: 1.6em } 
-}
 
-#locations .search {
-  display: block; }
+    .distance {
+        display: block;
+        font-size: 0.9em;
+        color: #bbb;
+    }
 
-.search {
-  margin-left: 10px; }
-
-.search_field {
-  padding: 5px;
-  width: 100%;
-  margin-left: 5px;
-
-  outline: 0px;
-  border: 1px solid #eee; 
-  border-radius: 2px;
-}
-
-#location_icon {
-    width: 11px;
-    height: 16px;
-    background: url("../images/icons/location_icon.png");
-}
-
-.location-pin, #location-change {
-    color: $red;
-    cursor: pointer;
-}
-
-#pinned_location {
-    display: none;
-    margin-left: 8px;
-}
-
-.near-label {
-    display: none;
-    font-size: 0.9em;
-    margin-left: 2em; 
-}
-
-#search_locations {
-    color: $red;
-}
-
-#attractions_icon {
-    width: 13px;
-    height: 15px;
-    background: url("../images/icons/attraction_icon.png");
-}
-
-#search_attractions {
-    color: $light_teal;
-}
-
-#meals_icon {
-    width: 11px;
-    height: 16px;
-    background: url("../images/icons/food_icon.png");
-}
-
-#search_meals {
-    color: $light_orange;
+    .add-event {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
 }
 
 #savepanel {

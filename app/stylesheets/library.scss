@@ -3,3 +3,17 @@ $light_yellow  : #FEF6B8;
 $light_orange  : #FFCF75;
 $red					 : #FFA8A8;
 $light_teal    : #8BC5C5;
+$teal:      #52A4AD;    
+$orange: #DCB44B;
+
+.inset-teal {
+    background: $light_teal;
+    text-shadow: $teal -1px -1px 0;
+}
+
+.inset-yellow {
+    background: $light_orange;
+    text-shadow: $orange -1px -1px 0;
+}
+
+

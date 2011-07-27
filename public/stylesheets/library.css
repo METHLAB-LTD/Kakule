@@ -1,0 +1,11 @@
+/* line 9, ../../app/stylesheets/library.scss */
+.inset-teal {
+  background: #8bc5c5;
+  text-shadow: #52a4ad -1px -1px 0;
+}
+
+/* line 14, ../../app/stylesheets/library.scss */
+.inset-yellow {
+  background: #ffcf75;
+  text-shadow: #dcb44b -1px -1px 0;
+}

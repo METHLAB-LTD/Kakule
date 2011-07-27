@@ -17,35 +17,36 @@ body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
   font-size: 13px;
+  background: #D3C8C1;
 }
 
-/* line 23, ../../app/stylesheets/global.scss */
+/* line 25, ../../app/stylesheets/global.scss */
 h1, h2 {
   font-weight: normal;
   color: #999;
 }
 
-/* line 27, ../../app/stylesheets/global.scss */
+/* line 29, ../../app/stylesheets/global.scss */
 h1 {
   font-size: 1.5em;
 }
 
-/* line 30, ../../app/stylesheets/global.scss */
+/* line 32, ../../app/stylesheets/global.scss */
 h2 {
   font-size: 1.2em;
 }
 
-/* line 33, ../../app/stylesheets/global.scss */
+/* line 35, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 36, ../../app/stylesheets/global.scss */
+/* line 38, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 39, ../../app/stylesheets/global.scss */
+/* line 41, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.5em;
@@ -54,32 +55,32 @@ img {
   opacity: 0.8;
   cursor: pointer;
 }
-/* line 46, ../../app/stylesheets/global.scss */
+/* line 48, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 48, ../../app/stylesheets/global.scss */
+/* line 50, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 51, ../../app/stylesheets/global.scss */
+/* line 53, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
   top: 4px;
 }
 
-/* line 56, ../../app/stylesheets/global.scss */
+/* line 58, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 58, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 61, ../../app/stylesheets/global.scss */
+/* line 63, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }

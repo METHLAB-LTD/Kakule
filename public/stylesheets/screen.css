@@ -67,6 +67,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 9, ../../app/stylesheets/library.scss */
+.inset-teal {
+  background: #8bc5c5;
+  text-shadow: #52a4ad -1px -1px 0;
+}
+
+/* line 14, ../../app/stylesheets/library.scss */
+.inset-yellow {
+  background: #ffcf75;
+  text-shadow: #dcb44b -1px -1px 0;
+}
+
 /* Fonts
  * @fonts
  */
@@ -86,35 +98,36 @@ body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
   font-size: 13px;
+  background: #D3C8C1;
 }
 
-/* line 23, ../../app/stylesheets/global.scss */
+/* line 25, ../../app/stylesheets/global.scss */
 h1, h2 {
   font-weight: normal;
   color: #999;
 }
 
-/* line 27, ../../app/stylesheets/global.scss */
+/* line 29, ../../app/stylesheets/global.scss */
 h1 {
   font-size: 1.5em;
 }
 
-/* line 30, ../../app/stylesheets/global.scss */
+/* line 32, ../../app/stylesheets/global.scss */
 h2 {
   font-size: 1.2em;
 }
 
-/* line 33, ../../app/stylesheets/global.scss */
+/* line 35, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 36, ../../app/stylesheets/global.scss */
+/* line 38, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 39, ../../app/stylesheets/global.scss */
+/* line 41, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.5em;
@@ -123,32 +136,32 @@ img {
   opacity: 0.8;
   cursor: pointer;
 }
-/* line 46, ../../app/stylesheets/global.scss */
+/* line 48, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 48, ../../app/stylesheets/global.scss */
+/* line 50, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 51, ../../app/stylesheets/global.scss */
+/* line 53, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
   top: 4px;
 }
 
-/* line 56, ../../app/stylesheets/global.scss */
+/* line 58, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 58, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 61, ../../app/stylesheets/global.scss */
+/* line 63, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }
@@ -187,14 +200,14 @@ a:hover {
 #search {
   width: 99.5%;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #C4B6B2;
   border-radius: 1px;
   padding: 2px;
-  background: url("../images/icons/location_icon.png") no-repeat;
+  background: white url("../images/icons/location_icon.png") no-repeat;
   background-position: 5px center;
-  -webkit-box-shadow: inset 0 1px 1px 1px #eee;
-  -moz-box-shadow: inset 0 1px 1px 1px #eee;
-  box-shadow: inset 0 1px 1px 1px #eee;
+  -webkit-box-shadow: inset 0 1px 1px 1px #dedede;
+  -moz-box-shadow: inset 0 1px 1px 1px #dedede;
+  box-shadow: inset 0 1px 1px 1px #dedede;
 }
 /* line 43, ../../app/stylesheets/home/home.scss */
 #search input {
@@ -221,21 +234,28 @@ a:hover {
 #content {
   height: 100%;
   background: white;
-  border: 1px solid #ccc;
+  border: 1px solid #C4B6B2;
+  -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
+  -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
+  box-shadow: 0 2px 5px 1px #CFC0BE;
 }
 
-/* line 71, ../../app/stylesheets/home/home.scss */
+/* line 75, ../../app/stylesheets/home/home.scss */
 #right {
   float: right;
   width: 35%;
   padding: 1.5%;
-  border: 1px solid #ccc;
+  border: 1px solid #C4B6B2;
+  background: white;
+  -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
+  -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
+  box-shadow: 0 2px 5px 1px #CFC0BE;
 }
 
 /* New tutorial styles
  * @new
  */
-/* line 81, ../../app/stylesheets/home/home.scss */
+/* line 89, ../../app/stylesheets/home/home.scss */
 #new-to-kakule {
   display: none;
   margin: auto;
@@ -244,13 +264,13 @@ a:hover {
   padding: 1em;
   margin-bottom: 1em;
 }
-/* line 90, ../../app/stylesheets/home/home.scss */
+/* line 98, ../../app/stylesheets/home/home.scss */
 #new-to-kakule h2 {
   color: #999;
   margin: 0px;
   font-size: 1.5em;
 }
-/* line 96, ../../app/stylesheets/home/home.scss */
+/* line 104, ../../app/stylesheets/home/home.scss */
 #new-to-kakule .button {
   background: #D3E9E9;
   color: #5EBFC5;
@@ -262,168 +282,106 @@ a:hover {
 /* Right panel styles 
  * @right 
  */
-/* line 113, ../../app/stylesheets/home/home.scss */
+/* line 121, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
   margin: 0.5em 0.8em;
   height: 1.2em;
 }
 
-/* line 118, ../../app/stylesheets/home/home.scss */
+/* line 126, ../../app/stylesheets/home/home.scss */
 #itinerary-name {
   display: inline-block;
   min-height: 15px;
 }
-/* line 121, ../../app/stylesheets/home/home.scss */
+/* line 129, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form {
   position: relative;
   left: -5px;
   top: -5px;
 }
-/* line 126, ../../app/stylesheets/home/home.scss */
+/* line 134, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
   font-size: 0.9em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 135, ../../app/stylesheets/home/home.scss */
+/* line 143, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
   background-position: right top;
   padding-right: 20px;
 }
 
-/* line 144, ../../app/stylesheets/home/home.scss */
+/* line 152, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 148, ../../app/stylesheets/home/home.scss */
-#addpanel {
-  width: 320px;
-  background: #f3f3f3;
-  border: 1px solid #ededed;
-  min-height: 240px;
-  padding: 15px;
-}
-/* line 155, ../../app/stylesheets/home/home.scss */
-#addpanel #title {
-  border-bottom: 1px solid #dedede;
-  margin: 1px 0;
-}
-/* line 160, ../../app/stylesheets/home/home.scss */
-#addpanel p {
-  margin: 12px 0;
+/* line 156, ../../app/stylesheets/home/home.scss */
+.place-header {
+  padding: 1em;
 }
 
-/* line 165, ../../app/stylesheets/home/home.scss */
+/* line 160, ../../app/stylesheets/home/home.scss */
+.header {
+  padding: 0.8em;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 166, ../../app/stylesheets/home/home.scss */
+.place-content {
+  padding: 1em;
+}
+
+/* line 170, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 169, ../../app/stylesheets/home/home.scss */
-.addpane {
-  margin-bottom: 15px;
-}
-/* line 173, ../../app/stylesheets/home/home.scss */
-.addpane .results div:hover, .addpane .results div.selected {
-  background: #CCC;
+/* line 174, ../../app/stylesheets/home/home.scss */
+.event {
+  padding: 0.5em;
 }
 
-/* line 180, ../../app/stylesheets/home/home.scss */
-#addpanel .heading {
-  margin-bottom: 5px;
-}
-/* line 183, ../../app/stylesheets/home/home.scss */
-#addpanel .heading label {
-  display: inline-block;
-  width: 80%;
-}
-/* line 188, ../../app/stylesheets/home/home.scss */
-#addpanel .search {
-  margin-left: 1.6em;
+/* line 178, ../../app/stylesheets/home/home.scss */
+.event-thumbnail {
+  height: 50px;
+  width: 50px;
+  background: #ccc;
+  overflow: hidden;
+  float: left;
 }
 
-/* line 192, ../../app/stylesheets/home/home.scss */
-#locations .search {
+/* line 186, ../../app/stylesheets/home/home.scss */
+.event-information {
+  position: relative;
+  margin-left: 50px;
+  padding: 0.5em;
+}
+/* line 191, ../../app/stylesheets/home/home.scss */
+.event-information .name {
   display: block;
 }
-
 /* line 195, ../../app/stylesheets/home/home.scss */
-.search {
-  margin-left: 10px;
+.event-information .distance {
+  display: block;
+  font-size: 0.9em;
+  color: #bbb;
 }
-
-/* line 198, ../../app/stylesheets/home/home.scss */
-.search_field {
-  padding: 5px;
-  width: 100%;
-  margin-left: 5px;
-  outline: 0px;
-  border: 1px solid #eee;
-  border-radius: 2px;
+/* line 201, ../../app/stylesheets/home/home.scss */
+.event-information .add-event {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /* line 208, ../../app/stylesheets/home/home.scss */
-#location_icon {
-  width: 11px;
-  height: 16px;
-  background: url("../images/icons/location_icon.png");
-}
-
-/* line 214, ../../app/stylesheets/home/home.scss */
-.location-pin, #location-change {
-  color: #ffa8a8;
-  cursor: pointer;
-}
-
-/* line 219, ../../app/stylesheets/home/home.scss */
-#pinned_location {
-  display: none;
-  margin-left: 8px;
-}
-
-/* line 224, ../../app/stylesheets/home/home.scss */
-.near-label {
-  display: none;
-  font-size: 0.9em;
-  margin-left: 2em;
-}
-
-/* line 230, ../../app/stylesheets/home/home.scss */
-#search_locations {
-  color: #ffa8a8;
-}
-
-/* line 234, ../../app/stylesheets/home/home.scss */
-#attractions_icon {
-  width: 13px;
-  height: 15px;
-  background: url("../images/icons/attraction_icon.png");
-}
-
-/* line 240, ../../app/stylesheets/home/home.scss */
-#search_attractions {
-  color: #8bc5c5;
-}
-
-/* line 244, ../../app/stylesheets/home/home.scss */
-#meals_icon {
-  width: 11px;
-  height: 16px;
-  background: url("../images/icons/food_icon.png");
-}
-
-/* line 250, ../../app/stylesheets/home/home.scss */
-#search_meals {
-  color: #ffcf75;
-}
-
-/* line 254, ../../app/stylesheets/home/home.scss */
 #savepanel {
   margin-top: 1em;
 }
-/* line 257, ../../app/stylesheets/home/home.scss */
+/* line 211, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   width: 44.5%;
   background: #D3E9E9;
@@ -432,16 +390,16 @@ a:hover {
   text-align: center;
 }
 
-/* line 266, ../../app/stylesheets/home/home.scss */
+/* line 220, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 269, ../../app/stylesheets/home/home.scss */
+/* line 223, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 271, ../../app/stylesheets/home/home.scss */
+/* line 225, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;

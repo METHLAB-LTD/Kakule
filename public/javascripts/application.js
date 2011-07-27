@@ -33,11 +33,6 @@ kakule.init = {
 			kakule.ui.pin.location(this);
 		});
 
-		   $("body").delegate("#location-change", "click", function() {
-		       $("#pinned_location").hide();
-		       $("#locations .search_form").show();
-		       $("#locations .results").show();
-		   });
 	},
 
     attachEditHandlers : function() {
@@ -238,14 +233,11 @@ kakule.ui = {
 	},
 
   repopulateAttractions : function(data) {
-		var resultsDiv = $("#attractions .results")
-    resultsDiv.empty();
-    resultsDiv.append(data.html);
-
-    $.each($(".name", resultsDiv), function(i, div){
-	    kakule.ui.highlight(div, data.query);
-    });
-
+     var resultsDiv = $("#attractions");
+     console.log(data);
+     console.log(resultsDiv);
+     resultsDiv.empty();
+     resultsDiv.append(data.html);
   },
 
   setLocation : function(location) {
@@ -287,7 +279,6 @@ kakule.ui = {
       $(".near-label span").text(location_name);
       $(".near-label").show();
       
-      kakule.search.attractions("");
       // TODO: Search for meals
 		}
 	}
@@ -316,12 +307,17 @@ $(document).ready(function() {
             return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
         },
         }).result(function(event, item) {
+            kakule.current.lat = item.lat;
+            kakule.current.lng = item.lng;
+
             $("#location-search").val(item.name);
             $.get("/search/render_place_by_id", 
                   {id: item.id},
                   function(data) {
                     $("#content").empty();
                     $("#content").append(data.html);
+
+                    kakule.search.attractions("");
                   });
         });
 
