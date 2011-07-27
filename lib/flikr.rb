@@ -28,7 +28,7 @@ module Flikr
     #Example
     #Flikr::Photos.new.search({"lat" => "48.85341", "lon" => "2.3488", "radius" => 20}).each{|a| puts a[:url]}
     def search(params)
-      params = sanitize_params(params)
+      #params = sanitize_params(params)
       params[:radius] ||= 20
       params[:radius_units] ||= "mi"
       params[:safe_search] ||= 1
@@ -36,17 +36,19 @@ module Flikr
       params[:nojsoncallback] = 1
       params[:format] = "json"
       url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=#{FLIKR_API_KEY}&#{params.to_query}"
+      puts url
       begin
-        response = JSON.parse(http_get(url))["photos"]["photo"]
-        response.each do |photo| 
+        response = JSON.parse(http_get(url))
+        response["photos"]["photo"].each do |photo| 
           photo[:url] = construct_url(photo)
         end
       rescue => e
+        RAILS_DEFAULT_LOGGER.error(response)
         RAILS_DEFAULT_LOGGER.error("[ERROR]: [API] Flikr")
         RAILS_DEFAULT_LOGGER.error(e.inspect)
         RAILS_DEFAULT_LOGGER.error(e.backtrace)
       end
-      return response
+      return response["photos"]["photo"]
     end
     
     def sanitize_params(params)

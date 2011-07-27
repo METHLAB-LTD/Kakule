@@ -138,9 +138,18 @@ class SearchController < ApplicationController
   # 
   # Possible fields: http://www.flickr.com/services/api/flickr.photos.search.html
   def photos
+    # p={}
+    # p[:lat] = "37"
+    # p[:lon] = "-122"
+    return Flikr::Photos.new.search(params)
+  end
+  
+  
+  def render_photos
     render :json => {
-      :photos => Flikr::Photos.new.search(params)
-    }
+      :html => render_to_string (:partial => "photos", :locals => {:photos => photos})
+    }.to_json
+    
   end
   
   

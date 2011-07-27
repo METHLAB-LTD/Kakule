@@ -85,6 +85,23 @@ class ItinerariesController < ApplicationController
 
     render :text => itinerary.name
   end
+  
+  
+  # POST /itineraries/1/event/create
+  # Required: type (event, attraction, transportation)
+  # def create_event
+  #   case params[:type]
+  #   when 
+  #   
+  # end
+  
+  # POST /itineraries/1/event/update/:event_id
+  # Required: type (event, attraction, transportation). id
+  def update_event
+    
+    
+  end
+  
 
   # DELETE /itineraries/1
   def destroy
