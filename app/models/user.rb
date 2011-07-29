@@ -9,6 +9,12 @@ class User < ActiveRecord::Base
   has_many :itineraries, :foreign_key => 'owner_id'
   has_many :calendar_events, :through => :itineraries
   has_many :likes
+  
+  has_many :friends, :through => :friendships
+  has_many :friendships, :dependent => :destroy, :conditions => {:confirmed => true}
+  
+  has_many :pending_friends, :through => :pending_friendships, :source => :friend
+  has_many :pending_friendships, :dependent => :destroy, :conditions => {:confirmed => false}, :class_name => "Friendship"
    
   def can_bypass_validation?
     is_guest? || registered_using_facebook?
@@ -42,7 +48,7 @@ class User < ActiveRecord::Base
   end
   
   def name
-    is_guest? ? "Guest" : "#{first_name} #{last_name}"
+    is_guest? ? "Guest-#{id}" : "#{first_name} #{last_name}"
   end
   
 end

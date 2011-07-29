@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  #TODO ALPHA: before_filter :authorized?
+  
   # GET /users
   # GET /users.xml
   def index
@@ -11,9 +13,9 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1
-  # GET /users/1.xml
+  # GET /dashboard
   def show
-    @user = User.find(params[:id])
+    @user = current_user# || User.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

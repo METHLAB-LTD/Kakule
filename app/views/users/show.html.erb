@@ -6,21 +6,6 @@
 </p>
 
 <p>
-  <b>Crypted password:</b>
-  <%= @user.crypted_password %>
-</p>
-
-<p>
-  <b>Password salt:</b>
-  <%= @user.password_salt %>
-</p>
-
-<p>
-  <b>Persistence token:</b>
-  <%= @user.persistence_token %>
-</p>
-
-<p>
   <b>First name:</b>
   <%= @user.first_name %>
 </p>
@@ -36,7 +21,7 @@
 </p>
 
 <p>
-  <b>Facebook:</b>
+  <b>Facebook ID:</b>
   <%= @user.facebook_id %>
 </p>
 
@@ -46,5 +31,12 @@
 </p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p>
+  <b>Friends:</b>
+  <%= @user.friends.map{|f| f.name}.join(", ") %>
+</p>
+
+<p>
+  <b>Friend Requests:</b>
+  <%= @user.pending_friends.map{|f| f.name}.join(", ") %>
+</p>
