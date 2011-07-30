@@ -22,7 +22,6 @@ gem 'capistrano', "~> 2.6.0"
 gem "eventfulapi", "~> 2.2.1"
 gem "nokogiri", "~> 1.5.0"
 gem "curb", "~> 0.7.15"
-gem "hirb", :require => nil
 gem 'event-calendar', '2.3.3', :path => ('vendor/gems/event-calendar-2.3.3'), :require => 'event_calendar'
 gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 gem "simplegeo", "~> 0.5.3"
@@ -40,14 +39,19 @@ gem "fssm", "~> 0.2.7"
 gem "compass", ">= 0.11.5"
 gem "rb-fsevent", ">= 0.4.1"
 
+# Testing
+gem "autotest", ">= 4.3.2"
+gem "autotest-rails-pure", ">= 4.1.0"
 
-# gem 'bj'	
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
+gem "autotest-fsevent", ">= 0.2.2"
+gem "autotest-growl", ">= 0.2.4"
 
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development do
+	gem "hirb"
+	gem "rspec-rails", ">= 2.0.1"
+end
+
+group :test do
+	gem "rspec", ">= 2.0.1"
+	gem "webrat", ">= 0.7.1"
+end
