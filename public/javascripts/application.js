@@ -286,7 +286,7 @@ kakule.ui = {
 };
 
 $(document).ready(function() {
-    kakule.init.getLocation();
+    //kakule.init.getLocation();
 	kakule.init.attachEditHandlers();
 	kakule.init.session()
 

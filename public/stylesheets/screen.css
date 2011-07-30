@@ -67,16 +67,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 9, ../../app/stylesheets/library.scss */
+/* line 15, ../../app/stylesheets/library.scss */
 .inset-teal {
   background: #8bc5c5;
   text-shadow: #52a4ad -1px -1px 0;
+  color: white;
 }
 
-/* line 14, ../../app/stylesheets/library.scss */
+/* line 21, ../../app/stylesheets/library.scss */
 .inset-yellow {
   background: #ffcf75;
   text-shadow: #dcb44b -1px -1px 0;
+  color: white;
+}
+
+/* line 27, ../../app/stylesheets/library.scss */
+.inset-pink {
+  background: #ff9f9a;
+  text-shadow: #df8986 -1px -1px 0;
+  color: white;
+}
+
+/* line 33, ../../app/stylesheets/library.scss */
+.inset-brown {
+  background: #aaa19e;
+  text-shadow: #8f8785 -1px -1px 0;
+  color: white;
+  border: 1px solid #a59c9a;
 }
 
 /* Fonts
@@ -130,40 +147,53 @@ img {
 /* line 41, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.7em;
   margin-right: 0.5em;
-  font-family: AaarghNormal, Helvetica, Arial, serif;
   opacity: 0.8;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px 1px #dedede;
+  -moz-box-shadow: 0 1px 1px 1px #dedede;
+  box-shadow: 0 1px 1px 1px #dedede;
 }
-/* line 48, ../../app/stylesheets/global.scss */
+/* line 56, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 50, ../../app/stylesheets/global.scss */
+/* line 58, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 53, ../../app/stylesheets/global.scss */
+/* line 61, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
-  top: 4px;
+  top: 2px;
+  margin-right: 5px;
 }
 
-/* line 58, ../../app/stylesheets/global.scss */
+/* line 68, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 60, ../../app/stylesheets/global.scss */
+/* line 70, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 63, ../../app/stylesheets/global.scss */
+/* line 73, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
+}
+
+/* line 77, ../../app/stylesheets/global.scss */
+.loader {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
 }
 
 /* Home styles 
@@ -186,8 +216,8 @@ a:hover {
 /* line 18, ../../app/stylesheets/home/home.scss */
 #logo {
   float: left;
-  width: 192px;
-  height: 29px;
+  width: 194px;
+  height: 78px;
 }
 
 /* line 24, ../../app/stylesheets/home/home.scss */
@@ -218,19 +248,23 @@ a:hover {
   font-size: 1.3em;
 }
 
-/* line 54, ../../app/stylesheets/home/home.scss */
+/* line 53, ../../app/stylesheets/home/home.scss */
+#calendar {
+  margin-bottom: 1em;
+}
+/* line 55, ../../app/stylesheets/home/home.scss */
 #calendar table {
   border-collapse: separate;
   border-spacing: 5px;
 }
 
-/* line 60, ../../app/stylesheets/home/home.scss */
+/* line 61, ../../app/stylesheets/home/home.scss */
 #left {
   float: left;
   width: 60%;
 }
 
-/* line 65, ../../app/stylesheets/home/home.scss */
+/* line 66, ../../app/stylesheets/home/home.scss */
 #content {
   height: 100%;
   background: white;
@@ -240,11 +274,10 @@ a:hover {
   box-shadow: 0 2px 5px 1px #CFC0BE;
 }
 
-/* line 75, ../../app/stylesheets/home/home.scss */
+/* line 76, ../../app/stylesheets/home/home.scss */
 #right {
   float: right;
   width: 35%;
-  padding: 1.5%;
   border: 1px solid #C4B6B2;
   background: white;
   -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
@@ -255,97 +288,114 @@ a:hover {
 /* New tutorial styles
  * @new
  */
-/* line 89, ../../app/stylesheets/home/home.scss */
-#new-to-kakule {
-  display: none;
+/* line 90, ../../app/stylesheets/home/home.scss */
+#landing {
+  min-width: 518px;
   margin: auto;
-  height: 100px;
-  background: #EBFCF9;
   padding: 1em;
-  margin-bottom: 1em;
 }
-/* line 98, ../../app/stylesheets/home/home.scss */
-#new-to-kakule h2 {
-  color: #999;
-  margin: 0px;
-  font-size: 1.5em;
-}
-/* line 104, ../../app/stylesheets/home/home.scss */
-#new-to-kakule .button {
-  background: #D3E9E9;
-  color: #5EBFC5;
-  text-transform: uppercase;
+
+/* line 96, ../../app/stylesheets/home/home.scss */
+.landing_icon {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  height: 90px;
   text-align: center;
-  float: right;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 109, ../../app/stylesheets/home/home.scss */
+.landing_icon:hover {
+  opacity: 1;
 }
 
 /* Right panel styles 
  * @right 
  */
+/* line 117, ../../app/stylesheets/home/home.scss */
+#right-calendar {
+  padding: 1em;
+}
+
 /* line 121, ../../app/stylesheets/home/home.scss */
+#itinerary-day {
+  padding: 1em;
+}
+
+/* line 125, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
   margin: 0.5em 0.8em;
   height: 1.2em;
 }
 
-/* line 126, ../../app/stylesheets/home/home.scss */
+/* line 130, ../../app/stylesheets/home/home.scss */
 #itinerary-name {
   display: inline-block;
   min-height: 15px;
 }
-/* line 129, ../../app/stylesheets/home/home.scss */
+/* line 133, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form {
   position: relative;
   left: -5px;
   top: -5px;
 }
-/* line 134, ../../app/stylesheets/home/home.scss */
+/* line 138, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
   font-size: 0.9em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 143, ../../app/stylesheets/home/home.scss */
+/* line 147, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
   background-position: right top;
   padding-right: 20px;
 }
 
-/* line 152, ../../app/stylesheets/home/home.scss */
+/* line 156, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 156, ../../app/stylesheets/home/home.scss */
+/* line 160, ../../app/stylesheets/home/home.scss */
 .place-header {
   padding: 1em;
 }
 
-/* line 160, ../../app/stylesheets/home/home.scss */
+/* line 164, ../../app/stylesheets/home/home.scss */
+.place-description {
+  margin-top: 1em;
+}
+
+/* line 168, ../../app/stylesheets/home/home.scss */
 .header {
   padding: 0.8em;
-  color: white;
+  padding-left: 1em;
   text-transform: uppercase;
 }
 
-/* line 166, ../../app/stylesheets/home/home.scss */
+/* line 174, ../../app/stylesheets/home/home.scss */
 .place-content {
   padding: 1em;
 }
 
-/* line 170, ../../app/stylesheets/home/home.scss */
+/* line 178, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 174, ../../app/stylesheets/home/home.scss */
+/* line 182, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 178, ../../app/stylesheets/home/home.scss */
+/* line 186, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -354,52 +404,49 @@ a:hover {
   float: left;
 }
 
-/* line 186, ../../app/stylesheets/home/home.scss */
+/* line 194, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 191, ../../app/stylesheets/home/home.scss */
+/* line 199, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 195, ../../app/stylesheets/home/home.scss */
+/* line 203, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 201, ../../app/stylesheets/home/home.scss */
+/* line 209, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-/* line 208, ../../app/stylesheets/home/home.scss */
+/* line 216, ../../app/stylesheets/home/home.scss */
 #savepanel {
-  margin-top: 1em;
+  padding: 1em;
 }
-/* line 211, ../../app/stylesheets/home/home.scss */
+/* line 219, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
-  width: 44.5%;
-  background: #D3E9E9;
-  color: #5EBFC5;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 220, ../../app/stylesheets/home/home.scss */
+/* line 225, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 223, ../../app/stylesheets/home/home.scss */
+/* line 228, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 225, ../../app/stylesheets/home/home.scss */
+/* line 230, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -527,12 +574,12 @@ a:hover {
 /* Day header */
 /* line 108, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-day-header {
-  color: #ccc;
+  color: #D3C8C1;
   text-align: center;
   font-size: 1.8em;
   overflow: hidden;
   cursor: pointer;
-  background: #eee;
+  background: #F2F0EE;
 }
 /* line 115, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-day-header:hover {
@@ -563,18 +610,18 @@ a.ec-day-link {
 
 /* line 138, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-other-month-header {
-  background: #e2e2e2;
+  background: #E9E4E4;
 }
 
 /* Event cell and container */
-/* line 145, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 146, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-cell {
   cursor: pointer;
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
 }
-/* line 150, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 151, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-cell a {
   text-decoration: none;
   display: block;
@@ -582,12 +629,12 @@ a.ec-day-link {
   height: 100%;
 }
 
-/* line 156, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 157, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-no-event-cell {
   cursor: default;
 }
 
-/* line 159, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 160, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event {
   color: white;
   padding-right: 1px;
@@ -598,30 +645,30 @@ a.ec-day-link {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 168, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 169, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event :hover {
   /* doesn't look as good as js highlighting */
   /* background-color: #2eac6a; */
 }
 
-/* line 172, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 173, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-bg a {
   color: white;
 }
 
 /* used to distinguish non-all_day events */
-/* line 177, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 178, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-no-bg {
   position: relative;
   /* padding-left: 5px; */
 }
-/* line 180, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 181, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-no-bg a {
   /* isn't implemented in all browsers */
   color: inherit;
 }
 
-/* line 184, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 185, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-time {
   font-size: 85%;
   font-weight: bold;
@@ -630,7 +677,7 @@ a.ec-day-link {
 
 /* Left and right arrows */
 /* Doesn't work in IE6, use bg images instead */
-/* line 192, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 193, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-left-arrow, .ec-right-arrow {
   position: relative;
   top: 3px;
@@ -641,13 +688,13 @@ a.ec-day-link {
   margin-bottom: -8px;
 }
 
-/* line 201, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 202, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-left-arrow {
   margin-left: -7px;
   margin-right: auto;
 }
 
-/* line 205, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 206, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-right-arrow {
   margin-left: auto;
   margin-right: 3px;
@@ -655,7 +702,7 @@ a.ec-day-link {
 
 /* remove this to not have a bullet */
 /* don't look as good in ie */
-/* line 212, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 213, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-bullet {
   position: absolute;
   top: 7px;

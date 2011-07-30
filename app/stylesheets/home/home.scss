@@ -17,8 +17,8 @@
 
 #logo {
   float: left;
-  width: 192px;
-  height: 29px; 
+  width: 194px;
+  height: 78px; 
 }
 
 #userbar {
@@ -51,6 +51,7 @@
 }
 
 #calendar {
+    margin-bottom: 1em;
 	table {
 	  border-collapse: separate;
 	  border-spacing: 5px;
@@ -75,7 +76,6 @@
 #right {
     float: right;
     width: 35%;
-    padding: 1.5%;
     border: 1px solid #C4B6B2;
     background: white;
     -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
@@ -86,37 +86,41 @@
 /* New tutorial styles
  * @new
  */
-#new-to-kakule {
-    display: none;
-    margin: auto;
-    height: 100px;
-    background: #EBFCF9;
 
+#landing {
+    min-width: 518px;
+    margin: auto;    
     padding: 1em;
-    margin-bottom: 1em;
-
-    h2 {
-        color: #999;
-        margin: 0px;
-        font-size: 1.5em;
-    }
-
-    .button {
-        background: #D3E9E9;
-        color: #5EBFC5;
-        text-transform: uppercase;
-        text-align: center;
-
-        float: right;
-    }
 }
 
-#information {
+.landing_icon {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    height: 90px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.landing_icon:hover {
+    opacity: 1;
 }
 
 /* Right panel styles 
  * @right 
  */
+
+#right-calendar {
+    padding: 1em;
+}
+
+#itinerary-day {
+    padding: 1em;
+}
 
 #itinerary-title {
   margin: 0.5em 0.8em; 
@@ -157,9 +161,13 @@
     padding: 1em;
 }
 
+.place-description {
+    margin-top: 1em;
+}
+
 .header {
     padding: 0.8em;
-    color: white;
+    padding-left: 1em;
     text-transform: uppercase;
 }
 
@@ -206,12 +214,9 @@
 }
 
 #savepanel {
-  margin-top: 1em;
+  padding: 1em;
 
   .button {
-    width: 44.5%;
-    background: #D3E9E9;
-    color: #5EBFC5;
     text-transform: uppercase;
     text-align: center; 
   }

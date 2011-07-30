@@ -5,7 +5,7 @@ Syntax error: Undefined variable: "$light_orange".
 111:   font-size: 1.8em;
 112:   overflow: hidden;
 113:   cursor: pointer;
-114:   background: #eee;
+114:   background: #F2F0EE;
 115:   &:hover {
 116:     color: $light_orange;
 117:     background: $light_yellow; } 
@@ -124,4 +124,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light_orange\".\A         on line 116 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss\A \A 111:   font-size: 1.8em;\A 112:   overflow: hidden;\A 113:   cursor: pointer;\A 114:   background: #eee;\A 115:   &:hover {\A 116:     color: $light_orange;\A 117:     background: $light_yellow; } \A 118:   &:active {\A 119: 	  color: darken($light_red, 10%);\A 120: 	  background-color: lighten($light_red, 2%);\A 121:   }"; }
+  content: "Syntax error: Undefined variable: \"$light_orange\".\A         on line 116 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss\A \A 111:   font-size: 1.8em;\A 112:   overflow: hidden;\A 113:   cursor: pointer;\A 114:   background: #F2F0EE;\A 115:   &:hover {\A 116:     color: $light_orange;\A 117:     background: $light_yellow; } \A 118:   &:active {\A 119: 	  color: darken($light_red, 10%);\A 120: 	  background-color: lighten($light_red, 2%);\A 121:   }"; }
