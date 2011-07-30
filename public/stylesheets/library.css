@@ -1,11 +1,28 @@
-/* line 9, ../../app/stylesheets/library.scss */
+/* line 15, ../../app/stylesheets/library.scss */
 .inset-teal {
   background: #8bc5c5;
   text-shadow: #52a4ad -1px -1px 0;
+  color: white;
 }
 
-/* line 14, ../../app/stylesheets/library.scss */
+/* line 21, ../../app/stylesheets/library.scss */
 .inset-yellow {
   background: #ffcf75;
   text-shadow: #dcb44b -1px -1px 0;
+  color: white;
+}
+
+/* line 27, ../../app/stylesheets/library.scss */
+.inset-pink {
+  background: #ff9f9a;
+  text-shadow: #df8986 -1px -1px 0;
+  color: white;
+}
+
+/* line 33, ../../app/stylesheets/library.scss */
+.inset-brown {
+  background: #aaa19e;
+  text-shadow: #8f8785 -1px -1px 0;
+  color: white;
+  border: 1px solid #a59c9a;
 }

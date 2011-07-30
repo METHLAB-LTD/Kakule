@@ -106,12 +106,12 @@
 /* Day header */
 
 .ec-day-header {
-  color: #ccc;
+  color: #D3C8C1;
   text-align: center;
   font-size: 1.8em;
   overflow: hidden;
   cursor: pointer;
-  background: #eee;
+  background: #F2F0EE;
   &:hover {
     color: $light_orange;
     background: $light_yellow; } 
@@ -136,7 +136,8 @@ a.ec-day-link {
 .ec-weekend-day-header {}
 
 .ec-other-month-header {
-  background: #e2e2e2; }
+  background: #E9E4E4; 
+}
 
 .ec-other-month-bg {}
 

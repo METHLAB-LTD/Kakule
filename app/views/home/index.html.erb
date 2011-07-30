@@ -8,15 +8,6 @@
     </div>
     <div class="clear"></div>
 </div>
-
-<div id="new-to-kakule">
-    <h2>New to Kakule?</h2>
-    <p>Don't worry, we've got your back - we're dedicated to making your travel planning experience ridiculously easy. Just select days, add any events and attractions you want to hit up, and we'll take care of all the grunt work for you.</p>
-    <div id="information"></div>
-    <span class="button" id="tutorial-done">Yeah, yeah</span>
-    <div class="clear"></div>
-</div>
-
 <div id="left">
     <div id="search">
         <form class="search_form">
@@ -24,16 +15,35 @@
         </form>
     </div>
     <div id="content">
+        <div id="landing">
+            <h1>New to Kakule?</h1>
+            <p style="margin-top: 1em;">Don't worry, we've got your back - we're dedicated to making your travel planning experience ridiculously easy. Just select days, add any events and attractions you want to hit up, and we'll take care of all the grunt work for you.</p>
+
+            <h2 style="margin-top: 1.5em;">Check out what we've got in store for you:</h2>
+            <div id="landing-options">
+                <div id="landing-places" class="landing_icon inset-pink">
+                    <%= image_tag "icons/places_large_white_icon.png" %>
+                </div>
+                <div id="landing-attractions" class="landing_icon inset-teal">
+                    <%= image_tag "icons/attractions_large_white_icon.png" %>
+                </div>
+                <div id="landing-meals" class="landing_icon inset-yellow">
+                    <%= image_tag "icons/meals_large_white_icon.png" %>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="right">
-    <h1 id="itinerary-title"> 
-        <span id="itinerary-name" class="itinerary-name-icon"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
-    </h1>
-    <div id="calendar">
-        <%= render "calendar" %>
+    <div id="right-calendar">
+        <h1 id="itinerary-title"> 
+            <span id="itinerary-name" class="itinerary-name-icon"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
+        </h1>
+        <div id="calendar">
+            <%= render "calendar" %>
+        </div>
     </div>
-    <div id="itinerary-day">
+    <div id="itinerary-day-wrapper">
         <%= render "day" %>
     </div>
     <div id="savepanel">

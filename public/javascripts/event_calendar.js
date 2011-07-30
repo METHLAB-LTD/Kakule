@@ -30,8 +30,8 @@ function choose_day(e) {
     $.get("/itineraries/render_day",
           {date: date},
           function(data) {
-            $("#itinerary-day").empty();
-            $("#itinerary-day").append(data.html);
+            $("#itinerary-day-wrapper").empty();
+            $("#itinerary-day-wrapper").append(data.html);
             kakule.init.getLocation();
           }
     );

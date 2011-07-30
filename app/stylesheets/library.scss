@@ -2,18 +2,38 @@ $light_red  	 : #FFD9D7;
 $light_yellow  : #FEF6B8;
 $light_orange  : #FFCF75;
 $red					 : #FFA8A8;
+$light_pink : #FF9F9A;
+$pink : #DF8986;
 $light_teal    : #8BC5C5;
 $teal:      #52A4AD;    
 $orange: #DCB44B;
 
+$light_brown: #AAA19E;
+$med_brown: #A59C9A;
+$brown: #8F8785;
+
 .inset-teal {
     background: $light_teal;
     text-shadow: $teal -1px -1px 0;
+    color: white;
 }
 
 .inset-yellow {
     background: $light_orange;
     text-shadow: $orange -1px -1px 0;
+    color: white;
 }
 
+.inset-pink {
+    background: $light_pink; 
+    text-shadow: $pink -1px -1px 0;
+    color: white;
+}
+
+.inset-brown {
+    background: $light_brown; 
+    text-shadow: $brown -1px -1px 0;
+    color: white;
+    border: 1px solid $med_brown;
+}
 
