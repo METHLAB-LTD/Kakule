@@ -290,16 +290,16 @@ a:hover {
  */
 /* line 90, ../../app/stylesheets/home/home.scss */
 #landing {
-  min-width: 518px;
   margin: auto;
-  padding: 1em;
+  padding: 2em;
 }
 
-/* line 96, ../../app/stylesheets/home/home.scss */
+/* line 95, ../../app/stylesheets/home/home.scss */
 .landing_icon {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   padding: 10px;
+  margin-right: 20px;
   height: 90px;
   text-align: center;
   -webkit-border-radius: 10px;
@@ -455,6 +455,11 @@ a:hover {
   z-index: 9999;
   border: 1px solid #CCC;
   padding: 5px;
+}
+
+/* line 241, ../../app/stylesheets/home/home.scss */
+#footer {
+  padding: 1em;
 }
 
 /* 

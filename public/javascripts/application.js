@@ -29,8 +29,7 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-		$("body").delegate(".location-pin", "click", function() {
-			kakule.ui.pin.location(this);
+		$("body").delegate("event-add", "click", function() {
 		});
 
 	},
@@ -41,15 +40,15 @@ kakule.init = {
         });
         $("#itinerary-name").editInPlace({
             callback: function(unused, enteredText) { 
+                console.log("callback");
                 $.post('/itineraries/edit_name', 
-                       { update_value: enteredText },
-                       function() {
-                        $("#itinerary-name").text(enteredText);
-                       }
+                       { update_value: enteredText }
                       );
+
                 $("#itinerary-name").addClass("itinerary-name-icon");
-                return true;
+                return enteredText;
             },
+            save_if_nothing_changed: true,
 		    show_buttons: false 
 	    });
     },

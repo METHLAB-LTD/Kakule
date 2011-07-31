@@ -101,6 +101,14 @@ class Itinerary < ActiveRecord::Base
   def full_name
     "#{self.owner.name} :: #{self.name}"
   end
+
+  def add_event(id)
+    sel_event = SelectedEvent.new
+    sel_event.event_id = id
+    sel_event.save
+
+    self.selected_events << sel_event
+  end
   
   def self.permissions(str)
     @@permissions[str]
@@ -111,5 +119,5 @@ class Itinerary < ActiveRecord::Base
     itinerary.owner = user
     itinerary.save
   end
-  
+
 end

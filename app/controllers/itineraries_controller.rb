@@ -101,6 +101,10 @@ class ItinerariesController < ApplicationController
     
     
   end
+
+  def add_event
+    
+  end
   
 
   # DELETE /itineraries/1
@@ -115,8 +119,9 @@ class ItinerariesController < ApplicationController
 
   def render_day
     @date = format_date(params[:date].to_time)
+    @events = current_itinerary.events
     render :json => {
-        :html => (render_to_string :partial => "home/day")
+        :html => (render_to_string :partial => "home/day", :locals => {:events => @events})
     }
   end
   

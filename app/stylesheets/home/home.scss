@@ -88,15 +88,15 @@
  */
 
 #landing {
-    min-width: 518px;
     margin: auto;    
-    padding: 1em;
+    padding: 2em;
 }
 
 .landing_icon {
     display: inline-block;
-    width: 150px;
+    width: 120px;
     padding: 10px;
+    margin-right: 20px;
     height: 90px;
     text-align: center;
     -webkit-border-radius: 10px;
@@ -236,4 +236,8 @@
 		border: 1px solid #CCC;
 		padding: 5px;
 	}
+}
+
+#footer {
+    padding: 1em;
 }
