@@ -111,40 +111,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * @global
  */
 /* line 18, ../../app/stylesheets/global.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 22, ../../app/stylesheets/global.scss */
 body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
   font-size: 13px;
-  background: #D3C8C1;
+  background: #d3c8c1 url("../images/bg-main.jpg") repeat;
 }
 
-/* line 25, ../../app/stylesheets/global.scss */
+/* line 29, ../../app/stylesheets/global.scss */
 h1, h2 {
   font-weight: normal;
   color: #999;
 }
 
-/* line 29, ../../app/stylesheets/global.scss */
+/* line 33, ../../app/stylesheets/global.scss */
 h1 {
   font-size: 1.5em;
 }
 
-/* line 32, ../../app/stylesheets/global.scss */
+/* line 36, ../../app/stylesheets/global.scss */
 h2 {
   font-size: 1.2em;
 }
 
-/* line 35, ../../app/stylesheets/global.scss */
+/* line 39, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 38, ../../app/stylesheets/global.scss */
+/* line 42, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 41, ../../app/stylesheets/global.scss */
+/* line 45, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.7em;
@@ -158,16 +163,16 @@ img {
   -moz-box-shadow: 0 1px 1px 1px #dedede;
   box-shadow: 0 1px 1px 1px #dedede;
 }
-/* line 56, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 58, ../../app/stylesheets/global.scss */
+/* line 62, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 61, ../../app/stylesheets/global.scss */
+/* line 65, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
@@ -175,21 +180,21 @@ img {
   margin-right: 5px;
 }
 
-/* line 68, ../../app/stylesheets/global.scss */
+/* line 72, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 70, ../../app/stylesheets/global.scss */
+/* line 74, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 73, ../../app/stylesheets/global.scss */
+/* line 77, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }
 
-/* line 77, ../../app/stylesheets/global.scss */
+/* line 81, ../../app/stylesheets/global.scss */
 .loader {
   position: relative;
   top: 3px;
@@ -205,28 +210,34 @@ a:hover {
   top: 50px;
   width: 80%;
   min-width: 800px;
+  height: 100%;
   margin: auto;
 }
 
-/* line 14, ../../app/stylesheets/home/home.scss */
+/* line 15, ../../app/stylesheets/home/home.scss */
+#fb-root {
+  height: 100%;
+}
+
+/* line 19, ../../app/stylesheets/home/home.scss */
 #header {
   margin-bottom: 2em;
 }
 
-/* line 18, ../../app/stylesheets/home/home.scss */
+/* line 23, ../../app/stylesheets/home/home.scss */
 #logo {
   float: left;
   width: 194px;
   height: 78px;
 }
 
-/* line 24, ../../app/stylesheets/home/home.scss */
+/* line 29, ../../app/stylesheets/home/home.scss */
 #userbar {
   float: right;
   margin-top: 1em;
 }
 
-/* line 29, ../../app/stylesheets/home/home.scss */
+/* line 34, ../../app/stylesheets/home/home.scss */
 #search {
   width: 99.5%;
   margin-bottom: 1em;
@@ -239,7 +250,7 @@ a:hover {
   -moz-box-shadow: inset 0 1px 1px 1px #dedede;
   box-shadow: inset 0 1px 1px 1px #dedede;
 }
-/* line 43, ../../app/stylesheets/home/home.scss */
+/* line 48, ../../app/stylesheets/home/home.scss */
 #search input {
   width: 90%;
   border: 0px;
@@ -248,33 +259,37 @@ a:hover {
   font-size: 1.3em;
 }
 
-/* line 53, ../../app/stylesheets/home/home.scss */
+/* line 58, ../../app/stylesheets/home/home.scss */
 #calendar {
   margin-bottom: 1em;
 }
-/* line 55, ../../app/stylesheets/home/home.scss */
+/* line 60, ../../app/stylesheets/home/home.scss */
 #calendar table {
   border-collapse: separate;
   border-spacing: 5px;
 }
 
-/* line 61, ../../app/stylesheets/home/home.scss */
+/* line 66, ../../app/stylesheets/home/home.scss */
 #left {
   float: left;
   width: 60%;
+  background: rgba(174, 164, 158, 0.3);
+  padding: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
-/* line 66, ../../app/stylesheets/home/home.scss */
+/* line 75, ../../app/stylesheets/home/home.scss */
 #content {
   height: 100%;
   background: white;
   border: 1px solid #C4B6B2;
-  -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
-  -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
-  box-shadow: 0 2px 5px 1px #CFC0BE;
+  -webkit-box-shadow: 0 2px 10px 1px #BFAFA4;
+  -moz-box-shadow: 0 2px 10px 1px #BFAFA4;
+  box-shadow: 0 2px 10px 1px #BFAFA4;
 }
 
-/* line 76, ../../app/stylesheets/home/home.scss */
+/* line 85, ../../app/stylesheets/home/home.scss */
 #right {
   float: right;
   width: 35%;
@@ -288,13 +303,13 @@ a:hover {
 /* New tutorial styles
  * @new
  */
-/* line 90, ../../app/stylesheets/home/home.scss */
+/* line 99, ../../app/stylesheets/home/home.scss */
 #landing {
   margin: auto;
   padding: 2em;
 }
 
-/* line 95, ../../app/stylesheets/home/home.scss */
+/* line 104, ../../app/stylesheets/home/home.scss */
 .landing_icon {
   display: inline-block;
   width: 120px;
@@ -309,7 +324,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 109, ../../app/stylesheets/home/home.scss */
+/* line 118, ../../app/stylesheets/home/home.scss */
 .landing_icon:hover {
   opacity: 1;
 }
@@ -317,85 +332,85 @@ a:hover {
 /* Right panel styles 
  * @right 
  */
-/* line 117, ../../app/stylesheets/home/home.scss */
+/* line 126, ../../app/stylesheets/home/home.scss */
 #right-calendar {
   padding: 1em;
 }
 
-/* line 121, ../../app/stylesheets/home/home.scss */
+/* line 130, ../../app/stylesheets/home/home.scss */
 #itinerary-day {
   padding: 1em;
 }
 
-/* line 125, ../../app/stylesheets/home/home.scss */
+/* line 134, ../../app/stylesheets/home/home.scss */
 #itinerary-title {
   margin: 0.5em 0.8em;
   height: 1.2em;
 }
 
-/* line 130, ../../app/stylesheets/home/home.scss */
+/* line 139, ../../app/stylesheets/home/home.scss */
 #itinerary-name {
   display: inline-block;
   min-height: 15px;
 }
-/* line 133, ../../app/stylesheets/home/home.scss */
+/* line 142, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form {
   position: relative;
   left: -5px;
   top: -5px;
 }
-/* line 138, ../../app/stylesheets/home/home.scss */
+/* line 147, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
   font-size: 0.9em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 147, ../../app/stylesheets/home/home.scss */
+/* line 156, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
   background-position: right top;
   padding-right: 20px;
 }
 
-/* line 156, ../../app/stylesheets/home/home.scss */
+/* line 165, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 160, ../../app/stylesheets/home/home.scss */
+/* line 169, ../../app/stylesheets/home/home.scss */
 .place-header {
   padding: 1em;
 }
 
-/* line 164, ../../app/stylesheets/home/home.scss */
+/* line 173, ../../app/stylesheets/home/home.scss */
 .place-description {
   margin-top: 1em;
 }
 
-/* line 168, ../../app/stylesheets/home/home.scss */
+/* line 177, ../../app/stylesheets/home/home.scss */
 .header {
   padding: 0.8em;
   padding-left: 1em;
   text-transform: uppercase;
 }
 
-/* line 174, ../../app/stylesheets/home/home.scss */
+/* line 183, ../../app/stylesheets/home/home.scss */
 .place-content {
   padding: 1em;
 }
 
-/* line 178, ../../app/stylesheets/home/home.scss */
+/* line 187, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 182, ../../app/stylesheets/home/home.scss */
+/* line 191, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 186, ../../app/stylesheets/home/home.scss */
+/* line 195, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -404,49 +419,49 @@ a:hover {
   float: left;
 }
 
-/* line 194, ../../app/stylesheets/home/home.scss */
+/* line 203, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 199, ../../app/stylesheets/home/home.scss */
+/* line 208, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 203, ../../app/stylesheets/home/home.scss */
+/* line 212, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 209, ../../app/stylesheets/home/home.scss */
+/* line 218, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-/* line 216, ../../app/stylesheets/home/home.scss */
+/* line 225, ../../app/stylesheets/home/home.scss */
 #savepanel {
   padding: 1em;
 }
-/* line 219, ../../app/stylesheets/home/home.scss */
+/* line 228, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 225, ../../app/stylesheets/home/home.scss */
+/* line 234, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 228, ../../app/stylesheets/home/home.scss */
+/* line 237, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 230, ../../app/stylesheets/home/home.scss */
+/* line 239, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -457,7 +472,7 @@ a:hover {
   padding: 5px;
 }
 
-/* line 241, ../../app/stylesheets/home/home.scss */
+/* line 250, ../../app/stylesheets/home/home.scss */
 #footer {
   padding: 1em;
 }

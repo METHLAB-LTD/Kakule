@@ -13,40 +13,45 @@
  * @global
  */
 /* line 18, ../../app/stylesheets/global.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 22, ../../app/stylesheets/global.scss */
 body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
   font-size: 13px;
-  background: #D3C8C1;
+  background: #d3c8c1 url("../images/bg-main.jpg") repeat;
 }
 
-/* line 25, ../../app/stylesheets/global.scss */
+/* line 29, ../../app/stylesheets/global.scss */
 h1, h2 {
   font-weight: normal;
   color: #999;
 }
 
-/* line 29, ../../app/stylesheets/global.scss */
+/* line 33, ../../app/stylesheets/global.scss */
 h1 {
   font-size: 1.5em;
 }
 
-/* line 32, ../../app/stylesheets/global.scss */
+/* line 36, ../../app/stylesheets/global.scss */
 h2 {
   font-size: 1.2em;
 }
 
-/* line 35, ../../app/stylesheets/global.scss */
+/* line 39, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 38, ../../app/stylesheets/global.scss */
+/* line 42, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 41, ../../app/stylesheets/global.scss */
+/* line 45, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.7em;
@@ -60,16 +65,16 @@ img {
   -moz-box-shadow: 0 1px 1px 1px #dedede;
   box-shadow: 0 1px 1px 1px #dedede;
 }
-/* line 56, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 58, ../../app/stylesheets/global.scss */
+/* line 62, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 61, ../../app/stylesheets/global.scss */
+/* line 65, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
@@ -77,21 +82,21 @@ img {
   margin-right: 5px;
 }
 
-/* line 68, ../../app/stylesheets/global.scss */
+/* line 72, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 70, ../../app/stylesheets/global.scss */
+/* line 74, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 73, ../../app/stylesheets/global.scss */
+/* line 77, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }
 
-/* line 77, ../../app/stylesheets/global.scss */
+/* line 81, ../../app/stylesheets/global.scss */
 .loader {
   position: relative;
   top: 3px;

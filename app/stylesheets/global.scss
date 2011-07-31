@@ -15,11 +15,15 @@
  * @global
  */
 
+html, body {
+    height: 100%;
+}
+
 body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
   font-size: 13px; 
-  background: #D3C8C1;
+  background: #D3C8C1 url("../images/bg-main.jpg") repeat;
 }
 
 h1, h2 {

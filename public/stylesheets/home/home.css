@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$light_yellow".
-        on line 226 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
+        on line 235 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
 
-221:     text-align: center; 
-222:   }
-223: }
-224: 
-225: .highlight {
-226:   background: $light_yellow; }
-227: 
-228: #session{
-229: 	position: relative;
-230:   .popup{
-231: 		position: absolute;
+230:     text-align: center; 
+231:   }
+232: }
+233: 
+234: .highlight {
+235:   background: $light_yellow; }
+236: 
+237: #session{
+238: 	position: relative;
+239:   .popup{
+240: 		position: absolute;
 
 Backtrace:
-/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:226
+/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:235
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
@@ -113,4 +113,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light_yellow\".\A         on line 226 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 221:     text-align: center; \A 222:   }\A 223: }\A 224: \A 225: .highlight {\A 226:   background: $light_yellow; }\A 227: \A 228: #session{\A 229: 	position: relative;\A 230:   .popup{\A 231: 		position: absolute;"; }
+  content: "Syntax error: Undefined variable: \"$light_yellow\".\A         on line 235 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 230:     text-align: center; \A 231:   }\A 232: }\A 233: \A 234: .highlight {\A 235:   background: $light_yellow; }\A 236: \A 237: #session{\A 238: 	position: relative;\A 239:   .popup{\A 240: 		position: absolute;"; }
