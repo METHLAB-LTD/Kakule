@@ -29,7 +29,25 @@ kakule.init = {
 	},
 	
 	attachAddHandlers : function() {
-		$("body").delegate("event-add", "click", function() {
+		$("body").delegate(".add-event a", "click", function(e) {
+            e.preventDefault();
+            var split = $(this).attr("id").split("-");
+            var type = split[0];
+            var id = parseInt(split[1]);
+
+            $.post("/itineraries/add_event/",
+                {type: type, id: id}, 
+                function(data) {
+                    if (type == "event") {
+                        var event = data.obj.event;
+                        kakule.ui.addEventToItinerary(event);
+                    } else if (type == "attraction") {
+                        var attraction = data.obj.attraction;
+                        kakule.ui.addAttractionToItinerary(attraction);
+                    }
+                    
+                }
+            );
 		});
 
 	},
@@ -40,7 +58,6 @@ kakule.init = {
         });
         $("#itinerary-name").editInPlace({
             callback: function(unused, enteredText) { 
-                console.log("callback");
                 $.post('/itineraries/edit_name', 
                        { update_value: enteredText }
                       );
@@ -55,63 +72,36 @@ kakule.init = {
     
 
 	attachSearchHandlers : function(){
-		var search_fields = $(".search_field");
-		
-		var selectUp = function(){
-			if (kakule.current.addpanel.selected_search > 1){
-				kakule.current.addpanel.selected_search--;
-			}
-		};
-		
-		var selectDown = function(results){
-			if (kakule.current.addpanel.selected_search < results.children(".result").length){
-				kakule.current.addpanel.selected_search++;
-			}
-		};
-		
-	  
-		$("body").delegate(".search_field", "keyup", function(evt){
-			if (evt.keyCode != 8 && evt.keyCode != 13 && (evt.keyCode < 37 || evt.keyCode > 90)){
-				return false;
-			}
-			var textBox = $(this);
-			var func = textBox.attr("id").split("_")[1];
-			var results = $("#"+func+" .results");
-			
-			switch (evt.keyCode) {
-				case 38: //up arrow
-				  selectUp();
-				  break;
-				case 40: //down arrow
-				  selectDown(results);
-				  break;
-				case 13:
-				  break;
-				default:
-				  kakule.search[func](textBox.val());
-			}
-			
-			var selected_search = kakule.current.addpanel.selected_search;
-			var selected = $(".result:nth-child("+ selected_search +")", results)
-			kakule.ui.selectSearchResult(selected);
-			
-			if (evt.keyCode == 13) {
-				if (kakule.current.addpanel.selected_search == 0){
-					selected = $(".result:nth-child("+ (selected_search + 1) +")", results)
-				}
-				kakule.ui.pin.location($(".location-pin", selected));
-			}
-		  
-		});
-		
-    $("body").delegate(".search_form", "submit", function(e) {
-        e.preventDefault();
-    });
+        $("#location-search").autocomplete("/search/places", {
+            dataType: 'json',
+            scroll: false,
+            formatItem: function(item) {
+                    return item.name;
+                },
+            parse: function(data) {
+                    var array = new Array();
+                    for(var i = 0; i < data.length; i++) {
+                            array[array.length] = { data: data[i], value: data[i]};
+                    }
+                    return array;
+            },
+            highlight: function(value, term) { 
+                return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
+            },
+            }).result(function(event, item) {
+                kakule.current.lat = item.lat;
+                kakule.current.lng = item.lng;
 
-		$("body").delegate(".addpane .results", "hover", function(evt){
-		  $(this).children(".result").removeClass("selected");
-		  kakule.current.addpanel.selected_search = 0;
-		});
+                $("#location-search").val(item.name);
+                $.get("/search/render_place_by_id", 
+                      {id: item.id},
+                      function(data) {
+                        $("#content").empty();
+                        $("#content").append(data.html);
+
+                        kakule.search.attractions("");
+                      });
+            });
 	},
 	
 	session : function(){
@@ -205,120 +195,48 @@ kakule.search = {
 
 kakule.server = {
 	searchLocations : function(data, callback){
-		kakule.util.addCurrentLocationData(data);
 		$.get("/search/render_geocoding", data, callback);
 	},
 	
 	searchAttractions : function(data, callback) {
-		kakule.util.addCurrentLocationData(data);
-    $.get("/search/render_attractions", data, callback);
+        $.get("/search/render_attractions", data, callback);
 	},
 	
 	searchMeals : function(data, callback) {
-		kakule.util.addCurrentLocationData(data);
+        // TODO
 	}
 };
 
 kakule.ui = {
-	repopulateLocations : function(data) {
-		var resultsDiv =  $("#content");
-    resultsDiv.empty();
-    resultsDiv.append(data.html);
-
-    $.each($(".name", resultsDiv), function(i, div){
-	    kakule.ui.highlight(div, data.query);
-    });
-		
-	},
-
   repopulateAttractions : function(data) {
      var resultsDiv = $("#attractions");
-     console.log(data);
-     console.log(resultsDiv);
      resultsDiv.empty();
      resultsDiv.append(data.html);
+  },
+
+  addEventToItinerary : function(event) {
+    $("#itinerary-day").append(
+        $("<div></div>")
+            .addClass("itinerary-event")
+            .text(event.name)
+    );
+  },
+
+  addAttractionToItinerary : function(attraction) {
   },
 
   setLocation : function(location) {
     $("#current_location").text(location);
   },
-
-  highlight : function(location, text){
-	  var div = $(location);
-	  if (div.html()){
-			var regex = new RegExp(text, 'ig');
-			div.html(div.html().replace(regex, function(match){
-				return '<span class="highlight">' + match + '</span>';
-			}));
-	  }
-  },
-
-  selectSearchResult : function(result){
-	  $(result).siblings().removeClass("selected");
-	  $(result).addClass("selected");
-  },
-
-  pin : {
-	  location : function(elem){
-		  var i = parseInt($(elem).attr("id").split("-")[1]);
-
-      // Save location
-      kakule.current.pinned_location = kakule.current.geocode_data[i].name;
-      kakule.current.lat = kakule.current.geocode_data[i].latitude;
-      kakule.current.lng = kakule.current.geocode_data[i].longitude;
-
-      var location_name = kakule.current.pinned_location;
-      // Replace text box
-      $("#locations .search_form").hide();
-      $("#locations .results").hide();
-      $("#pinned_location_name").text(location_name);
-      $("#pinned_location").show();
-
-      // Open attractions/meals search
-      $(".near-label span").text(location_name);
-      $(".near-label").show();
-      
-      // TODO: Search for meals
-		}
-	}
-	
 };
 
 $(document).ready(function() {
     //kakule.init.getLocation();
+    kakule.init.attachSearchHandlers();
 	kakule.init.attachEditHandlers();
+    kakule.init.attachAddHandlers();
 	kakule.init.session()
 
-    $("#location-search").autocomplete("/search/places", {
-        dataType: 'json',
-        scroll: false,
-        formatItem: function(item) {
-                return item.name;
-            },
-        parse: function(data) {
-                var array = new Array();
-                for(var i = 0; i < data.length; i++) {
-                        array[array.length] = { data: data[i], value: data[i]};
-                }
-                return array;
-        },
-        highlight: function(value, term) { 
-            return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
-        },
-        }).result(function(event, item) {
-            kakule.current.lat = item.lat;
-            kakule.current.lng = item.lng;
-
-            $("#location-search").val(item.name);
-            $.get("/search/render_place_by_id", 
-                  {id: item.id},
-                  function(data) {
-                    $("#content").empty();
-                    $("#content").append(data.html);
-
-                    kakule.search.attractions("");
-                  });
-        });
 
 		// FB.init({
 		// 	    appId  : '190781907646255',

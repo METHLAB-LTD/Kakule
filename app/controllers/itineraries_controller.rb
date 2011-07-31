@@ -102,11 +102,26 @@ class ItinerariesController < ApplicationController
     
   end
 
+
+  # POST /itineraries/add_event
+  # Required type (event, attraction, transportation), id
   def add_event
-    
+    id = params[:id].to_i
+    obj = nil
+    if params[:type] == "event"
+        obj = current_itinerary.add_event(id)  
+    elsif params[:type] == "attraction"
+        obj = current_itinerary.add_attraction(id)
+    elsif params[:type] == "transportation"
+        obj = current_itinerary.add_transportation(id)
+    end
+
+    render :json => {
+        :status => 0,
+        :obj => obj
+    }
   end
   
-
   # DELETE /itineraries/1
   def destroy
     @itinerary = Itinerary.find(params[:id])

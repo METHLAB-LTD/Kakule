@@ -102,12 +102,26 @@ class Itinerary < ActiveRecord::Base
     "#{self.owner.name} :: #{self.name}"
   end
 
+  # TODO: Add time bounds
   def add_event(id)
     sel_event = SelectedEvent.new
     sel_event.event_id = id
     sel_event.save
 
     self.selected_events << sel_event
+    return Event.find(id)
+  end
+
+  # TODO: Add time bounds
+  def add_attraction(id)
+    # TODO: Store attractions as objects in our db
+    # so we can add Yelp generated things to itineraries
+    sel_attr = SelectedAttraction.new
+    sel_attr.attraction_id = id
+    sel_attr.save
+
+    self.selected_attractions << sel_attr
+    return Attraction.find(id)
   end
   
   def self.permissions(str)
