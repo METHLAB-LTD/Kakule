@@ -45,9 +45,16 @@ class Attraction < ActiveRecord::Base
         :yelp_id => business["id"],
         :name => business["name"],
         :latitude => business["latitude"],
-        :longitude => business["longitude"]
+        :longitude => business["longitude"],
+        :photo_url_small => business["photo_url_small"],
+        :url => business["url"],
+        :photo_url => business["photo_url"],
+        :phone => business["phone"]
       })
-      categories.each{|cat| attraction.attractions_categories.build({:category => cat}).save}
+      business["categories"].each do |cat| 
+        c = PoiCategory.find_or_create_by_name(cat["name"])
+        attraction.attractions_categories.build({:category => c}).save
+      end
       attraction
     end
     
