@@ -130,7 +130,7 @@ class SearchController < ApplicationController
   
   def render_meals
     render :json => {
-      :html => render_to_string (:partial => "meals", :locals => {:meals => meals["businesses"]})
+      :html => render_to_string(:partial => "meals", :locals => {:meals => meals["businesses"]})
     }.to_json
   end
   
@@ -146,7 +146,7 @@ class SearchController < ApplicationController
   
   def render_photos
     render :json => {
-      :html => render_to_string (:partial => "photos", :locals => {:photos => photos})
+      :html => render_to_string(:partial => "photos", :locals => {:photos => photos})
     }.to_json
     
   end

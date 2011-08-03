@@ -4,7 +4,8 @@ class Geocode < ActiveRecord::Base
   
   def self.find_by_similar_name(str)
     arr = str.split(",").map{|a| a.strip}
-    find(:all, :conditions => ["name LIKE ? AND (state LIKE ? OR country LIKE ?)", "%#{arr[0]}%", "%#{arr[1]}%", "%#{arr[1]}%"], :order => :name, :limit => 10)
+    data = find(:all, :conditions => ["name LIKE ? AND (state LIKE ? OR country LIKE ?)", "%#{arr[0]}%", "%#{arr[1]}%", "%#{arr[1]}%"], :order => :name, :limit => 10, :include => :likes)
+    data.sort{|a, b| b.likes.length <=> a.likes.length}
   end
   
   def full_name

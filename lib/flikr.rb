@@ -32,7 +32,10 @@ module Flikr
       params[:radius] ||= 20
       params[:radius_units] ||= "mi"
       params[:safe_search] ||= 1
-      
+      params[:sort] ||= "interestingness-desc"
+      params[:content_type] ||= 1
+      params[:media] = "photos"
+      params[:in_gallery] ||= true
       params[:nojsoncallback] = 1
       params[:format] = "json"
       url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=#{FLIKR_API_KEY}&#{params.to_query}"
@@ -48,7 +51,11 @@ module Flikr
         #RAILS_DEFAULT_LOGGER.error(e.inspect)
         #RAILS_DEFAULT_LOGGER.error(e.backtrace)
       end
-      return response["photos"]["photo"]
+      if response && response["photos"]
+        return response["photos"]["photo"] 
+      else
+        return nil
+      end
     end
     
     def sanitize_params(params)
