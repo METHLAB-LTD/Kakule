@@ -102,3 +102,8 @@ a:hover {
   top: 3px;
   margin-right: 5px;
 }
+
+/* line 87, ../../app/stylesheets/global.scss */
+.clickable {
+  cursor: pointer;
+}

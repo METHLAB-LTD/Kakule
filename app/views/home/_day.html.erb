@@ -1,8 +1,11 @@
 <% events = @events if @events %>
 <div class="header inset-pink">Itinerary for: <%= @date %></div>
 <div id="itinerary-day">
+<div id="added">
+    <span class="icon"></span>Your itinerary item has been successfully added.
+</div>
 <% if events.empty? %>
-    You don't have any events planned yet.
+    <div id="empty">You don't have any events planned yet.</div>
 <% else %>
     <% for event in events %>
         <div class="itinerary-event">

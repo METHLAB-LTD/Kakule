@@ -188,8 +188,28 @@
   color: #333; 
 }
 
+#added {
+    display: none;
+    background: $light_yellow;
+    color: $orange ;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 1em;
+
+    .icon {
+        width: 15px;
+        height: 14px;
+        background: url("../images/icons/ok_icon.png");
+    }
+}
+
 .event {
     padding: 0.5em;
+}
+
+.event:hover {
+    background: #efefef;
 }
 
 .event-thumbnail {
@@ -219,6 +239,23 @@
         position: absolute;
         top: 0px;
         right: 0px;
+
+        width: 14px;
+        height: 14px;
+        background: url("../images/icons/add_icon.png");
+        opacity: 0.5;
+    }
+
+    .add-event:hover {
+        opacity: 1;
+    }
+    
+    .more {
+        display: none;
+    }
+
+    .show-less {
+        display: none;
     }
 }
 

@@ -1,33 +1,27 @@
-<% if event_data.length == 0 and attraction_data.length == 0 %>
+<% if all.length == 0 %>
     No results found.
 <% end %>
 
-<% for event in event_data %>
-    <div id="event-<%= event.id %>" class="event">
-        <div class="event-thumbnail"></div>
+<% for item in all %>
+    <% type = item["type"] %>
+    <% is_event = type == "event" %>
+    <% id = is_event ? item.id : item["id"] %>
+    <% name = is_event ? item.name : item["name"] %> 
+    <% description = is_event ? item.description : item["description"] %>
+    <% photo_url = is_event ? "" : item["photo_url"] %>
+
+    <div id="event-<%= id %>" class="event">
+        <div class="event-thumbnail">
+            <%= image_tag photo_url %>
+        </div>
         <div class="event-information">
-            <span class="name"><%= event.name %></span>
+            <span class="name"><%= name %></span>
             <span class="distance">X miles away (X-ing distance)</span> 
-            <span class="show-more"><a href="#">[show me more]</a></span>
-            <div class="more">This is more</div>
-            <div class="add-event"><a id="event-<%= event.id %>" href="#">[ADD]</a></div>
+            <span class="show-more clickable" id="more-<%= id %>">[SHOW ME MORE]</span>
+            <span class="show-less clickable" id="less-<%= id %>">[SHOW ME LESS]</span>
+            <div class="more" id="description-<%= id %>"><%= description %></div>
+            <div class="add-event clickable" id="add-<%= type %>-<%= id %>"></div>
         </div>
         <div class="clear"></div>
     </div>
-<% end %>
-
-<% for attraction in attraction_data %>
-    <div id="attraction-<%= attraction["id"] %>" class="event">
-		<div class="event-thumbnail">
-            <%= image_tag attraction["photo_url"] %>
-        </div>
-        <div class="event-information">
-            <span class="name"><%= attraction["name"] %></span>
-            <span class="distance">X miles away (X-ing distance)</span> 
-            <span class="show-more"><a href="#">[show me more]</a></span>
-            <div class="more">This is more</div>
-            <div class="add-event"><a id="attraction-<%= attraction["id"] %>" href="#">[ADD]</a></div>
-        </div>
-        <div class="clear"></div>
-	</div>
 <% end %>

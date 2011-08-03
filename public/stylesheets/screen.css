@@ -201,6 +201,11 @@ a:hover {
   margin-right: 5px;
 }
 
+/* line 87, ../../app/stylesheets/global.scss */
+.clickable {
+  cursor: pointer;
+}
+
 /* Home styles 
  * @home
  */
@@ -406,11 +411,33 @@ a:hover {
 }
 
 /* line 191, ../../app/stylesheets/home/home.scss */
+#added {
+  display: none;
+  background: #fef6b8;
+  color: #dcb44b;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 200, ../../app/stylesheets/home/home.scss */
+#added .icon {
+  width: 15px;
+  height: 14px;
+  background: url("../images/icons/ok_icon.png");
+}
+
+/* line 207, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 195, ../../app/stylesheets/home/home.scss */
+/* line 211, ../../app/stylesheets/home/home.scss */
+.event:hover {
+  background: #efefef;
+}
+
+/* line 215, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -419,49 +446,65 @@ a:hover {
   float: left;
 }
 
-/* line 203, ../../app/stylesheets/home/home.scss */
+/* line 223, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 208, ../../app/stylesheets/home/home.scss */
+/* line 228, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 212, ../../app/stylesheets/home/home.scss */
+/* line 232, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 218, ../../app/stylesheets/home/home.scss */
+/* line 238, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
   right: 0px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/add_icon.png");
+  opacity: 0.5;
+}
+/* line 249, ../../app/stylesheets/home/home.scss */
+.event-information .add-event:hover {
+  opacity: 1;
+}
+/* line 253, ../../app/stylesheets/home/home.scss */
+.event-information .more {
+  display: none;
+}
+/* line 257, ../../app/stylesheets/home/home.scss */
+.event-information .show-less {
+  display: none;
 }
 
-/* line 225, ../../app/stylesheets/home/home.scss */
+/* line 262, ../../app/stylesheets/home/home.scss */
 #savepanel {
   padding: 1em;
 }
-/* line 228, ../../app/stylesheets/home/home.scss */
+/* line 265, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 234, ../../app/stylesheets/home/home.scss */
+/* line 271, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 237, ../../app/stylesheets/home/home.scss */
+/* line 274, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 239, ../../app/stylesheets/home/home.scss */
+/* line 276, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -472,7 +515,7 @@ a:hover {
   padding: 5px;
 }
 
-/* line 250, ../../app/stylesheets/home/home.scss */
+/* line 287, ../../app/stylesheets/home/home.scss */
 #footer {
   padding: 1em;
 }
