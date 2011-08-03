@@ -145,7 +145,8 @@
         top: -5px;
 
         input {
-            font-size: 0.9em;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
             outline: 0px;
             border: 0px;
         }
@@ -155,7 +156,7 @@
 
 .itinerary-name-icon {
     background: url("../images/icons/edit_icon.png") no-repeat;
-    background-position: right top;
+    background-position: right center;
     padding-right: 20px;
 }
 
@@ -168,6 +169,10 @@
 
 .place-header {
     padding: 1em;
+
+    h1 {
+        margin-bottom: 1em;
+    }
 }
 
 .place-description {

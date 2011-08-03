@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$light_orange".
-        on line 116 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss
+        on line 117 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss
 
-111:   font-size: 1.8em;
-112:   overflow: hidden;
-113:   cursor: pointer;
-114:   background: #F2F0EE;
-115:   &:hover {
-116:     color: $light_orange;
-117:     background: $light_yellow; } 
-118:   &:active {
-119: 	  color: darken($light_red, 10%);
-120: 	  background-color: lighten($light_red, 2%);
-121:   }
+112:   font-size: 1.8em;
+113:   overflow: hidden;
+114:   cursor: pointer;
+115:   background: #F2F0EE;
+116:   &:hover {
+117:     color: $light_orange;
+118:     background: $light_yellow; } 
+119:   &:active {
+120: 	  color: darken($light_red, 10%);
+121: 	  background-color: lighten($light_red, 2%);
+122:   }
 
 Backtrace:
-/Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss:116
+/Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss:117
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
@@ -124,4 +124,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light_orange\".\A         on line 116 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss\A \A 111:   font-size: 1.8em;\A 112:   overflow: hidden;\A 113:   cursor: pointer;\A 114:   background: #F2F0EE;\A 115:   &:hover {\A 116:     color: $light_orange;\A 117:     background: $light_yellow; } \A 118:   &:active {\A 119: 	  color: darken($light_red, 10%);\A 120: 	  background-color: lighten($light_red, 2%);\A 121:   }"; }
+  content: "Syntax error: Undefined variable: \"$light_orange\".\A         on line 117 of /Users/amberfeng/Happy/kakule/app/stylesheets/plugins/event_calendar.scss\A \A 112:   font-size: 1.8em;\A 113:   overflow: hidden;\A 114:   cursor: pointer;\A 115:   background: #F2F0EE;\A 116:   &:hover {\A 117:     color: $light_orange;\A 118:     background: $light_yellow; } \A 119:   &:active {\A 120: 	  color: darken($light_red, 10%);\A 121: 	  background-color: lighten($light_red, 2%);\A 122:   }"; }

@@ -16,7 +16,7 @@
 /* Outer most container */
 
 .ec-calendar {
-  font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 14px;
   margin: 0;
@@ -31,14 +31,14 @@
   border-collapse: separate; }
 
 .ec-month-name {
-  font-size: 16px;
+  font-size: 1.3em;
   font-weight: bold; 
   text-align: center;
 }
 
 .ec-month-nav {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 1em;
   font-weight: normal;
   text-decoration: none; 
   text-align: center;
@@ -66,6 +66,7 @@
 .ec-day-name {
   font-weight: normal; 
   text-align: center;
+  line-height: 1em;
 }
 
 /* Rows container and Row */

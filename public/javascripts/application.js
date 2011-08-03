@@ -35,7 +35,7 @@ kakule.init = {
             var hide = $("#less-" + split[1]);
 
             $(this).hide();
-            description.slideDown();
+            description.slideDown(100);
             hide.show();
         });
 
@@ -45,7 +45,7 @@ kakule.init = {
             var show = $("#more-" + split[1]);
 
             $(this).hide();
-            description.slideUp();
+            description.slideUp(100);
             show.show();
         });
         
