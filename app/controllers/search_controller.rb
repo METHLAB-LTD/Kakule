@@ -37,9 +37,15 @@ class SearchController < ApplicationController
 
   def render_attractions
     results = events
+    results[:events].each {|e| e[:type] = "event" }
+    results[:attractions].each {|a| a[:type] = "attraction" }
+
+    # TODO: sort in order of importance, not events followed
+    # by attractions
+    all = results[:events].concat(results[:attractions])
     
     render :json => {
-        :html => (render_to_string :partial => "attractions", :locals => {:event_data => results[:events], :attraction_data => results[:attractions]}),
+        :html => (render_to_string :partial => "attractions", :locals => {:all => all}),
         :query => params[:query]
     }
   end

@@ -1,23 +1,12 @@
-/* Fonts
- * @fonts
- */
-@font-face {
-  font-family: 'AaarghNormal';
-  src: url("../fonts/aaargh/Aaargh-webfont.eot");
-  src: url("../fonts/aaargh/Aaargh-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aaargh/Aaargh-webfont.woff") format("woff"), url("../fonts/aaargh/Aaargh-webfont.ttf") format("truetype"), url("../fonts/aaargh/Aaargh-webfont.svg#AaarghNormal") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Global styles 
  * @global
  */
-/* line 18, ../../app/stylesheets/global.scss */
+/* line 5, ../../app/stylesheets/global.scss */
 html, body {
   height: 100%;
 }
 
-/* line 22, ../../app/stylesheets/global.scss */
+/* line 9, ../../app/stylesheets/global.scss */
 body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
@@ -25,33 +14,34 @@ body {
   background: #d3c8c1 url("../images/bg-main.jpg") repeat;
 }
 
-/* line 29, ../../app/stylesheets/global.scss */
-h1, h2 {
+/* line 16, ../../app/stylesheets/global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: normal;
   color: #999;
 }
 
-/* line 33, ../../app/stylesheets/global.scss */
+/* line 21, ../../app/stylesheets/global.scss */
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
-/* line 36, ../../app/stylesheets/global.scss */
+/* line 24, ../../app/stylesheets/global.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
-/* line 39, ../../app/stylesheets/global.scss */
+/* line 27, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 42, ../../app/stylesheets/global.scss */
+/* line 30, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 45, ../../app/stylesheets/global.scss */
+/* line 33, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.7em;
@@ -65,16 +55,16 @@ img {
   -moz-box-shadow: 0 1px 1px 1px #dedede;
   box-shadow: 0 1px 1px 1px #dedede;
 }
-/* line 60, ../../app/stylesheets/global.scss */
+/* line 48, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 62, ../../app/stylesheets/global.scss */
+/* line 50, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 65, ../../app/stylesheets/global.scss */
+/* line 53, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
@@ -82,23 +72,28 @@ img {
   margin-right: 5px;
 }
 
-/* line 72, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 74, ../../app/stylesheets/global.scss */
+/* line 62, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 77, ../../app/stylesheets/global.scss */
+/* line 65, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }
 
-/* line 81, ../../app/stylesheets/global.scss */
+/* line 69, ../../app/stylesheets/global.scss */
 .loader {
   position: relative;
   top: 3px;
   margin-right: 5px;
+}
+
+/* line 75, ../../app/stylesheets/global.scss */
+.clickable {
+  cursor: pointer;
 }

@@ -96,26 +96,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 1px solid #a59c9a;
 }
 
-/* Fonts
- * @fonts
- */
-@font-face {
-  font-family: 'AaarghNormal';
-  src: url("../fonts/aaargh/Aaargh-webfont.eot");
-  src: url("../fonts/aaargh/Aaargh-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aaargh/Aaargh-webfont.woff") format("woff"), url("../fonts/aaargh/Aaargh-webfont.ttf") format("truetype"), url("../fonts/aaargh/Aaargh-webfont.svg#AaarghNormal") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Global styles 
  * @global
  */
-/* line 18, ../../app/stylesheets/global.scss */
+/* line 5, ../../app/stylesheets/global.scss */
 html, body {
   height: 100%;
 }
 
-/* line 22, ../../app/stylesheets/global.scss */
+/* line 9, ../../app/stylesheets/global.scss */
 body {
   font-family: "Myriad Pro", Helvetica, Arial, serif;
   color: #666;
@@ -123,33 +112,34 @@ body {
   background: #d3c8c1 url("../images/bg-main.jpg") repeat;
 }
 
-/* line 29, ../../app/stylesheets/global.scss */
-h1, h2 {
+/* line 16, ../../app/stylesheets/global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: normal;
   color: #999;
 }
 
-/* line 33, ../../app/stylesheets/global.scss */
+/* line 21, ../../app/stylesheets/global.scss */
 h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
-/* line 36, ../../app/stylesheets/global.scss */
+/* line 24, ../../app/stylesheets/global.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
-/* line 39, ../../app/stylesheets/global.scss */
+/* line 27, ../../app/stylesheets/global.scss */
 img {
   border: 0px;
 }
 
-/* line 42, ../../app/stylesheets/global.scss */
+/* line 30, ../../app/stylesheets/global.scss */
 .clear {
   clear: both;
 }
 
-/* line 45, ../../app/stylesheets/global.scss */
+/* line 33, ../../app/stylesheets/global.scss */
 .button {
   display: inline-block;
   padding: 0.7em;
@@ -163,16 +153,16 @@ img {
   -moz-box-shadow: 0 1px 1px 1px #dedede;
   box-shadow: 0 1px 1px 1px #dedede;
 }
-/* line 60, ../../app/stylesheets/global.scss */
+/* line 48, ../../app/stylesheets/global.scss */
 .button:last-child {
   margin-right: 0;
 }
-/* line 62, ../../app/stylesheets/global.scss */
+/* line 50, ../../app/stylesheets/global.scss */
 .button:hover {
   opacity: 1;
 }
 
-/* line 65, ../../app/stylesheets/global.scss */
+/* line 53, ../../app/stylesheets/global.scss */
 .icon {
   display: inline-block;
   position: relative;
@@ -180,25 +170,30 @@ img {
   margin-right: 5px;
 }
 
-/* line 72, ../../app/stylesheets/global.scss */
+/* line 60, ../../app/stylesheets/global.scss */
 a {
   color: #999;
 }
-/* line 74, ../../app/stylesheets/global.scss */
+/* line 62, ../../app/stylesheets/global.scss */
 a:hover {
   color: #333;
 }
 
-/* line 77, ../../app/stylesheets/global.scss */
+/* line 65, ../../app/stylesheets/global.scss */
 .popup {
   display: none;
 }
 
-/* line 81, ../../app/stylesheets/global.scss */
+/* line 69, ../../app/stylesheets/global.scss */
 .loader {
   position: relative;
   top: 3px;
   margin-right: 5px;
+}
+
+/* line 75, ../../app/stylesheets/global.scss */
+.clickable {
+  cursor: pointer;
 }
 
 /* Home styles 
@@ -361,56 +356,83 @@ a:hover {
 }
 /* line 147, ../../app/stylesheets/home/home.scss */
 #itinerary-name .inplace_form input {
-  font-size: 0.9em;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1em;
   outline: 0px;
   border: 0px;
 }
 
-/* line 156, ../../app/stylesheets/home/home.scss */
+/* line 157, ../../app/stylesheets/home/home.scss */
 .itinerary-name-icon {
   background: url("../images/icons/edit_icon.png") no-repeat;
-  background-position: right top;
+  background-position: right center;
   padding-right: 20px;
 }
 
-/* line 165, ../../app/stylesheets/home/home.scss */
+/* line 166, ../../app/stylesheets/home/home.scss */
 #edit-icon:hover {
   opacity: 1;
 }
 
-/* line 169, ../../app/stylesheets/home/home.scss */
+/* line 170, ../../app/stylesheets/home/home.scss */
 .place-header {
   padding: 1em;
 }
-
 /* line 173, ../../app/stylesheets/home/home.scss */
+.place-header h1 {
+  margin-bottom: 1em;
+}
+
+/* line 178, ../../app/stylesheets/home/home.scss */
 .place-description {
   margin-top: 1em;
 }
 
-/* line 177, ../../app/stylesheets/home/home.scss */
+/* line 182, ../../app/stylesheets/home/home.scss */
 .header {
   padding: 0.8em;
   padding-left: 1em;
   text-transform: uppercase;
 }
 
-/* line 183, ../../app/stylesheets/home/home.scss */
+/* line 188, ../../app/stylesheets/home/home.scss */
 .place-content {
   padding: 1em;
 }
 
-/* line 187, ../../app/stylesheets/home/home.scss */
+/* line 192, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 191, ../../app/stylesheets/home/home.scss */
+/* line 196, ../../app/stylesheets/home/home.scss */
+#added {
+  display: none;
+  background: #fef6b8;
+  color: #dcb44b;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 205, ../../app/stylesheets/home/home.scss */
+#added .icon {
+  width: 15px;
+  height: 14px;
+  background: url("../images/icons/ok_icon.png");
+}
+
+/* line 212, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 195, ../../app/stylesheets/home/home.scss */
+/* line 216, ../../app/stylesheets/home/home.scss */
+.event:hover {
+  background: #efefef;
+}
+
+/* line 220, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -419,49 +441,65 @@ a:hover {
   float: left;
 }
 
-/* line 203, ../../app/stylesheets/home/home.scss */
+/* line 228, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 208, ../../app/stylesheets/home/home.scss */
+/* line 233, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 212, ../../app/stylesheets/home/home.scss */
+/* line 237, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 218, ../../app/stylesheets/home/home.scss */
+/* line 243, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
   right: 0px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/add_icon.png");
+  opacity: 0.5;
+}
+/* line 254, ../../app/stylesheets/home/home.scss */
+.event-information .add-event:hover {
+  opacity: 1;
+}
+/* line 258, ../../app/stylesheets/home/home.scss */
+.event-information .more {
+  display: none;
+}
+/* line 262, ../../app/stylesheets/home/home.scss */
+.event-information .show-less {
+  display: none;
 }
 
-/* line 225, ../../app/stylesheets/home/home.scss */
+/* line 267, ../../app/stylesheets/home/home.scss */
 #savepanel {
   padding: 1em;
 }
-/* line 228, ../../app/stylesheets/home/home.scss */
+/* line 270, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 234, ../../app/stylesheets/home/home.scss */
+/* line 276, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 237, ../../app/stylesheets/home/home.scss */
+/* line 279, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 239, ../../app/stylesheets/home/home.scss */
+/* line 281, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -472,7 +510,7 @@ a:hover {
   padding: 5px;
 }
 
-/* line 250, ../../app/stylesheets/home/home.scss */
+/* line 292, ../../app/stylesheets/home/home.scss */
 #footer {
   padding: 1em;
 }
@@ -494,7 +532,7 @@ a:hover {
 /* Outer most container */
 /* line 18, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-calendar {
-  font-family: "AaarghNormal", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 14px;
   margin: 0;
@@ -512,7 +550,7 @@ a:hover {
 
 /* line 33, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-month-name {
-  font-size: 16px;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: center;
 }
@@ -520,7 +558,7 @@ a:hover {
 /* line 39, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-month-nav {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 1em;
   font-weight: normal;
   text-decoration: none;
   text-align: center;
@@ -550,10 +588,11 @@ a:hover {
 .ec-day-name {
   font-weight: normal;
   text-align: center;
+  line-height: 1em;
 }
 
 /* Rows container and Row */
-/* line 73, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 74, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-rows {
   position: absolute;
   left: 0;
@@ -563,7 +602,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 81, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 82, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-row {
   position: absolute;
   left: 0;
@@ -572,7 +611,7 @@ a:hover {
 }
 
 /* Background */
-/* line 89, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 90, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-row-bg {
   position: absolute;
   top: 0;
@@ -583,7 +622,7 @@ a:hover {
   border-spacing: 0.8em 0.4em;
 }
 
-/* line 100, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 101, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-row-table {
   position: relative;
   width: 100%;
@@ -592,7 +631,7 @@ a:hover {
 }
 
 /* Day header */
-/* line 108, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 109, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-day-header {
   color: #D3C8C1;
   text-align: center;
@@ -601,47 +640,47 @@ a:hover {
   cursor: pointer;
   background: #F2F0EE;
 }
-/* line 115, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 116, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-day-header:hover {
   color: #ffcf75;
   background: #fef6b8;
 }
-/* line 118, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 119, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-day-header:active {
   color: #ffa9a4;
   background-color: #ffe3e1;
 }
 
-/* line 124, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 125, ../../app/stylesheets/plugins/event_calendar.scss */
 a.ec-day-link {
   color: #444;
 }
 
-/* line 127, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 128, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-today-header {
   color: #ffa9a4;
   background-color: #ffd9d7;
 }
-/* line 130, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 131, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-today-header:hover {
   color: #ffa9a4;
   background-color: #ffd9d7;
 }
 
-/* line 138, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 139, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-other-month-header {
   background: #E9E4E4;
 }
 
 /* Event cell and container */
-/* line 146, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 147, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-cell {
   cursor: pointer;
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
 }
-/* line 151, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 152, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-cell a {
   text-decoration: none;
   display: block;
@@ -649,12 +688,12 @@ a.ec-day-link {
   height: 100%;
 }
 
-/* line 157, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 158, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-no-event-cell {
   cursor: default;
 }
 
-/* line 160, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 161, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event {
   color: white;
   padding-right: 1px;
@@ -665,30 +704,30 @@ a.ec-day-link {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 169, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 170, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event :hover {
   /* doesn't look as good as js highlighting */
   /* background-color: #2eac6a; */
 }
 
-/* line 173, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 174, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-bg a {
   color: white;
 }
 
 /* used to distinguish non-all_day events */
-/* line 178, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 179, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-no-bg {
   position: relative;
   /* padding-left: 5px; */
 }
-/* line 181, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 182, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-no-bg a {
   /* isn't implemented in all browsers */
   color: inherit;
 }
 
-/* line 185, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 186, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-event-time {
   font-size: 85%;
   font-weight: bold;
@@ -697,7 +736,7 @@ a.ec-day-link {
 
 /* Left and right arrows */
 /* Doesn't work in IE6, use bg images instead */
-/* line 193, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 194, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-left-arrow, .ec-right-arrow {
   position: relative;
   top: 3px;
@@ -708,13 +747,13 @@ a.ec-day-link {
   margin-bottom: -8px;
 }
 
-/* line 202, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 203, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-left-arrow {
   margin-left: -7px;
   margin-right: auto;
 }
 
-/* line 206, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 207, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-right-arrow {
   margin-left: auto;
   margin-right: 3px;
@@ -722,7 +761,7 @@ a.ec-day-link {
 
 /* remove this to not have a bullet */
 /* don't look as good in ie */
-/* line 213, ../../app/stylesheets/plugins/event_calendar.scss */
+/* line 214, ../../app/stylesheets/plugins/event_calendar.scss */
 .ec-bullet {
   position: absolute;
   top: 7px;

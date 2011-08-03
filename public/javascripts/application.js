@@ -28,18 +28,44 @@ kakule.init = {
 	  }
 	},
 	
+    attachShowHandlers : function() {
+        $("body").delegate(".show-more", "click", function() {
+            var split = $(this).attr("id").split("-");
+            var description = $("#description-" + split[1]);
+            var hide = $("#less-" + split[1]);
+
+            $(this).hide();
+            description.slideDown(100);
+            hide.show();
+        });
+
+        $("body").delegate(".show-less", "click", function() {
+            var split = $(this).attr("id").split("-");
+            var description = $("#description-" + split[1]);
+            var show = $("#more-" + split[1]);
+
+            $(this).hide();
+            description.slideUp(100);
+            show.show();
+        });
+        
+    }, 
+
 	attachAddHandlers : function() {
-		$("body").delegate(".add-event a", "click", function(e) {
+		$("body").delegate(".add-event", "click", function(e) {
             e.preventDefault();
             var split = $(this).attr("id").split("-");
-            var type = split[0];
-            var id = parseInt(split[1]);
+            var type = split[1];
+            var id = parseInt(split[2]);
 
+            // Remove current object
+            $("#event-" + id).fadeOut();
             $.post("/itineraries/add_event/",
                 {type: type, id: id}, 
                 function(data) {
                     if (type == "event") {
                         var event = data.obj.event;
+
                         kakule.ui.addEventToItinerary(event);
                     } else if (type == "attraction") {
                         var attraction = data.obj.attraction;
@@ -215,11 +241,15 @@ kakule.ui = {
   },
 
   addEventToItinerary : function(event) {
+    $("#empty").remove();
     $("#itinerary-day").append(
         $("<div></div>")
             .addClass("itinerary-event")
             .text(event.name)
     );
+
+    // Flash notice
+    $("#added").show().delay(3000).fadeOut(500);
   },
 
   addAttractionToItinerary : function(attraction) {
@@ -235,6 +265,7 @@ $(document).ready(function() {
     kakule.init.attachSearchHandlers();
 	kakule.init.attachEditHandlers();
     kakule.init.attachAddHandlers();
+    kakule.init.attachShowHandlers();
 	kakule.init.session()
 
 
