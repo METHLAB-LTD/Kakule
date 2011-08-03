@@ -10,4 +10,12 @@ class Geocode < ActiveRecord::Base
   def full_name
     "#{name}, #{!state.blank? ? state+", " : ""}#{country}"
   end
+
+  def photos(num)
+    return Flikr::Photos.new.search(
+        {"lat" => latitude, 
+         "lng" => longitude,
+         "per_page" => num
+        })
+  end
 end
