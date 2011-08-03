@@ -169,20 +169,44 @@
 
 .place-header {
     padding: 1em;
-
-    h1 {
-        margin-bottom: 1em;
-    }
 }
 
-.place-description {
+#place-description {
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .header {
     padding: 0.8em;
     padding-left: 1em;
     text-transform: uppercase;
+}
+
+#place-photos {
+    img {
+        width: 100%;
+    }
+
+    #main-photo {
+        float: left;
+        width: 70%;
+        background: black;
+    }
+
+    #thumbs {
+        width: 25%;
+        float: right;
+    }
+
+    .place-photo {
+        display: inline-block;
+        overflow: hidden;
+        margin: 4px;
+        width: 50px;
+        height: 50px;
+        background: black;
+        border: 1px solid #ccc;
+    }
 }
 
 .place-content {

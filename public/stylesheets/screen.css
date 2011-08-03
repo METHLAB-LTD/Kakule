@@ -378,34 +378,57 @@ a:hover {
 .place-header {
   padding: 1em;
 }
-/* line 173, ../../app/stylesheets/home/home.scss */
-.place-header h1 {
+
+/* line 174, ../../app/stylesheets/home/home.scss */
+#place-description {
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
-/* line 178, ../../app/stylesheets/home/home.scss */
-.place-description {
-  margin-top: 1em;
-}
-
-/* line 182, ../../app/stylesheets/home/home.scss */
+/* line 179, ../../app/stylesheets/home/home.scss */
 .header {
   padding: 0.8em;
   padding-left: 1em;
   text-transform: uppercase;
 }
 
-/* line 188, ../../app/stylesheets/home/home.scss */
+/* line 186, ../../app/stylesheets/home/home.scss */
+#place-photos img {
+  width: 100%;
+}
+/* line 190, ../../app/stylesheets/home/home.scss */
+#place-photos #main-photo {
+  float: left;
+  width: 70%;
+  background: black;
+}
+/* line 196, ../../app/stylesheets/home/home.scss */
+#place-photos #thumbs {
+  width: 25%;
+  float: right;
+}
+/* line 201, ../../app/stylesheets/home/home.scss */
+#place-photos .place-photo {
+  display: inline-block;
+  overflow: hidden;
+  margin: 4px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  border: 1px solid #ccc;
+}
+
+/* line 212, ../../app/stylesheets/home/home.scss */
 .place-content {
   padding: 1em;
 }
 
-/* line 192, ../../app/stylesheets/home/home.scss */
+/* line 216, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 196, ../../app/stylesheets/home/home.scss */
+/* line 220, ../../app/stylesheets/home/home.scss */
 #added {
   display: none;
   background: #fef6b8;
@@ -415,24 +438,24 @@ a:hover {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 205, ../../app/stylesheets/home/home.scss */
+/* line 229, ../../app/stylesheets/home/home.scss */
 #added .icon {
   width: 15px;
   height: 14px;
   background: url("../images/icons/ok_icon.png");
 }
 
-/* line 212, ../../app/stylesheets/home/home.scss */
+/* line 236, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 216, ../../app/stylesheets/home/home.scss */
+/* line 240, ../../app/stylesheets/home/home.scss */
 .event:hover {
   background: #efefef;
 }
 
-/* line 220, ../../app/stylesheets/home/home.scss */
+/* line 244, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -441,23 +464,23 @@ a:hover {
   float: left;
 }
 
-/* line 228, ../../app/stylesheets/home/home.scss */
+/* line 252, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 233, ../../app/stylesheets/home/home.scss */
+/* line 257, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 237, ../../app/stylesheets/home/home.scss */
+/* line 261, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 243, ../../app/stylesheets/home/home.scss */
+/* line 267, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
@@ -467,39 +490,39 @@ a:hover {
   background: url("../images/icons/add_icon.png");
   opacity: 0.5;
 }
-/* line 254, ../../app/stylesheets/home/home.scss */
+/* line 278, ../../app/stylesheets/home/home.scss */
 .event-information .add-event:hover {
   opacity: 1;
 }
-/* line 258, ../../app/stylesheets/home/home.scss */
+/* line 282, ../../app/stylesheets/home/home.scss */
 .event-information .more {
   display: none;
 }
-/* line 262, ../../app/stylesheets/home/home.scss */
+/* line 286, ../../app/stylesheets/home/home.scss */
 .event-information .show-less {
   display: none;
 }
 
-/* line 267, ../../app/stylesheets/home/home.scss */
+/* line 291, ../../app/stylesheets/home/home.scss */
 #savepanel {
   padding: 1em;
 }
-/* line 270, ../../app/stylesheets/home/home.scss */
+/* line 294, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 276, ../../app/stylesheets/home/home.scss */
+/* line 300, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 279, ../../app/stylesheets/home/home.scss */
+/* line 303, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 281, ../../app/stylesheets/home/home.scss */
+/* line 305, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -510,7 +533,7 @@ a:hover {
   padding: 5px;
 }
 
-/* line 292, ../../app/stylesheets/home/home.scss */
+/* line 316, ../../app/stylesheets/home/home.scss */
 #footer {
   padding: 1em;
 }

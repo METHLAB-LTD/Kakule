@@ -268,7 +268,6 @@ $(document).ready(function() {
     kakule.init.attachShowHandlers();
 	kakule.init.session()
 
-
 		// FB.init({
 		// 	    appId  : '190781907646255',
 		// 	    status : true, // check login status
