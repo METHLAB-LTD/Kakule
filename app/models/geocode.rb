@@ -18,4 +18,11 @@ class Geocode < ActiveRecord::Base
          "per_page" => num
         })
   end
+  
+  # TODO: Better WikiMarkup parser
+  def fetch_and_store_description
+    data = Wikipedia.find(self.name, :prop => "revisions" )
+    self.update_attribute(:description, Wiky.process(data.content))
+    return self
+  end
 end

@@ -10,22 +10,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110803062812) do
+ActiveRecord::Schema.define(:version => 20110803210628) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
-    t.integer  "category_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "yelp_id"
+    t.string   "photo_url_small"
+    t.string   "url"
+    t.string   "photo_url"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "attractions", ["yelp_id"], :name => "attractions_yelp_id_index"
 
   create_table "attractions_categories", :force => true do |t|
     t.integer  "attraction_id"
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "attractions_poi_categories", :id => false, :force => true do |t|
+    t.integer "attraction_id"
+    t.integer "poi_category_id"
   end
 
   create_table "calendar_events", :force => true do |t|
@@ -77,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20110803062812) do
     t.integer  "timezone_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "itineraries", :force => true do |t|

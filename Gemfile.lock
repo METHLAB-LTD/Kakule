@@ -154,6 +154,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    wikipedia-client (1.0.0)
     yelp (1.0.0)
       json (>= 1.1.1)
 
@@ -186,4 +187,5 @@ DEPENDENCIES
   simplegeo (~> 0.5.3)
   sqlite3-ruby
   webrat (>= 0.7.1)
+  wikipedia-client (~> 1.0.0)
   yelp (~> 1.0.0)

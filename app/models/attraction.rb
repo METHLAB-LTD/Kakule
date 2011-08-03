@@ -53,6 +53,7 @@ class Attraction < ActiveRecord::Base
           :photo_url => business["photo_url"],
           :phone => business["phone"]
         })
+        # TODO: Fix inefficiency
         business["categories"].each do |cat| 
           c = PoiCategory.find_or_create_by_name(cat["name"])
           attraction.attractions_categories.build({:category => c}).save

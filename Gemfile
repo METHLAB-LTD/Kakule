@@ -28,6 +28,7 @@ gem "simplegeo", "~> 0.5.3"
 #gem "songkick", "~> 0.0.2"
 gem "httparty", "~> 0.7.8"
 gem "yelp", "~> 1.0.0"
+gem "wikipedia-client", "~> 1.0.0", :require => 'wikipedia'
 
 gem "oauth2"
 gem "koala"
