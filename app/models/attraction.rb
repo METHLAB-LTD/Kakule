@@ -41,19 +41,22 @@ class Attraction < ActiveRecord::Base
     categories.map! { |cat| PoiCategory.find_or_create_by_name(cat.to_s) }
     
     return raw_data["businesses"].map do |business|
-      attraction = Attraction.create({
-        :yelp_id => business["id"],
-        :name => business["name"],
-        :latitude => business["latitude"],
-        :longitude => business["longitude"],
-        :photo_url_small => business["photo_url_small"],
-        :url => business["url"],
-        :photo_url => business["photo_url"],
-        :phone => business["phone"]
-      })
-      business["categories"].each do |cat| 
-        c = PoiCategory.find_or_create_by_name(cat["name"])
-        attraction.attractions_categories.build({:category => c}).save
+      attraction = Attraction.find_by_yelp_id(business["id"])
+      unless attraction
+        attraction = Attraction.create({
+          :yelp_id => business["id"],
+          :name => business["name"],
+          :latitude => business["latitude"],
+          :longitude => business["longitude"],
+          :photo_url_small => business["photo_url_small"],
+          :url => business["url"],
+          :photo_url => business["photo_url"],
+          :phone => business["phone"]
+        })
+        business["categories"].each do |cat| 
+          c = PoiCategory.find_or_create_by_name(cat["name"])
+          attraction.attractions_categories.build({:category => c}).save
+        end
       end
       attraction
     end
