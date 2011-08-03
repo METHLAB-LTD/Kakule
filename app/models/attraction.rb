@@ -1,6 +1,10 @@
 class Attraction < ActiveRecord::Base
   has_many :likes, :as => :likable
-  belongs_to :category, :class_name => "PoiCategory"
+  
+  has_many :attractions_categories, :class_name => "AttractionsCategories"
+  has_many :categories, :through => :attractions_categories
+  
+  validates_uniqueness_of :yelp_id
   
   @@default_radius = 0.1
   @@default_search_page = 20
@@ -18,4 +22,34 @@ class Attraction < ActiveRecord::Base
       ], :limit => 20)
   end
   
+  def self.find_with_yelp(params)
+    
+    categories = params[:category] || ["amusementparks"]
+    
+    RAILS_DEFAULT_LOGGER.info("[API] Yelp")
+    client  = Yelp::Client.new
+    request = Yelp::Review::Request::GeoPoint.new(
+     :latitude => params[:lat],
+     :longitude => params[:lng],
+     :radius => 20,
+     :term => params[:query],
+     :category => categories,
+     :yws_id => YELP_API_KEY)
+    raw_data = client.search(request)
+    return nil if raw_data["businesses"].nil?
+    
+    categories.map! { |cat| PoiCategory.find_or_create_by_name(cat.to_s) }
+    
+    return raw_data["businesses"].map do |business|
+      attraction = Attraction.create({
+        :yelp_id => business["id"],
+        :name => business["name"],
+        :latitude => business["latitude"],
+        :longitude => business["longitude"]
+      })
+      categories.each{|cat| attraction.attractions_categories.build({:category => cat}).save}
+      attraction
+    end
+    
+  end
 end

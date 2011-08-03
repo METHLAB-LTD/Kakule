@@ -26,16 +26,7 @@ class SearchController < ApplicationController
   def events
     @events = Event.find_by_custom_params(params)
     #@attractions = Attraction.find_by_custom_params(params)
-    RAILS_DEFAULT_LOGGER.info("[API] Yelp")
-    client  = Yelp::Client.new
-    request = Yelp::Review::Request::GeoPoint.new(
-     :latitude => params[:lat],
-     :longitude => params[:lng],
-     :radius => 20,
-     :term => params[:query],
-     :category => params[:category] || ["amusementparks"],
-     :yws_id => YELP_API_KEY)
-    @attractions = client.search(request)["businesses"]
+    @attractions = Attraction.find_with_yelp(params)
     results = {:events => @events, :attractions => @attractions }
     
     #render :json => {
