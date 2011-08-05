@@ -18,9 +18,9 @@ class ApplicationController < ActionController::Base
 
     ### Methods for user sessions
 
-    def current_itinerary
+    def current_itinerary(options={})
         find_or_create_guest_user
-        current_user.itineraries.last 
+        current_user.itineraries.last(options)
     end
 
     def current_user_session
