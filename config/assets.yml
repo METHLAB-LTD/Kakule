@@ -7,4 +7,5 @@ javascripts:
   kakule:
     - public/javascripts/lib/*.js
     - public/javascripts/plugins/*.js
+    - public/javascripts/application.js
     - public/javascripts/*.js

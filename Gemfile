@@ -40,8 +40,8 @@ gem "fssm", "~> 0.2.7"
 gem "compass", ">= 0.11.5"
 gem "rb-fsevent", ">= 0.4.1"
 
-# Javascript Management
-#gem "closure-compiler", ">= 1.1.1"
+# Javascript Management (http://documentcloud.github.com/jammit)
+#gem "closure-compiler", ">= 1.1.1" #use YUI-compressor for now
 gem "jammit", ">= 0.6.3"
 
 

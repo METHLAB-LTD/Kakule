@@ -267,6 +267,7 @@ $(document).ready(function() {
     kakule.init.attachAddHandlers();
     kakule.init.attachShowHandlers();
 	kakule.init.session()
+	kakule.itinerary.init();
 
 		// FB.init({
 		// 	    appId  : '190781907646255',

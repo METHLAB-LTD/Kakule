@@ -127,6 +127,7 @@ class Itinerary < ActiveRecord::Base
         :id => entry.event.id,
         :lat => entry.event.latitude,
         :lng => entry.event.longitude,
+        :hashcode => entry.hash
       }
       
       break_time_into_days(dataset, element)
@@ -143,7 +144,8 @@ class Itinerary < ActiveRecord::Base
         :type => "attraction",
         :id => entry.attraction.id,
         :lat => entry.attraction.latitude,
-        :lng => entry.attraction.longitude
+        :lng => entry.attraction.longitude,
+        :hashcode => entry.hash
       }
       break_time_into_days(dataset, element)
     end
@@ -157,7 +159,8 @@ class Itinerary < ActiveRecord::Base
         :end_time => entry.end_time,
         :name => entry.name,
         :type => "transportation",
-        :id => entry.id
+        :id => entry.id,
+        :hashcode => entry.hash
       }
       break_time_into_days(dataset, element)
     end

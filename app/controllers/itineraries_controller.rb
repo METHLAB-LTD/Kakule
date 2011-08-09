@@ -3,6 +3,7 @@ class ItinerariesController < ApplicationController
   before_filter :validate_read_permission, :only => [:show]
   before_filter :validate_write_permission, :only => [:update]
   before_filter :validate_destroy_permission, :only => [:destroy]
+  before_filter :set_page
   
   # GET /itineraries
   # GET /itineraries.xml
@@ -166,5 +167,8 @@ class ItinerariesController < ApplicationController
     current_user.can_destroy_itinerary?(Itinerary.find(params[:id]))
   end
   
+  def set_page
+    @page = "itinerary"
+  end
   
 end
