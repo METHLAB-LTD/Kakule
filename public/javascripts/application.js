@@ -178,7 +178,13 @@ kakule.util = {
 	addCurrentLocationData : function(data){
 		data.lat = kakule.current.lat;
 		data.lng = kakule.current.lng;
+	},
+	
+	set_time_zone_offset : function(){
+	    var current_time = new Date();
+	    $.cookie('time_zone', current_time.getTimezoneOffset());
 	}
+	
 };
 
 kakule.storage = {
@@ -266,8 +272,10 @@ $(document).ready(function() {
 	kakule.init.attachEditHandlers();
     kakule.init.attachAddHandlers();
     kakule.init.attachShowHandlers();
-	kakule.init.session()
+	kakule.init.session();
 	kakule.itinerary.init();
+	
+	kakule.util.set_time_zone_offset();
 
 		// FB.init({
 		// 	    appId  : '190781907646255',

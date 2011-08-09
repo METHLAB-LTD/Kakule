@@ -20,7 +20,8 @@ class ItinerariesController < ApplicationController
   # /itineraries/:id/
   def show
     include_fields = [:selected_events, :events, :selected_attractions, :attractions, :transportations]
-    @timeline = Itinerary.find(params[:id], :include => include_fields).timeline(:include => include_fields)
+    @itinerary = Itinerary.find(params[:id], :include => include_fields)
+    @timeline = @itinerary.timeline(:include => include_fields)
     #render :json => @timeline.to_json
   end
 

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -856,4 +856,100 @@ a.ec-day-link {
 .ac_highlight {
   font-weight: bold;
   color: #aaa;
+}
+
+/* line 2, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary #name {
+  margin-bottom: 10px;
+}
+/* line 5, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day {
+  height: 360px;
+  positin: relative;
+  border-bottom: 1px gray dashed;
+}
+/* line 9, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day:first-child {
+  border-top: 1px gray dashed;
+}
+/* line 12, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day h2 {
+  position: absolute;
+  left: -120px;
+}
+/* line 17, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day ol li {
+  float: left;
+}
+/* line 22, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day .element div {
+  display: none;
+}
+/* line 26, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple {
+  z-index: 1000;
+  text-align: left;
+  border: 1px solid #c7bf93;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 6px 8px;
+  min-width: 50px;
+  max-width: 300px;
+  color: #000;
+  background-color: #fff9c9;
+  /**
+   * - If you set a background-image, border/padding/background-color will be ingnored.
+   *   You can set any padding to .tip-inner instead if you need.
+   * - If you want a tiled background-image and border/padding for the tip,
+   *   set the background-image to .tip-inner instead.
+   */
+}
+/* line 44, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple .tip-inner {
+  font: 12px/16px arial, helvetica, sans-serif;
+}
+/* line 47, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple .tip-arrow-top {
+  margin-top: -6px;
+  margin-left: -5px;
+  /* approx. half the width to center it */
+  top: 0;
+  left: 50%;
+  width: 9px;
+  height: 6px;
+  background: url("../images/tip-yellowsimple_arrows.gif") no-repeat;
+}
+/* line 56, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple .tip-arrow-right {
+  margin-top: -4px;
+  /* approx. half the height to center it */
+  margin-left: 0;
+  top: 50%;
+  left: 100%;
+  width: 6px;
+  height: 9px;
+  background: url("../images/tip-yellowsimple_arrows.gif") no-repeat -9px 0;
+}
+/* line 65, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple .tip-arrow-bottom {
+  margin-top: 0;
+  margin-left: -5px;
+  /* approx. half the width to center it */
+  top: 100%;
+  left: 50%;
+  width: 9px;
+  height: 6px;
+  background: url("../images/tip-yellowsimple_arrows.gif") no-repeat -18px 0;
+}
+/* line 74, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .tip-yellowsimple .tip-arrow-left {
+  margin-top: -4px;
+  /* approx. half the height to center it */
+  margin-left: -6px;
+  top: 50%;
+  left: 0;
+  width: 6px;
+  height: 9px;
+  background: url("../images/tip-yellowsimple_arrows.gif") no-repeat -27px 0;
 }

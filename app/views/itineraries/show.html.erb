@@ -1,18 +1,21 @@
-<% @timeline.sort.each do |day, elements| %>
-<div id=<%=day%> class="day">
-	<h2><%= day %></h2>
-	<ol>
-  <% elements.sort{|a, b| a[:start_time] <=> b[:start_time]}.each do |element| %>
-		<li>
-			<div id="<%=element[:hashcode]%>" class="element">
-			  <div class="name">Name: <%= element[:name] %></div>
-			  <div class="type">Name: <%= element[:type] %></div>
-			  <div class="start_time" title="<%= element[:start_time] %>">Start: <%= element[:start_time] %></div>
-			  <div class="end_time" title="<%= element[:end_time] %>">End: <%= element[:end_time] %></div>
-			</div>
-		</li>
-	<%end%>
-	</ol>
-</div>
-<%end%>
+<h1 id="name"><%=@itinerary.name%></h1>
 
+<div class="timeline">
+	<% @timeline.sort.each do |day, elements| %>
+	<div id=<%=Time.parse(day).to_i%> class="day">
+		<h2><%= day %></h2>
+		<ol>
+	  <% elements.sort{|a, b| a[:start_time] <=> b[:start_time]}.each do |element| %>
+			<li class="poshytip" title="<%= [element[:name], "<br>", format_time(element[:start_time]), " - ", format_time(element[:end_time])].join() %>">
+				<div id="<%=element[:hashcode]%>" class="element">
+				  <div class="name">Name: <%= element[:name] %></div>
+				  <div class="type">Name: <%= element[:type] %></div>
+				  <div class="start_time" title="<%= element[:start_time].to_i%>">Start: <%= element[:start_time] %></div>
+				  <div class="end_time" title="<%= element[:end_time].to_i %>">End: <%= element[:end_time] %></div>
+				</div>
+			</li>
+		<%end%>
+		</ol>
+	</div>
+	<%end%>
+</div>

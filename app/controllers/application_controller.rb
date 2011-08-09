@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   include Kakule
   protect_from_forgery
   helper_method :current_user_session, :current_user, :require_user, :current_itinerary, :logged_in?
+  before_filter :set_timezone 
 
   private
     def format_date(date)
@@ -62,5 +63,10 @@ class ApplicationController < ActionController::Base
     def redirect_back_or_default(default)
       redirect_to(session[:return_to] || default)
       session[:return_to] = nil
+    end
+    
+    def set_timezone
+     min = request.cookies["time_zone"].to_i
+     Time.zone = ActiveSupport::TimeZone[-min.minutes]
     end
 end
