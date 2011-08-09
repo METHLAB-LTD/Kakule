@@ -1,0 +1,10 @@
+embed_assets: off
+gzip_assets: off
+compress_assets: off
+javascript_compressor: yui
+
+javascripts:
+  kakule:
+    - public/javascripts/lib/*.js
+    - public/javascripts/plugins/*.js
+    - public/javascripts/*.js
