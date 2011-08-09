@@ -1,0 +1,19 @@
+<% @timeline.sort.each do |day, elements| %>
+<div class=<%=day%>>
+	<h2><%= day %></h2>
+	<ol>
+  <% elements.sort{|a, b| a[:start_time] <=> b[:start_time]}.each do |element| %>
+		<li>
+			<div>
+			  <div class="name">Name: <%= element[:name] %></div>
+			  <div class="type">Name: <%= element[:type] %></div>
+			  <div class="start_time">Start: <%= element[:start_time] %></div>
+			  <div class="end_time">End: <%= element[:end_time] %></div>
+			</div>
+		</li>
+	<%end%>
+	</ol>
+	
+</div>
+<%end%>
+

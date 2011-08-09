@@ -30,60 +30,41 @@ class Itinerary < ActiveRecord::Base
   }
   
   # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
-  def timeline
-    dataset = add_transportation(raw_timeline)
-    return dataset
-  end
-  
-  def raw_timeline
+  def timeline(params={})
     dataset = {}
-     self.selected_events.each do |entry|
-       date = entry.start_time.date
-       dataset[date] ||= []
-       element = {
-         :start_time => entry.start_time,
-         :end_time => entry.end_time,
-         :name => entry.event.name,
-         :type => "event",
-         :id => entry.event.id,
-         :lat => entry.event.latitude,
-         :lng => entry.event.longitude
-       }
-       dataset[date].push(element) 
-     end
-
-     self.selected_attractions.each do |entry|
-       date = entry.start_time.date
-       dataset[date] ||= []
-       element = {
-         :start_time => entry.start_time,
-         :end_time => entry.end_time,
-         :name => entry.attraction.name,
-         :type => "attraction",
-         :id => entry.attraction.id,
-         :lat => entry.attraction.latitude,
-         :lng => entry.attraction.longitude
-       }
-       dataset[date].push(element) 
-     end
-     return dataset
-  end
-  
-  def add_transportation(dataset)
-    self.transportations.each do |entry|
-      date = entry.start_time.date
-      dataset[date] ||= []
-      element = {
-        :start_time => entry.start_time,
-        :end_time => entry.end_time,
-        :name => entry.name,
-        :type => "transportation",
-        :id => entry.id
-      }
-      dataset[date].push(element) 
+    if params[:include]
+        timeline_include_events(dataset) if params[:include].include?(:events)
+        timeline_include_attractions(dataset) if params[:include].include?(:attractions)
+        timeline_include_transportations(dataset) if params[:include].include?(:transportations)
     end
+    
+    dataset.each do |k, v|
+      
+    end
+    
     return dataset
   end
+  
+  def recommend_transportation!
+    dataset = self.timeline({:include => [:events, :attractions]})
+    # need to sanitize: remove/disregard time blocks if n[:end_time] > n+1[:start_time]
+    # assuming non-overlaps in time blocks...
+    sorted_timeline = dataset.map{|k, v| v}.flatten.sort{|a, b| a[:start_time] <=> b[:start_time]}
+    
+    sorted_timeline.each_cons(2) do |from, to|
+      duration = to[:start_time] - from[:end_time]
+      recommendation = Transportation.recommend_transport(KakuleHelper.geo_distance(from[:lat], from[:lng], to[:lat], to[:lng]), duration)
+      
+      Transportation.create({
+        :start_time => from[:end_time],
+        :end_time => from[:end_time] + recommendation[:duration],
+        :itinerary => self,
+        :mode => recommendation[:mode]
+      })
+    end
+    return self.transportations
+  end
+
     
   
   def fork(new_owner)
@@ -132,6 +113,78 @@ class Itinerary < ActiveRecord::Base
     itinerary = Itinerary.new(@@defaults)
     itinerary.owner = user
     itinerary.save
+  end
+  
+  private
+  
+  def timeline_include_events(dataset)
+    self.selected_events.each do |entry|      
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.event.name,
+        :type => "event",
+        :id => entry.event.id,
+        :lat => entry.event.latitude,
+        :lng => entry.event.longitude,
+      }
+      
+      break_time_into_days(dataset, element)
+    end
+    return dataset
+  end
+  
+  def timeline_include_attractions(dataset)
+    self.selected_attractions.each do |entry|
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.attraction.name,
+        :type => "attraction",
+        :id => entry.attraction.id,
+        :lat => entry.attraction.latitude,
+        :lng => entry.attraction.longitude
+      }
+      break_time_into_days(dataset, element)
+    end
+    return dataset
+  end
+  
+  def timeline_include_transportations(dataset)
+    self.transportations.each do |entry|
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.name,
+        :type => "transportation",
+        :id => entry.id
+      }
+      break_time_into_days(dataset, element)
+    end
+    return dataset
+  end
+  
+  def break_time_into_days(dataset, element)
+    days = []
+    if (!element[:end_time].blank? && element[:start_time].to_date != element[:end_time].to_date) #more than one day
+      (element[:start_time].to_date..element[:end_time].to_date).each do |day|
+        dataset[day.strftime] ||= []
+        e = element.clone
+        if (day == element[:start_time].to_date)
+          e[:end_time] = element[:start_time].end_of_day
+        elsif (day == element[:end_time].to_date)
+          e[:start_time] = element[:end_time].beginning_of_day
+        else
+          e[:start_time] = day.beginning_of_day
+          e[:end_time] = day.end_of_day
+        end
+        dataset[day.strftime].push(e)
+      end
+    else
+      dataset[element[:start_time].to_date.strftime] ||= []
+      dataset[element[:start_time].to_date.strftime].push(element)
+    end
+    return dataset
   end
 
 end
