@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$light_yellow".
-        on line 222 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
+        on line 231 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss
 
-217:   color: #333; 
-218: }
-219: 
-220: #added {
-221:     display: none;
-222:     background: $light_yellow;
-223:     color: $orange ;
-224:     padding: 5px;
-225:     border-radius: 3px;
-226:     text-align: center;
-227:     margin-bottom: 1em;
+226:   color: #333; 
+227: }
+228: 
+229: #added {
+230:     display: none;
+231:     background: $light_yellow;
+232:     color: $orange ;
+233:     padding: 5px;
+234:     border-radius: 3px;
+235:     text-align: center;
+236:     margin-bottom: 1em;
 
 Backtrace:
-/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:222
+/Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss:231
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/variable.rb:45:in `_perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.4/lib/sass/../sass/tree/visitors/perform.rb:215:in `visit_prop'
@@ -113,4 +113,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light_yellow\".\A         on line 222 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 217:   color: #333; \A 218: }\A 219: \A 220: #added {\A 221:     display: none;\A 222:     background: $light_yellow;\A 223:     color: $orange ;\A 224:     padding: 5px;\A 225:     border-radius: 3px;\A 226:     text-align: center;\A 227:     margin-bottom: 1em;"; }
+  content: "Syntax error: Undefined variable: \"$light_yellow\".\A         on line 231 of /Users/amberfeng/Happy/kakule/app/stylesheets/home/home.scss\A \A 226:   color: #333; \A 227: }\A 228: \A 229: #added {\A 230:     display: none;\A 231:     background: $light_yellow;\A 232:     color: $orange ;\A 233:     padding: 5px;\A 234:     border-radius: 3px;\A 235:     text-align: center;\A 236:     margin-bottom: 1em;"; }

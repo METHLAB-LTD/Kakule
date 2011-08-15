@@ -7,11 +7,11 @@
         <% if photos != nil%>
             <% start = photos.slice!(0) %>
             <div id="main-photo">
-                <%= image_tag start[:url] if start != nil%>
+                <%= (image_tag start[:url], :id => start[:url_sq], :class => "main-photo-img") if start != nil %>
             </div>
             <div id="thumbs">
             <% for photo in photos %>
-                <div class="place-photo"><%= image_tag photo[:url] if photo != nil%></div>
+                <div class="place-photo"> <%= (image_tag photo[:url_sq], :id => photo[:url], :class => "place-photo-img") if photo != nil %></div>
             <% end %>
         <% end %>
         </div>

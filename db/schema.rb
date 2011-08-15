@@ -17,10 +17,6 @@ ActiveRecord::Schema.define(:version => 20110803210628) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "yelp_id"
-    t.string   "photo_url_small"
-    t.string   "url"
-    t.string   "photo_url"
-    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -32,11 +28,6 @@ ActiveRecord::Schema.define(:version => 20110803210628) do
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "attractions_poi_categories", :id => false, :force => true do |t|
-    t.integer "attraction_id"
-    t.integer "poi_category_id"
   end
 
   create_table "calendar_events", :force => true do |t|

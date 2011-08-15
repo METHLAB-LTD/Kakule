@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../.rvm/gems/ruby-1.8.7-p352@rails3/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -400,35 +400,44 @@ a:hover {
 #place-photos #main-photo {
   float: left;
   width: 70%;
-  background: black;
 }
-/* line 196, ../../app/stylesheets/home/home.scss */
+/* line 195, ../../app/stylesheets/home/home.scss */
+#place-photos .main-photo-img {
+  border: 1px solid #ccc;
+}
+/* line 199, ../../app/stylesheets/home/home.scss */
 #place-photos #thumbs {
   width: 25%;
   float: right;
+  margin-top: -4px;
 }
-/* line 201, ../../app/stylesheets/home/home.scss */
+/* line 205, ../../app/stylesheets/home/home.scss */
 #place-photos .place-photo {
   display: inline-block;
   overflow: hidden;
   margin: 4px;
   width: 50px;
   height: 50px;
-  background: black;
   border: 1px solid #ccc;
+  opacity: 0.7;
+  cursor: pointer;
+}
+/* line 215, ../../app/stylesheets/home/home.scss */
+#place-photos .place-photo:hover {
+  opacity: 1;
 }
 
-/* line 212, ../../app/stylesheets/home/home.scss */
+/* line 221, ../../app/stylesheets/home/home.scss */
 .place-content {
   padding: 1em;
 }
 
-/* line 216, ../../app/stylesheets/home/home.scss */
+/* line 225, ../../app/stylesheets/home/home.scss */
 #current_location {
   color: #333;
 }
 
-/* line 220, ../../app/stylesheets/home/home.scss */
+/* line 229, ../../app/stylesheets/home/home.scss */
 #added {
   display: none;
   background: #fef6b8;
@@ -438,24 +447,24 @@ a:hover {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 229, ../../app/stylesheets/home/home.scss */
+/* line 238, ../../app/stylesheets/home/home.scss */
 #added .icon {
   width: 15px;
   height: 14px;
   background: url("../images/icons/ok_icon.png");
 }
 
-/* line 236, ../../app/stylesheets/home/home.scss */
+/* line 245, ../../app/stylesheets/home/home.scss */
 .event {
   padding: 0.5em;
 }
 
-/* line 240, ../../app/stylesheets/home/home.scss */
+/* line 249, ../../app/stylesheets/home/home.scss */
 .event:hover {
   background: #efefef;
 }
 
-/* line 244, ../../app/stylesheets/home/home.scss */
+/* line 253, ../../app/stylesheets/home/home.scss */
 .event-thumbnail {
   height: 50px;
   width: 50px;
@@ -464,23 +473,23 @@ a:hover {
   float: left;
 }
 
-/* line 252, ../../app/stylesheets/home/home.scss */
+/* line 261, ../../app/stylesheets/home/home.scss */
 .event-information {
   position: relative;
   margin-left: 50px;
   padding: 0.5em;
 }
-/* line 257, ../../app/stylesheets/home/home.scss */
+/* line 266, ../../app/stylesheets/home/home.scss */
 .event-information .name {
   display: block;
 }
-/* line 261, ../../app/stylesheets/home/home.scss */
+/* line 270, ../../app/stylesheets/home/home.scss */
 .event-information .distance {
   display: block;
   font-size: 0.9em;
   color: #bbb;
 }
-/* line 267, ../../app/stylesheets/home/home.scss */
+/* line 276, ../../app/stylesheets/home/home.scss */
 .event-information .add-event {
   position: absolute;
   top: 0px;
@@ -490,39 +499,39 @@ a:hover {
   background: url("../images/icons/add_icon.png");
   opacity: 0.5;
 }
-/* line 278, ../../app/stylesheets/home/home.scss */
+/* line 287, ../../app/stylesheets/home/home.scss */
 .event-information .add-event:hover {
   opacity: 1;
 }
-/* line 282, ../../app/stylesheets/home/home.scss */
+/* line 291, ../../app/stylesheets/home/home.scss */
 .event-information .more {
   display: none;
 }
-/* line 286, ../../app/stylesheets/home/home.scss */
+/* line 295, ../../app/stylesheets/home/home.scss */
 .event-information .show-less {
   display: none;
 }
 
-/* line 291, ../../app/stylesheets/home/home.scss */
+/* line 300, ../../app/stylesheets/home/home.scss */
 #savepanel {
   padding: 1em;
 }
-/* line 294, ../../app/stylesheets/home/home.scss */
+/* line 303, ../../app/stylesheets/home/home.scss */
 #savepanel .button {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 300, ../../app/stylesheets/home/home.scss */
+/* line 309, ../../app/stylesheets/home/home.scss */
 .highlight {
   background: #fef6b8;
 }
 
-/* line 303, ../../app/stylesheets/home/home.scss */
+/* line 312, ../../app/stylesheets/home/home.scss */
 #session {
   position: relative;
 }
-/* line 305, ../../app/stylesheets/home/home.scss */
+/* line 314, ../../app/stylesheets/home/home.scss */
 #session .popup {
   position: absolute;
   background: white;
@@ -533,7 +542,7 @@ a:hover {
   padding: 5px;
 }
 
-/* line 316, ../../app/stylesheets/home/home.scss */
+/* line 325, ../../app/stylesheets/home/home.scss */
 #footer {
   padding: 1em;
 }

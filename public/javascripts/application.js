@@ -126,9 +126,26 @@ kakule.init = {
                         $("#content").append(data.html);
 
                         kakule.search.attractions("");
+                        kakule.init.attachPhotoGalleryHandlers();
                       });
             });
 	},
+
+    attachPhotoGalleryHandlers : function() {
+        $("#thumbs").delegate(".place-photo-img", "click", function() {
+            // Save thumbnail information
+            var photo_url = $(this).attr("id");
+            var thumb_url = $(this).attr("src");
+
+            // Replace the thumbnail
+            $(this).attr("id", $(".main-photo-img").attr("src"));
+            $(this).attr("src", $(".main-photo-img").attr("id"));
+
+            // Replace the main photo
+            $(".main-photo-img").attr("id", thumb_url);
+            $(".main-photo-img").attr("src", photo_url);
+        });
+    },
 	
 	session : function(){
 		var sessionDiv = $("#session");

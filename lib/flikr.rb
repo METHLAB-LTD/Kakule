@@ -38,12 +38,14 @@ module Flikr
       params[:in_gallery] ||= true
       params[:nojsoncallback] = 1
       params[:format] = "json"
+      params[:extras] = "url_sq"
       url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=#{FLIKR_API_KEY}&#{params.to_query}"
       puts url
       begin
         response = JSON.parse(http_get(url))
         response["photos"]["photo"].each do |photo| 
           photo[:url] = construct_url(photo)
+          photo[:url_sq] = photo["url_sq"]
         end
       rescue => e
         RAILS_DEFAULT_LOGGER.error(response)
