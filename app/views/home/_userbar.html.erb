@@ -1,0 +1,4 @@
+ <!-- <fb:login-button show-faces="true" width="200" max-rows="1" perms="offline_access"></fb:login-button> -->
+        <span id="userbar-name"><%= "Welcome, " + current_user.name if current_user %></span>
+        <span id="userbar-options"><%= link_to "Log In", login_path %> | <%= link_to "Register", register_path %></span>
+

@@ -3,8 +3,7 @@
         <%= link_to(image_tag("kakule.png"), root_url) %>
     </div>
     <div id="userbar">
-        <!-- <fb:login-button show-faces="true" width="200" max-rows="1" perms="offline_access"></fb:login-button> -->
-        <%= "Welcome, " + current_user.name if current_user %>
+        <%= render "userbar" %>   
     </div>
     <div class="clear"></div>
 </div>

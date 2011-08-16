@@ -30,10 +30,11 @@ Kakule::Application.routes.draw do
   get "search/render_photos"
   get "search/render_meals"
 
-  # Session
-  get "user_sessions/new", :as => "new_user_session"
-  match "/dashboard" => 'users#show', :as => "dashboard"
+  # Users/Sessions 
+  match "/dashboard" => 'users#show', :as => :dashboard
+  match "/login" => 'user_sessions#new', :as => :login
   match "/logout" => 'user_sessions#destroy', :as => :logout
+  match "/register" => 'users#new', :as => :register
   
   # Facebook OAuth
   get 'facebook/auth', :as => :facebook_login
