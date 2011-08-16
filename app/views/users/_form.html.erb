@@ -10,23 +10,6 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :crypted_password %><br />
-    <%= f.text_field :crypted_password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_salt %><br />
-    <%= f.text_field :password_salt %>
-  </div>
-  <div class="field">
-    <%= f.label :persistence_token %><br />
-    <%= f.text_field :persistence_token %>
-  </div>
   <div class="field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
@@ -36,16 +19,16 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :facebook_id %><br />
-    <%= f.text_field :facebook_id %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :birthday %><br />
-    <%= f.datetime_select :birthday %>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
     <%= f.submit %>
