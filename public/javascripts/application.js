@@ -126,6 +126,7 @@ kakule.init = {
                         $("#content").append(data.html);
 
                         kakule.search.attractions("");
+                        kakule.search.meals("");
                         kakule.init.attachPhotoGalleryHandlers();
                       });
             });
@@ -228,6 +229,13 @@ kakule.search = {
 		kakule.server.searchAttractions({'query': query, 'lat': kakule.current.lat, 'lng': kakule.current.lng}, callback);
 	},
 	
+	meals : function(query){
+		function callback (response){
+            kakule.ui.repopulateMeals(response);
+		};
+		kakule.server.searchMeals({'query': query, 'lat': kakule.current.lat, 'lng': kakule.current.lng}, callback);
+	},
+
 	locations : function(query){
 		function callback (response){
             kakule.ui.repopulateLocations(response);
@@ -252,7 +260,7 @@ kakule.server = {
 	},
 	
 	searchMeals : function(data, callback) {
-        // TODO
+        $.get("/search/render_meals", data, callback);
 	}
 };
 
@@ -261,6 +269,12 @@ kakule.ui = {
      var resultsDiv = $("#attractions");
      resultsDiv.empty();
      resultsDiv.append(data.html);
+  },
+
+  repopulateMeals : function(data) {
+    var resultsDiv = $("#meals");
+    resultsDiv.empty();
+    resultsDiv.append(data.html);
   },
 
   addEventToItinerary : function(event) {
