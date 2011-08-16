@@ -5,10 +5,18 @@
 	
   <%= csrf_meta_tag %>
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
 	<%= stylesheet_link_tag 'print.css', :media => 'print' %>
 	<!--[if IE]><%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %><![endif]-->
+
+    <% filename = controller.controller_name %>
+    <% if FileTest.exist?  RAILS_ROOT + "/public/stylesheets/" + filename %>
+      <%= stylesheet_link_tag "#{filename}" %>
+    <% end %>
+    <% if FileTest.exist?  RAILS_ROOT + "/public/javascripts/" + filename %>
+      <%= javascript_include_tag "#{filename}" %>
+    <% end %>
 	
 </head>
 <body id=<%= @page || "default"%>>
