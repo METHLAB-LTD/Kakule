@@ -1,0 +1,26 @@
+/* New tutorial styles
+ * @new
+ */
+
+#landing {
+    margin: auto;    
+    padding: 2em;
+}
+
+.landing_icon {
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    margin-right: 20px;
+    height: 90px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.landing_icon:hover {
+    opacity: 1;
+}

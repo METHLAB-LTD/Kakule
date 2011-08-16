@@ -1,0 +1,112 @@
+/* Place styles 
+ * @home
+ */
+.place-header {
+    padding: 1em;
+}
+
+#place-description {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.header {
+    padding: 0.8em;
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+#place-photos {
+    img {
+        width: 100%;
+    }
+
+    #main-photo {
+        float: left;
+        width: 70%;
+    }
+
+    .main-photo-img {
+        border: 1px solid #ccc;
+    }
+
+    #thumbs {
+        width: 25%;
+        float: right;
+        margin-top: -4px;
+    }
+
+    .place-photo {
+        display: inline-block;
+        overflow: hidden;
+        margin: 4px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ccc;
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.place-content {
+    padding: 1em;
+}
+
+.event {
+    padding: 0.5em;
+}
+
+.event:hover {
+    background: #efefef;
+}
+
+.event-thumbnail {
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    overflow: hidden;
+    float: left;
+}
+
+.event-information {
+    position: relative;
+    margin-left: 50px;
+    padding: 0.5em;
+
+    .name {
+        display: block;
+    }
+
+    .distance {
+        display: block;
+        font-size: 0.9em;
+        color: #bbb;
+    }
+
+    .add-event {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        width: 14px;
+        height: 14px;
+        background: url("../images/icons/add_icon.png");
+        opacity: 0.5;
+    }
+
+    .add-event:hover {
+        opacity: 1;
+    }
+    
+    .more {
+        display: none;
+    }
+
+    .show-less {
+        display: none;
+    }
+}

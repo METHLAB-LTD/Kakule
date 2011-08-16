@@ -1,0 +1,74 @@
+/* Side bar styles
+ * @sidebar
+ */
+
+#itinerary-day {
+    padding: 1em;
+}
+
+#itinerary-title {
+  margin: 0.5em 0.8em; 
+  height: 1.2em;
+}
+
+#itinerary-name {
+    display: inline-block;
+    min-height: 15px;
+    .inplace_form {
+        position: relative;
+        left: -5px;
+        top: -5px;
+
+        input {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            outline: 0px;
+            border: 0px;
+        }
+    }
+
+}
+
+.itinerary-name-icon {
+    background: url("../images/icons/edit_icon.png") no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+}
+
+.itinerary-name-noicon {
+}
+
+#edit-icon:hover {
+    opacity: 1;
+}
+
+#current_location {
+  color: #333; 
+}
+
+#added {
+    display: none;
+    background: $light_yellow;
+    color: $orange ;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 1em;
+
+    .icon {
+        width: 15px;
+        height: 14px;
+        background: url("../images/icons/ok_icon.png");
+    }
+}
+
+#savepanel {
+  padding: 1em;
+
+  .button {
+    text-transform: uppercase;
+    text-align: center; 
+  }
+}
+
+
