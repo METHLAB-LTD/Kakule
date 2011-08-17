@@ -50,11 +50,15 @@
 #itinerary .day ol li {
   float: left;
 }
-/* line 22, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 21, ../../app/stylesheets/itinerary/itinerary.scss */
+#itinerary .day .element {
+  width: 10px;
+}
+/* line 23, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .day .element div {
   display: none;
 }
-/* line 26, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 27, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple {
   z-index: 1000;
   text-align: left;
@@ -74,11 +78,11 @@
    *   set the background-image to .tip-inner instead.
    */
 }
-/* line 44, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 45, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple .tip-inner {
   font: 12px/16px arial, helvetica, sans-serif;
 }
-/* line 47, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 48, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple .tip-arrow-top {
   margin-top: -6px;
   margin-left: -5px;
@@ -89,7 +93,7 @@
   height: 6px;
   background: url("../images/tip-yellowsimple_arrows.gif") no-repeat;
 }
-/* line 56, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 57, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple .tip-arrow-right {
   margin-top: -4px;
   /* approx. half the height to center it */
@@ -100,7 +104,7 @@
   height: 9px;
   background: url("../images/tip-yellowsimple_arrows.gif") no-repeat -9px 0;
 }
-/* line 65, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 66, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple .tip-arrow-bottom {
   margin-top: 0;
   margin-left: -5px;
@@ -111,7 +115,7 @@
   height: 6px;
   background: url("../images/tip-yellowsimple_arrows.gif") no-repeat -18px 0;
 }
-/* line 74, ../../app/stylesheets/itinerary/itinerary.scss */
+/* line 75, ../../app/stylesheets/itinerary/itinerary.scss */
 #itinerary .tip-yellowsimple .tip-arrow-left {
   margin-top: -4px;
   /* approx. half the height to center it */
