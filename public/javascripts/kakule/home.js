@@ -113,6 +113,7 @@ kakule.home.init = {
             highlight: function(value, term) { 
                 return value.replace(new RegExp("("+term+")", "gi"),'<span class="ac_highlight">$1</span>'); 
             },
+						delay: 200,
             }).result(function(event, item) {
                 kakule.current.lat = item.lat;
                 kakule.current.lng = item.lng;
