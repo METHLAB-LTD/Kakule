@@ -17,6 +17,10 @@ ActiveRecord::Schema.define(:version => 20110803210628) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "yelp_id"
+    t.string   "photo_url_small"
+    t.string   "url"
+    t.string   "photo_url"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

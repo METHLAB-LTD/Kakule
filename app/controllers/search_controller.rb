@@ -150,7 +150,6 @@ class SearchController < ApplicationController
     }.to_json
     
   end
-  
-  
+
 
 end

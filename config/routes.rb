@@ -15,6 +15,8 @@ Kakule::Application.routes.draw do
   match 'itineraries/:id/finalize' => 'itineraries#finalize'
   match 'itineraries/:id/event/create' => 'itineraries#create_event'
   match 'itineraries/:id/event/update/:event_id' => 'itineraries#update_event'
+  match 'itineraries/:id/show_day/:year-:month-:day' => 'itineraries#show_day', :constraints => {:year => /\d{4}/, :month => /\d{1,2}/, :day => /\d{1,2}/}, :via => :get
+  
 
   # Search
   post "search/events"
