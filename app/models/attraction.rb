@@ -51,7 +51,9 @@ class Attraction < ActiveRecord::Base
           :photo_url_small => business["photo_url_small"],
           :url => business["url"],
           :photo_url => business["photo_url"],
-          :phone => business["phone"]
+          :phone => business["phone"],
+          :avg_rating => business["avg_rating"],
+          :review_count => business["review_count"]
         })
         # TODO: Fix inefficiency
         business["categories"].each do |cat| 

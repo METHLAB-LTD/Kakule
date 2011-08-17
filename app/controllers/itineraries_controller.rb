@@ -19,9 +19,8 @@ class ItinerariesController < ApplicationController
   # GET /itineraries/1
   # /itineraries/:id/
   def show
-    include_fields = [:selected_events, :events, :selected_attractions, :attractions, :transportations]
-    @itinerary = Itinerary.find(params[:id], :include => include_fields)
-    @timeline = @itinerary.timeline(:include => include_fields)
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations, :selected_meals, :meals])
+    @timeline = @itinerary.timeline
     #render :json => @timeline.to_json
   end
 
@@ -150,11 +149,11 @@ class ItinerariesController < ApplicationController
   # GET /itineraries/1/finalize
   # Generate transportation
   def finalize
-    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations, :selected_meals, :meals])
     @itinerary.recommend_transportation!
     
     render :json => {
-      :itinerary => @itinerary.timeline(:include => [:events, :attractions, :transportations])
+      :itinerary => @itinerary.timeline
     }.to_json
     
   end

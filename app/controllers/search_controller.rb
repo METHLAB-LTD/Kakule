@@ -116,21 +116,13 @@ class SearchController < ApplicationController
   # 
   # Possible Categories: http://www.yelp.com/developers/documentation/category_list
   def meals
-    client  = Yelp::Client.new
-    RAILS_DEFAULT_LOGGER.info("[API] Yelp")
-    request = Yelp::Review::Request::GeoPoint.new(
-     :latitude => params[:lat],
-     :longitude => params[:lng],
-     :radius => params[:radius],
-     :term => params[:query],
-     :category => params[:category] || ["food", "restaurants"],
-     :yws_id => YELP_API_KEY)
-    return client.search(request)
+    params[:category] = ["food", "restaurants"]
+    Attraction.find_with_yelp(params)
   end
   
   def render_meals
     render :json => {
-      :html => render_to_string(:partial => "meals", :locals => {:meals => meals["businesses"]})
+      :html => render_to_string(:partial => "meals", :locals => {:meals => meals})
     }.to_json
   end
   

@@ -7,8 +7,13 @@ class Itinerary < ActiveRecord::Base
   has_many :attractions, :through => :selected_attractions
   has_many :selected_events
   has_many :events, :through => :selected_events
-  has_many :transportations
+  
+  has_many :selected_meals
+  has_many :meals, :through => :selected_meals, :source => :attraction
+  
 
+  has_many :transportations
+  
   validates_presence_of :owner_id
   
   #validates_presence_of :parent_id
@@ -30,12 +35,13 @@ class Itinerary < ActiveRecord::Base
   }
   
   # Always preload. :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations]
-  def timeline(params={})
+  def timeline(params={:include => [:events, :attractions, :meals, :transportations]})
     dataset = {}
     if params[:include]
         timeline_include_events(dataset) if params[:include].include?(:events)
         timeline_include_attractions(dataset) if params[:include].include?(:attractions)
         timeline_include_transportations(dataset) if params[:include].include?(:transportations)
+        timeline_include_meals(dataset) if params[:include].include?(:meals)
     end
     
     dataset.each do |k, v|
@@ -109,6 +115,10 @@ class Itinerary < ActiveRecord::Base
     
   end
   
+  def add_meal(id, from, to)    
+    add_attraction(id, from, to)
+  end
+  
   def self.permissions(str)
     @@permissions[str]
   end
@@ -170,6 +180,24 @@ class Itinerary < ActiveRecord::Base
     end
     return dataset
   end
+  
+  def timeline_include_meals(dataset)
+    self.selected_meals.each do |entry|
+      element = {
+        :start_time => entry.start_time,
+        :end_time => entry.end_time,
+        :name => entry.attraction.name,
+        :type => "meal",
+        :id => entry.attraction.id,
+        :lat => entry.attraction.latitude,
+        :lng => entry.attraction.longitude,
+        :hashcode => entry.hash
+      }
+      break_time_into_days(dataset, element)
+    end
+    return dataset
+  end
+  
   
   def break_time_into_days(dataset, element)
     days = []
