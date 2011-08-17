@@ -1,0 +1,118 @@
+/* Place styles 
+ * @home
+ */
+/* line 4, ../../../app/stylesheets/home/place.scss */
+.place-header {
+  padding: 1em;
+}
+
+/* line 8, ../../../app/stylesheets/home/place.scss */
+#place-description {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 13, ../../../app/stylesheets/home/place.scss */
+.header {
+  padding: 0.8em;
+  padding-left: 1em;
+  text-transform: uppercase;
+}
+
+/* line 20, ../../../app/stylesheets/home/place.scss */
+#place-photos img {
+  width: 100%;
+}
+/* line 24, ../../../app/stylesheets/home/place.scss */
+#place-photos #main-photo {
+  float: left;
+  width: 70%;
+}
+/* line 29, ../../../app/stylesheets/home/place.scss */
+#place-photos .main-photo-img {
+  border: 1px solid #ccc;
+}
+/* line 33, ../../../app/stylesheets/home/place.scss */
+#place-photos #thumbs {
+  width: 25%;
+  float: right;
+  margin-top: -4px;
+}
+/* line 39, ../../../app/stylesheets/home/place.scss */
+#place-photos .place-photo {
+  display: inline-block;
+  overflow: hidden;
+  margin: 4px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  opacity: 0.7;
+  cursor: pointer;
+}
+/* line 49, ../../../app/stylesheets/home/place.scss */
+#place-photos .place-photo:hover {
+  opacity: 1;
+}
+
+/* line 55, ../../../app/stylesheets/home/place.scss */
+.place-content {
+  padding: 1em;
+}
+
+/* line 59, ../../../app/stylesheets/home/place.scss */
+.event {
+  padding: 0.5em;
+}
+
+/* line 63, ../../../app/stylesheets/home/place.scss */
+.event:hover {
+  background: #efefef;
+}
+
+/* line 67, ../../../app/stylesheets/home/place.scss */
+.event-thumbnail {
+  height: 50px;
+  width: 50px;
+  background: #ccc;
+  overflow: hidden;
+  float: left;
+}
+
+/* line 75, ../../../app/stylesheets/home/place.scss */
+.event-information {
+  position: relative;
+  margin-left: 50px;
+  padding: 0.5em;
+}
+/* line 80, ../../../app/stylesheets/home/place.scss */
+.event-information .name {
+  display: block;
+}
+/* line 84, ../../../app/stylesheets/home/place.scss */
+.event-information .distance {
+  display: block;
+  font-size: 0.9em;
+  color: #bbb;
+}
+/* line 90, ../../../app/stylesheets/home/place.scss */
+.event-information .add-event {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/add_icon.png");
+  opacity: 0.5;
+}
+/* line 101, ../../../app/stylesheets/home/place.scss */
+.event-information .add-event:hover {
+  opacity: 1;
+}
+/* line 105, ../../../app/stylesheets/home/place.scss */
+.event-information .more {
+  display: none;
+}
+/* line 109, ../../../app/stylesheets/home/place.scss */
+.event-information .show-less {
+  display: none;
+}
