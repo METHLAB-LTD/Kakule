@@ -1,4 +1,7 @@
-var test;
+if (!kakule.itinerary) {
+  kakule.itinerary = {};
+}
+
 kakule.itinerary = {
 	init : function(){
 		if (!$("itinerary")){return;}
@@ -15,7 +18,7 @@ kakule.itinerary = {
 				var colorSeed = parseInt(element.attr('id'), 10);
 				
 				element.height(height+"px");
-				element.width("10px");
+				//element.width("10px");
 				element.css("margin-top", yPos+"px");
 				element.css("background-color", "hsl("+[Math.round(360/colorSeed), "100%", "70%"].join(",")+")");
 			})

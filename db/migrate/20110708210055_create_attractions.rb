@@ -9,7 +9,8 @@ class CreateAttractions < ActiveRecord::Migration
       t.string :url
       t.string :photo_url
       t.string :phone
-      
+      t.float :avg_rating
+      t.integer :review_count
       
       t.timestamps
     end

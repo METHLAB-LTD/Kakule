@@ -19,9 +19,8 @@ class ItinerariesController < ApplicationController
   # GET /itineraries/1
   # /itineraries/:id/
   def show
-    include_fields = [:selected_events, :events, :selected_attractions, :attractions, :transportations]
-    @itinerary = Itinerary.find(params[:id], :include => include_fields)
-    @timeline = @itinerary.timeline(:include => include_fields)
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations, :selected_meals, :meals])
+    @timeline = @itinerary.timeline
     #render :json => @timeline.to_json
   end
 
@@ -107,16 +106,19 @@ class ItinerariesController < ApplicationController
 
 
   # POST /itineraries/add_event
-  # Required type (event, attraction, transportation), id
+  # Required type (event, attraction, transportation), id, from, to
   def add_event
     id = params[:id].to_i
+    from = Time.parse(params[:from])
+    to = Time.parse(params[:to])
+    
     obj = nil
     if params[:type] == "event"
-        obj = current_itinerary.add_event(id)  
+        obj = current_itinerary.add_event(id, from, to)  
     elsif params[:type] == "attraction"
-        obj = current_itinerary.add_attraction(id)
+        obj = current_itinerary.add_attraction(id, from, to)
     elsif params[:type] == "transportation"
-        obj = current_itinerary.add_transportation(id)
+        obj = current_itinerary.add_transportation(id, from, to)
     end
 
     render :json => {
@@ -145,8 +147,9 @@ class ItinerariesController < ApplicationController
   
   
   # GET /itineraries/1/finalize
+  # Generate transportation
   def finalize
-    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
+    @itinerary = Itinerary.find(params[:id], :include => [:selected_events, :events, :selected_attractions, :attractions, :transportations, :selected_meals, :meals])
     @itinerary.recommend_transportation!
     
     render :json => {
@@ -154,6 +157,19 @@ class ItinerariesController < ApplicationController
     }.to_json
     
   end
+  
+  # GET/itineraries/1/show_day/yyyy-mm-dd
+  def show_day
+    @itinerary = Itinerary.find(params[:id])
+    render :json => {:error => 'access denied'} unless current_user.can_read_itinerary?(@itinerary)
+    
+    @timeline = @itinerary.timeline(:include => [:events, :attractions, :transportations])
+    date = "#{params[:year]}-#{params[:month]}-#{params[:day]}"
+    
+    render :json => @timeline[date]
+    
+  end
+  
   
   private
   def validate_write_permission

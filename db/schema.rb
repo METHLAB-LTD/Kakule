@@ -10,13 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110803210628) do
+ActiveRecord::Schema.define(:version => 20110817094720) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
     t.float    "latitude"
     t.float    "longitude"
     t.string   "yelp_id"
+    t.string   "photo_url_small"
+    t.string   "url"
+    t.string   "photo_url"
+    t.string   "phone"
+    t.float    "avg_rating"
+    t.integer  "review_count"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -118,6 +124,15 @@ ActiveRecord::Schema.define(:version => 20110803210628) do
   create_table "selected_events", :force => true do |t|
     t.integer  "itinerary_id"
     t.integer  "event_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "selected_meals", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "attraction_id"
     t.datetime "start_time"
     t.datetime "end_time"
     t.datetime "created_at"
