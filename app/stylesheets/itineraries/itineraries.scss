@@ -4,7 +4,8 @@
 	}
 	.day{
 		height: 360px;
-		positin: relative;
+		margin-left: 140px;
+		position: relative;
 		border-bottom: 1px gray dashed;
 		&:first-child{
 			border-top: 1px gray dashed;
