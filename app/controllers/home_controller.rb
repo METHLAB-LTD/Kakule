@@ -6,10 +6,6 @@ class HomeController < ApplicationController
     @date = format_date(time)
     find_or_create_guest_user
     @itinerary = current_itinerary(:include => [:selected_events, :events, :selected_attractions, :attractions, :transportations])
-    puts current_user
-    puts current_user.id
-    puts current_user.itineraries
-    puts @itinerary
     @timeline = current_itinerary.timeline
 
     @events = current_itinerary.get_events(time)
