@@ -7,8 +7,5 @@ kakule.current = {
     lng: 0,
     location: undefined,
     geocode_data: undefined,
-    pinned_location: undefined,
-    addpanel: {
-        selected_search: 0 
-    }
+    date: new Date().toString()
 };

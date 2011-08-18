@@ -60,7 +60,7 @@ kakule.home.init = {
             // Remove current object
             $("#event-" + id).fadeOut();
             $.post("/itineraries/add_event/",
-                {type: type, id: id}, 
+                {type: type, id: id, from: kakule.current.date, to: kakule.current.date}, 
                 function(data) {
                     if (type == "event") {
                         var event = data.obj.event;
@@ -74,7 +74,6 @@ kakule.home.init = {
                 }
             );
 		});
-
 	},
 
     attachEditHandlers : function() {
@@ -94,7 +93,6 @@ kakule.home.init = {
 		    show_buttons: false 
 	    });
     },
-    
 
 	attachSearchHandlers : function(){
         $("#location-search").autocomplete("/search/places", {
@@ -157,12 +155,6 @@ kakule.home.init = {
 	}
 };
 
-
-
-
-
-
-
 kakule.home.search = {
 	attractions : function(query){
 		function callback (response){
@@ -217,7 +209,16 @@ kakule.home.ui = {
     $("#added").show().delay(3000).fadeOut(500);
   },
 
-  addAttractionToItinerary : function(attraction) {
+  addAttractionToItinerary : function(attr) {
+    $("#empty").remove();
+    $("#itinerary-day").append(
+        $("<div></div>")
+            .addClass("itinerary-attraction")
+            .text(attr.name)
+    );
+
+    // Flash notice
+    $("#added").show().delay(3000).fadeOut(500);
   },
 
   setLocation : function(location) {

@@ -24,6 +24,7 @@ function render_calendar(e) {
 function choose_day(e) {
     var date = $(this).attr("id");
 
+    kakule.current.date = date;
     $(".ec-today-header").removeClass("ec-today-header");
     $(this).addClass("ec-today-header");
 
