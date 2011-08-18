@@ -138,10 +138,12 @@ class ItinerariesController < ApplicationController
   end
 
   def render_day
-    @date = format_date(params[:date].to_time)
-    @events = current_itinerary.events
+    date = params[:date].to_time
+    @date = format_date(date)
+    @events = current_itinerary.get_events(date)
+    @attractions = current_itinerary.get_attractions(date)
     render :json => {
-        :html => (render_to_string :partial => "home/day", :locals => {:events => @events})
+        :html => (render_to_string :partial => "home/day", :locals => {:events => @events, :attractions => @attractions})
     }
   end
   

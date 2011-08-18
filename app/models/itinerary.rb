@@ -89,6 +89,14 @@ class Itinerary < ActiveRecord::Base
     "#{self.owner.name} :: #{self.name}"
   end
 
+  def get_events(date) 
+    SelectedEvent.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.event }
+  end 
+
+  def get_attractions(date) 
+    SelectedAttraction.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.attraction }
+  end 
+
   def add_event(id, from, to)
     sel_event = SelectedEvent.create({
       :event_id => id,
