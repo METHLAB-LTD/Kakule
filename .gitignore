@@ -11,3 +11,5 @@ doc/app
 .DS_Store
 .rvmrc
 vendor/cache/*
+public/stylesheets
+
