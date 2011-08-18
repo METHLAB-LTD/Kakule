@@ -75,3 +75,42 @@ a {
 .clickable {
     cursor: pointer;
 }
+
+.white {
+    background: white;
+    -webkit-box-shadow: 0 2px 5px 1px #CFC0BE;
+    -moz-box-shadow: 0 2px 5px 1px #CFC0BE;
+    box-shadow: 0 2px 5px 1px #CFC0BE;
+}
+
+.form {
+    margin-top: 1em;
+
+    label {
+        text-transform: uppercase;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    }
+
+    .field {
+        padding-bottom: 0.5em;
+
+        input {
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 3px;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .field_with_errors {
+            display: inline-block;
+            color: red;
+        }
+    }
+    
+
+    label {
+        width: 6em;
+        display: inline-block;
+    }
+}
