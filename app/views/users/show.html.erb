@@ -1,18 +1,9 @@
 <p id="notice"><%= notice %></p>
+<h1><%=@user.name%></h1>
 
 <p>
   <b>Email:</b>
   <%= @user.email %>
-</p>
-
-<p>
-  <b>First name:</b>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <b>Last name:</b>
-  <%= @user.last_name %>
 </p>
 
 <p>
@@ -40,3 +31,8 @@
   <b>Friend Requests:</b>
   <%= @user.pending_friends.map{|f| f.name}.join(", ") %>
 </p>
+
+<h2>Your Itineraries</h2>
+<% @itineraries.each do |itinerary| %>
+  <%= link_to(itinerary.name, itinerary) %>
+<%end%>

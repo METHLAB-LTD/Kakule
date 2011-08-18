@@ -16,7 +16,8 @@ class UsersController < ApplicationController
   # GET /dashboard
   def show
     @user = current_user# || User.find(params[:id])
-
+    @itineraries = current_user.itineraries
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }
