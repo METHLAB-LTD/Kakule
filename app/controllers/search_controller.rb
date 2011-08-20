@@ -23,10 +23,13 @@ class SearchController < ApplicationController
   # Required: lat, lng
   # Optional: radius, query, start_time, end_time, limit
   # example = {lat : 37.782455, lng : -122.405855, radius : 50, query : "ass", start_time : (new Date()).toLocaleString(), end_time : (new Date(2011,7,2)).toLocaleString(), limit : 20}
-  def events
-    @events = Event.find_by_custom_params(params)
+  def events(limit)
+    # TODO: Figure out how to limit the Yelp API calls,
+    # instead of cutting the results off afterwards (less
+    # efficient)
+    @events = Event.find_by_custom_params(params)[0, limit]
     #@attractions = Attraction.find_by_custom_params(params)
-    @attractions = Attraction.find_with_yelp(params)
+    @attractions = Attraction.find_with_yelp(params)[0, limit]
     results = {:events => @events, :attractions => @attractions }
     
     #render :json => {
@@ -36,7 +39,7 @@ class SearchController < ApplicationController
   end
 
   def render_attractions
-    results = events
+    results = events(5)
     results[:events].each {|e| e[:type] = "event" }
     results[:attractions].each {|a| a[:type] = "attraction" }
 
@@ -115,14 +118,18 @@ class SearchController < ApplicationController
   # Optional: radius (miles), query, category
   # 
   # Possible Categories: http://www.yelp.com/developers/documentation/category_list
-  def meals
+  def meals(limit)
+    # TODO: Figure out how to set limit w/ Yelp API
+    # instead of cutting the array off after (less
+    # efficient)
     params[:category] = ["food", "restaurants"]
-    meals = Attraction.find_with_yelp(params)
+    meals = Attraction.find_with_yelp(params)[0, limit]
     meals.map {|m| m["type"] = "meal"}
     return meals
   end
   
   def render_meals
+    meals = meals(5)
     render :json => {
       :html => render_to_string(:partial => "attractions", :locals => {:all => meals})
     }.to_json
