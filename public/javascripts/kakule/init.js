@@ -7,5 +7,5 @@ kakule.current = {
     lng: 0,
     location: undefined,
     geocode_data: undefined,
-    date: new Date().toString()
+    date: new Date().setHours(0,0,0,0).toString()
 };

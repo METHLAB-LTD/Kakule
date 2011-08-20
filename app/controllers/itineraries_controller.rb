@@ -110,13 +110,16 @@ class ItinerariesController < ApplicationController
   def add_event
     id = params[:id].to_i
     from = Time.parse(params[:from])
-    to = Time.parse(params[:to])
+    to = from + 1.day
+    to = Time.parse(params[:to]) if params[:to]
     
     obj = nil
     if params[:type] == "event"
         obj = current_itinerary.add_event(id, from, to)  
     elsif params[:type] == "attraction"
         obj = current_itinerary.add_attraction(id, from, to)
+    elsif params[:type] == "meal"
+        obj = current_itinerary.add_meal(id, from, to)
     elsif params[:type] == "transportation"
         obj = current_itinerary.add_transportation(id, from, to)
     end

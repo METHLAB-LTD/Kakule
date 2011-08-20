@@ -117,12 +117,14 @@ class SearchController < ApplicationController
   # Possible Categories: http://www.yelp.com/developers/documentation/category_list
   def meals
     params[:category] = ["food", "restaurants"]
-    Attraction.find_with_yelp(params)
+    meals = Attraction.find_with_yelp(params)
+    meals.map {|m| m["type"] = "meal"}
+    return meals
   end
   
   def render_meals
     render :json => {
-      :html => render_to_string(:partial => "meals", :locals => {:meals => meals})
+      :html => render_to_string(:partial => "attractions", :locals => {:all => meals})
     }.to_json
   end
   

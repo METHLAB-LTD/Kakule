@@ -118,6 +118,17 @@ class Itinerary < ActiveRecord::Base
     
     return Attraction.find(id)
   end
+
+  def add_meal(id, from, to) 
+     sel_meal = SelectedMeal.create({
+      :attraction_id => id,
+      :itinerary_id => self.id,
+      :start_time => from,
+      :end_time => to
+    })
+
+    return Meal.find(id)
+  end
   
   def add_transportation(id, from, to)
     

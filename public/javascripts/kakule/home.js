@@ -60,7 +60,7 @@ kakule.home.init = {
             // Remove current object
             $("#event-" + id).fadeOut();
             $.post("/itineraries/add_event/",
-                {type: type, id: id, from: kakule.current.date, to: kakule.current.date}, 
+                {type: type, id: id, from: kakule.current.date}, 
                 function(data) {
                     if (type == "event") {
                         var event = data.obj.event;
@@ -69,6 +69,9 @@ kakule.home.init = {
                     } else if (type == "attraction") {
                         var attraction = data.obj.attraction;
                         kakule.home.ui.addAttractionToItinerary(attraction);
+                    } else if (type == "meal") {
+                        var meal = data.obj.attraction;
+                        kakule.home.ui.addMealToItinerary(meal);
                     }
                     
                 }
@@ -215,6 +218,18 @@ kakule.home.ui = {
         $("<div></div>")
             .addClass("itinerary-attraction")
             .text(attr.name)
+    );
+
+    // Flash notice
+    $("#added").show().delay(3000).fadeOut(500);
+  },
+
+  addMealToItinerary : function(meal) {
+    $("#empty").remove();
+    $("#itinerary-day").append(
+        $("<div></div>")
+            .addClass("itinerary-meal")
+            .text(meal.name)
     );
 
     // Flash notice

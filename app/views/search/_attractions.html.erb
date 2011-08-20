@@ -15,7 +15,7 @@
             <%= image_tag photo_url %>
         </div>
         <div class="event-information">
-            <span class="name"><%= name %></span>
+            <span class="name"><%= name %></span><% if type == "meal" %><span class="rating"><%= item["avg_rating"] %></span><% end %>
             <span class="distance">X miles away (X-ing distance)</span> 
             <span class="show-more clickable" id="more-<%= id %>">[SHOW ME MORE]</span>
             <span class="show-less clickable" id="less-<%= id %>">[SHOW ME LESS]</span>
