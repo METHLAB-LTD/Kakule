@@ -126,6 +126,13 @@ kakule.home.init = {
                         $("#content").empty();
                         $("#content").append(data.html);
 
+                        // Preload images
+                        photos = data.photos
+                        for (var i = 0; i < photos.length; i++) {
+                            var image = new Image();
+                            image.src = photos[i];
+                        }
+
                         kakule.home.search.attractions("");
                         kakule.home.search.meals("");
                         kakule.home.init.attachPhotoGalleryHandlers();

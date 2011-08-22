@@ -69,8 +69,10 @@ class SearchController < ApplicationController
   # Render partial UI for geocoding results
   def render_place_by_id
     geocode = Geocode.find(params[:id].to_i)
+    photos = geocode.photos(10)
     render :json => {
-        :html => (render_to_string :partial => "place", :locals => {:place => geocode})
+        :html => (render_to_string :partial => "place", :locals => {:place => geocode, :photos => photos}),
+        :photos => photos.map {|p| p[:url]}
     }
   end
   
