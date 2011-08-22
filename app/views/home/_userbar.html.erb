@@ -1,9 +1,9 @@
 
-        <span id="userbar-name"><%= "Welcome, " + current_user.name if current_user %></span>
-				<% unless current_user%>
+        <span id="userbar-name">Welcome, <%= (link_to current_user.name, :dashboard) %></span>
+				<% if current_user.is_guest?%>
         <span id="userbar-options"><%= link_to "Log In", login_path %> | <%= link_to "Register", register_path %></span>
-				<span id="userbar-facebook"><%= link_to (image_tag "fbconnect.gif"), "/facebook/auth"%></span>
+				<span id="userbar-facebook"><%= link_to (image_tag "fbconnect.gif"), :facebook_login %></span>
 				<%else%>
-				[Logout]
+				<span id="userbar-logout"><%= link_to "logout", :logout %></span>
 				<%end%>
 
