@@ -33,6 +33,7 @@ function choose_day(e) {
           function(data) {
             $("#itinerary-day-wrapper").empty();
             $("#itinerary-day-wrapper").append(data.html);
+            kakule.home.init.attachItineraryHandlers();
           }
     );
 }

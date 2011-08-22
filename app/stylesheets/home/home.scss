@@ -100,6 +100,26 @@
     padding: 1em;
 }
 
+/* Itinerary sidebar styles
+ * @itinerary-right
+ */
+
+.ui-effects-transfer {
+    background: #FFCF75;
+    opacity: 0.5;
+}
+
+.itinerary-event {
+    padding: 0.5em;
+    background: #F2F0EE;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.empty-itinerary {
+    height: 70px;
+}
+
 #session{
 	position: relative;
   .popup{

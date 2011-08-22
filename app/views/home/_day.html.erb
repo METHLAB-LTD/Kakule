@@ -1,22 +1,32 @@
 <% events = @events if @events %>
 <% attractions = @attractions if @attractions %>
+<% all = events + attractions %>
 <div class="header inset-pink">Itinerary for: <%= @date %></div>
 <div id="itinerary-day">
 <div id="added">
     <span class="icon"></span>Your itinerary item has been successfully added.
 </div>
-<% if events.empty? and attractions.empty? %>
+<% if all.empty? %>
     <div id="empty">You don't have any events planned yet.</div>
+    <ul id="itinerary-events"></ul>
 <% else %>
-    <% for event in events %>
-        <div class="itinerary-event">
-            <%= event.name %>
-        </div>
+    <ul id="itinerary-events">
+    <% for event in all %>
+        <li class="itinerary-event">
+            <div class="event-thumbnail">
+                <img src="<%= event.photo_url %>">
+            </div>
+            <div class="event-information">
+                <span class="name">
+                    <%= event.name %>
+                </span>
+                <span class="time">
+                    12:00am - 11:59pm
+                </span>
+            </div>
+            <div class="clear"></div>
+        </li>
     <% end %>
-    <% for attr in attractions %>
-        <div class="itinerary-attraction">
-            <%= attr.name %>
-        </div>
-    <% end %>
+    </ul>
 <% end %>
 </div>

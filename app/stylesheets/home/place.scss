@@ -76,6 +76,7 @@
     position: relative;
     margin-left: 50px;
     padding: 0.5em;
+    padding-top: 0px;
 
     .name {
         display: block;
@@ -92,10 +93,14 @@
         top: 0px;
         right: 0px;
 
-        width: 14px;
+        padding: 5px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+
+        /*width: 14px;
         height: 14px;
-        background: url("../images/icons/add_icon.png");
-        opacity: 0.5;
+        background: url("../images/icons/add_icon.png");*/
+        opacity: 0.7;
     }
 
     .add-event:hover {

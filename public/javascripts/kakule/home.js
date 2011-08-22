@@ -10,6 +10,7 @@ kakule.home.init = {
 			kakule.home.init.attachEditHandlers();
 			kakule.home.init.attachAddHandlers();
 			kakule.home.init.attachShowHandlers();
+            kakule.home.init.attachItineraryHandlers();
 			kakule.home.init.session();
 	  }
 	},
@@ -53,26 +54,43 @@ kakule.home.init = {
 	attachAddHandlers : function() {
 		$("body").delegate(".add-event", "click", function(e) {
             e.preventDefault();
-            var split = $(this).attr("id").split("-");
+            var elem = $(this);
+            var parent = elem.parent();
+            var split = elem.attr("id").split("-");
             var type = split[1];
             var id = parseInt(split[2]);
 
-            // Remove current object
-            $("#event-" + id).fadeOut();
             $.post("/itineraries/add_event/",
                 {type: type, id: id, from: kakule.current.date}, 
                 function(data) {
-                    if (type == "event") {
-                        var event = data.obj.event;
-
-                        kakule.home.ui.addEventToItinerary(event);
-                    } else if (type == "attraction") {
-                        var attraction = data.obj.attraction;
-                        kakule.home.ui.addAttractionToItinerary(attraction);
-                    } else if (type == "meal") {
-                        var meal = data.obj.attraction;
-                        kakule.home.ui.addMealToItinerary(meal);
+                    $("#empty").remove();
+                    common = function() {
+                        $(".empty-itinerary").remove();
+                        // Remove current object
+                        $("#event-" + id).fadeOut();
                     }
+                    if (type == "event") {
+                        var callback = function() {
+                            common();
+                            var event = data.obj.event;
+                            kakule.home.ui.addEventToItinerary(event);
+                        }
+                    } else if (type == "attraction") {
+                        var callback = function() {
+                            common();
+                            var attraction = data.obj.attraction;
+                            kakule.home.ui.addAttractionToItinerary(attraction);
+                        }
+                    } else if (type == "meal") {
+                        var callback = function() {
+                            common();
+                            var meal = data.obj.attraction;
+                            kakule.home.ui.addMealToItinerary(meal);
+                        }
+                    }
+
+                    $("#itinerary-day").append($("<div></div>").addClass("empty-itinerary"));
+                    parent.effect("transfer", {to: ".empty-itinerary", className: "ui-effects-transfer"}, 250, callback);
                     
                 }
             );
@@ -139,6 +157,10 @@ kakule.home.init = {
                       });
             });
 	},
+
+    attachItineraryHandlers : function() {
+        $("#itinerary-events").sortable();
+    },
 
     attachPhotoGalleryHandlers : function() {
         $("#thumbs").delegate(".place-photo-img", "click", function() {
@@ -208,36 +230,87 @@ kakule.home.ui = {
   },
 
   addEventToItinerary : function(event) {
-    $("#empty").remove();
-    $("#itinerary-day").append(
-        $("<div></div>")
+    $("#itinerary-events").append(
+        $("<li></li>")
             .addClass("itinerary-event")
-            .text(event.name)
-    );
+            .append(
+                $("<div></div>")
+                    .addClass("event-thumbnail")
+                    .append(
+                        $("<img>")
+                            .attr("src", event.photo_url)))
+            .append(
+                $("<div></div>")
+                    .addClass("event-information")
+                    .append(
+                        $("<span></span>")
+                            .addClass("name")
+                            .text(event.name))
+                    .append(
+                        $("<span></span>")
+                            .addClass("time")
+                            .text("12:00am - 11:59pm")))
+             .append(
+                $("<div></div>")
+                    .addClass("clear")));
 
     // Flash notice
     $("#added").show().delay(3000).fadeOut(500);
   },
 
   addAttractionToItinerary : function(attr) {
-    $("#empty").remove();
-    $("#itinerary-day").append(
-        $("<div></div>")
-            .addClass("itinerary-attraction")
-            .text(attr.name)
-    );
+    $("#itinerary-events").append(
+        $("<li></li>")
+            .addClass("itinerary-event")
+            .append(
+                $("<div></div>")
+                    .addClass("event-thumbnail")
+                    .append(
+                        $("<img>")
+                            .attr("src", attr.photo_url)))
+            .append(
+                $("<div></div>")
+                    .addClass("event-information")
+                    .append(
+                        $("<span></span>")
+                            .addClass("name")
+                            .text(attr.name))
+                    .append(
+                        $("<span></span>")
+                            .addClass("time")
+                            .text("12:00am - 11:59pm")))
+             .append(
+                $("<div></div>")
+                    .addClass("clear")));
 
     // Flash notice
     $("#added").show().delay(3000).fadeOut(500);
   },
 
   addMealToItinerary : function(meal) {
-    $("#empty").remove();
-    $("#itinerary-day").append(
-        $("<div></div>")
-            .addClass("itinerary-meal")
-            .text(meal.name)
-    );
+    $("#itinerary-events").append(
+        $("<li></li>")
+            .addClass("itinerary-event")
+            .append(
+                $("<div></div>")
+                    .addClass("event-thumbnail")
+                    .append(
+                        $("<img>")
+                            .attr("src", meal.photo_url)))
+            .append(
+                $("<div></div>")
+                    .addClass("event-information")
+                    .append(
+                        $("<span></span>")
+                            .addClass("name")
+                            .text(meal.name))
+                    .append(
+                        $("<span></span>")
+                            .addClass("time")
+                            .text("12:00am - 11:59pm")))
+             .append(
+                $("<div></div>")
+                    .addClass("clear")));
 
     // Flash notice
     $("#added").show().delay(3000).fadeOut(500);
