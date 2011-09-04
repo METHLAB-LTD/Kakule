@@ -1,0 +1,31 @@
+#calendar {
+  width: 80%;
+  margin: auto;
+
+  .event {
+    background: $red;
+  }
+
+  .attraction {
+    background: $teal;
+  }
+
+  .meal {
+    background: $light_orange;   
+  }
+}
+
+#add-event {
+  float: left;
+}
+
+#add-comment {
+  float: right;
+}
+
+.add {
+  width: 45%;
+  padding: 2%;
+  background: #f5f2f1;
+  border: 1px solid darken(#f5f2f1, 3%);
+}
