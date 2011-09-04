@@ -14,6 +14,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1.xml
   def show
     @question = Question.find(params[:id])
+    @itinerary = @question.itinerary
 
     respond_to do |format|
       format.html # show.html.erb
