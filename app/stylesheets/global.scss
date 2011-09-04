@@ -150,3 +150,12 @@ a {
         display: inline-block;
     }
 }
+
+a.back {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
