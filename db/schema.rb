@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110904042937) do
+ActiveRecord::Schema.define(:version => 20110904224942) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
   end
 
   add_index "geocodes", ["country"], :name => "geocodes_country_index"
+  add_index "geocodes", ["name"], :name => "altered_geocodes_name_index"
   add_index "geocodes", ["name"], :name => "geocodes_name_index"
   add_index "geocodes", ["state"], :name => "geocodes_state_index"
 
@@ -122,6 +123,13 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
     t.datetime "updated_at"
   end
 
+  create_table "itinerary_tags", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "likes", :force => true do |t|
     t.integer  "user_id"
     t.integer  "likable_id"
@@ -139,6 +147,7 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
   create_table "questions", :force => true do |t|
     t.integer  "author_id"
     t.integer  "itinerary_id"
+    t.string   "title"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -167,6 +176,13 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
     t.integer  "attraction_id"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
