@@ -4,7 +4,7 @@ if (!kakule.itinerary) {
 
 kakule.itinerary = {
 	init : function(){
-		if (!$("body#itineraries")){return;}
+		if (!$("body#question")){return;}
 		$('.day').each(function(i, d){
 			var today = $(d);
 			var beginning_of_day = new Date(today.attr("id")*1000);

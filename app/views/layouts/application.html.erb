@@ -21,9 +21,13 @@
 -->
 	
 </head>
-<body id=<%= @page || "default"%>>
-
+<body id=<%= filename || "default"%>>
 <div id="wrapper">
+  <div id="header">
+      <div id="logo">
+          <%= link_to(image_tag("kakule.png"), root_url) %>
+      </div>
+  </div>
   <%= yield %>
 </div>
 
