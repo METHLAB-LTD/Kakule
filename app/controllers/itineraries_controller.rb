@@ -31,7 +31,7 @@ class ItinerariesController < ApplicationController
         :title => item.location.name,
         :start => item.start_time.to_i,
         :end => item.end_time.to_i,
-        :className => item.location_type.downcase
+        :className => item.item_type.downcase
       }
     end
     render :json => data

@@ -28,20 +28,19 @@ end
 
 User.create({:username => "azhu", :password=>"123456", :password_confirmation => "123456", :email=>"anhang@gmail.com"})
 
-Itinerary.create({:owner_id => 1, :name => "Trip to Amber's"})# 
-# Attraction.create({:name => "Amber's House", :latitude => 37, :longitude => -120})
-# Attraction.create({:name => "Nima's House", :latitude => 38, :longitude => -120})
-# SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 1, :start_time => Time.now, :end_time => Time.now + 5.hours})
-# SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 2, :start_time => Time.now + 6.hours, :end_time => Time.now + 9.hours})
-# SelectedEvent.create({:itinerary_id => 1, :event_id => 1, :start_time => Time.now + 9.hours, :end_time => Time.now + 10.hours})
-# Transportation.create({:itinerary_id => 1, :mode => 1, :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
-# 
+itinerary = Itinerary.create({:owner_id => 1, :name => "Trip to Amber's"})
 
-
-SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 18, :start_time => Time.now, :end_time => Time.now + 1.hour})
-SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 19, :start_time => Time.now + 2.hours, :end_time => Time.now + 3.hours})
-SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 7, :start_time => Time.now + 4.hours, :end_time => Time.now + 5.hours})
-
-
-
-
+def create_itinerary_items(itinerary_id)
+  10.times do |i|
+    item = ItineraryItem.new({
+      :itinerary_id => itinerary_id, 
+      :location_id => rand(10) + 1, 
+      :location_type => ["Attraction", "Event"][rand(2)],
+      :start_time => (rand(50).hours.ago),
+      :end_time => (Time.now + rand(50).hours)
+    })
+    item.intent = ["Attraction", "Meal"][rand(2)] if item.location_type == "Attraction"
+    item.save
+  end
+end
+create_itinerary_items(itinerary)

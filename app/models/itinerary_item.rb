@@ -10,7 +10,9 @@ class ItineraryItem < ActiveRecord::Base
   
   validates_presence_of :start_time, :end_time
   
-  
+  def item_type
+    intent || location_type
+  end
                     
   # module ItineraryItem  
   #   def is_confirmed?
