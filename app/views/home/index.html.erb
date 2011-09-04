@@ -5,11 +5,11 @@
         </form>
     </div>
     <div id="content">
-      [insert itineraries, stack overflow style]
+			<%= render :partial => 'questions/question', :collection => @questions %>
     </div>
 </div>
 <div id="right" class="white">
-  <div id="create-itinerary" class="inset-pink">Create New Itinerary</div>
+  <div id="create-itinerary" class="inset-pink"><%= link_to "Create New Itinerary", new_question_path%></div>
   <div id="user-panel" class="sidebar-section">
     <div id="user-information">
       <div id="user-photo">

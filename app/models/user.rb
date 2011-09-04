@@ -42,7 +42,6 @@ class User < ActiveRecord::Base
   
   def self.create_guest
     guest = User.create(:is_guest => true)
-    itinerary = Itinerary.create_itinerary(guest)
     session = UserSession.create(guest, true)
     return guest
   end

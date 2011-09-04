@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
     def find_or_create_guest_user
       unless current_user
         user = User.create_guest
-        #Itinerary.create_itinerary(user)
         @current_user = user
       end
     end

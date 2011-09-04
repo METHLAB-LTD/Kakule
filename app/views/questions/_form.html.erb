@@ -1,0 +1,26 @@
+<div class="form">
+    <%= form_for(@question) do |f| %>
+      <% if @question.errors.any? %>
+        <div id="error_explanation">
+          <h2>Oops! <%= pluralize(@question.errors.count, "error") %> things went wrong.</h2>
+          <ul>
+          <% @question.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="field">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="field">
+        <%= f.label :body %>
+        <%= f.text_area :body %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Post Your Question", :class => "button inset-brown" %>
+      </div>
+    <% end %>
+</div>
