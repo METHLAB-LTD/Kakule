@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110904032227) do
+ActiveRecord::Schema.define(:version => 20110904042937) do
+
+  create_table "answers", :force => true do |t|
+    t.integer  "suggestable_id"
+    t.string   "suggestable_type"
+    t.text     "body"
+    t.integer  "author_id"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -103,6 +113,17 @@ ActiveRecord::Schema.define(:version => 20110904032227) do
     t.datetime "updated_at"
   end
 
+  create_table "itinerary_items", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "location_id"
+    t.string   "location_type"
+    t.string   "intent"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "likes", :force => true do |t|
     t.integer  "user_id"
     t.integer  "likable_id"
@@ -117,37 +138,12 @@ ActiveRecord::Schema.define(:version => 20110904032227) do
     t.datetime "updated_at"
   end
 
-  create_table "selected_attractions", :force => true do |t|
+  create_table "questions", :force => true do |t|
+    t.integer  "author_id"
     t.integer  "itinerary_id"
-    t.integer  "attraction_id"
-    t.datetime "start_time"
-    t.datetime "end_time"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_confirmed",  :default => false
-    t.integer  "suggested_by"
-  end
-
-  create_table "selected_events", :force => true do |t|
-    t.integer  "itinerary_id"
-    t.integer  "event_id"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "is_confirmed", :default => false
-    t.integer  "suggested_by"
-  end
-
-  create_table "selected_meals", :force => true do |t|
-    t.integer  "itinerary_id"
-    t.integer  "attraction_id"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "is_confirmed",  :default => false
-    t.integer  "suggested_by"
   end
 
   create_table "timezones", :force => true do |t|
@@ -167,7 +163,6 @@ ActiveRecord::Schema.define(:version => 20110904032227) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "is_confirmed", :default => false
-    t.integer  "suggested_by"
   end
 
   create_table "user_sessions", :force => true do |t|

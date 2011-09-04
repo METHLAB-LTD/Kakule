@@ -1,7 +1,9 @@
 class Transportation < ActiveRecord::Base
-  include ItineraryItem
-  belongs_to :itinerary
-  validates_uniqueness_of :start_time, :scope => :itinerary_id
+  #belongs_to :itinerary
+  # Stand alone class for now. Have it point to other classes like Flights later. Maybe.
+  has_one :itinerary_item, :foreign_key => "location_id", :conditions => "itinerary_items.location_type = 'Transportation'"
+  has_one :itinerary, :through => :itinerary_item
+  #validates_uniqueness_of :start_time, :scope => :itinerary_id
   
   @@modes = {
     0 => "None",

@@ -2,21 +2,23 @@ class Itinerary < ActiveRecord::Base
   belongs_to :owner, :class_name => 'User'
   belongs_to :parent, :class_name => 'Itinerary'
   has_many :likes, :as => :likable
+
+  has_many :itinerary_items
   
-  has_many :selected_attractions
+  has_many :selected_attractions, :class_name => "ItineraryItem", :conditions => "itinerary_items.location_type = 'Attraction' AND itinerary_items.intent = 'Attraction'"
   has_many :attractions, :through => :selected_attractions
-  has_many :selected_events
+    
+  has_many :selected_events, :class_name => "ItineraryItem", :conditions => "itinerary_items.location_type = 'Event'"
   has_many :events, :through => :selected_events
   
-  has_many :selected_meals
+  has_many :selected_meals, :class_name => "ItineraryItem", :conditions => "itinerary_items.location_type = 'Attraction' AND itinerary_items.intent = 'Meal'"
   has_many :meals, :through => :selected_meals, :source => :attraction
-  
-
-  has_many :transportations
+    
+  has_many :selected_transportations, :class_name => "ItineraryItem", :conditions => "itinerary_items.location_type = 'Transportation'"
+  has_many :transportations, :through => :selected_transportations
   
   validates_presence_of :owner_id
   
-  #validates_presence_of :parent_id
   
   def is_root?
     self.parent.nil?
@@ -73,16 +75,16 @@ class Itinerary < ActiveRecord::Base
 
     
   
-  def fork(new_owner)
-    forked = self.clone
-    forked.parent_id = self[:id]
-    forked.owner = new_owner
-    forked.save
-    self.selected_events.map{|s| s2=s.clone; s2.itinerary_id = forked[:id]; s2.save}
-    self.selected_attractions.map{|a| a2=a.clone; a2.itinerary_id = forked[:id]; a2.save}
-    self.transportations.map{|t| t2=t.clone; t2.itinerary_id = forked[:id]; t2.save}
-    return forked
-  end
+  # def fork(new_owner)
+  #   forked = self.clone
+  #   forked.parent_id = self[:id]
+  #   forked.owner = new_owner
+  #   forked.save
+  #   self.selected_events.map{|s| s2=s.clone; s2.itinerary_id = forked[:id]; s2.save}
+  #   self.selected_attractions.map{|a| a2=a.clone; a2.itinerary_id = forked[:id]; a2.save}
+  #   self.transportations.map{|t| t2=t.clone; t2.itinerary_id = forked[:id]; t2.save}
+  #   return forked
+  # end
   
   #github style name
   def full_name
@@ -90,52 +92,29 @@ class Itinerary < ActiveRecord::Base
   end
 
   def get_events(date) 
-    SelectedEvent.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.event }
+    #SelectedEvent.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.event }
+    self.events
   end 
 
   def get_attractions(date) 
-    SelectedAttraction.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.attraction }
+    #SelectedAttraction.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.attraction }
+    self.attractions
   end 
 
   def add_event(id, from, to)
-    sel_event = SelectedEvent.create({
-      :event_id => id,
-      :itinerary_id => self.id,
-      :start_time => from,
-      :end_time => to
-    })
-    
-    return Event.find(id)
+    ItineraryItem.add_event(self, Event.find(id), from, to)
   end
 
   def add_attraction(id, from, to)    
-    sel_attr = SelectedAttraction.create({
-      :attraction_id => id,
-      :itinerary_id => self.id,
-      :start_time => from,
-      :end_time => to
-    })
-    
-    return Attraction.find(id)
+    ItineraryItem.add_attraction(self, Attraction.find(id), from, to)
   end
 
-  def add_meal(id, from, to) 
-     sel_meal = SelectedMeal.create({
-      :attraction_id => id,
-      :itinerary_id => self.id,
-      :start_time => from,
-      :end_time => to
-    })
-
-    return Meal.find(id)
+  def add_meal(id, from, to)
+    ItineraryItem.add_meal(self, Attraction.find(id), from, to)
   end
   
   def add_transportation(id, from, to)
     
-  end
-  
-  def add_meal(id, from, to)    
-    add_attraction(id, from, to)
   end
   
   def self.permissions(str)
@@ -155,11 +134,11 @@ class Itinerary < ActiveRecord::Base
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
-        :name => entry.event.name,
+        :name => entry.location.name,
         :type => "event",
-        :id => entry.event.id,
-        :lat => entry.event.latitude,
-        :lng => entry.event.longitude,
+        :id => entry.location.id,
+        :lat => entry.location.latitude,
+        :lng => entry.location.longitude,
         :hashcode => entry.hash
       }
       
@@ -173,11 +152,11 @@ class Itinerary < ActiveRecord::Base
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
-        :name => entry.attraction.name,
+        :name => entry.location.name,
         :type => "attraction",
-        :id => entry.attraction.id,
-        :lat => entry.attraction.latitude,
-        :lng => entry.attraction.longitude,
+        :id => entry.location.id,
+        :lat => entry.location.latitude,
+        :lng => entry.location.longitude,
         :hashcode => entry.hash
       }
       break_time_into_days(dataset, element)
@@ -205,11 +184,11 @@ class Itinerary < ActiveRecord::Base
       element = {
         :start_time => entry.start_time,
         :end_time => entry.end_time,
-        :name => entry.attraction.name,
+        :name => entry.location.name,
         :type => "meal",
-        :id => entry.attraction.id,
-        :lat => entry.attraction.latitude,
-        :lng => entry.attraction.longitude,
+        :id => entry.location.id,
+        :lat => entry.location.latitude,
+        :lng => entry.location.longitude,
         :hashcode => entry.hash
       }
       break_time_into_days(dataset, element)

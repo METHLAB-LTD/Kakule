@@ -28,14 +28,14 @@ end
 
 User.create({:username => "azhu", :password=>"123456", :password_confirmation => "123456", :email=>"anhang@gmail.com"})
 
-Itinerary.create({:owner_id => 1, :name => "Trip to Amber's"})
-Attraction.create({:name => "Amber's House", :latitude => 37, :longitude => -120})
-Attraction.create({:name => "Nima's House", :latitude => 38, :longitude => -120})
-SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 1, :start_time => Time.now, :end_time => Time.now + 5.hours})
-SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 2, :start_time => Time.now + 6.hours, :end_time => Time.now + 9.hours})
-SelectedEvent.create({:itinerary_id => 1, :event_id => 1, :start_time => Time.now + 9.hours, :end_time => Time.now + 10.hours})
-Transportation.create({:itinerary_id => 1, :mode => 1, :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
-
+Itinerary.create({:owner_id => 1, :name => "Trip to Amber's"})# 
+# Attraction.create({:name => "Amber's House", :latitude => 37, :longitude => -120})
+# Attraction.create({:name => "Nima's House", :latitude => 38, :longitude => -120})
+# SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 1, :start_time => Time.now, :end_time => Time.now + 5.hours})
+# SelectedAttraction.create({:itinerary_id => 1, :attraction_id => 2, :start_time => Time.now + 6.hours, :end_time => Time.now + 9.hours})
+# SelectedEvent.create({:itinerary_id => 1, :event_id => 1, :start_time => Time.now + 9.hours, :end_time => Time.now + 10.hours})
+# Transportation.create({:itinerary_id => 1, :mode => 1, :start_time => Time.now + 5.hours, :end_time => Time.now + 6.hours, :extra_data => "Car rental info here"})
+# 
 
 
 SelectedAttraction.create({:itinerary_id => 3, :attraction_id => 18, :start_time => Time.now, :end_time => Time.now + 1.hour})

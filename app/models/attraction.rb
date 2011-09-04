@@ -1,8 +1,8 @@
 class Attraction < ActiveRecord::Base
   has_many :likes, :as => :likable
-  
   has_many :attractions_categories, :class_name => "AttractionsCategories"
   has_many :categories, :through => :attractions_categories
+  
   
   validates_uniqueness_of :yelp_id
   
