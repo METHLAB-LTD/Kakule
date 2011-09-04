@@ -13,9 +13,8 @@
 ActiveRecord::Schema.define(:version => 20110904042937) do
 
   create_table "answers", :force => true do |t|
-    t.integer  "suggestable_id"
-    t.string   "suggestable_type"
     t.text     "body"
+    t.integer  "itinerary_item_id"
     t.integer  "author_id"
     t.integer  "question_id"
     t.datetime "created_at"
@@ -99,7 +98,6 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
   end
 
   add_index "geocodes", ["country"], :name => "geocodes_country_index"
-  add_index "geocodes", ["name"], :name => "altered_geocodes_name_index"
   add_index "geocodes", ["name"], :name => "geocodes_name_index"
   add_index "geocodes", ["state"], :name => "geocodes_state_index"
 
@@ -146,6 +144,33 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
     t.datetime "updated_at"
   end
 
+  create_table "selected_attractions", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "attraction_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "selected_events", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "event_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "selected_meals", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "attraction_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "timezones", :force => true do |t|
     t.string   "name"
     t.float    "gmt_offset"
@@ -162,7 +187,6 @@ ActiveRecord::Schema.define(:version => 20110904042937) do
     t.text     "extra_data"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_confirmed", :default => false
   end
 
   create_table "user_sessions", :force => true do |t|

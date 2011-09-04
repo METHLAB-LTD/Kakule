@@ -2,52 +2,46 @@
     <div id="logo">
         <%= link_to(image_tag("kakule.png"), root_url) %>
     </div>
-    <div id="userbar">
-        <%= render "userbar" %>   
-    </div>
-    <div class="clear"></div>
 </div>
 <div id="left">
     <div id="search">
         <form class="search_form">
-            <input id="location-search" type="text" placeholder="Search for a location ex. San Francisco" autocomplete="off"></input>
+            <input id="location-search" type="text" placeholder="Find itineraries by keyword (ex. Paris or kid-friendly)" autocomplete="off"></input>
         </form>
     </div>
     <div id="content">
-        <div id="landing">
-            <h1>New to Kakule?</h1>
-            <p style="margin-top: 1em;">Don't worry, we've got your back - we're dedicated to making your travel planning experience ridiculously easy. Just select days, add any events and attractions you want to hit up, and we'll take care of all the grunt work for you.</p>
-
-            <h2 style="margin-top: 1.5em; margin-bottom: 1em;">Check out what we've got in store for you:</h2>
-            <div id="landing-options">
-                <div id="landing-places" class="landing_icon inset-pink">
-                    <%= image_tag "icons/places_large_white_icon.png" %>
-                </div>
-                <div id="landing-attractions" class="landing_icon inset-teal">
-                    <%= image_tag "icons/attractions_large_white_icon.png" %>
-                </div>
-                <div id="landing-meals" class="landing_icon inset-yellow">
-                    <%= image_tag "icons/meals_large_white_icon.png" %>
-                </div>
-            </div>
-        </div>
+      [insert itineraries, stack overflow style]
     </div>
 </div>
 <div id="right" class="white">
-    <div id="right-calendar">
-        <h1 id="itinerary-title"> 
-            <span id="itinerary-name" class="itinerary-name-icon"><%= @itinerary.name %></span><span id="itinerary-id" style="display: none"><%= @itinerary.id %></span>
-        </h1>
-        <div id="calendar">
-            <%= render "calendar" %>
-        </div>
+  <div id="create-itinerary">Create New Itinerary</div>
+  <div id="user-panel" class="sidebar-section">
+    <div id="user-information">
+      <div id="user-photo">
+      </div>
+      <span id="userbar-name">Welcome, <%= current_user.name %></span>
+      <div id="user-actions">
+        <% if current_user.is_guest? %>
+          <span id="login"><%= link_to "Log In", login_path %> | <%= link_to "Register", register_path %></span>
+        <% else %>
+          <span id="settings">Settings</span>
+          <span id="logout"><%= link_to "logout", :logout %></span>
+        <% end %>
+
+      </div>
     </div>
-    <div id="itinerary-day-wrapper">
-        <%= render "day" %>
-    </div>
-    <div id="savepanel">
-        <%= render "savepanel" %>
-    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="notifications">
+  </div>
+  <div class="header inset-pink">Your Itineraries</div>
+  <div id="your-itineraries" class="sidebar-section">
+    No itineraries found.
+  </div>
+  <div class="header inset-pink">Friends' Itineraries</div>
+  <div id="friends-itineraries" class="sidebar-section">
+    No itineraries found.
+  </div>
 </div>
     <div class="clear"></div>
 </div>
