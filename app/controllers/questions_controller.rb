@@ -42,7 +42,7 @@ class QuestionsController < ApplicationController
   # POST /questions.xml
   def create
     @question = Question.new(params[:question])
-    @itinerary = Itinerary.create(params[:itinerary])
+    @itinerary = Itinerary.create_itinerary(current_user)
     @question.itinerary_id = @itinerary[:id]
     @question.author_id = current_user[:id]
 

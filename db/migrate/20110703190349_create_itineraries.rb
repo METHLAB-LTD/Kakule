@@ -2,6 +2,7 @@ class CreateItineraries < ActiveRecord::Migration
   def self.up
     create_table :itineraries do |t|
       t.string :name
+      t.integer :owner_id
       t.integer :parent_id
       
       t.text :stringified_data

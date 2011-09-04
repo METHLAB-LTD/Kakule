@@ -1,4 +1,5 @@
 class Itinerary < ActiveRecord::Base
+  belongs_to :owner, :class_name => 'User'
   belongs_to :parent, :class_name => 'Itinerary'
   has_many :likes, :as => :likable
 
@@ -18,6 +19,7 @@ class Itinerary < ActiveRecord::Base
   
   has_one :question
   
+  validates_presence_of :owner_id
   
   def is_root?
     self.parent.nil?
@@ -116,7 +118,12 @@ class Itinerary < ActiveRecord::Base
     @@permissions[str]
   end
 
-  
+  def self.create_itinerary(user)
+    itinerary = Itinerary.new(@@defaults)
+    itinerary.owner = user
+    itinerary.save
+    return itinerary
+  end
   private
   
   def timeline_include_events(dataset)
