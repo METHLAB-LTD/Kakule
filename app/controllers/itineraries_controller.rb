@@ -79,14 +79,14 @@ class ItinerariesController < ApplicationController
   end
 
   # POST /itineraries/edit_name
-  def edit_name
-    new_name = params[:update_value]
-    itinerary = current_itinerary
-    itinerary.name = new_name
-    itinerary.save
-
-    render :text => itinerary.name
-  end
+  # def edit_name
+  #   new_name = params[:update_value]
+  #   itinerary = current_itinerary
+  #   itinerary.name = new_name
+  #   itinerary.save
+  # 
+  #   render :text => itinerary.name
+  # end
   
   
   # POST /itineraries/1/event/create
