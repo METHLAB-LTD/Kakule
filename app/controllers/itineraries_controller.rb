@@ -22,6 +22,20 @@ class ItinerariesController < ApplicationController
     @timeline = @itinerary.timeline
     #render :json => @timeline.to_json
   end
+  
+  # GET /itineraries/1/timeline
+  def timeline
+    @itinerary_items = Itinerary.find(params[:id], :include => [:events, :attractions, :meals, :transportations]).itinerary_items
+    data = @itinerary_items.map do |item|
+      {
+        :title => item.location.name,
+        :start => item.start_time.to_i,
+        :end => item.end_time.to_i,
+        :className => item.location_type.downcase
+      }
+    end
+    render :json => data
+  end
 
   # # GET /itineraries/new
   # # GET /itineraries/new.xml

@@ -8,9 +8,11 @@ Kakule::Application.routes.draw do
 
   # Itineraries
   get 'itineraries/render_day' 
+  
   post 'itineraries/edit_name'
   post 'itineraries/add_event'
   post 'itineraries/fork'
+  match 'itineraries/:id/timeline' => 'itineraries#timeline', :via => :get
   match 'itineraries/:id' => 'itineraries#show'
   match 'itineraries/:id/finalize' => 'itineraries#finalize'
   match 'itineraries/:id/event/create' => 'itineraries#create_event'
