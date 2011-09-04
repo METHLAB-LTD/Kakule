@@ -12,6 +12,8 @@ Kakule::Application.routes.draw do
   post 'itineraries/edit_name'
   post 'itineraries/add_event'
   post 'itineraries/fork'
+  post 'itineraries/drag_event_time'
+  post 'itineraries/resize_event_time'
   match 'itineraries/:id/timeline' => 'itineraries#timeline', :via => :get
   match 'itineraries/:id' => 'itineraries#show'
   match 'itineraries/:id/finalize' => 'itineraries#finalize'

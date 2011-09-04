@@ -13,6 +13,15 @@ kakule.questions = {
         today: '&nbsp;Today&nbsp;'
       },
       editable: true,
+      eventDrop: function(event, dayDelta, minuteDelta, allDay, revertFunc, jsEvent, ui, view) {
+        $.post("/itineraries/drag_event_time", 
+               {id: event.id, dayDelta: dayDelta, minuteDelta: minuteDelta});
+      },
+      eventResize: function(event, dayDelta, minuteDelta, allDay, revertFunc, jsEvent, ui, view) {
+        $.post("/itineraries/resize_event_time", 
+               {id: event.id, dayDelta: dayDelta, minuteDelta: minuteDelta});
+      },
+
 			events: '/itineraries/'+itineraryId+'/timeline'
     })
 	},

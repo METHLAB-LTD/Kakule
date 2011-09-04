@@ -28,6 +28,7 @@ class ItinerariesController < ApplicationController
     @itinerary_items = Itinerary.find(params[:id], :include => [:events, :attractions, :meals, :transportations]).itinerary_items
     data = @itinerary_items.map do |item|
       {
+        :id => item[:id], 
         :title => item.location.name,
         :start => item.start_time.to_i,
         :end => item.end_time.to_i,
@@ -111,10 +112,25 @@ class ItinerariesController < ApplicationController
   # end
   
   # POST /itineraries/1/event/update/:event_id
-  # Required: type (event, attraction, transportation). id
-  def update_event
-    
-    
+  # Required: id, dayDelta, minuteDelta
+  def drag_event_time
+    item = ItineraryItem.find(params[:id])
+    dayDelta = params[:dayDelta].to_i
+    minuteDelta = params[:minuteDelta].to_i
+    item.update_attributes(:start_time => item.start_time + dayDelta.days + minuteDelta.minutes, :end_time => item.end_time + dayDelta.days + minuteDelta.minutes)
+
+    render :json => {:status => "0"}
+  end
+
+  # POST /itineraries/1/event/update/:event_id
+  # Required: id, dayDelta, minuteDelta
+  def resize_event_time 
+    item = ItineraryItem.find(params[:id])
+    dayDelta = params[:dayDelta].to_i
+    minuteDelta = params[:minuteDelta].to_i
+    item.update_attributes(:end_time => item.end_time + dayDelta.days + minuteDelta.minutes)
+
+    render :json => {:status => "0"}
   end
 
 
