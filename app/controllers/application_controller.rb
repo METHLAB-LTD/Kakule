@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   include Kakule
   protect_from_forgery
-  helper_method :current_user_session, :current_user, :require_user, :current_itinerary, :logged_in?
+  helper_method :current_user_session, :current_user, :require_user, :logged_in? 
   before_filter :set_timezone 
 
   private
@@ -12,17 +12,17 @@ class ApplicationController < ActionController::Base
     def find_or_create_guest_user
       unless current_user
         user = User.create_guest
-        Itinerary.create_itinerary(user)
+        #Itinerary.create_itinerary(user)
         @current_user = user
       end
     end
 
     ### Methods for user sessions
 
-    def current_itinerary(options={})
-        find_or_create_guest_user
-        current_user.itineraries.last(options)
-    end
+    # def current_itinerary(options={})
+    #     find_or_create_guest_user
+    #     current_user.itineraries.last(options)
+    # end
 
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
