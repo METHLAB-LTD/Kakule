@@ -6,7 +6,7 @@
 #wrapper {
   position: relative;
   top: 50px;
-  width: 80%;
+  width: 90%;
   min-width: 800px;
   height: 100%;
   margin: auto; 
@@ -21,7 +21,6 @@
 }
 
 #logo {
-  float: left;
   width: 194px;
   height: 78px; 
 }
@@ -42,6 +41,7 @@
     border-radius: 1px;
     padding: 2px;
     
+    /* FIXME: Change to search icon */
     background: white url("../images/icons/location_icon.png") no-repeat;
     background-position: 5px center;
 
@@ -69,15 +69,14 @@
 
 #left {
     float: left;
-    width: 60%;
+    width: 70%;
     background: rgba(174, 164, 158, 0.3);
     padding: 1em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
 
-#content {
-    height: 100%;
+.itinerary {
     background: white;
     border: 1px solid #C4B6B2;
     
@@ -88,7 +87,7 @@
 
 #right {
     float: right;
-    width: 35%;
+    width: 25%;
     border: 1px solid #C4B6B2;
 }
 
@@ -100,38 +99,46 @@
     padding: 1em;
 }
 
-/* Itinerary sidebar styles
- * @itinerary-right
+/* Right sidebar styles
+ * @right
  */
 
-.ui-effects-transfer {
-    background: #FFCF75;
-    opacity: 0.5;
+#create-itinerary {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: #ffcc66;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+
+  position: relative;
+  margin-top: -3em;
 }
 
-.itinerary-event {
-    padding: 0.5em;
-    background: #F2F0EE;
-    border-radius: 5px;
-    margin-bottom: 0.5em;
+.sidebar-section {
+  padding: 1em;
 }
 
-.empty-itinerary {
-    height: 70px;
+#user-panel {
+  padding-top: 2em;
+
+  #user-information {
+    padding-left: 60px;
+
+    #user-photo {
+      width: 50px;
+      height: 50px;
+      background: #ccc;
+      float: left;
+      
+      margin-left: -60px;
+    }
+  }
 }
 
-#session{
-	position: relative;
-  .popup{
-		position: absolute;
-		background: white;
-		top: 0.8px;
-		left: 70px;
-		z-index: 9999;
-		border: 1px solid #CCC;
-		padding: 5px;
-	}
-}
 
 #footer {
     padding: 1em;
