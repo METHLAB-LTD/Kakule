@@ -17,6 +17,8 @@ class Itinerary < ActiveRecord::Base
   has_many :selected_transportations, :class_name => "ItineraryItem", :conditions => "itinerary_items.location_type = 'Transportation'"
   has_many :transportations, :through => :selected_transportations
   
+  has_one :question
+  
   validates_presence_of :owner_id
   
   

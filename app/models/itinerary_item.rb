@@ -38,7 +38,7 @@ class ItineraryItem < ActiveRecord::Base
       :itinerary_id => itinerary.id,
       :location_id => attraction.id,
       :location_type => "Attraction",
-      :intent => "Attraction"
+      :intent => "Attraction",
       :start_time => from,
       :end_time => to
     })
@@ -49,7 +49,7 @@ class ItineraryItem < ActiveRecord::Base
       :itinerary_id => itinerary.id,
       :location_id => meal.id,
       :location_type => "Attraction",
-      :intent => "Meal"
+      :intent => "Meal",
       :start_time => from,
       :end_time => to
     })

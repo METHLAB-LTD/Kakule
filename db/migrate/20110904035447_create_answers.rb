@@ -1,9 +1,8 @@
 class CreateAnswers < ActiveRecord::Migration
   def self.up
     create_table :answers do |t|
-      t.integer :suggestable_id
-      t.string :suggestable_type
       t.text :body
+      t.integer :itinerary_item_id
       t.integer :author_id
       t.integer :question_id
 
