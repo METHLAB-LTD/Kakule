@@ -3,6 +3,7 @@ class CreateQuestions < ActiveRecord::Migration
     create_table :questions do |t|
       t.integer :author_id
       t.integer :itinerary_id
+      t.string :title
       t.text :body
 
       t.timestamps

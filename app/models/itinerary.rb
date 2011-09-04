@@ -1,5 +1,4 @@
 class Itinerary < ActiveRecord::Base
-  belongs_to :owner, :class_name => 'User'
   belongs_to :parent, :class_name => 'Itinerary'
   has_many :likes, :as => :likable
 
@@ -18,8 +17,6 @@ class Itinerary < ActiveRecord::Base
   has_many :transportations, :through => :selected_transportations
   
   has_one :question
-  
-  validates_presence_of :owner_id
   
   
   def is_root?
@@ -88,10 +85,6 @@ class Itinerary < ActiveRecord::Base
   #   return forked
   # end
   
-  #github style name
-  def full_name
-    "#{self.owner.name} :: #{self.name}"
-  end
 
   def get_events(date) 
     #SelectedEvent.where(:itinerary_id => self.id).where(:start_time => (date)..(date + 1.days)).map {|s| s.event }
@@ -123,11 +116,6 @@ class Itinerary < ActiveRecord::Base
     @@permissions[str]
   end
 
-  def self.create_itinerary(user)
-    itinerary = Itinerary.new(@@defaults)
-    itinerary.owner = user
-    itinerary.save
-  end
   
   private
   
