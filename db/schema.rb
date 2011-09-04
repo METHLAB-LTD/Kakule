@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817095437) do
+ActiveRecord::Schema.define(:version => 20110904032227) do
 
   create_table "attractions", :force => true do |t|
     t.string   "name"
@@ -88,6 +88,11 @@ ActiveRecord::Schema.define(:version => 20110817095437) do
     t.text     "description"
   end
 
+  add_index "geocodes", ["country"], :name => "geocodes_country_index"
+  add_index "geocodes", ["name"], :name => "altered_geocodes_name_index"
+  add_index "geocodes", ["name"], :name => "geocodes_name_index"
+  add_index "geocodes", ["state"], :name => "geocodes_state_index"
+
   create_table "itineraries", :force => true do |t|
     t.string   "name"
     t.integer  "owner_id"
@@ -119,6 +124,8 @@ ActiveRecord::Schema.define(:version => 20110817095437) do
     t.datetime "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_confirmed",  :default => false
+    t.integer  "suggested_by"
   end
 
   create_table "selected_events", :force => true do |t|
@@ -128,6 +135,8 @@ ActiveRecord::Schema.define(:version => 20110817095437) do
     t.datetime "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_confirmed", :default => false
+    t.integer  "suggested_by"
   end
 
   create_table "selected_meals", :force => true do |t|
@@ -137,6 +146,8 @@ ActiveRecord::Schema.define(:version => 20110817095437) do
     t.datetime "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_confirmed",  :default => false
+    t.integer  "suggested_by"
   end
 
   create_table "timezones", :force => true do |t|
@@ -155,6 +166,8 @@ ActiveRecord::Schema.define(:version => 20110817095437) do
     t.text     "extra_data"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_confirmed", :default => false
+    t.integer  "suggested_by"
   end
 
   create_table "user_sessions", :force => true do |t|

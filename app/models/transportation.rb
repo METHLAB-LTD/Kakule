@@ -1,4 +1,5 @@
 class Transportation < ActiveRecord::Base
+  include ItineraryItem
   belongs_to :itinerary
   validates_uniqueness_of :start_time, :scope => :itinerary_id
   
