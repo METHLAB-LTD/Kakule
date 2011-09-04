@@ -297,8 +297,6 @@ a.fc-event {
 	}
 	
 .fc-event-skin {
-	border-color: #36c;     /* default BORDER color */
-	background-color: #36c; /* default BACKGROUND color */
 	color: #fff;            /* default TEXT color */
 	}
 	
@@ -313,8 +311,9 @@ a.fc-event {
 	
 .fc-event-time,
 .fc-event-title {
-	padding: 0 1px;
-	}
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 	
 .fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
 	display: block;
@@ -331,8 +330,9 @@ a.fc-event {
 ------------------------------------------------------------------------*/
 
 .fc-event-hori {
-	border-width: 1px 0;
 	margin-bottom: 1px;
+  padding: 3px;
+  text-transform: uppercase;
 	}
 	
 /* resizable */
@@ -358,64 +358,6 @@ a.fc-event {
 	}
 	
 	
-	
-/* Fake Rounded Corners (for buttons and events)
-------------------------------------------------------------*/
-	
-.fc-corner-left {
-	margin-left: 1px;
-	}
-	
-.fc-corner-left .fc-button-inner,
-.fc-corner-left .fc-event-inner {
-	margin-left: -1px;
-	}
-	
-.fc-corner-right {
-	margin-right: 1px;
-	}
-	
-.fc-corner-right .fc-button-inner,
-.fc-corner-right .fc-event-inner {
-	margin-right: -1px;
-	}
-	
-.fc-corner-top {
-	margin-top: 1px;
-	}
-	
-.fc-corner-top .fc-event-inner {
-	margin-top: -1px;
-	}
-	
-.fc-corner-bottom {
-	margin-bottom: 1px;
-	}
-	
-.fc-corner-bottom .fc-event-inner {
-	margin-bottom: -1px;
-	}
-	
-	
-	
-/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
------------------------------------------------------------------*/
-	
-.fc-corner-left .fc-event-inner {
-	border-left-width: 1px;
-	}
-	
-.fc-corner-right .fc-event-inner {
-	border-right-width: 1px;
-	}
-	
-.fc-corner-top .fc-event-inner {
-	border-top-width: 1px;
-	}
-	
-.fc-corner-bottom .fc-event-inner {
-	border-bottom-width: 1px;
-	}
 	
 	
 	

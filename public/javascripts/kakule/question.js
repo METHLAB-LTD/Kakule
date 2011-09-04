@@ -12,6 +12,7 @@ kakule.questions = {
 			buttonText: {
         today: '&nbsp;Today&nbsp;'
       },
+      editable: true,
 			events: '/itineraries/'+itineraryId+'/timeline'
     })
 	},
