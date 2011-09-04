@@ -6,11 +6,8 @@ kakule.questions = {
 	init : function(){
 		if (!$("body#questions")) { return; }
     $('#calendar').fullCalendar({
+      weekMode: "variable"
     })
-
-    var view = $("#calendar").fullCalendar("getView");
-    view.visStart = new Date();
-    console.log(view);
 	},
 	
 	poshyTip : function(){

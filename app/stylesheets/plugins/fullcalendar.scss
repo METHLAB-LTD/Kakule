@@ -13,12 +13,13 @@
 .fc {
 	direction: ltr;
 	text-align: left;
-	}
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
 	
 .fc table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	}
+	border-collapse: separate;
+  border-spacing: 10px;
+}
 	
 html .fc,
 .fc table {
@@ -27,7 +28,6 @@ html .fc,
 	
 .fc td,
 .fc th {
-	padding: 0;
 	vertical-align: top;
 	}
 
@@ -122,14 +122,32 @@ html .fc,
 /* Cell Styles
 ------------------------------------------------------------------------*/
 
-.fc-widget-header,    /* <th>, usually */
+.fc-widget-header { /* <th>, usually */
+  text-transform: uppercase;
+  color: #999;
+} 
 .fc-widget-content {  /* <td>, usually */
-	border: 1px solid #ccc;
-	}
+  background: #F2F0EE;
+  color: #D3C8C1;
+  font-size: 2em;
+  padding: 0.2em;
+  width: 14.2%;
+
+  &:hover {
+    color: $light_orange;
+    background: $light_yellow; } 
+  &:active {
+	  color: darken($light_red, 10%);
+	  background-color: lighten($light_red, 2%);
+  }
+
+}
 	
 .fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
-	background: #ffc;
-	}
+  color: darken($light_red, 10%);
+  background-color: lighten($light_red, 2%);
+
+}
 	
 .fc-cell-overlay { /* semi-transparent rectangle while dragging */
 	background: #9cf;
@@ -443,12 +461,11 @@ table.fc-border-separate {
 	}
 	
 .fc-grid .fc-other-month .fc-day-number {
-	opacity: 0.3;
-	filter: alpha(opacity=30); /* for IE */
-	/* opacity with small font can sometimes look too faded
-	   might want to set the 'color' property instead
-	   making day-numbers bold also fixes the problem */
-	}
+}
+
+.fc-other-month {
+  background: #E9E4E4; 
+}
 	
 .fc-grid .fc-day-content {
 	clear: both;
