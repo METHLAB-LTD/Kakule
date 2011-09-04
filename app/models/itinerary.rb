@@ -2,6 +2,9 @@ class Itinerary < ActiveRecord::Base
   belongs_to :owner, :class_name => 'User'
   belongs_to :parent, :class_name => 'Itinerary'
   has_many :likes, :as => :likable
+  
+  has_many :itinerary_tags
+  has_many :tags, :through => :itinerary_tags
 
   has_many :itinerary_items
   
