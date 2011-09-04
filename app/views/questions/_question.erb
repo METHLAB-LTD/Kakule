@@ -1,8 +1,15 @@
-<div class="question_element">
-	Written by <%= question.author.name %>
-	<br>
-	Itinerary: <%= link_to  "link", question.itinerary%>
-	<br>
-	Body: <%= question.body %>
+<div class="itinerary">
+	<div class="help-answer"><%= link_to  "Help out this itinerary", question, {:class => "inset-yellow"} %></div>
+  <h2><%= question.title %></h2>
+	<div class="meta">
+    <span class="author">Author: <%= question.author.name %></span>
+    <span class="contributors">Contributor count: 0 </span>
+  </div>
+  <div class="tags">
+  </div>
+  <div class="vote">
+  </div>
+	<div class="description">
+    <%= question.body %>
+  </div>
 </div>
-<hr>

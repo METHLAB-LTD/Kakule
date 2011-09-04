@@ -22,6 +22,18 @@ body {
   margin: auto; 
 }
 
+#wrapper-content {
+  margin: auto;
+  background: rgba(174, 164, 158, 0.3);
+  padding: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#inner-content {
+  padding: 1em;
+}
+
 #header {
   margin-bottom: 2em; 
 }
@@ -43,6 +55,10 @@ h1 {
 
 h2 {
   font-size: 1.4em; }
+
+h3 {
+  font-size: 1.2em;
+}
 
 img {
   border: 0px; }
@@ -133,4 +149,13 @@ a {
         width: 6em;
         display: inline-block;
     }
+}
+
+a.back {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  text-decoration: none;
 }

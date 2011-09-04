@@ -30,6 +30,15 @@ $brown: #8F8785;
     color: white;
 }
 
+a.inset-teal, a.inset-yellow, a.inset-pink, a.inset-brown {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}
+
 .inset-brown {
     background: $light_brown; 
     text-shadow: $brown -1px -1px 0;

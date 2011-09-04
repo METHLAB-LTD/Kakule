@@ -1,8 +1,19 @@
-<div id="content">
-	Title: <%= @question.title%><br>
-	Body: <%= @question.body%>
-	<span id="itinerary_id" style="display:none"><%=@itinerary.id%></span>
-  <div id="inner-content" class="white">
+<div id="wrapper-content">
+  <%= link_to "<< Back", "/", {:class => "back"} %>
+  <div id="inner-content" class="itinerary white">
+    <h2><%= @question.title %></h2>
+    <div class="meta">
+      <span class="author">Author: <%= @question.author.name %></span>
+      <span class="contributors">Contributor count: 0 </span>
+    </div>
+    <div class="tags">
+    </div>
+    <div class="vote">
+    </div>
+    <div class="description">
+      <%= @question.body %>
+    </div>
+	  <span id="itinerary_id" style="display:none"><%=@itinerary.id%></span>
     <div id="calendar"></div>
   </div>
 </div>
