@@ -1,8 +1,3 @@
-<div id="header">
-    <div id="logo">
-        <%= link_to(image_tag("kakule.png"), root_url) %>
-    </div>
-</div>
 <div id="left">
     <div id="search">
         <form class="search_form">
@@ -14,7 +9,7 @@
     </div>
 </div>
 <div id="right" class="white">
-  <div id="create-itinerary"><%= link_to "Create New Itinerary", new_question_path%></div>
+  <div id="create-itinerary" class="inset-pink"><%= link_to "Create New Itinerary", new_question_path%></div>
   <div id="user-panel" class="sidebar-section">
     <div id="user-information">
       <div id="user-photo">
@@ -34,11 +29,11 @@
   </div>
   <div id="notifications">
   </div>
-  <div class="header inset-pink">Your Itineraries</div>
+  <div class="header inset-brown">Your Itineraries</div>
   <div id="your-itineraries" class="sidebar-section">
     No itineraries found.
   </div>
-  <div class="header inset-pink">Friends' Itineraries</div>
+  <div class="header inset-brown">Friends' Itineraries</div>
   <div id="friends-itineraries" class="sidebar-section">
     No itineraries found.
   </div>

@@ -13,6 +13,26 @@ body {
   background: #D3C8C1 url("../images/bg-main.jpg") repeat;
 }
 
+#wrapper {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  min-width: 800px;
+  height: 100%;
+  margin: auto; 
+}
+
+#header {
+  margin-bottom: 2em; 
+}
+
+#logo {
+  width: 194px;
+  height: 78px; 
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: normal;
