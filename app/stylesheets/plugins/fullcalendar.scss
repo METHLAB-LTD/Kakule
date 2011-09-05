@@ -574,4 +574,21 @@ table.fc-border-separate {
 	_overflow: hidden;
 	}
 	
+.fc-blank {
+  background: white;
+  color: white;
+
+  &:hover {
+    background: white;
+    color: white;
+  }
+
+  .fc-day-number {
+    display: none;
+  }
+
+  .fc-content {
+    display: none;
+  }
+}
 	

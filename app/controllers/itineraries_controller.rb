@@ -117,9 +117,20 @@ class ItinerariesController < ApplicationController
     item = ItineraryItem.find(params[:id])
     dayDelta = params[:dayDelta].to_i
     minuteDelta = params[:minuteDelta].to_i
-    item.update_attributes(:start_time => item.start_time + dayDelta.days + minuteDelta.minutes, :end_time => item.end_time + dayDelta.days + minuteDelta.minutes)
 
-    render :json => {:status => "0"}
+    start_time = item.start_time + dayDelta.days + minuteDelta.minutes;
+    end_time = item.end_time + dayDelta.days + minuteDelta.minutes;
+
+    start = Date.today + 4.days
+    ending = Date.today + 11.days
+
+    if ((start_time.to_date <=> start) == -1) or ((end_time.to_date <=> ending) == 1)
+      render :json => {:status => "1"}
+    else
+      item.update_attributes(:start_time => start_time, :end_time => end_time);
+      render :json => {:status => "0"}
+    end
+
   end
 
   # POST /itineraries/1/event/update/:event_id
@@ -128,9 +139,17 @@ class ItinerariesController < ApplicationController
     item = ItineraryItem.find(params[:id])
     dayDelta = params[:dayDelta].to_i
     minuteDelta = params[:minuteDelta].to_i
-    item.update_attributes(:end_time => item.end_time + dayDelta.days + minuteDelta.minutes)
 
-    render :json => {:status => "0"}
+    end_time = item.end_time + dayDelta.days + minuteDelta.minutes;
+
+    ending = Date.today + 11.days
+
+    if (end_time.to_date <=> ending) == 1
+      render :json => {:status => "1"}
+    else
+      item.update_attributes(:end_time => end_time);
+      render :json => {:status => "0"}
+    end
   end
 
 
