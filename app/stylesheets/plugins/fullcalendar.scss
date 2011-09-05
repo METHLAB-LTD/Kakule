@@ -311,8 +311,12 @@ a.fc-event {
 	
 .fc-event-time,
 .fc-event-title {
+  width: 100%;
+  height: 1em;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: inline-block;
 }
 	
 .fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
@@ -591,4 +595,15 @@ table.fc-border-separate {
     display: none;
   }
 }
-	
+
+.event {
+  background: $red;
+}
+
+.attraction {
+  background: $light_teal;
+}
+
+.meal {
+  background: $light_orange;   
+}

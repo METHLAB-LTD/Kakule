@@ -33,7 +33,7 @@ kakule.questions = {
                });
       },
 			events: '/itineraries/'+itineraryId+'/timeline'
-    })
+    });
 	},
 
 	

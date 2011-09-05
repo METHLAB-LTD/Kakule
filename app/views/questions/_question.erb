@@ -1,4 +1,9 @@
-<div class="itinerary">
+<% id = question.itinerary[:id] %>
+<div class="itinerary" id="<%= id %>">
+  <div id="range-<%= id %>" class="hidden">
+    <span id="start-date-<%= id %>"><%= question.itinerary.start_time.to_s %></span>
+    <span id="end-date-<%= id %>"><%= question.itinerary.end_time.to_s %></span>
+  </div>
 	<div class="help-answer"><%= link_to  "Help out this itinerary", question, {:class => "inset-yellow"} %></div>
   <h2><%= question.title %></h2>
 	<div class="meta">
@@ -12,4 +17,5 @@
 	<div class="description">
     <%= question.body %>
   </div>
+  <div id="calendar-<%= id %>"></div>
 </div>

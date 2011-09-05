@@ -10,7 +10,8 @@ kakule.home.init = {
 			kakule.home.init.attachEditHandlers();
 			kakule.home.init.attachAddHandlers();
 			kakule.home.init.attachShowHandlers();
-            kakule.home.init.attachItineraryHandlers();
+      kakule.home.init.attachItineraryHandlers();
+      kakule.home.init.calendars();
 			kakule.home.init.session();
 	  }
 	},
@@ -177,7 +178,23 @@ kakule.home.init = {
             $(".main-photo-img").attr("src", photo_url);
         });
     },
-	
+
+  calendars : function() {
+    $.each($(".itinerary"), function(i, item) {
+      var id = $(item).attr("id");
+      var visStartDate = new Date($("#start-date-" + id).html());
+      var visEndDate = new Date($("#end-date-" + id).html());
+
+      $("#calendar-" + id).fullCalendar({
+        visStartDate: visStartDate,
+        visEndDate: visEndDate,
+        weekMode: "variable",
+        events: "/itineraries/" + id + "/timeline"
+      });
+      
+    });
+  },
+
 	session : function(){
 		var sessionDiv = $("#session");
 		var loginLink = $(".login", sessionDiv);
