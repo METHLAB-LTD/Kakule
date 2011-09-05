@@ -22,7 +22,8 @@ class Itinerary < ActiveRecord::Base
   
   has_one :question
   
-  validates_presence_of :owner_id
+  validates_presence_of :owner_id, :start_time, :end_time
+  validate :start_before_end
   
   def is_root?
     self.parent.nil?
@@ -218,6 +219,10 @@ class Itinerary < ActiveRecord::Base
       dataset[element[:start_time].to_date.strftime].push(element)
     end
     return dataset
+  end
+  
+  def start_before_end
+    errors.add_to_base("Start time must be before end time.") if start_time > end_time
   end
 
 end

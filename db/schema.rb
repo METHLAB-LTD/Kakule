@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(:version => 20110905011204) do
   end
 
   add_index "geocodes", ["country"], :name => "geocodes_country_index"
+  add_index "geocodes", ["name"], :name => "altered_geocodes_name_index"
   add_index "geocodes", ["name"], :name => "geocodes_name_index"
   add_index "geocodes", ["state"], :name => "geocodes_state_index"
 
@@ -120,6 +121,13 @@ ActiveRecord::Schema.define(:version => 20110905011204) do
     t.string   "intent"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "itinerary_tags", :force => true do |t|
+    t.integer  "itinerary_id"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -170,6 +178,13 @@ ActiveRecord::Schema.define(:version => 20110905011204) do
     t.integer  "attraction_id"
     t.datetime "start_time"
     t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
