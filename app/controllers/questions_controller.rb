@@ -47,11 +47,8 @@ class QuestionsController < ApplicationController
     @question.itinerary_id = @itinerary[:id]
     @question.author_id = current_user[:id]
 
-    date_check = true
-    date_check = false if (@itinerary.start_time.to_date <=> @itinerary.end_time.to_date) == 1
-
     respond_to do |format|
-      if @question.save && date_check
+      if @question.save 
           format.html { redirect_to(@question, :notice => 'Question was successfully created.') }
           format.xml  { render :xml => @question, :status => :created, :location => @question }
       else
