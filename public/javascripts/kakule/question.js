@@ -7,10 +7,9 @@ kakule.questions = {
 		if (!$("body#questions")) { return; }
 		
 		var itineraryId = $("span#itinerary_id").html();
-    visStartDate = new Date();
-    visEndDate = new Date();
-    visStartDate.setDate(8);
-    visEndDate.setDate(15);
+    var visStartDate = new Date($("span#start_date").html());
+    var visEndDate = new Date($("span#end_date").html());
+
     $('#calendar').fullCalendar({
       visStartDate: visStartDate,
       visEndDate: visEndDate,

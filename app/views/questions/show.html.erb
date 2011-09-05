@@ -2,6 +2,10 @@
   <%= link_to "<< Back", "/", {:class => "back"} %>
   <div id="inner-content" class="itinerary white">
     <h2><%= @question.title %></h2>
+    <div class="hidden">
+      <span id="start_date"><%= @question.itinerary.start_time.to_s %></span>
+      <span id="end_date"><%= @question.itinerary.end_time.to_s %></span>
+    </div>
     <div class="meta">
       <span class="author">Author: <%= @question.author.name %></span>
       <span class="contributors">Contributor count: 0 </span>

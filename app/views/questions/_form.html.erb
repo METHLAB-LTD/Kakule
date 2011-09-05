@@ -18,6 +18,14 @@
         <%= f.label :body %>
         <%= f.text_area :body %>
       </div>
+      <div class="field">
+        <%= label_tag :start_time %>
+        <%= date_select :itinerary, :start_time, :default => DateTime.now, :ampm => true %> 
+      </div>
+      <div class="field">
+        <%= label_tag :end_time %>
+        <%= date_select :itinerary, :end_time, :default => DateTime.now, :ampm => true %> 
+      </div>
 
       <div class="actions">
         <%= f.submit "Post Your Question", :class => "button inset-brown" %>

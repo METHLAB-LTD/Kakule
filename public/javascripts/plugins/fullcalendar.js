@@ -1995,7 +1995,7 @@ function MonthView(element, calendar) {
 		}
 		addDays(visStart, -((visStart.getDay() - Math.max(firstDay, nwe) + 7) % 7));
 		addDays(visEnd, (7 - visEnd.getDay() + Math.max(firstDay, nwe)) % 7);
-		var rowCnt = Math.round((visEnd - visStart) / (DAY_MS * 7));
+		var rowCnt = Math.max(1, Math.round((visEnd - visStart) / (DAY_MS * 7)));
 		if (opt('weekMode') == 'fixed') {
 			addDays(visEnd, (6 - rowCnt) * 7);
 			rowCnt = 6;
@@ -2350,7 +2350,7 @@ function BasicView(element, calendar, viewName) {
 		var cell;
 			
 		if (opt('weekMode') == 'variable') {
-			rowHeight = rowHeightLast = Math.floor(bodyHeight / (rowCnt==1 ? 2 : 6));
+			rowHeight = rowHeightLast = Math.floor(bodyHeight / (rowCnt==1 ? 6 : 6));
 		}else{
 			rowHeight = Math.floor(bodyHeight / rowCnt);
 			rowHeightLast = bodyHeight - rowHeight * (rowCnt-1);

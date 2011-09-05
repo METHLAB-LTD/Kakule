@@ -121,8 +121,8 @@ class ItinerariesController < ApplicationController
     start_time = item.start_time + dayDelta.days + minuteDelta.minutes;
     end_time = item.end_time + dayDelta.days + minuteDelta.minutes;
 
-    start = Date.today + 4.days
-    ending = Date.today + 11.days
+    start = item.itinerary.start_time.to_date
+    ending = item.itinerary.end_time.to_date
 
     if ((start_time.to_date <=> start) == -1) or ((end_time.to_date <=> ending) == 1)
       render :json => {:status => "1"}
@@ -142,7 +142,7 @@ class ItinerariesController < ApplicationController
 
     end_time = item.end_time + dayDelta.days + minuteDelta.minutes;
 
-    ending = Date.today + 11.days
+    ending = item.itinerary.end_time.to_date
 
     if (end_time.to_date <=> ending) == 1
       render :json => {:status => "1"}

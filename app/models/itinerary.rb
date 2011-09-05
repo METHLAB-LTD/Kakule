@@ -121,8 +121,8 @@ class Itinerary < ActiveRecord::Base
     @@permissions[str]
   end
 
-  def self.create_itinerary(user)
-    itinerary = Itinerary.new(@@defaults)
+  def self.create_itinerary(user, params) 
+    itinerary = Itinerary.new(@@defaults.merge(params))
     itinerary.owner = user
     itinerary.save
     return itinerary
