@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :itineraries, :foreign_key => 'owner_id'
   has_many :calendar_events, :through => :itineraries
   has_many :likes
+  has_many :questions, :foreign_key => 'author_id'
   
   has_many :friends, :through => :friendships
   has_many :friendships, :dependent => :destroy, :conditions => {:confirmed => true}

@@ -14,16 +14,7 @@
     <div id="user-information">
       <div id="user-photo">
       </div>
-      <span id="userbar-name">Welcome, <%= current_user.name %></span>
-      <div id="user-actions">
-        <% if current_user.is_guest? %>
-          <span id="login"><%= link_to "Log In", login_path %> | <%= link_to "Register", register_path %></span>
-        <% else %>
-          <span id="settings">Settings</span>
-          <span id="logout"><%= link_to "logout", :logout %></span>
-        <% end %>
-
-      </div>
+			<%= render :partial => "userbar" %>
     </div>
     <div class="clear"></div>
   </div>
