@@ -49,7 +49,11 @@ Kakule::Application.routes.draw do
   get 'facebook/callback', :as => :facebook_callback
   
 
-  resources :attractions, :events, :itineraries, :users, :user_sessions, :questions, :answers
+  resources :attractions, :events, :itineraries, :users, :user_sessions
+  
+  resources :questions do 
+    resources :answers
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
