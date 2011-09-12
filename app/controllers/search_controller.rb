@@ -85,6 +85,25 @@ class SearchController < ApplicationController
     }
   end
   
+  # GET /search/questions
+  # Required: id, type
+  
+  def questions
+    if (params[:type] == "Tag")
+      render :json => {
+        :html => (render_to_string :partial => "tag", :locals => {:tag => Tag.find(params[:id])})
+      }
+    elsif (params[:type] == "Question")
+      render :json => {
+        :html => (render_to_string :partial => "question", :locals => {:question => Question.find(params[:id])})
+      }
+    else
+      render :json => {
+        :error => "invalid type"
+      }
+    end
+  end
+  
   # POST /search/flights
   # Required: from, to, departure_date
   # Optional: return_date, adults

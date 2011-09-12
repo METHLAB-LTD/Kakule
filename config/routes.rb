@@ -37,6 +37,7 @@ Kakule::Application.routes.draw do
   get "search/render_attractions"
   get "search/render_photos"
   get "search/render_meals"
+  get "search/questions"
 
   # Users/Sessions 
   match "/dashboard" => 'users#show', :as => :dashboard

@@ -1,0 +1,8 @@
+Tag = <%=tag.name%>
+<br>
+Listing questions...
+<br>
+<% tag.questions.each do |question|%>
+	<%= question.title%> => <%= question.body%>
+	<br>
+<%end%>

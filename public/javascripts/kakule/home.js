@@ -139,8 +139,8 @@ kakule.home.init = {
                 kakule.current.lng = item.lng;
 console.log(item);
                 $("#location-search").val(item.name);
-                $.get("/search/render_place_by_id", 
-                      {id: item.id},
+                $.get("/search/questions", 
+                      {id: item.id, type: item.type},
                       function(data) {
                         $("#content").empty();
                         $("#content").append(data.html);
