@@ -122,7 +122,7 @@ kakule.home.init = {
             scroll: false,
             formatItem: function(item) {
                     return item.name;
-                },
+            },
             parse: function(data) {
                     var array = new Array();
                     for(var i = 0; i < data.length; i++) {
@@ -137,7 +137,7 @@ kakule.home.init = {
             }).result(function(event, item) {
                 kakule.current.lat = item.lat;
                 kakule.current.lng = item.lng;
-
+console.log(item);
                 $("#location-search").val(item.name);
                 $.get("/search/render_place_by_id", 
                       {id: item.id},

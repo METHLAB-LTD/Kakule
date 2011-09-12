@@ -57,12 +57,17 @@ class SearchController < ApplicationController
   # Required: query
   # example = {"query" : "San Francisco"}
   def places
-    render :json => [] if params[:q].blank? #should let JS handle this eventually (at least 2 chars)
+    #render :json => [] if params[:q].blank? #should let JS handle this eventually (at least 2 chars)
     #geocodes = Geocode.find_by_similar_name(params[:q])
     
     tags = Tag.where("name like ?", "%#{params[:q]}%")
     titles = Question.where("title like ?", "%#{params[:q]}%")
-    render :json => tags.map {|tag| {:name => tag.name, :type => "Tag"}} + titles.map {|g| {:name => g.title}}
+    render :json => tags.map {|tag| {:id => tag[:id], :name => tag.name, :type => "Tag"}} + titles.map {|g| {:id => g[:id], :name => g.title, :type => "Question"}}
+    
+    # render :json => {
+    #   :tags => tags.map {|tag| {:name => tag.name, :type => "Tag"}},
+    #   :questions => titles.map {|g| {:name => g.title}}
+    # }
     
     #render :json => geocodes.map {|g| {:name => g.full_name, :id => g.id, :lat => g.latitude, :lng => g.longitude } }
     
