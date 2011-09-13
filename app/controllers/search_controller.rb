@@ -20,7 +20,7 @@ class SearchController < ApplicationController
   end
   
   # POST /search/events
-  # Required: lat, lng
+  # Required: (lat, lng) OR (query)
   # Optional: radius, query, start_time, end_time, limit
   # example = {lat : 37.782455, lng : -122.405855, radius : 50, query : "ass", start_time : (new Date()).toLocaleString(), end_time : (new Date(2011,7,2)).toLocaleString(), limit : 20}
   def events(limit)

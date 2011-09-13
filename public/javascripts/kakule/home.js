@@ -137,9 +137,8 @@ kakule.home.init = {
             }).result(function(event, item) {
                 kakule.current.lat = item.lat;
                 kakule.current.lng = item.lng;
-console.log(item);
                 $("#location-search").val(item.name);
-                $.get("/search/questions", 
+                $.get("/search/questions",
                       {id: item.id, type: item.type},
                       function(data) {
                         $("#content").empty();
